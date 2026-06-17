@@ -373,6 +373,62 @@ async function iniciarLogin(){
   err.style.display = 'none';
   await cargarDatos();
 }
+function poblarFiltros(){
+  // Asignados (separados por ;)
+  var asignados = {};
+  todosLosDatos.forEach(function(r){
+    splitAsignados(r.Asignado_Nombre).forEach(function(n){
+      var clean = displayNombre(n);
+      if(clean) asignados[clean] = true;
+    });
+  });
+  var selA = document.getElementById('fAsignado');
+  selA.innerHTML = '<option value="">Todos</option>';
+  Object.keys(asignados).sort().forEach(function(n){
+    var opt = document.createElement('option');
+    opt.value = n; opt.textContent = n;
+    selA.appendChild(opt);
+  });
+
+  // Buckets / Copropiedades
+  var buckets = {};
+  todosLosDatos.forEach(function(r){
+    var b = String(r.Bucket || '').trim();
+    if(b) buckets[b] = true;
+  });
+  var selB = document.getElementById('fBucket');
+  selB.innerHTML = '<option value="">Todas</option>';
+  Object.keys(buckets).sort().forEach(function(b){
+    var opt = document.createElement('option');
+    opt.value = b; opt.textContent = b;
+    selB.appendChild(opt);
+  });
+
+  // Prioridades
+  var prioridades = {};
+  todosLosDatos.forEach(function(r){
+    var p = String(r.Prioridad || '').trim();
+    if(p) prioridades[p] = true;
+  });
+  var selP = document.getElementById('fPrioridad');
+  selP.innerHTML = '<option value="">Todas</option>';
+  Object.keys(prioridades).sort().forEach(function(p){
+    var opt = document.createElement('option');
+    opt.value = p; opt.textContent = p;
+    selP.appendChild(opt);
+  });
+
+  // Copropiedad para infografía (mismo listado que buckets)
+  var selIC = document.getElementById('infoCopropiedad');
+  if(selIC){
+    selIC.innerHTML = '<option value="">Todas las copropiedades</option>';
+    Object.keys(buckets).sort().forEach(function(b){
+      var opt = document.createElement('option');
+      opt.value = b; opt.textContent = b;
+      selIC.appendChild(opt);
+    });
+  }
+}
 async function cargarDatos(){
   try{
     mostrarCargando('Cargando datos...');
