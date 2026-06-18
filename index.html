@@ -473,7 +473,7 @@ function aplicarFiltros(){
   var cDesde=parsearFechaInput(document.getElementById('fCreacionDesde').value),cHasta=parsearFechaInput(document.getElementById('fCreacionHasta').value);
   if(fHasta) fHasta.setHours(23,59,59,999);if(cHasta) cHasta.setHours(23,59,59,999);
   datosFiltrados=todosLosDatos.filter(function(t){
-    var matchA=!a||splitAsignados(t.Asignado_Nombre).some(function(n){return normalizarNombre(n)===normalizarNombre(a);});
+    var matchA=!a||splitAsignados(t.Asignado_Nombre).some(function(n){return displayNombre(n)===a;});
     var matchB=!b||t.Bucket===b,matchE=!e||String(parsearEstado(t.Estado))===e,matchP=!p||t.Prioridad===p;
     var matchFV=true;if(fDesde||fHasta){var fv=parsearFecha(t.Fecha_vencimiento);if(!fv){matchFV=false;}else{var fvd=soloFecha(fv);if(fDesde&&fvd<fDesde)matchFV=false;if(fHasta&&fvd>fHasta)matchFV=false;}}
     var matchFC=true;if(cDesde||cHasta){var fc=parsearFecha(t.Fecha_Creacion);if(!fc){matchFC=false;}else{var fcd=soloFecha(fc);if(cDesde&&fcd<cDesde)matchFC=false;if(cHasta&&fcd>cHasta)matchFC=false;}}
