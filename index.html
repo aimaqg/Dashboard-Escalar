@@ -139,7 +139,7 @@ tbody td{padding:9px 10px;color:#ddd;font-size:12px}
 
 <div class="login-screen" id="loginScreen">
   <div class="login-card">
-    <div class="logo-hex"><div class="logo-inner"></div></div>
+    <div style="text-align:center;margin-bottom:20px"><img src="logo.png" alt="Escalar" style="max-width:140px;height:auto;display:block;margin:0 auto"/></div>
     <div class="login-title">ESCALAR</div>
     <div class="login-sub">GESTOR DE TAREAS</div>
     <p class="login-desc">Ingresa tus credenciales para acceder al dashboard.</p>
@@ -168,7 +168,7 @@ tbody td{padding:9px 10px;color:#ddd;font-size:12px}
 <div class="dash" id="dashboard">
   <div class="topbar">
     <div class="brand">
-      <div class="logo-sm"></div>
+      <img src="logo.png" alt="Escalar" style="width:40px;height:40px;object-fit:contain;flex-shrink:0"/>
       <div><div class="brand-text">ESCALAR</div><div class="brand-sub">GESTOR DE TAREAS</div></div>
     </div>
     <div class="topbar-right">
@@ -435,6 +435,7 @@ function poblarFiltros(){
 async function cargarDatos(){
   try{
     mostrarCargando('Cargando datos...');
+    precargarLogo();
     var resp = await fetch(CONFIG.jsonUrl + '?t=' + Date.now());
     if(!resp.ok) throw new Error('No se pudo leer tareas.json (' + resp.status + ')');
     var data = await resp.json();
@@ -639,7 +640,22 @@ function roundRect(ctx,x,y,w,h,r,fill,stroke){
   if(fill){ctx.fillStyle=fill;ctx.fill();}if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=1.5;ctx.stroke();}
 }
 
+var logoImg=null;
+function precargarLogo(){
+  if(logoImg) return Promise.resolve(logoImg);
+  return new Promise(function(resolve){
+    var img=new Image();img.crossOrigin='anonymous';
+    img.onload=function(){logoImg=img;resolve(img);};
+    img.onerror=function(){resolve(null);};
+    img.src='logo.png?t='+Date.now();
+  });
+}
 function dibujarHexLogo(ctx,cx,cy,r){
+  if(logoImg){
+    var size=r*2.2;
+    ctx.drawImage(logoImg,cx-size/2,cy-size/2,size,size);
+    return;
+  }
   var pts=[];for(var i=0;i<6;i++){var a=Math.PI/180*(60*i-30);pts.push([cx+r*Math.cos(a),cy+r*Math.sin(a)]);}
   ctx.beginPath();ctx.moveTo(pts[0][0],pts[0][1]);for(var i=1;i<6;i++) ctx.lineTo(pts[i][0],pts[i][1]);ctx.closePath();ctx.fillStyle='#C9A84C';ctx.fill();
   var ri=r*0.55;var pts2=[];for(var i=0;i<6;i++){var a=Math.PI/180*(60*i-30);pts2.push([cx+ri*Math.cos(a),cy+ri*Math.sin(a)]);}
