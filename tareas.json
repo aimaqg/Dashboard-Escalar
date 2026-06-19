@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-06-19T12:01:44.751Z",
-  "total": 270,
+  "actualizado": "2026-06-19T15:47:07.859Z",
+  "total": 271,
   "datos": [
     {
       "ID_Registro": 1,
@@ -4586,6 +4586,23 @@
       "Fecha_vencimiento": "2026-06-18T10:00:00Z",
       "Prioridad": "",
       "Bucket": "Santorini",
+      "Estado": 0,
+      "Completada": "",
+      "Dias para vencer": "",
+      "Semaforo": "",
+      "Canal_teams": "Escalar"
+    },
+    {
+      "ID_Registro": 271,
+      "ID_Tarea": "OKxudNesOUGnExwQGDzyi2UADVL_",
+      "Titulo_Tarea": "Retirar Agua Del Pin Del Ascensor",
+      "Descripcion": "",
+      "Asignado_Nombre": "Coordinador Escalar SAS",
+      "Asignado_email": "coordinador@escalarsas.com",
+      "Fecha_Creacion": "2026-06-19T13:32:53.867263Z",
+      "Fecha_vencimiento": "2026-06-26T10:00:00Z",
+      "Prioridad": "",
+      "Bucket": "Dijon",
       "Estado": 0,
       "Completada": "",
       "Dias para vencer": "",
