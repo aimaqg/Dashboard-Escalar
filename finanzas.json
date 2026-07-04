@@ -1,10 +1,353 @@
 {
-  "actualizado": "2026-07-04T16:12:25.431Z",
-  "total": 1,
+  "actualizado": "2026-07-04T16:34:02.476Z",
+  "total": 2,
   "unidades": [
     {
       "unidad": "Charlotte",
       "archivo": "EEFF-CHARLOTTE-2026.xls",
+      "anio": 2026,
+      "mes": "MAYO",
+      "kpis": {
+        "efectivo": 4022084.34,
+        "cartera": 14862009,
+        "excedenteAcumulado": 4771802.719999999,
+        "gastoPromedioMensual": 37144966.072000004
+      },
+      "presupuesto": {
+        "ingresos": {
+          "ppto": 179732345,
+          "ejecutado": 190496633.08
+        },
+        "gastos": {
+          "ppto": 179732345,
+          "ejecutado": 185724830.36
+        }
+      },
+      "mensual": {
+        "meses": [
+          "ENERO",
+          "FEBRERO",
+          "MARZO",
+          "ABRIL",
+          "MAYO"
+        ],
+        "ingresos": [
+          37567948.49,
+          42342229.23,
+          36981346.87,
+          36760032.35,
+          36845076.14
+        ],
+        "gastos": [
+          32865510.2,
+          37120062,
+          33749895.92,
+          39764938.62,
+          42224423.62
+        ]
+      },
+      "morosos": [
+        {
+          "apto": "1702",
+          "nombre": "LINA MARIA ACOSTA TAMAYO-CARLOS ALBERTO OSPINA GA",
+          "valor": 6377107,
+          "cuotas": 6.3
+        },
+        {
+          "apto": "1701",
+          "nombre": "GANADOS RAMIREZ JIMENEZ Y CIA S.C.S. R.P. GILLERM",
+          "valor": 2770804,
+          "cuotas": 3.1
+        },
+        {
+          "apto": "803",
+          "nombre": "ANDREA LILIANA DIEZ VALENCIA",
+          "valor": 1409695,
+          "cuotas": 2.3
+        },
+        {
+          "apto": "1502",
+          "nombre": "CATALINA ZAPATA VANEGAS-NEVILLE KENNETH PRICE",
+          "valor": 871512,
+          "cuotas": 1
+        },
+        {
+          "apto": "1402",
+          "nombre": "LUIS JAVIER RESTREPO VARGAS",
+          "valor": 871278,
+          "cuotas": 1
+        },
+        {
+          "apto": "1302",
+          "nombre": "IDI AMIN ISAAC MILAN-ANA CATALINA ESCOBAR TABARES",
+          "valor": 868312,
+          "cuotas": 1
+        },
+        {
+          "apto": "901",
+          "nombre": "LEON CORKIDI CARDENAS-MABEL ROCIO DIAZ BELTRAN",
+          "valor": 753901,
+          "cuotas": 1
+        },
+        {
+          "apto": "501",
+          "nombre": "JORGE ANTONIO ALZATE HERRERA-GLORIA ELENA RIOS MA",
+          "valor": 753501,
+          "cuotas": 1
+        },
+        {
+          "apto": "703",
+          "nombre": "PAOLA ANDREA ARIAS",
+          "valor": 620924,
+          "cuotas": 1
+        },
+        {
+          "apto": "1002",
+          "nombre": "NURY ESTHER ZAPATA AGUDELO",
+          "valor": 14975,
+          "cuotas": 0
+        }
+      ],
+      "desviaciones": [
+        {
+          "rubro": "Vigilancia",
+          "ppto": 89135735,
+          "ejecutado": 87622831,
+          "diferencia": -1512904
+        },
+        {
+          "rubro": "Aseo",
+          "ppto": 16741500,
+          "ejecutado": 16741110,
+          "diferencia": -390
+        },
+        {
+          "rubro": "Contabilidad",
+          "ppto": 2835000,
+          "ejecutado": 2835000,
+          "diferencia": 0
+        },
+        {
+          "rubro": "Facturacion",
+          "ppto": 496500,
+          "ejecutado": 496500,
+          "diferencia": 0
+        },
+        {
+          "rubro": "Administración",
+          "ppto": 9675000,
+          "ejecutado": 9675000,
+          "diferencia": 0
+        },
+        {
+          "rubro": "Otros Honorarios/Sgsst",
+          "ppto": 375000,
+          "ejecutado": 500000,
+          "diferencia": 125000
+        },
+        {
+          "rubro": "Seguro Todo Riesgo Zonas Comunes Y Privadas",
+          "ppto": 11503330,
+          "ejecutado": 9850328,
+          "diferencia": -1653002
+        },
+        {
+          "rubro": "Acueducto Y Alcantarillado",
+          "ppto": 450000,
+          "ejecutado": 791554,
+          "diferencia": 341554
+        },
+        {
+          "rubro": "Energía Electrica Y Enviaseo",
+          "ppto": 10330000,
+          "ejecutado": 9815710,
+          "diferencia": -514290
+        },
+        {
+          "rubro": "Tasa De Seguridad Y Convivencia",
+          "ppto": 550000,
+          "ejecutado": 533000,
+          "diferencia": -17000
+        },
+        {
+          "rubro": "Plan De Celular",
+          "ppto": 255000,
+          "ejecutado": 224500,
+          "diferencia": -30500
+        },
+        {
+          "rubro": "Jardín",
+          "ppto": 1500000,
+          "ejecutado": 2099000,
+          "diferencia": 599000
+        },
+        {
+          "rubro": "Edificio",
+          "ppto": 2000000,
+          "ejecutado": 2739978,
+          "diferencia": 739978
+        },
+        {
+          "rubro": "Parqueaderos",
+          "ppto": 1500000,
+          "ejecutado": 0,
+          "diferencia": -1500000
+        },
+        {
+          "rubro": "Planta De Respaldo Electrico",
+          "ppto": 585000,
+          "ejecutado": 462804,
+          "diferencia": -122196
+        },
+        {
+          "rubro": "Puertas Eléctricas",
+          "ppto": 675000,
+          "ejecutado": 695000,
+          "diferencia": 20000
+        },
+        {
+          "rubro": "Provision Resorte",
+          "ppto": 650000,
+          "ejecutado": 1180000,
+          "diferencia": 530000
+        },
+        {
+          "rubro": "Turco",
+          "ppto": 190000,
+          "ejecutado": 0,
+          "diferencia": -190000
+        },
+        {
+          "rubro": "Equipo Gimnasio",
+          "ppto": 425000,
+          "ejecutado": 240000,
+          "diferencia": -185000
+        },
+        {
+          "rubro": "Sistema Hidroneumatico",
+          "ppto": 4500000,
+          "ejecutado": 4962641,
+          "diferencia": 462641
+        },
+        {
+          "rubro": "Lavada De Tanques",
+          "ppto": 750000,
+          "ejecutado": 1597025,
+          "diferencia": 847025
+        },
+        {
+          "rubro": "Ascensor",
+          "ppto": 12255750,
+          "ejecutado": 11165235,
+          "diferencia": -1090515
+        },
+        {
+          "rubro": "Red Contra Incendio",
+          "ppto": 5500000,
+          "ejecutado": 14058270,
+          "diferencia": 8558270
+        },
+        {
+          "rubro": "Recarga De Extintores",
+          "ppto": 190000,
+          "ejecutado": 0,
+          "diferencia": -190000
+        },
+        {
+          "rubro": "Suministros Electricos",
+          "ppto": 325000,
+          "ejecutado": 483735,
+          "diferencia": 158735
+        },
+        {
+          "rubro": "C.c.tv",
+          "ppto": 550000,
+          "ejecutado": 260000,
+          "diferencia": -290000
+        },
+        {
+          "rubro": "Implementos De Aseo Y Cafeteria",
+          "ppto": 2050000,
+          "ejecutado": 1732658,
+          "diferencia": -317342
+        },
+        {
+          "rubro": "Fumigacion",
+          "ppto": 590000,
+          "ejecutado": 1619400,
+          "diferencia": 1029400
+        },
+        {
+          "rubro": "Papelería Y Fotocopias",
+          "ppto": 145000,
+          "ejecutado": 134545,
+          "diferencia": -10455
+        },
+        {
+          "rubro": "Taxis - Buses Y Parqueaderos",
+          "ppto": 0,
+          "ejecutado": 3600,
+          "diferencia": 3600
+        },
+        {
+          "rubro": "Arreglos Navideños - Eventos Sociales",
+          "ppto": 500000,
+          "ejecutado": 210000,
+          "diferencia": -290000
+        },
+        {
+          "rubro": "Gastos Bancarios Y Ajuste Al Peso",
+          "ppto": 425000,
+          "ejecutado": 409876.36,
+          "diferencia": -15123.640000000014
+        },
+        {
+          "rubro": "Gastos Consejos Y Asambleas",
+          "ppto": 300000,
+          "ejecutado": 806000,
+          "diferencia": 506000
+        },
+        {
+          "rubro": "Fondo De Imprevistos 1% Ley 675",
+          "ppto": 1779530,
+          "ejecutado": 1779530,
+          "diferencia": 0
+        }
+      ],
+      "composicion": [
+        {
+          "categoria": "Servicios Personal",
+          "valor": 104363941
+        },
+        {
+          "categoria": "Honorarios",
+          "valor": 13506500
+        },
+        {
+          "categoria": "Seguro Todo Riesgo",
+          "valor": 9850328
+        },
+        {
+          "categoria": "Servicios Publicos",
+          "valor": 11364764
+        },
+        {
+          "categoria": "Mantenimiento Y Reparaciones",
+          "valor": 43295746
+        },
+        {
+          "categoria": "Diversos",
+          "valor": 1564021.3599999999
+        },
+        {
+          "categoria": "Fondo De Imprevistos",
+          "valor": 1779530
+        }
+      ]
+    },
+    {
+      "unidad": "Charlotte",
+      "archivo": "EEFF-CHARLOTTE-2026.xlsx",
       "anio": 2026,
       "mes": "MAYO",
       "kpis": {
