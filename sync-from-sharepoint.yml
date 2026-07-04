@@ -1,0 +1,56 @@
+name: Sync desde SharePoint
+
+on:
+  schedule:
+    # Cada 30 minutos. Cambiar si quieres más/menos frecuencia.
+    # Ej: '0 * * * *' = cada hora exacta
+    # Ej: '*/15 * * * *' = cada 15 minutos (puede demorarse hasta 1h por carga de GitHub)
+    - cron: '0,30 * * * *'
+  workflow_dispatch:  # Botón "Run workflow" en GitHub para forzar sync manual
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install xlsx node-fetch@2
+
+      - name: Download Excel from SharePoint and convert to JSON
+        env:
+          AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
+        run: node scripts/sync.js
+
+      - name: Download EEFF from SharePoint and build finanzas.json
+        continue-on-error: true
+        env:
+          AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
+        run: node scripts/sync-finanzas.js
+
+      - name: Commit JSON if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add tareas.json
+          git add finanzas.json 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "Sin cambios — no se hace commit."
+          else
+            git commit -m "auto: sync desde SharePoint $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+            echo "JSON actualizado y publicado."
+          fi

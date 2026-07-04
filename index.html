@@ -133,6 +133,26 @@ tbody td{padding:9px 10px;color:#ddd;font-size:12px}
 .info-empty{color:#C9A84C44;text-align:center;padding:60px 24px;font-size:14px}
 .info-hint{color:#C9A84C55;font-size:11px;margin-top:8px}
 @media(max-width:640px){.charts-row{grid-template-columns:1fr}.filters{gap:6px}.nds-bar-wrap{display:none}}
+body.fin-tab .filters,body.fin-tab .active-filters-bar{display:none!important}
+.fin-toolbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+.fin-toolbar label{color:#C9A84C88;font-size:11px}
+.fin-toolbar select{background:#16213e;border:1px solid #C9A84C33;color:#C9A84C;font-size:13px;padding:7px 12px;border-radius:6px;cursor:pointer;outline:none}
+.fin-corte{color:#C9A84C66;font-size:12px;letter-spacing:1px}
+.fin-kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-bottom:20px}
+.fin-kpi{background:#16213e;border:1px solid #C9A84C22;border-left:4px solid #C9A84C;border-radius:12px;padding:18px 20px}
+.fin-kpi.k-red{border-left-color:#E53935;background:linear-gradient(135deg,#16213e,#2a1620)}
+.fin-kpi.k-green{border-left-color:#4CAF50;background:linear-gradient(135deg,#16213e,#16281e)}
+.fin-kpi.k-orange{border-left-color:#FFA726}
+.fin-kpi-label{color:#C9A84C88;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px}
+.fin-kpi-valor{font-size:30px;font-weight:700;letter-spacing:-0.5px}
+.fin-kpi.k-red .fin-kpi-valor{color:#EF5350}
+.fin-kpi.k-green .fin-kpi-valor{color:#66BB6A}
+.fin-kpi.k-orange .fin-kpi-valor{color:#FFA726}
+.fin-kpi.k-big .fin-kpi-valor{font-size:36px}
+.fin-kpi-sub{color:#aaa;font-size:11px;margin-top:6px;line-height:1.4}
+.fin-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+@media(max-width:900px){.fin-grid-2{grid-template-columns:1fr}.fin-kpi-valor{font-size:24px}.fin-kpi.k-big .fin-kpi-valor{font-size:28px}}
+.fin-empty{color:#C9A84C66;font-size:13px;text-align:center;padding:40px 20px}
 </style>
 </head>
 <body>
@@ -186,6 +206,7 @@ tbody td{padding:9px 10px;color:#ddd;font-size:12px}
 
   <div class="tabs-bar">
     <button class="tab-btn active" onclick="cambiarTab('dashboard')">&#9783; Dashboard</button>
+    <button class="tab-btn" onclick="cambiarTab('finanzas')">&#36; Finanzas</button>
     <button class="tab-btn" onclick="cambiarTab('nds')">&#9650; NDS por asignado</button>
     <button class="tab-btn" onclick="cambiarTab('infografia')">&#9670; Infografía</button>
   </div>
@@ -237,6 +258,31 @@ tbody td{padding:9px 10px;color:#ddd;font-size:12px}
   </div>
 
   <!-- TAB NDS -->
+  <!-- TAB: FINANZAS -->
+  <div class="tab-panel" id="panel-finanzas">
+    <div class="content">
+      <div class="fin-toolbar">
+        <div class="filter-group"><label>Copropiedad</label><select id="finUnidad" onchange="renderFinanzas()"></select></div>
+        <div class="fin-corte" id="finCorte"></div>
+      </div>
+      <div id="finContenido" style="display:none">
+        <div class="fin-kpi-grid" id="finKpis"></div>
+        <div class="fin-grid-2">
+          <div class="card"><div class="card-title">&#9636; Ingresos y gastos: presupuesto vs. realidad (acumulado)</div><div style="position:relative;height:260px"><canvas id="finChartPptoReal"></canvas></div></div>
+          <div class="card"><div class="card-title">&#9201; Evolución mensual: ingresos vs. gastos</div><div style="position:relative;height:260px"><canvas id="finChartMensual"></canvas></div></div>
+        </div>
+        <div class="card" style="margin-bottom:16px"><div class="card-title">&#9888; Top de morosos — dónde enfocar la gestión de cobro</div><div style="position:relative" id="finMorososWrap"><canvas id="finChartMorosos"></canvas></div></div>
+        <div class="card" style="margin-bottom:16px"><div class="card-title">&#128680; Alertas de desviación de gastos — sobre-ejecución (rojo) vs. sub-ejecución (verde)</div><div style="position:relative" id="finTornadoWrap"><canvas id="finChartTornado"></canvas></div></div>
+        <div class="fin-grid-2">
+          <div class="card"><div class="card-title">&#9685; Composición del gasto acumulado</div><div class="legend" id="finLegendComposicion"></div><div style="position:relative;height:280px"><canvas id="finChartComposicion"></canvas></div></div>
+          <div class="card"><div class="card-title">&#9998; Lectura ejecutiva</div><div id="finResumen" style="color:#ccc;font-size:13px;line-height:1.8;padding:6px 2px"></div></div>
+        </div>
+      </div>
+      <div class="fin-empty" id="finEmpty" style="display:none">No se pudo cargar finanzas.json. Ejecuta el workflow "Sync desde SharePoint" en GitHub Actions.</div>
+      <div class="fin-empty" id="finLoading">Cargando datos financieros...</div>
+    </div>
+  </div>
+
   <div class="tab-panel" id="panel-nds">
     <div class="content">
       <div class="nds-hero" id="ndsHero"></div>
@@ -308,9 +354,13 @@ var AVATAR_COLORS=['#C9A84C','#42A5F5','#81C784','#CE93D8','#EF9A9A','#FFB74D','
 
 // ── TABS ────────────────────────────────────────────────────────────────────
 function cambiarTab(tab){
-  document.querySelectorAll('.tab-btn').forEach(function(b,i){b.classList.toggle('active',['dashboard','nds','infografia'][i]===tab);});
+  var TABS=['dashboard','finanzas','nds','infografia'];
+  document.querySelectorAll('.tab-btn').forEach(function(b,i){b.classList.toggle('active',TABS[i]===tab);});
   document.querySelectorAll('.tab-panel').forEach(function(p){p.classList.remove('active');});
   document.getElementById('panel-'+tab).classList.add('active');
+  var esFin=(tab==='finanzas');
+  document.body.classList.toggle('fin-tab',esFin);
+  if(esFin) cargarFinanzas();
 }
 
 // ── UTILS ────────────────────────────────────────────────────────────────────
@@ -1043,6 +1093,153 @@ function descargarInfografia(){
   if(!infografiaCanvas) return;
   var estilo=document.getElementById('infoEstilo').value;
   var a=document.createElement('a');a.download='infografia-escalar-'+estilo+'-'+Date.now()+'.png';a.href=infografiaCanvas.toDataURL('image/png',1.0);a.click();
+}
+
+// ── FINANZAS ──────────────────────────────────────────────────────────────────
+var finanzasData=null,finanzasCargando=false;
+var finCharts={};
+function fmtCOP(n){if(n===null||n===undefined||isNaN(n)) return'—';return(n<0?'-':'')+'$'+Math.abs(Math.round(n)).toLocaleString('es-CO');}
+function fmtCOPCorto(n){var a=Math.abs(n);if(a>=1e6) return(n/1e6).toLocaleString('es-CO',{maximumFractionDigits:1})+'M';if(a>=1e3) return Math.round(n/1e3)+'K';return String(Math.round(n));}
+function mesCorto(m){return m?m.charAt(0)+m.slice(1).toLowerCase():'';}
+
+async function cargarFinanzas(){
+  if(finanzasData||finanzasCargando) return;
+  finanzasCargando=true;
+  try{
+    var resp=await fetch('finanzas.json?t='+Date.now());
+    if(!resp.ok) throw new Error('finanzas.json no disponible ('+resp.status+')');
+    finanzasData=await resp.json();
+    var sel=document.getElementById('finUnidad');
+    sel.innerHTML=finanzasData.unidades.map(function(u,i){return'<option value="'+i+'">'+u.unidad+'</option>';}).join('');
+    document.getElementById('finLoading').style.display='none';
+    renderFinanzas();
+  }catch(e){
+    document.getElementById('finLoading').style.display='none';
+    document.getElementById('finEmpty').style.display='block';
+  }finally{finanzasCargando=false;}
+}
+
+function renderFinanzas(){
+  if(!finanzasData) return;
+  var u=finanzasData.unidades[parseInt(document.getElementById('finUnidad').value||'0')];
+  if(!u) return;
+  document.getElementById('finContenido').style.display='block';
+  var act=finanzasData.actualizado?new Date(finanzasData.actualizado).toLocaleString('es-CO'):'';
+  document.getElementById('finCorte').textContent='CORTE: '+mesCorto(u.mes).toUpperCase()+(u.anio?' '+u.anio:'')+(act?'  ·  Sync: '+act:'');
+  renderFinKpis(u);renderFinPptoReal(u);renderFinMensual(u);renderFinMorosos(u);renderFinTornado(u);renderFinComposicion(u);renderFinResumen(u);
+}
+
+function renderFinKpis(u){
+  var k=u.kpis;
+  // Semáforo de liquidez: efectivo vs. gasto promedio mensual
+  var liqCls='k-green',liqTxt='Liquidez sana';
+  if(k.efectivo!==null&&k.gastoPromedioMensual){
+    var ratio=k.efectivo/k.gastoPromedioMensual;
+    if(ratio<0.5){liqCls='k-red';liqTxt='&#9888; Alerta: cubre menos del 50% de un mes de gastos';}
+    else if(ratio<1){liqCls='k-orange';liqTxt='Cubre '+Math.round(ratio*100)+'% de un mes de gastos';}
+    else{liqTxt='Cubre '+ratio.toLocaleString('es-CO',{maximumFractionDigits:1})+' meses de gastos';}
+  }
+  var exc=k.excedenteAcumulado||0;
+  var html='';
+  html+='<div class="fin-kpi '+liqCls+'"><div class="fin-kpi-label">Efectivo disponible</div><div class="fin-kpi-valor">'+fmtCOP(k.efectivo)+'</div><div class="fin-kpi-sub">'+liqTxt+'</div></div>';
+  html+='<div class="fin-kpi k-red k-big"><div class="fin-kpi-label">Cartera vencida total</div><div class="fin-kpi-valor">'+fmtCOP(k.cartera)+'</div><div class="fin-kpi-sub">'+(u.morosos?u.morosos.length+' unidades en mora — mayor riesgo de la copropiedad':'')+'</div></div>';
+  html+='<div class="fin-kpi '+(exc>=0?'k-green':'k-red')+'"><div class="fin-kpi-label">'+(exc>=0?'Excedente':'Déficit')+' acumulado a '+mesCorto(u.mes)+'</div><div class="fin-kpi-valor">'+fmtCOP(exc)+'</div><div class="fin-kpi-sub">Resultado contable del ejercicio</div></div>';
+  document.getElementById('finKpis').innerHTML=html;
+}
+
+function destruirChart(id){if(finCharts[id]){finCharts[id].destroy();delete finCharts[id];}}
+var FIN_GRID={color:'#C9A84C11'},FIN_TICKS={color:'#C9A84C88',font:{size:11}};
+function ejeMoneda(){return{grid:FIN_GRID,ticks:{color:'#C9A84C88',font:{size:11},callback:function(v){return fmtCOPCorto(v);}}};}
+function tooltipCOP(pre){return{callbacks:{label:function(c){return(pre?c.dataset.label+': ':'')+fmtCOP(c.parsed.x!==undefined&&c.chart.options.indexAxis==='y'?c.parsed.x:c.parsed.y);}}};}
+
+function renderFinPptoReal(u){
+  destruirChart('pptoReal');
+  finCharts.pptoReal=new Chart(document.getElementById('finChartPptoReal'),{
+    type:'bar',
+    data:{labels:['Ingresos','Gastos'],datasets:[
+      {label:'Presupuesto a la fecha',data:[u.presupuesto.ingresos.ppto,u.presupuesto.gastos.ppto],backgroundColor:'#C9A84C55',borderColor:'#C9A84C',borderWidth:1,borderRadius:4},
+      {label:'Real ejecutado',data:[u.presupuesto.ingresos.ejecutado,u.presupuesto.gastos.ejecutado],backgroundColor:['#42A5F5','#EF9A9A'],borderRadius:4}
+    ]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{labels:{color:'#C9A84C88',font:{size:11}}},tooltip:tooltipCOP(true)},
+      scales:{x:{grid:{display:false},ticks:FIN_TICKS},y:ejeMoneda()}}
+  });
+}
+
+function renderFinMensual(u){
+  destruirChart('mensual');
+  finCharts.mensual=new Chart(document.getElementById('finChartMensual'),{
+    type:'line',
+    data:{labels:u.mensual.meses.map(mesCorto),datasets:[
+      {label:'Ingresos',data:u.mensual.ingresos,borderColor:'#42A5F5',backgroundColor:'#42A5F533',fill:false,tension:0.3,pointRadius:4},
+      {label:'Gastos',data:u.mensual.gastos,borderColor:'#EF5350',backgroundColor:'#EF535033',fill:false,tension:0.3,pointRadius:4}
+    ]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{labels:{color:'#C9A84C88',font:{size:11}}},tooltip:tooltipCOP(true)},
+      scales:{x:{grid:{display:false},ticks:FIN_TICKS},y:ejeMoneda()}}
+  });
+}
+
+function renderFinMorosos(u){
+  destruirChart('morosos');
+  var top=(u.morosos||[]).slice(0,10);
+  document.getElementById('finMorososWrap').style.height=Math.max(160,top.length*34+60)+'px';
+  finCharts.morosos=new Chart(document.getElementById('finChartMorosos'),{
+    type:'bar',
+    data:{labels:top.map(function(m){return'Apto '+m.apto;}),datasets:[{label:'Deuda',data:top.map(function(m){return m.valor;}),backgroundColor:top.map(function(m,i){return i<3?'#E53935':'#EF9A9A';}),borderRadius:4}]},
+    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:function(c){var m=top[c.dataIndex];return[fmtCOP(m.valor),(m.cuotas?m.cuotas+' cuota(s) vencida(s)':''),(m.nombre||'').substring(0,40)];}}}},
+      scales:{x:ejeMoneda(),y:{grid:{display:false},ticks:{color:'#C9A84C',font:{size:12,weight:'600'}}}}}
+  });
+}
+
+function renderFinTornado(u){
+  destruirChart('tornado');
+  var srt=(u.desviaciones||[]).slice().sort(function(a,b){return b.diferencia-a.diferencia;});
+  var sobre=srt.filter(function(d){return d.diferencia>0;}).slice(0,5);
+  var sub=srt.filter(function(d){return d.diferencia<0;}).slice(-5).reverse();
+  var items=sobre.concat(sub);
+  document.getElementById('finTornadoWrap').style.height=Math.max(160,items.length*34+60)+'px';
+  finCharts.tornado=new Chart(document.getElementById('finChartTornado'),{
+    type:'bar',
+    data:{labels:items.map(function(d){return d.rubro;}),datasets:[{label:'Desviación',data:items.map(function(d){return d.diferencia;}),backgroundColor:items.map(function(d){return d.diferencia>0?'#E53935':'#66BB6A';}),borderRadius:4}]},
+    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:function(c){var d=items[c.dataIndex];return[(d.diferencia>0?'Sobrecosto: +':'Ahorro/retraso: ')+fmtCOP(d.diferencia),'Presupuesto: '+fmtCOP(d.ppto),'Ejecutado: '+fmtCOP(d.ejecutado)];}}}},
+      scales:{x:{grid:FIN_GRID,ticks:{color:'#C9A84C88',font:{size:11},callback:function(v){return fmtCOPCorto(v);}}},y:{grid:{display:false},ticks:{color:'#ccc',font:{size:11}}}}}
+  });
+}
+
+function renderFinComposicion(u){
+  destruirChart('composicion');
+  var comp=(u.composicion||[]).slice().sort(function(a,b){return b.valor-a.valor;});
+  var total=comp.reduce(function(s,c){return s+c.valor;},0);
+  document.getElementById('finLegendComposicion').innerHTML=comp.map(function(c,i){
+    return'<span class="legend-item"><span class="legend-dot" style="background:'+PALETA[i%PALETA.length]+'"></span>'+c.categoria+' ('+Math.round(c.valor/total*100)+'%)</span>';
+  }).join('');
+  finCharts.composicion=new Chart(document.getElementById('finChartComposicion'),{
+    type:'doughnut',
+    data:{labels:comp.map(function(c){return c.categoria;}),datasets:[{data:comp.map(function(c){return c.valor;}),backgroundColor:comp.map(function(c,i){return PALETA[i%PALETA.length];}),borderColor:'#16213e',borderWidth:2}]},
+    options:{responsive:true,maintainAspectRatio:false,cutout:'60%',
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:function(c){return c.label+': '+fmtCOP(c.parsed)+' ('+Math.round(c.parsed/total*100)+'%)';}}}}}
+  });
+}
+
+function renderFinResumen(u){
+  var srt=(u.desviaciones||[]).slice().sort(function(a,b){return b.diferencia-a.diferencia;});
+  var peor=srt[0],mejor=srt[srt.length-1];
+  var m0=(u.morosos||[])[0];
+  var comp=(u.composicion||[]).slice().sort(function(a,b){return b.valor-a.valor;});
+  var totalG=u.presupuesto.gastos.ejecutado||1;
+  var exc=u.kpis.excedenteAcumulado||0;
+  var pts=[];
+  pts.push('&#8226; Los ingresos acumulados van en <b style="color:#42A5F5">'+fmtCOP(u.presupuesto.ingresos.ejecutado)+'</b> frente a <b>'+fmtCOP(u.presupuesto.ingresos.ppto)+'</b> presupuestados ('+Math.round(u.presupuesto.ingresos.ejecutado/u.presupuesto.ingresos.ppto*100)+'%).');
+  pts.push('&#8226; Los gastos van en <b style="color:#EF9A9A">'+fmtCOP(u.presupuesto.gastos.ejecutado)+'</b> ('+Math.round(u.presupuesto.gastos.ejecutado/u.presupuesto.gastos.ppto*100)+'% del presupuesto a la fecha).');
+  if(peor&&peor.diferencia>0) pts.push('&#8226; Mayor alerta: <b style="color:#EF5350">'+peor.rubro+'</b> con sobrecosto de <b style="color:#EF5350">+'+fmtCOP(peor.diferencia)+'</b>.');
+  if(mejor&&mejor.diferencia<0) pts.push('&#8226; Mayor sub-ejecución: <b style="color:#66BB6A">'+mejor.rubro+'</b> ('+fmtCOP(mejor.diferencia)+').');
+  if(m0) pts.push('&#8226; El apto <b style="color:#EF5350">'+m0.apto+'</b> concentra <b>'+fmtCOP(m0.valor)+'</b> ('+Math.round(m0.valor/(u.kpis.cartera||m0.valor)*100)+'% de la cartera). Priorizar cobro jurídico.');
+  if(comp[0]) pts.push('&#8226; El '+Math.round((comp[0].valor+(comp[1]?comp[1].valor:0))/totalG*100)+'% del gasto se concentra en <b>'+comp[0].categoria+'</b>'+(comp[1]?' y <b>'+comp[1].categoria+'</b>':'')+'.');
+  pts.push('&#8226; Resultado del ejercicio: <b style="color:'+(exc>=0?'#66BB6A':'#EF5350')+'">'+(exc>=0?'excedente':'déficit')+' de '+fmtCOP(Math.abs(exc))+'</b>.');
+  document.getElementById('finResumen').innerHTML=pts.join('<br>');
 }
 
 // ── RENDER TODO ───────────────────────────────────────────────────────────────
