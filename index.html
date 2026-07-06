@@ -1147,7 +1147,8 @@ function renderFinKpis(u){
   var html='';
   html+='<div class="fin-kpi '+liqCls+'"><div class="fin-kpi-label">Efectivo disponible</div><div class="fin-kpi-valor">'+fmtCOP(k.efectivo)+'</div><div class="fin-kpi-sub">'+liqTxt+'</div></div>';
   html+='<div class="fin-kpi k-red k-big"><div class="fin-kpi-label">Cartera vencida total</div><div class="fin-kpi-valor">'+fmtCOP(k.cartera)+'</div><div class="fin-kpi-sub">'+(u.morosos?u.morosos.length+' unidades en mora — mayor riesgo de la copropiedad':'')+'</div></div>';
-  html+='<div class="fin-kpi '+(exc>=0?'k-green':'k-red')+'"><div class="fin-kpi-label">'+(exc>=0?'Excedente':'Déficit')+' acumulado a '+mesCorto(u.mes)+'</div><div class="fin-kpi-valor">'+fmtCOP(exc)+'</div><div class="fin-kpi-sub">Resultado contable del ejercicio</div></div>';
+  var em=k.excedenteMes;var emTxt=(em!==null&&em!==undefined)?('Mes de '+mesCorto(u.mes)+': '+(em>=0?'+':'')+fmtCOP(em)):'Resultado contable del ejercicio';
+  html+='<div class="fin-kpi '+(exc>=0?'k-green':'k-red')+'"><div class="fin-kpi-label">'+(exc>=0?'Excedente':'Déficit')+' acumulado a '+mesCorto(u.mes)+'</div><div class="fin-kpi-valor">'+fmtCOP(exc)+'</div><div class="fin-kpi-sub">'+emTxt+'</div></div>';
   document.getElementById('finKpis').innerHTML=html;
 }
 
@@ -1257,9 +1258,9 @@ function renderFinTornado(u){
   document.getElementById('finTornadoWrap').style.height=Math.max(160,items.length*46+60)+'px';
   finCharts.tornado=new Chart(document.getElementById('finChartTornado'),{
     type:'bar',
-    data:{labels:items.map(function(d){var pct=d.ppto>0?Math.round(d.ejecutado/d.ppto*100)+'% ejecutado':'sin presupuesto';return[d.rubro.length>30?d.rubro.substring(0,29)+'\u2026':d.rubro,pct];}),datasets:[{label:'Desviación',data:items.map(function(d){return d.diferencia;}),backgroundColor:items.map(function(d){return d.diferencia>0?'#E53935':'#66BB6A';}),borderRadius:4}]},
+    data:{labels:items.map(function(d){var pct=d.pptoAnual?Math.round(d.ejecutado/d.pptoAnual*100)+'% del ppto anual':(d.ppto>0?Math.round(d.ejecutado/d.ppto*100)+'% ejecutado':'sin presupuesto');return[d.rubro.length>30?d.rubro.substring(0,29)+'\u2026':d.rubro,pct];}),datasets:[{label:'Desviación',data:items.map(function(d){return d.diferencia;}),backgroundColor:items.map(function(d){return d.diferencia>0?'#E53935':'#66BB6A';}),borderRadius:4}]},
     options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{display:false},tooltip:{callbacks:{title:function(cs){return items[cs[0].dataIndex].rubro;},label:function(c){var d=items[c.dataIndex];return[(d.diferencia>0?'Sobrecosto: +':'Ahorro/retraso: ')+fmtCOP(d.diferencia),'Presupuesto: '+fmtCOP(d.ppto),'Ejecutado: '+fmtCOP(d.ejecutado),(d.ppto>0?'Ejecuci\u00f3n: '+Math.round(d.ejecutado/d.ppto*100)+'%':'')];}}}},
+      plugins:{legend:{display:false},tooltip:{callbacks:{title:function(cs){return items[cs[0].dataIndex].rubro;},label:function(c){var d=items[c.dataIndex];var out=[(d.diferencia>0?'Sobrecosto: +':'Ahorro/retraso: ')+fmtCOP(d.diferencia),'Presupuesto a la fecha: '+fmtCOP(d.ppto),'Ejecutado: '+fmtCOP(d.ejecutado)];if(d.pptoAnual){out.push('Presupuesto anual: '+fmtCOP(d.pptoAnual));out.push('Ejecuci\u00f3n del a\u00f1o: '+Math.round(d.ejecutado/d.pptoAnual*100)+'%');}else if(d.ppto>0){out.push('Ejecuci\u00f3n: '+Math.round(d.ejecutado/d.ppto*100)+'%');}return out;}}}},
       scales:{x:{grid:FIN_GRID,ticks:{color:'#C9A84C88',font:{size:11},callback:function(v){return fmtCOPCorto(v);}}},y:{grid:{display:false},ticks:{color:'#ccc',font:{size:11}}}}}
   });
 }

@@ -225,6 +225,7 @@ function parseFormatoA(rows){
     },
     excedenteAcumulado: iExcedente > 0 ? val(iExcedente, ejecCol)
       : (val(iIngresos, ejecCol) - gastosEjec),
+    excedenteMes: iExcedente > 0 && mes ? val(iExcedente, monthCols[mes]) : null,
     mensual, desviaciones, composicion, ingresosDetalle, servicios
   };
 }
@@ -319,7 +320,7 @@ function parseFormatoB(wb){
       totalAnual += (pAnual || 0);
       const ejec = e || 0;
       if(pProrr === 0 && ejec === 0) continue;
-      desviaciones.push({ rubro: tituloCorto(ej[i][cCta]), ppto: pProrr, ejecutado: ejec, diferencia: ejec - pProrr });
+      desviaciones.push({ rubro: tituloCorto(ej[i][cCta]), ppto: pProrr, pptoAnual: pAnual || 0, ejecutado: ejec, diferencia: ejec - pProrr });
     }
     gastosPpto = Math.round(totalAnual * nMeses / 12);
   }
@@ -332,16 +333,46 @@ function parseFormatoB(wb){
       gastos:   { ppto: gastosPpto, ejecutado: gastosEjec }
     },
     excedenteAcumulado: iExc >= 0 ? vER(iExc, acumCol) : (ingresosEjec - gastosEjec),
-    mensual: mes && mesCol >= 0 ? {
+    excedenteMes: iExc >= 0 && mesCol >= 0 ? vER(iExc, mesCol) : null,
+    mensual: parseMensualB(wb) || (mes && mesCol >= 0 ? {
       meses: [mes],
       ingresos: [vER(iIng, mesCol)],
       gastos: [vER(iEgr, mesCol) + noOpMes]
-    } : { meses: [], ingresos: [], gastos: [] },
+    } : { meses: [], ingresos: [], gastos: [] }),
     desviaciones,
     composicion: composicion.length ? composicion : composicionDesdeDetalle(desviaciones, gastosEjec),
     ingresosDetalle,
     servicios: parseServiciosB(wb)
   };
+}
+
+// Hoja "PPTO" (formato Oz): matriz mensual — total de gastos y superávit por mes
+function parseMensualB(wb){
+  const name = wb.SheetNames.find(n => (/^P[PT]TO( |$)|PRESUPUESTO/.test(norm(n))) && !/EJEC/.test(norm(n)));
+  if(!name) return null;
+  const rows = rowsOf(wb, name);
+  const mIdx = findRow(rows, r => r.filter(c => MESES.some(m => norm(c).startsWith(m))).length >= 3);
+  if(mIdx < 0) return null;
+  const monthCols = {};
+  rows[mIdx].forEach((c, j) => {
+    const n = norm(c);
+    for(const m of MESES){ if(n.startsWith(m) && monthCols[m] === undefined) monthCols[m] = j; }
+  });
+  const meses = MESES.filter(m => monthCols[m] !== undefined);
+  const lab = i => norm((rows[i] || [])[0]);
+  const iGas = findRowLast(rows, r => /^(TOTAL (DE )?(GASTOS|EGRESOS|GTOS)|GASTOS OPERATIVOS$)/.test(norm(r[0])));
+  if(iGas < 0) return null;
+  const iSup = findRowLast(rows, r => /^(SUPERAVIT|EXCEDENTE|RESULTADO)/.test(norm(r[0])));
+  const iIng = findRow(rows, r => /^TOTAL (DE )?(INGRESOS|APORTES)$/.test(norm(r[0])));
+  const val = (i, j) => num((rows[i] || [])[j]) || 0;
+
+  const gastos = meses.map(m => val(iGas, monthCols[m]));
+  let ingresos = null;
+  if(iSup > 0) ingresos = meses.map((m, x) => gastos[x] + val(iSup, monthCols[m]));
+  else if(iIng > 0) ingresos = meses.map(m => val(iIng, monthCols[m]));
+  if(!ingresos) return null;
+  if(!gastos.some(v => v) || !ingresos.some(v => v)) return null;
+  return { meses, ingresos, gastos, excedenteMes: iSup > 0 ? meses.map(m => val(iSup, monthCols[m])) : null };
 }
 
 // Hoja "SVC PUBLICOS" (formato Oz): filas por mes con acueducto/energía/gas
@@ -503,6 +534,8 @@ function parseArchivo(buffer, filename){
       efectivo,
       cartera: cxc.carteraTotal,
       excedenteAcumulado: ejec.excedenteAcumulado,
+      excedenteMes: ejec.excedenteMes !== undefined && ejec.excedenteMes !== null ? ejec.excedenteMes
+        : (ejec.mensual && ejec.mensual.excedenteMes ? ejec.mensual.excedenteMes[ejec.mensual.excedenteMes.length - 1] : null),
       gastoPromedioMensual: nMeses ? ejec.presupuesto.gastos.ejecutado / nMeses : null
     },
     presupuesto: ejec.presupuesto,
