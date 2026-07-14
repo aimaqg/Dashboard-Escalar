@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-07-14T15:54:39.383Z",
-  "total": 300,
+  "actualizado": "2026-07-14T17:07:42.397Z",
+  "total": 301,
   "datos": [
     {
       "ID_Registro": 1,
@@ -5097,6 +5097,23 @@
       "Prioridad": "",
       "Bucket": "Escalar",
       "Estado": 0,
+      "Completada": "",
+      "Dias para vencer": "",
+      "Semaforo": "",
+      "Canal_teams": "Escalar"
+    },
+    {
+      "ID_Registro": 301,
+      "ID_Tarea": "u-1IhXINpEK3oyRDwk83p2UAInr8",
+      "Titulo_Tarea": "Iniciar Instalacion De Pergola En La Porteria.",
+      "Descripcion": "",
+      "Asignado_Nombre": "Coordinador Escalar SAS",
+      "Asignado_email": "coordinador@escalarsas.com",
+      "Fecha_Creacion": "2026-07-14T15:57:19.9784941Z",
+      "Fecha_vencimiento": "2026-07-30T10:00:00Z",
+      "Prioridad": "",
+      "Bucket": "Atalanta",
+      "Estado": 50,
       "Completada": "",
       "Dias para vencer": "",
       "Semaforo": "",
