@@ -175,6 +175,19 @@ body.fin-tab .filters,body.fin-tab .active-filters-bar{display:none!important}
 .fin-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
 @media(max-width:900px){.fin-grid-2{grid-template-columns:1fr}.fin-kpi-valor{font-size:24px}.fin-kpi.k-big .fin-kpi-valor{font-size:28px}}
 .fin-empty{color:var(--tinta-3);font-size:13px;text-align:center;padding:40px 20px}
+
+/* ZOOM DE TARJETAS */
+.card,.nds-pendientes-card{cursor:zoom-in}
+.zoom-overlay{position:fixed;inset:0;background:rgba(35,29,16,.45);backdrop-filter:blur(5px);z-index:200;display:none;align-items:center;justify-content:center;padding:20px}
+.zoom-overlay.open{display:flex;animation:zoomFade .2s}
+@keyframes zoomFade{from{opacity:0}to{opacity:1}}
+.zoom-box{background:var(--blanco);border-radius:18px;max-width:min(1150px,95vw);width:100%;max-height:92vh;overflow:auto;position:relative;box-shadow:0 40px 90px -25px rgba(35,29,16,.5);animation:zoomPop .28s cubic-bezier(.22,.61,.36,1);padding:8px 14px 14px}
+@keyframes zoomPop{from{transform:scale(.9);opacity:0}to{transform:scale(1);opacity:1}}
+.zoom-close{position:sticky;top:6px;margin-left:auto;display:flex;align-items:center;justify-content:center;z-index:5;background:var(--blanco);border:1px solid var(--linea);color:var(--tinta-2);width:34px;height:34px;border-radius:50%;font-size:19px;line-height:1;cursor:pointer;transition:all .15s}
+.zoom-close:hover{border-color:var(--oro);color:var(--oro-profundo);transform:rotate(90deg)}
+.zoom-box .card,.zoom-box .nds-pendientes-card{border:none;box-shadow:none;cursor:default;animation:none;margin:0}
+.zoom-box .card:hover{box-shadow:none;transform:none}
+.zoom-box div[style*="height:200px"],.zoom-box div[style*="height:220px"],.zoom-box div[style*="height:260px"],.zoom-box div[style*="height:280px"]{height:60vh!important}
 </style>
 </head>
 <body>
@@ -218,7 +231,7 @@ body.fin-tab .filters,body.fin-tab .active-filters-bar{display:none!important}
         <div class="user-name" id="userName"></div>
         <div id="lastUpdate" style="font-size:11px"></div>
       </div>
-      <button class="btn-refresh" onclick="cargarDatos()">&#8635; Actualizar</button>
+      <button class="btn-refresh" onclick="cargarDatos();recargarFinanzas()">&#8635; Actualizar</button>
       <button class="btn-logout" onclick="cerrarSesion()">Salir</button>
     </div>
   </div>
@@ -424,6 +437,13 @@ function formatFecha(f){var d=parsearFecha(f);if(!d) return'—';try{return d.to
 function soloFecha(d){var c=new Date(d);c.setHours(0,0,0,0);return c;}
 function diasRestantes(fecha){var d=parsearFecha(fecha);if(!d) return null;try{d.setHours(0,0,0,0);var h=new Date();h.setHours(0,0,0,0);return Math.round((d-h)/(1000*60*60*24));}catch(e){return null;}}
 function calcularHoras(f1,f2){var d1=parsearFecha(f1),d2=parsearFecha(f2);if(!d1||!d2) return null;return(d2-d1)/(1000*60*60);}
+// Plazos de NDS según prioridad de Planner: hábiles = lunes a viernes
+var NDS_PLAZOS={urgente:{dias:3,habiles:true},urgent:{dias:3,habiles:true},importante:{dias:5,habiles:true},important:{dias:5,habiles:true},media:{dias:7,habiles:true},medium:{dias:7,habiles:true},baja:{dias:30,habiles:false},low:{dias:30,habiles:false}};
+function plazoNds(prioridad){return NDS_PLAZOS[(prioridad||'').trim().toLowerCase()]||NDS_PLAZOS.media;}
+function sumarDiasHabiles(fecha,n){var d=new Date(fecha.getTime());var add=0;while(add<n){d.setDate(d.getDate()+1);var w=d.getDay();if(w!==0&&w!==6)add++;}return d;}
+function fechaLimiteNds(t){var c=parsearFecha(t.Fecha_Creacion);if(!c) return null;var p=plazoNds(t.Prioridad);var d;if(p.habiles){d=sumarDiasHabiles(c,p.dias);}else{d=new Date(c.getTime());d.setDate(d.getDate()+p.dias);}d.setHours(23,59,59,999);return d;}
+function evaluarNds(t){var lim=fechaLimiteNds(t);var fin=parsearFecha(t.Completada);if(!lim||!fin) return null;return fin<=lim?'enTiempo':'fuera';}
+function diasTarde(t){var lim=fechaLimiteNds(t);var fin=parsearFecha(t.Completada);if(!lim||!fin) return null;return Math.max(1,Math.ceil((fin-lim)/(1000*60*60*24)));}
 function semaforo(dias,estado){if(estado===100) return'x';if(dias===null) return'x';if(dias<0) return'r';if(dias<=3) return'o';return'g';}
 function estadoLabel(v){var p=parsearEstado(v);if(p===100) return{txt:'Completada',cls:'b-green'};if(p===50) return{txt:'En progreso',cls:'b-blue'};return{txt:'Sin iniciar',cls:'b-gray'};}
 function prioridadBadge(p){var m={urgente:'b-red',urgent:'b-red',importante:'b-orange',important:'b-orange',media:'b-blue',medium:'b-blue',baja:'b-gray',low:'b-gray'};return m[(p||'').toLowerCase()]||'b-gray';}
@@ -582,7 +602,7 @@ function renderKPIs(){
   var sinIniciar=datosFiltrados.filter(function(t){return parsearEstado(t.Estado)===0;}).length;
   var vencidas=datosFiltrados.filter(function(t){if(parsearEstado(t.Estado)===100) return false;var d=diasRestantes(t.Fecha_vencimiento);return d!==null&&d<0;}).length;
   var pct=total?Math.round(completadas/total*100):0;
-  var ndsCount=datosFiltrados.filter(function(t){if(parsearEstado(t.Estado)!==100) return false;var h=calcularHoras(t.Fecha_Creacion,t.Completada);return h!==null&&h<=72;}).length;
+  var ndsCount=datosFiltrados.filter(function(t){if(parsearEstado(t.Estado)!==100) return false;return evaluarNds(t)==='enTiempo';}).length;
   var nds=total?Math.round(ndsCount/total*100):0,nc=ndsColor(nds);
   document.getElementById('kpis').innerHTML=
     '<div class="kpi gold"><div class="kpi-label">TOTAL TAREAS</div><div class="kpi-value">'+total+'</div><div class="progress-bar"><div class="progress-fill" style="width:'+pct+'%"></div></div><div class="kpi-sub" style="color:#8A8171">'+pct+'% completado</div></div>'+
@@ -590,7 +610,7 @@ function renderKPIs(){
     '<div class="kpi blue"><div class="kpi-label">EN PROGRESO</div><div class="kpi-value" style="color:#2E7CC4">'+enProgreso+'</div><div class="kpi-sub" style="color:#2E7CC44D">'+(total?Math.round(enProgreso/total*100):0)+'% del total</div></div>'+
     '<div class="kpi orange"><div class="kpi-label">SIN INICIAR</div><div class="kpi-value" style="color:#DB9034">'+sinIniciar+'</div><div class="kpi-sub" style="color:#D9821F55">'+(total?Math.round(sinIniciar/total*100):0)+'% del total</div></div>'+
     '<div class="kpi red"><div class="kpi-label">VENCIDAS</div><div class="kpi-value" style="color:#DE8272">'+vencidas+'</div><div class="kpi-sub" style="color:#C93B2E55">requieren atención</div></div>'+
-    '<div class="kpi" style="border-top-color:'+nc+';grid-column:span 2"><div class="kpi-label">NDS — NIVEL DE SERVICIO (meta: '+CONFIG.NDS_META+'% en 72 hrs)</div><div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap"><div class="kpi-value" style="color:'+nc+'">'+nds+'%</div><div style="font-size:13px;color:#6E6656">'+ndsCount+' de '+total+' tareas en 72 hrs</div></div><div class="progress-bar" style="margin-top:8px;height:8px"><div class="progress-fill" style="width:'+nds+'%;background:'+nc+'"></div></div><div style="display:flex;justify-content:space-between;margin-top:4px"><div style="font-size:11px;color:#8A8171">0%</div><div style="font-size:11px;color:#8A8171">Meta '+CONFIG.NDS_META+'%</div></div></div>';
+    '<div class="kpi" style="border-top-color:'+nc+';grid-column:span 2"><div class="kpi-label">NDS — NIVEL DE SERVICIO (meta: '+CONFIG.NDS_META+'% &middot; Urgente 3dh &middot; Importante 5dh &middot; Media 7dh &middot; Baja 30d)</div><div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap"><div class="kpi-value" style="color:'+nc+'">'+nds+'%</div><div style="font-size:13px;color:#6E6656">'+ndsCount+' de '+total+' tareas en 72 hrs</div></div><div class="progress-bar" style="margin-top:8px;height:8px"><div class="progress-fill" style="width:'+nds+'%;background:'+nc+'"></div></div><div style="display:flex;justify-content:space-between;margin-top:4px"><div style="font-size:11px;color:#8A8171">0%</div><div style="font-size:11px;color:#8A8171">Meta '+CONFIG.NDS_META+'%</div></div></div>';
 }
 function renderAsignados(){
   var conteo={};datosFiltrados.forEach(function(t){splitAsignados(t.Asignado_Nombre).forEach(function(n){var nc=n.trim().replace(/\s+/g,' ');if(nc) conteo[nc]=(conteo[nc]||0)+1;});});
@@ -639,7 +659,7 @@ function renderTablaTodas(){
     var dias=diasRestantes(t.Fecha_vencimiento),est=estadoLabel(t.Estado),sem=semaforo(dias,parsearEstado(t.Estado));
     var fechaTxt=!fechaValida(t.Fecha_vencimiento)?'<span style="color:#C9A84C55;font-style:italic;font-size:11px">Sin fecha</span>':'<span style="color:'+(dias<0?'#DE8272':dias<=3?'#DB9034':'#6E6656')+'">'+formatFecha(t.Fecha_vencimiento)+'</span>';
     var asigs=splitAsignados(t.Asignado_Nombre).map(function(n){return displayNombre(n);}).join(', ')||'—';
-    var ndsTxt='—';if(parsearEstado(t.Estado)===100){var h=calcularHoras(t.Fecha_Creacion,t.Completada);if(h!==null){ndsTxt=h<=72?'<span class="badge b-green" style="font-size:10px">&#10003; '+Math.round(h)+'h</span>':'<span class="badge b-red" style="font-size:10px">+72h ('+Math.round(h)+'h)</span>';}}
+    var ndsTxt='—';if(parsearEstado(t.Estado)===100){var r=evaluarNds(t);if(r!==null){ndsTxt=r==='enTiempo'?'<span class="badge b-green" style="font-size:10px">&#10003; En plazo</span>':'<span class="badge b-red" style="font-size:10px">'+diasTarde(t)+'d tarde</span>';}}
     return'<tr><td><span class="sem sem-'+sem+'"></span></td><td style="color:#231D10;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+(t.Titulo_Tarea||'—')+'</td><td>'+asigs+'</td><td><span class="badge b-gray">'+(t.Bucket||'—')+'</span></td><td><span class="badge '+est.cls+'">'+est.txt+'</span></td><td><span class="badge '+prioridadBadge(t.Prioridad)+'">'+(t.Prioridad||'—')+'</span></td><td>'+fechaTxt+'</td><td style="color:#6E6656">'+formatFecha(t.Completada)+'</td><td>'+ndsTxt+'</td></tr>';
   }).join('');
 }
@@ -652,7 +672,7 @@ function calcularNdsPorAsignado(){
       var key=normalizarNombre(n);if(!key) return;
       if(!mapa[key]){mapa[key]={nombre:n.trim().replace(/\s+/g,' '),total:0,completadas:0,enTiempo:0,fuera:0,sinMedir:0,pendientes:[]};}
       var m=mapa[key];m.total++;var est=parsearEstado(t.Estado);
-      if(est===100){m.completadas++;var h=calcularHoras(t.Fecha_Creacion,t.Completada);if(h===null){m.sinMedir++;}else if(h<=72){m.enTiempo++;}else{m.fuera++;}}
+      if(est===100){m.completadas++;var r=evaluarNds(t);if(r===null){m.sinMedir++;}else if(r==='enTiempo'){m.enTiempo++;}else{m.fuera++;}}
       else{m.pendientes.push(t);}
     });
   });
@@ -660,13 +680,13 @@ function calcularNdsPorAsignado(){
 }
 function renderNds(){
   var datos=calcularNdsPorAsignado();
-  var totalMedibles=datosFiltrados.filter(function(t){if(parsearEstado(t.Estado)!==100) return false;var h=calcularHoras(t.Fecha_Creacion,t.Completada);return h!==null;}).length;
-  var totalEnTiempo=datosFiltrados.filter(function(t){if(parsearEstado(t.Estado)!==100) return false;var h=calcularHoras(t.Fecha_Creacion,t.Completada);return h!==null&&h<=72;}).length;
+  var totalMedibles=datosFiltrados.filter(function(t){if(parsearEstado(t.Estado)!==100) return false;return evaluarNds(t)!==null;}).length;
+  var totalEnTiempo=datosFiltrados.filter(function(t){if(parsearEstado(t.Estado)!==100) return false;return evaluarNds(t)==='enTiempo';}).length;
   var ndsGlobal=totalMedibles>0?Math.round(totalEnTiempo/totalMedibles*100):0,nc=ndsColor(ndsGlobal);
   var cumpleMeta=ndsGlobal>=CONFIG.NDS_META,pendientesTotal=datosFiltrados.filter(function(t){return parsearEstado(t.Estado)!==100;}).length;
   document.getElementById('ndsHero').innerHTML=
     '<div class="nds-hero-card" style="border-top:3px solid '+nc+'"><div class="nds-hero-value" style="color:'+nc+'">'+ndsGlobal+'%</div><div class="nds-hero-label">NDS GLOBAL</div><div class="nds-hero-sub" style="color:'+nc+'">'+(cumpleMeta?'✓ Meta cumplida':'✗ Bajo la meta')+' ('+CONFIG.NDS_META+'%)</div><div class="progress-bar" style="margin-top:10px;height:8px"><div class="progress-fill" style="width:'+ndsGlobal+'%;background:'+nc+'"></div></div></div>'+
-    '<div class="nds-hero-card" style="border-top:3px solid #2E9C5C"><div class="nds-hero-value" style="color:#2E9C5C">'+totalEnTiempo+'</div><div class="nds-hero-label">COMPLETADAS EN 72 HRS</div><div class="nds-hero-sub" style="color:#1E8E4E4D">de '+totalMedibles+' medibles</div></div>'+
+    '<div class="nds-hero-card" style="border-top:3px solid #2E9C5C"><div class="nds-hero-value" style="color:#2E9C5C">'+totalEnTiempo+'</div><div class="nds-hero-label">COMPLETADAS EN PLAZO</div><div class="nds-hero-sub" style="color:#1E8E4E4D">de '+totalMedibles+' medibles</div></div>'+
     '<div class="nds-hero-card" style="border-top:3px solid #D9821F"><div class="nds-hero-value" style="color:#DB9034">'+pendientesTotal+'</div><div class="nds-hero-label">PENDIENTES</div></div>'+
     '<div class="nds-hero-card" style="border-top:3px solid #C9A84C"><div class="nds-hero-value" style="color:#C9A84C">'+datos.length+'</div><div class="nds-hero-label">ASIGNADOS</div></div>';
   document.getElementById('ndsRanking').innerHTML=datos.map(function(m,i){
@@ -841,8 +861,8 @@ function dibujarResumen(ctx,sz){
   var prog=datosInfografia.filter(function(t){return parsearEstado(t.Estado)===50;}).length;
   var sin=datosInfografia.filter(function(t){return parsearEstado(t.Estado)===0;}).length;
   var venc=datosInfografia.filter(function(t){if(parsearEstado(t.Estado)===100) return false;var d=diasRestantes(t.Fecha_vencimiento);return d!==null&&d<0;}).length;
-  var medibles=datosInfografia.filter(function(t){if(parsearEstado(t.Estado)!==100) return false;var h=calcularHoras(t.Fecha_Creacion,t.Completada);return h!==null;}).length;
-  var enTiempo=datosInfografia.filter(function(t){if(parsearEstado(t.Estado)!==100) return false;var h=calcularHoras(t.Fecha_Creacion,t.Completada);return h!==null&&h<=72;}).length;
+  var medibles=datosInfografia.filter(function(t){if(parsearEstado(t.Estado)!==100) return false;return evaluarNds(t)!==null;}).length;
+  var enTiempo=datosInfografia.filter(function(t){if(parsearEstado(t.Estado)!==100) return false;return evaluarNds(t)==='enTiempo';}).length;
   var nds=medibles>0?Math.round(enTiempo/medibles*100):0;
   var pctComp=total?Math.round(comp/total*100):0;
   var contexto=obtenerContextoInfografia();
@@ -887,7 +907,7 @@ function dibujarResumen(ctx,sz){
   ctx.fillStyle=nc;ctx.fillRect(P,yy,ndsW,4);
   ctx.fillStyle=nc;ctx.font='bold 44px -apple-system,sans-serif';ctx.textAlign='left';ctx.fillText(nds+'%',P+20,yy+56);
   ctx.fillStyle='rgba(255,255,255,0.7)';ctx.font='bold 14px -apple-system,sans-serif';ctx.fillText('NDS — NIVEL DE SERVICIO',P+120,yy+30);
-  ctx.fillStyle='rgba(201,168,76,0.5)';ctx.font='12px -apple-system,sans-serif';ctx.fillText('Meta: '+CONFIG.NDS_META+'%  ·  '+enTiempo+' de '+medibles+' completadas en 72 hrs',P+120,yy+50);
+  ctx.fillStyle='rgba(201,168,76,0.5)';ctx.font='12px -apple-system,sans-serif';ctx.fillText('Meta: '+CONFIG.NDS_META+'%  ·  '+enTiempo+' de '+medibles+' completadas en plazo',P+120,yy+50);
   barraHorizontal(ctx,P+120,yy+60,ndsW-130,10,nds,nc,'rgba(255,255,255,0.06)');
   var metaX=P+120+(ndsW-130)*CONFIG.NDS_META/100;
   ctx.strokeStyle='rgba(201,168,76,0.6)';ctx.lineWidth=2;ctx.setLineDash([4,3]);ctx.beginPath();ctx.moveTo(metaX,yy+57);ctx.lineTo(metaX,yy+73);ctx.stroke();ctx.setLineDash([]);
@@ -1060,7 +1080,7 @@ function dibujarAsignados(ctx,sz){
       if(!asigMap[key]){asigMap[key]={nombre:n.trim().replace(/\s+/g,' '),total:0,comp:0,prog:0,sin:0,venc:0,enTiempo:0,fuera:0,medibles:0};}
       var m=asigMap[key];m.total++;
       var e=parsearEstado(t.Estado);
-      if(e===100){m.comp++;var hh=calcularHoras(t.Fecha_Creacion,t.Completada);if(hh!==null){m.medibles++;if(hh<=72)m.enTiempo++;else m.fuera++;}}
+      if(e===100){m.comp++;var rr=evaluarNds(t);if(rr!==null){m.medibles++;if(rr==='enTiempo')m.enTiempo++;else m.fuera++;}}
       else if(e===50){m.prog++;}else{m.sin++;}
       if(e!==100){var d=diasRestantes(t.Fecha_vencimiento);if(d!==null&&d<0)m.venc++;}
     });
@@ -1144,6 +1164,37 @@ async function cargarFinanzas(){
     document.getElementById('finEmpty').style.display='block';
   }finally{finanzasCargando=false;}
 }
+
+// ── Actualización automática ──────────────────────────────────────────────
+async function recargarFinanzas(){
+  if(finanzasCargando) return;
+  var sel=document.getElementById('finUnidad');
+  var seleccion=finanzasData?sel.value:null;
+  finanzasData=null;
+  await cargarFinanzas();
+  if(seleccion!==null&&finanzasData&&finanzasData.unidades[parseInt(seleccion)]){
+    sel.value=seleccion;
+    if(document.body.classList.contains('fin-tab')) renderFinanzas();
+  }
+}
+async function refrescarSilencioso(){
+  try{
+    var resp=await fetch(CONFIG.jsonUrl+'?t='+Date.now());
+    if(resp.ok){
+      var data=await resp.json();
+      todosLosDatos=(data.datos||data).filter(function(r){return r.Titulo_Tarea||r.ID_Tarea;});
+      aplicarFiltros();
+      var fechaTxt=data.actualizado?new Date(data.actualizado).toLocaleString('es-CO'):new Date().toLocaleTimeString('es-CO');
+      document.getElementById('lastUpdate').textContent='Actualizado: '+fechaTxt;
+    }
+  }catch(e){/* sin conexión: se reintenta en el próximo ciclo */}
+  recargarFinanzas();
+}
+var AUTO_REFRESH_MINUTOS=10;
+setInterval(function(){
+  var dash=document.getElementById('dashboard');
+  if(dash&&dash.style.display==='block') refrescarSilencioso();
+},AUTO_REFRESH_MINUTOS*60*1000);
 
 function renderFinanzas(){
   if(!finanzasData) return;
@@ -1326,9 +1377,44 @@ function renderTodo(){
 }
 
 // ── INIT ──────────────────────────────────────────────────────────────────────
+
+// ── Zoom de tarjetas (pop-up) ─────────────────────────────────────────────
+var zoomOrigen=null,zoomPlaceholder=null;
+function abrirZoom(card){
+  if(zoomOrigen) return;
+  zoomOrigen=card;
+  zoomPlaceholder=document.createElement('div');
+  zoomPlaceholder.style.display='none';
+  card.parentNode.insertBefore(zoomPlaceholder,card);
+  document.getElementById('zoomSlot').appendChild(card);
+  document.getElementById('zoomOverlay').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function cerrarZoom(){
+  if(!zoomOrigen) return;
+  zoomPlaceholder.parentNode.insertBefore(zoomOrigen,zoomPlaceholder);
+  zoomPlaceholder.remove();
+  zoomOrigen=null;zoomPlaceholder=null;
+  document.getElementById('zoomOverlay').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.addEventListener('click',function(e){
+  var overlay=e.target.closest('#zoomOverlay');
+  if(overlay){
+    if(e.target.id==='zoomOverlay'||e.target.closest('.zoom-close')) cerrarZoom();
+    return;
+  }
+  var card=e.target.closest('.card,.nds-pendientes-card');
+  if(!card) return;
+  if(e.target.closest('select,button,a,input,textarea,label')) return;
+  abrirZoom(card);
+});
+document.addEventListener('keydown',function(e){if(e.key==='Escape') cerrarZoom();});
+
 (function init(){
   document.getElementById('loginScreen').style.display = 'flex';
 })();
 </script>
+<div class="zoom-overlay" id="zoomOverlay"><div class="zoom-box"><button class="zoom-close" title="Cerrar (Esc)">&times;</button><div id="zoomSlot"></div></div></div>
 </body>
 </html>
