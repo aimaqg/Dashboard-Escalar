@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-07-15T22:53:32.570Z",
+  "actualizado": "2026-07-15T23:36:15.335Z",
   "total": 12,
   "unidades": [
     {
@@ -539,15 +539,15 @@
     },
     {
       "unidad": "Charlotte",
-      "archivo": "EEFF-CHARLOTTE-2026.xls",
+      "archivo": "EEFF-CHARLOTTE-2026.xlsx",
       "anio": 2026,
-      "mes": "MAYO",
+      "mes": "JUNIO",
       "kpis": {
-        "efectivo": 4022084.34,
+        "efectivo": 6722490.87,
         "cartera": 12970443,
         "excedenteAcumulado": 7978337.25,
-        "excedenteMes": -5379347.479999997,
-        "gastoPromedioMensual": 43959015.764
+        "excedenteMes": 3206534.530000001,
+        "gastoPromedioMensual": 36632513.13666666
       },
       "presupuesto": {
         "ingresos": {
@@ -565,21 +565,24 @@
           "FEBRERO",
           "MARZO",
           "ABRIL",
-          "MAYO"
+          "MAYO",
+          "JUNIO"
         ],
         "ingresos": [
           37567948.49,
           42342229.23,
           36981346.87,
           36760032.35,
-          36845076.14
+          36845076.14,
+          37276782.99
         ],
         "gastos": [
           32865510.2,
           37120062,
           33749895.92,
           39764938.62,
-          42224423.62
+          42224423.62,
+          34070248.46
         ]
       },
       "morosos": [
@@ -908,14 +911,16 @@
             "FEBRERO",
             "MARZO",
             "ABRIL",
-            "MAYO"
+            "MAYO",
+            "JUNIO"
           ],
           "valores": [
             25326,
             189987,
             189987,
             189987,
-            196267
+            196267,
+            196490
           ]
         },
         {
@@ -925,14 +930,16 @@
             "FEBRERO",
             "MARZO",
             "ABRIL",
-            "MAYO"
+            "MAYO",
+            "JUNIO"
           ],
           "valores": [
             2049929,
             1906360,
             2093722,
             1828960,
-            1936739
+            1936739,
+            1937848
           ]
         },
         {
@@ -942,14 +949,16 @@
             "FEBRERO",
             "MARZO",
             "ABRIL",
-            "MAYO"
+            "MAYO",
+            "JUNIO"
           ],
           "valores": [
             0,
             0,
             533000,
             0,
-            0
+            0,
+            596000
           ]
         },
         {
@@ -959,9 +968,11 @@
             "FEBRERO",
             "MARZO",
             "ABRIL",
-            "MAYO"
+            "MAYO",
+            "JUNIO"
           ],
           "valores": [
+            44900,
             44900,
             44900,
             44900,
