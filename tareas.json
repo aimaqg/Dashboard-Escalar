@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-07-15T23:54:03.629Z",
-  "total": 309,
+  "actualizado": "2026-07-16T00:21:34.741Z",
+  "total": 310,
   "datos": [
     {
       "ID_Registro": 1,
@@ -5249,6 +5249,23 @@
       "Fecha_vencimiento": "2026-07-17T10:00:00Z",
       "Prioridad": "",
       "Bucket": "Cumbres Condominio",
+      "Estado": 0,
+      "Completada": "",
+      "Dias para vencer": "",
+      "Semaforo": "",
+      "Canal_teams": "Escalar"
+    },
+    {
+      "ID_Registro": 310,
+      "ID_Tarea": "aKxVMWgExkmJJ2BRoZHG-GUAExYf",
+      "Titulo_Tarea": "EEFF Junio",
+      "Descripcion": "",
+      "Asignado_Nombre": "Asistente dos Escalar SAS",
+      "Asignado_email": "asistentedos@escalarsas.com",
+      "Fecha_Creacion": "2026-07-16T00:07:43.633886Z",
+      "Fecha_vencimiento": "",
+      "Prioridad": "",
+      "Bucket": "Escalar",
       "Estado": 0,
       "Completada": "",
       "Dias para vencer": "",
