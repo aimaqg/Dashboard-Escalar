@@ -2,10 +2,11 @@ name: Sync desde SharePoint
 
 on:
   schedule:
-    # Cada 30 minutos. Cambiar si quieres más/menos frecuencia.
-    # Ej: '0 * * * *' = cada hora exacta
-    # Ej: '*/15 * * * *' = cada 15 minutos (puede demorarse hasta 1h por carga de GitHub)
-    - cron: '0,30 * * * *'
+    # Cada 10 minutos en minutos despejados (:02,:12,:22,:32,:42,:52).
+    # GitHub retrasa o se salta los crons programados en :00 y :30 (los minutos
+    # más congestionados de la plataforma); usar minutos desplazados y mayor
+    # frecuencia reduce muchísimo los ciclos perdidos.
+    - cron: '2,12,22,32,42,52 * * * *'
   workflow_dispatch:  # Botón "Run workflow" en GitHub para forzar sync manual
 
 permissions:
