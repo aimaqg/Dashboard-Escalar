@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-07-17T16:44:51.182Z",
-  "total": 312,
+  "actualizado": "2026-07-17T17:51:21.778Z",
+  "total": 313,
   "datos": [
     {
       "ID_Registro": 1,
@@ -5301,6 +5301,23 @@
       "Prioridad": "",
       "Bucket": "Charlotte",
       "Estado": 50,
+      "Completada": "",
+      "Dias para vencer": "",
+      "Semaforo": "",
+      "Canal_teams": "Escalar"
+    },
+    {
+      "ID_Registro": 313,
+      "ID_Tarea": "byNVYCTt00iCWutUGPxpTmUAAqPm",
+      "Titulo_Tarea": "Humedad piso 13 Torre 1",
+      "Descripcion": "",
+      "Asignado_Nombre": "Dirección  Escalar SAS",
+      "Asignado_email": "direccion@escalarsas.com",
+      "Fecha_Creacion": "2026-07-17T17:13:20.9673077Z",
+      "Fecha_vencimiento": "2026-07-22T10:00:00Z",
+      "Prioridad": "",
+      "Bucket": "Santa Fe",
+      "Estado": 0,
       "Completada": "",
       "Dias para vencer": "",
       "Semaforo": "",
