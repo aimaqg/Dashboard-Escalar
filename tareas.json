@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-07-23T13:07:16.820Z",
-  "total": 322,
+  "actualizado": "2026-07-23T15:22:16.987Z",
+  "total": 323,
   "datos": [
     {
       "ID_Registro": 1,
@@ -5470,6 +5470,23 @@
       "Fecha_vencimiento": "2026-07-24T10:00:00Z",
       "Prioridad": "",
       "Bucket": "Marroco",
+      "Estado": 0,
+      "Completada": "",
+      "Dias para vencer": "",
+      "Semaforo": "",
+      "Canal_teams": "Escalar"
+    },
+    {
+      "ID_Registro": 323,
+      "ID_Tarea": "zQaHY2uEB0an8kgjnDSN1GUAAa8o",
+      "Titulo_Tarea": "Gotera parqueadero apto 150",
+      "Descripcion": "",
+      "Asignado_Nombre": "Dirección  Escalar SAS",
+      "Asignado_email": "direccion@escalarsas.com",
+      "Fecha_Creacion": "2026-07-23T14:01:59.5407496Z",
+      "Fecha_vencimiento": "2026-07-31T10:00:00Z",
+      "Prioridad": "",
+      "Bucket": "Santa Fe",
       "Estado": 0,
       "Completada": "",
       "Dias para vencer": "",
