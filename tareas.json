@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-07-23T19:50:49.316Z",
-  "total": 327,
+  "actualizado": "2026-07-23T20:47:23.596Z",
+  "total": 328,
   "datos": [
     {
       "ID_Registro": 1,
@@ -5556,6 +5556,23 @@
       "Prioridad": "",
       "Bucket": "Complex",
       "Estado": 50,
+      "Completada": "",
+      "Dias para vencer": "",
+      "Semaforo": "",
+      "Canal_teams": "Escalar"
+    },
+    {
+      "ID_Registro": 328,
+      "ID_Tarea": "xcZ6qOF06kSCU8bGFtNDGGUAOcic",
+      "Titulo_Tarea": "Filtración parqueadero 1503",
+      "Descripcion": "",
+      "Asignado_Nombre": "Dirección  Escalar SAS",
+      "Asignado_email": "direccion@escalarsas.com",
+      "Fecha_Creacion": "2026-07-23T19:36:45.3539587Z",
+      "Fecha_vencimiento": "2026-07-30T10:00:00Z",
+      "Prioridad": "",
+      "Bucket": "Santa Fe",
+      "Estado": 0,
       "Completada": "",
       "Dias para vencer": "",
       "Semaforo": "",
