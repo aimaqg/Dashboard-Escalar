@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-07-27T20:53:26.748Z",
-  "total": 352,
+  "actualizado": "2026-07-27T22:10:55.988Z",
+  "total": 353,
   "datos": [
     {
       "ID_Registro": 1,
@@ -5981,6 +5981,23 @@
       "Prioridad": "",
       "Bucket": "Dijon",
       "Estado": 50,
+      "Completada": "",
+      "Dias para vencer": "",
+      "Semaforo": "",
+      "Canal_teams": "Escalar"
+    },
+    {
+      "ID_Registro": 353,
+      "ID_Tarea": "WfMFJEqugUqwi2ZlzGaJ82UAIgmv",
+      "Titulo_Tarea": "Cotizar puerta vehicular",
+      "Descripcion": "",
+      "Asignado_Nombre": "Coordinador Escalar SAS",
+      "Asignado_email": "coordinador@escalarsas.com",
+      "Fecha_Creacion": "2026-07-27T21:37:57.2251538Z",
+      "Fecha_vencimiento": "2026-08-14T10:00:00Z",
+      "Prioridad": "",
+      "Bucket": "Complex",
+      "Estado": 0,
       "Completada": "",
       "Dias para vencer": "",
       "Semaforo": "",
