@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-07-27T10:57:53.518Z",
-  "total": 346,
+  "actualizado": "2026-07-27T13:41:36.997Z",
+  "total": 347,
   "datos": [
     {
       "ID_Registro": 1,
@@ -5878,6 +5878,23 @@
       "Fecha_vencimiento": "2026-07-27T10:00:00Z",
       "Prioridad": "",
       "Bucket": "Cumbres Condominio",
+      "Estado": 0,
+      "Completada": "",
+      "Dias para vencer": "",
+      "Semaforo": "",
+      "Canal_teams": "Escalar"
+    },
+    {
+      "ID_Registro": 347,
+      "ID_Tarea": "rPnnSOAgZky_6ovk2ws7JWUAOXls",
+      "Titulo_Tarea": "Cotizar reparaciones playa piscina ",
+      "Descripcion": "",
+      "Asignado_Nombre": "Dirección  Escalar SAS",
+      "Asignado_email": "direccion@escalarsas.com",
+      "Fecha_Creacion": "2026-07-27T13:15:25.4835539Z",
+      "Fecha_vencimiento": "2026-07-30T10:00:00Z",
+      "Prioridad": "",
+      "Bucket": "Marroco",
       "Estado": 0,
       "Completada": "",
       "Dias para vencer": "",
