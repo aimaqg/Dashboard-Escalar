@@ -1,6 +1,6 @@
 {
-  "actualizado": "2026-07-28T17:07:26.303Z",
-  "total": 353,
+  "actualizado": "2026-07-28T18:42:48.727Z",
+  "total": 354,
   "datos": [
     {
       "ID_Registro": 1,
@@ -5997,6 +5997,23 @@
       "Fecha_vencimiento": "2026-08-14T10:00:00Z",
       "Prioridad": "",
       "Bucket": "Complex",
+      "Estado": 0,
+      "Completada": "",
+      "Dias para vencer": "",
+      "Semaforo": "",
+      "Canal_teams": "Escalar"
+    },
+    {
+      "ID_Registro": 354,
+      "ID_Tarea": "qjodXo4hMUazhx88aGBIFGUAANlZ",
+      "Titulo_Tarea": "Revisar último mmto bomba atalanta intervenida ",
+      "Descripcion": "",
+      "Asignado_Nombre": "Coordinador Escalar SAS",
+      "Asignado_email": "coordinador@escalarsas.com",
+      "Fecha_Creacion": "2026-07-28T17:55:03.262387Z",
+      "Fecha_vencimiento": "2026-07-31T10:00:00Z",
+      "Prioridad": "",
+      "Bucket": "Atalanta",
       "Estado": 0,
       "Completada": "",
       "Dias para vencer": "",
