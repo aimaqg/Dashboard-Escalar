@@ -658,7 +658,8 @@ function renderTablaVencidas(){
   }).join('');
 }
 function renderTablaTodas(){
-  document.getElementById('contadorTareas').textContent='('+datosFiltrados.length+')';
+  var _vT={};var _uniqT=datosFiltrados.filter(function(t){if(_vT[t.ID_Tarea])return false;_vT[t.ID_Tarea]=true;return true;});
+  document.getElementById('contadorTareas').textContent='('+_uniqT.length+')';
   var tbody=document.getElementById('tbodyTodas');
   if(!_uniqT.length){tbody.innerHTML='<tr><td colspan="9" class="empty-state">Sin resultados</td></tr>';return;}
   tbody.innerHTML=_uniqT.map(function(t){
