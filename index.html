@@ -217,6 +217,9 @@ body.fin-tab .filters,body.fin-tab .active-filters-bar,body.mantenimientos-tab .
 .mtto-toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
 .mtto-toolbar select{background:var(--blanco);border:1px solid var(--linea);color:var(--tinta);font-size:12px;padding:6px 10px;border-radius:8px;cursor:pointer;outline:none}
 .mtto-toolbar select:hover{border-color:var(--oro)}
+
+.kpi.clickable{cursor:pointer;transition:box-shadow .2s,transform .2s}
+.kpi.clickable:hover{box-shadow:var(--sombra-hover);transform:translateY(-2px)}
 </style>
 </head>
 <body>
@@ -647,10 +650,10 @@ function renderKPIs(){
   var nds=total?Math.round(ndsCount/total*100):0,nc=ndsColor(nds);
   document.getElementById('kpis').innerHTML=
     '<div class="kpi gold"><div class="kpi-label">TOTAL TAREAS</div><div class="kpi-value">'+total+'</div><div class="progress-bar"><div class="progress-fill" style="width:'+pct+'%"></div></div><div class="kpi-sub" style="color:#8A8171">'+pct+'% completado</div></div>'+
-    '<div class="kpi green"><div class="kpi-label">COMPLETADAS</div><div class="kpi-value" style="color:#2E9C5C">'+completadas+'</div><div class="kpi-sub" style="color:#1E8E4E4D">'+(total?Math.round(completadas/total*100):0)+'% del total</div></div>'+
-    '<div class="kpi blue"><div class="kpi-label">EN PROGRESO</div><div class="kpi-value" style="color:#2E7CC4">'+enProgreso+'</div><div class="kpi-sub" style="color:#2E7CC44D">'+(total?Math.round(enProgreso/total*100):0)+'% del total</div></div>'+
-    '<div class="kpi orange"><div class="kpi-label">SIN INICIAR</div><div class="kpi-value" style="color:#DB9034">'+sinIniciar+'</div><div class="kpi-sub" style="color:#D9821F55">'+(total?Math.round(sinIniciar/total*100):0)+'% del total</div></div>'+
-    '<div class="kpi red"><div class="kpi-label">VENCIDAS</div><div class="kpi-value" style="color:#DE8272">'+vencidas+'</div><div class="kpi-sub" style="color:#C93B2E55">requieren atención</div></div>'+
+    '<div class="kpi green clickable" onclick="filtrarPorEstado(100)" title="Filtrar completadas"><div class="kpi-label">COMPLETADAS</div><div class="kpi-value" style="color:#2E9C5C">'+completadas+'</div><div class="kpi-sub" style="color:#1E8E4E4D">'+(total?Math.round(completadas/total*100):0)+'% del total</div></div>'+
+    '<div class="kpi blue clickable" onclick="filtrarPorEstado(50)" title="Filtrar en progreso"><div class="kpi-label">EN PROGRESO</div><div class="kpi-value" style="color:#2E7CC4">'+enProgreso+'</div><div class="kpi-sub" style="color:#2E7CC44D">'+(total?Math.round(enProgreso/total*100):0)+'% del total</div></div>'+
+    '<div class="kpi orange clickable" onclick="filtrarPorEstado(0)" title="Filtrar sin iniciar"><div class="kpi-label">SIN INICIAR</div><div class="kpi-value" style="color:#DB9034">'+sinIniciar+'</div><div class="kpi-sub" style="color:#D9821F55">'+(total?Math.round(sinIniciar/total*100):0)+'% del total</div></div>'+
+    '<div class="kpi red clickable" onclick="filtrarPorVencidas()" title="Filtrar vencidas"><div class="kpi-label">VENCIDAS</div><div class="kpi-value" style="color:#DE8272">'+vencidas+'</div><div class="kpi-sub" style="color:#C93B2E55">requieren atención</div></div>'+
     '<div class="kpi" style="border-top-color:'+nc+';grid-column:span 2"><div class="kpi-label">NDS — NIVEL DE SERVICIO (meta: '+CONFIG.NDS_META+'% &middot; Urgente 3dh &middot; Importante 5dh &middot; Media 7dh &middot; Baja 30d)</div><div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap"><div class="kpi-value" style="color:'+nc+'">'+nds+'%</div><div style="font-size:13px;color:#6E6656">'+ndsCount+' de '+total+' tareas en plazo</div></div><div class="progress-bar" style="margin-top:8px;height:8px"><div class="progress-fill" style="width:'+nds+'%;background:'+nc+'"></div></div><div style="display:flex;justify-content:space-between;margin-top:4px"><div style="font-size:11px;color:#8A8171">0%</div><div style="font-size:11px;color:#8A8171">Meta '+CONFIG.NDS_META+'%</div></div></div>';
 }
 function renderAsignados(){
@@ -1484,9 +1487,16 @@ document.addEventListener('click',function(e){
     if(e.target.id==='zoomOverlay'||e.target.closest('.zoom-close')) cerrarZoom();
     return;
   }
+  if(e.target.closest('select,button,a,input,textarea,label')) return;
+  // Clic en título de tarjeta colapsable → colapsar/expandir (no zoom)
+  var titulo=e.target.closest('.card-collapsible .card-title');
+  if(titulo){
+    titulo.closest('.card-collapsible').classList.toggle('collapsed');
+    return;
+  }
+  // Clic en el cuerpo → zoom
   var card=e.target.closest('.card,.nds-pendientes-card');
   if(!card) return;
-  if(e.target.closest('select,button,a,input,textarea,label')) return;
   abrirZoom(card);
 });
 document.addEventListener('keydown',function(e){if(e.key==='Escape') cerrarZoom();});
