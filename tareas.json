@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-01T15:57:30.493Z",
+  "actualizado": "2026-08-01T16:39:42.232Z",
   "total": 341,
   "datos": [
     {
@@ -27,12 +27,12 @@
       "Asignado_Nombre": "Gerencia Escalar SAS",
       "Asignado_email": "gerencia@escalarsas.com",
       "Fecha_Creacion": "2026-07-31",
-      "Fecha_vencimiento": "2026-08-11",
-      "Prioridad": "Media",
+      "Fecha_vencimiento": "2026-08-10",
+      "Prioridad": "Importante",
       "Bucket": "Santa Fe",
       "Estado": "Not started",
       "Completada": "",
-      "Dias para vencer": 10,
+      "Dias para vencer": 9,
       "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
