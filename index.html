@@ -325,7 +325,8 @@ body.fin-tab .filters,body.fin-tab .active-filters-bar{display:none!important}
   <div class="tab-panel" id="panel-nds">
     <div class="content">
       <div class="nds-hero" id="ndsHero"></div>
-      <div class="card" style="margin-bottom:16px"><div class="card-title">&#9650; NDS por asignado — % dentro de su meta por prioridad (meta 90%)</div><div id="ndsRanking"></div></div>
+      <div class="card" style="margin-bottom:16px"><div class="card-title">&#9670; NDS por prioridad</div><div id="ndsPorPrioridad"></div></div>
+        <div class="card" style="margin-bottom:16px"><div class="card-title">&#9650; NDS por asignado — % dentro de su meta por prioridad (meta 90%)</div><div id="ndsRanking"></div></div>
       <div class="card" style="margin-bottom:16px"><div class="card-title">&#9636; Comparativa NDS (% completadas dentro de su meta)</div><div class="nds-chart-wrap"><canvas id="chartNds"></canvas></div></div>
       <div class="nds-section-title">&#9203; Tareas pendientes por asignado</div>
       <div id="ndsPendientes"></div>
@@ -635,7 +636,7 @@ function renderChartBucket(){
 function renderChartPrioridad(){
   var conteo={};datosFiltrados.forEach(function(t){if(t.Prioridad) conteo[t.Prioridad]=(conteo[t.Prioridad]||0)+1;});
   var labels=Object.keys(conteo),data=labels.map(function(p){return conteo[p];});
-  var colors={urgente:'#C93B2E',urgent:'#C93B2E',importante:'#D9821F',important:'#D9821F',media:'#2E7CC4',medium:'#2E7CC4',baja:'#8F8A7C',low:'#8F8A7C'};
+  var colors={urgente:'#C93B2E',urgent:'#C93B2E','Urgente':'#C93B2E',importante:'#D9821F',important:'#D9821F','Importante':'#D9821F',media:'#2E7CC4',medium:'#2E7CC4','Media':'#2E7CC4',baja:'#8F8A7C',low:'#8F8A7C','Baja':'#8F8A7C','Sin prioridad':'#C9C3B4'};
   document.getElementById('legendPrioridad').innerHTML=labels.map(function(l,i){return'<span class="legend-item"><span class="legend-dot" style="background:'+(colors[l.toLowerCase()]||PALETA[i])+'"></span>'+l+' ('+data[i]+')</span>';}).join('');
   if(chartPrioridadInst) chartPrioridadInst.destroy();
   chartPrioridadInst=new Chart(document.getElementById('chartPrioridad'),{type:'doughnut',data:{labels:labels,datasets:[{data:data,backgroundColor:labels.map(function(l){return colors[l.toLowerCase()]||'#888';}),borderColor:'#FFFFFF',borderWidth:3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}}}});
@@ -678,8 +679,45 @@ function calcularNdsPorAsignado(){
   });
   return Object.values(mapa).map(function(m){var med=m.enTiempo+m.fuera;m.nds=med>0?Math.round(m.enTiempo/med*100):null;return m;}).sort(function(a,b){if(a.nds===null&&b.nds===null) return a.nombre.localeCompare(b.nombre,'es');if(a.nds===null) return 1;if(b.nds===null) return-1;return b.nds-a.nds;});
 }
+
+function renderNdsPorPrioridad(){
+  var ORDEN=['Urgente','Importante','Media','Baja','Sin prioridad'];
+  var PLAZOS={Urgente:'3 días hábiles',Importante:'5 días hábiles',Media:'7 días hábiles',Baja:'30 días calendario','Sin prioridad':'7 días hábiles (Media)'};
+  var COLORES={Urgente:'#C93B2E',Importante:'#D9821F',Media:'#2E7CC4',Baja:'#8F8A7C','Sin prioridad':'#C9C3B4'};
+  var mapa={};
+  datosFiltrados.forEach(function(t){
+    if(parsearEstado(t.Estado)!==100) return;
+    var r=evaluarNds(t); if(r===null) return;
+    var p=t.Prioridad||'Sin prioridad';
+    if(!mapa[p]) mapa[p]={enTiempo:0,fuera:0};
+    if(r==='enTiempo') mapa[p].enTiempo++; else mapa[p].fuera++;
+  });
+  var html='<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;padding:4px 0">';
+  var hayDatos=false;
+  ORDEN.forEach(function(p){
+    var d=mapa[p]; if(!d) return;
+    hayDatos=true;
+    var total=d.enTiempo+d.fuera;
+    var pct=total>0?Math.round(d.enTiempo/total*100):0;
+    var col=COLORES[p]||'#888';
+    var nc=ndsColor(pct);
+    html+='<div style="background:var(--blanco);border:1px solid var(--linea);border-radius:12px;padding:14px;position:relative;overflow:hidden">'+
+      '<div style="position:absolute;top:0;left:0;right:0;height:3px;background:'+col+'"></div>'+
+      '<div style="font-size:10px;color:var(--tinta-3);letter-spacing:1px;text-transform:uppercase;font-weight:600;margin-bottom:6px">'+p+'</div>'+
+      '<div style="font-family:Sora,sans-serif;font-size:28px;font-weight:700;color:'+nc+'">'+pct+'%</div>'+
+      '<div style="font-size:11px;color:var(--tinta-2);margin:4px 0">'+d.enTiempo+' de '+total+' en plazo</div>'+
+      '<div style="font-size:10px;color:var(--tinta-3)">Meta: '+PLAZOS[p]+'</div>'+
+      '<div style="height:5px;background:var(--linea-2);border-radius:3px;overflow:hidden;margin-top:8px">'+
+        '<div style="height:100%;border-radius:3px;background:'+nc+';width:'+pct+'%"></div>'+
+      '</div>'+
+    '</div>';
+  });
+  html+='</div>';
+  document.getElementById('ndsPorPrioridad').innerHTML=hayDatos?html:'<div class="fin-empty">Aún no hay tareas completadas medibles</div>';
+}
+
 function renderNds(){
-  var datos=calcularNdsPorAsignado();
+  renderNdsPorPrioridad();var datos=calcularNdsPorAsignado();
   var totalMedibles=datosFiltrados.filter(function(t){if(parsearEstado(t.Estado)!==100) return false;return evaluarNds(t)!==null;}).length;
   var totalEnTiempo=datosFiltrados.filter(function(t){if(parsearEstado(t.Estado)!==100) return false;return evaluarNds(t)==='enTiempo';}).length;
   var ndsGlobal=totalMedibles>0?Math.round(totalEnTiempo/totalMedibles*100):0,nc=ndsColor(ndsGlobal);
