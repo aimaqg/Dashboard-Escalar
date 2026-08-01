@@ -151,7 +151,7 @@ tbody td{padding:9px 10px;color:var(--tinta);font-size:12px;font-variant-numeric
 .info-empty{color:var(--tinta-3);text-align:center;padding:60px 24px;font-size:14px}
 .info-hint{color:var(--tinta-3);font-size:11px;margin-top:8px}
 @media(max-width:640px){.charts-row{grid-template-columns:1fr}.filters{gap:6px}.nds-bar-wrap{display:none}}
-body.fin-tab .filters,body.fin-tab .active-filters-bar{display:none!important}
+body.fin-tab .filters,body.fin-tab .active-filters-bar,body.mantenimientos-tab .filters,body.mantenimientos-tab .active-filters-bar{display:none!important}
 .fin-toolbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
 .fin-toolbar label{color:var(--tinta-2);font-size:11px}
 .fin-toolbar select{background:var(--blanco);border:1px solid var(--linea);color:var(--tinta);font-size:13px;font-weight:500;padding:7px 12px;border-radius:9px;cursor:pointer;outline:none;transition:border-color .15s}
@@ -188,6 +188,35 @@ body.fin-tab .filters,body.fin-tab .active-filters-bar{display:none!important}
 .zoom-box .card,.zoom-box .nds-pendientes-card{border:none;box-shadow:none;cursor:default;animation:none;margin:0}
 .zoom-box .card:hover{box-shadow:none;transform:none}
 .zoom-box div[style*="height:200px"],.zoom-box div[style*="height:220px"],.zoom-box div[style*="height:260px"],.zoom-box div[style*="height:280px"]{height:60vh!important}
+
+/* Tarjetas expandibles */
+.card-collapsible .card-title{cursor:pointer;user-select:none;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.card-collapsible .card-title::after{content:'\25B2';font-size:10px;color:var(--tinta-3);transition:transform .25s;flex-shrink:0}
+.card-collapsible.collapsed .card-title::after{transform:rotate(180deg)}
+.card-collapsible .card-body{overflow:hidden;transition:max-height .35s ease,opacity .25s;max-height:2000px;opacity:1}
+.card-collapsible.collapsed .card-body{max-height:0;opacity:0}
+/* Tab mantenimientos */
+.mtto-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px;margin-bottom:16px}
+.mtto-card{background:var(--blanco);border:1px solid var(--linea);border-radius:14px;padding:0;overflow:hidden;box-shadow:var(--sombra);animation:riseIn .45s both}
+.mtto-header{padding:12px 16px;display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--linea-2)}
+.mtto-copropiedad{font-family:'Sora',sans-serif;font-size:13px;font-weight:700;color:var(--tinta);flex:1}
+.mtto-contador{font-size:11px;color:var(--tinta-3);background:var(--marfil);border-radius:10px;padding:2px 8px}
+.mtto-row{display:flex;align-items:flex-start;gap:10px;padding:10px 16px;border-bottom:1px solid var(--linea-2);transition:background .15s}
+.mtto-row:hover{background:var(--marfil)}
+.mtto-row:last-child{border-bottom:none}
+.mtto-sem{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:4px}
+.mtto-info{flex:1;min-width:0}
+.mtto-titulo{color:var(--tinta);font-size:12px;font-weight:500;line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mtto-meta{color:var(--tinta-3);font-size:11px;margin-top:2px}
+.mtto-dias{font-size:11px;font-weight:600;white-space:nowrap;text-align:right;min-width:70px}
+.mtto-empty{color:var(--tinta-3);text-align:center;padding:20px;font-size:12px}
+.mtto-resumen{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:16px}
+.mtto-kpi{background:var(--blanco);border:1px solid var(--linea);border-radius:12px;padding:14px 16px;box-shadow:var(--sombra)}
+.mtto-kpi-val{font-family:'Sora',sans-serif;font-size:26px;font-weight:700;color:var(--tinta)}
+.mtto-kpi-label{font-size:10px;color:var(--tinta-3);letter-spacing:1px;text-transform:uppercase;margin-top:4px}
+.mtto-toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+.mtto-toolbar select{background:var(--blanco);border:1px solid var(--linea);color:var(--tinta);font-size:12px;padding:6px 10px;border-radius:8px;cursor:pointer;outline:none}
+.mtto-toolbar select:hover{border-color:var(--oro)}
 </style>
 </head>
 <body>
@@ -244,6 +273,7 @@ body.fin-tab .filters,body.fin-tab .active-filters-bar{display:none!important}
     <button class="tab-btn active" onclick="cambiarTab('dashboard')">&#9783; Dashboard</button>
     <button class="tab-btn" onclick="cambiarTab('finanzas')">&#9636; Estados financieros</button>
     <button class="tab-btn" onclick="cambiarTab('nds')">&#9650; NDS por asignado</button>
+    <button class="tab-btn" onclick="cambiarTab('mantenimientos')">&#128295; Mantenimientos</button>
     <button class="tab-btn" onclick="cambiarTab('infografia')">&#9670; Infografía</button>
   </div>
 
@@ -282,11 +312,11 @@ body.fin-tab .filters,body.fin-tab .active-filters-bar{display:none!important}
         <div class="card"><div class="card-title">&#9632; Tareas por copropiedad</div><div class="legend" id="legendBucket"></div><div style="position:relative;height:220px"><canvas id="chartBucket"></canvas></div></div>
         <div class="card"><div class="card-title">&#9873; Distribución por prioridad</div><div class="legend" id="legendPrioridad"></div><div style="position:relative;height:220px"><canvas id="chartPrioridad"></canvas></div></div>
       </div>
-      <div class="card" style="margin-bottom:16px">
+      <div class="card card-collapsible" style="margin-bottom:16px">
         <div class="card-title">&#9888; Tareas vencidas o próximas a vencer</div>
         <div class="table-wrap"><table><thead><tr><th></th><th>Tarea</th><th>Asignado</th><th>Copropiedad</th><th>Vencimiento</th><th>Días</th><th>Prioridad</th><th>Estado</th></tr></thead><tbody id="tbodyVencidas"></tbody></table></div>
       </div>
-      <div class="card">
+      <div class="card card-collapsible">
         <div class="card-title">&#9776; Todas las tareas <span id="contadorTareas" style="color:#A39B88;font-size:12px;font-weight:400;margin-left:6px"></span></div>
         <div class="table-wrap"><table><thead><tr><th></th><th>Tarea</th><th>Asignado</th><th>Copropiedad</th><th>Estado</th><th>Prioridad</th><th>Vencimiento</th><th>Completada</th><th>NDS</th></tr></thead><tbody id="tbodyTodas"></tbody></table></div>
       </div>
@@ -308,11 +338,11 @@ body.fin-tab .filters,body.fin-tab .active-filters-bar{display:none!important}
           <div class="card"><div class="card-title">&#9201; Evolución mensual: ingresos vs. gastos</div><div style="position:relative;height:260px"><canvas id="finChartMensual"></canvas></div></div>
         </div>
         <div class="fin-grid-2">
-          <div class="card"><div class="card-title">&#9654; Detalle de ingresos (acumulado)</div><div style="position:relative" id="finIngresosWrap"><canvas id="finChartIngresos"></canvas></div></div>
+          <div class="card card-collapsible"><div class="card-title">&#9654; Detalle de ingresos (acumulado)</div><div style="position:relative" id="finIngresosWrap"><canvas id="finChartIngresos"></canvas></div></div>
           <div class="card" id="finServiciosCard"><div class="card-title">&#9889; Servicios p&uacute;blicos: evoluci&oacute;n mensual</div><div class="legend" id="finLegendServicios"></div><div style="position:relative;height:260px"><canvas id="finChartServicios"></canvas></div></div>
         </div>
-        <div class="card" style="margin-bottom:16px"><div class="card-title">&#9888; Top de morosos — dónde enfocar la gestión de cobro</div><div style="position:relative" id="finMorososWrap"><canvas id="finChartMorosos"></canvas></div></div>
-        <div class="card" style="margin-bottom:16px"><div class="card-title">&#128680; Alertas de desviación de gastos — sobre-ejecución (rojo) vs. sub-ejecución (verde)</div><div style="position:relative" id="finTornadoWrap"><canvas id="finChartTornado"></canvas></div></div>
+        <div class="card card-collapsible" style="margin-bottom:16px"><div class="card-title">&#9888; Top de morosos — dónde enfocar la gestión de cobro</div><div style="position:relative" id="finMorososWrap"><canvas id="finChartMorosos"></canvas></div></div>
+        <div class="card card-collapsible" style="margin-bottom:16px"><div class="card-title">&#128680; Alertas de desviación de gastos — sobre-ejecución (rojo) vs. sub-ejecución (verde)</div><div style="position:relative" id="finTornadoWrap"><canvas id="finChartTornado"></canvas></div></div>
         <div class="fin-grid-2">
           <div class="card"><div class="card-title">&#9685; Composición del gasto acumulado</div><div class="legend" id="finLegendComposicion"></div><div style="position:relative;height:280px"><canvas id="finChartComposicion"></canvas></div></div>
           <div class="card"><div class="card-title">&#9998; Lectura ejecutiva</div><div id="finResumen" style="color:#4A4436;font-size:13px;line-height:1.8;padding:6px 2px"></div></div>
@@ -326,9 +356,9 @@ body.fin-tab .filters,body.fin-tab .active-filters-bar{display:none!important}
   <div class="tab-panel" id="panel-nds">
     <div class="content">
       <div class="nds-hero" id="ndsHero"></div>
-      <div class="card" style="margin-bottom:16px"><div class="card-title">&#9670; NDS por prioridad</div><div id="ndsPorPrioridad"></div></div>
-        <div class="card" style="margin-bottom:16px"><div class="card-title">&#9650; NDS por asignado — % dentro de su meta por prioridad (meta 90%)</div><div id="ndsRanking"></div></div>
-      <div class="card" style="margin-bottom:16px"><div class="card-title">&#9636; Comparativa NDS (% completadas dentro de su meta)</div><div class="nds-chart-wrap"><canvas id="chartNds"></canvas></div></div>
+      <div class="card card-collapsible" style="margin-bottom:16px"><div class="card-title">&#9670; NDS por prioridad</div><div id="ndsPorPrioridad"></div></div>
+        <div class="card card-collapsible" style="margin-bottom:16px"><div class="card-title">&#9650; NDS por asignado — % dentro de su meta por prioridad (meta 90%)</div><div id="ndsRanking"></div></div>
+      <div class="card card-collapsible" style="margin-bottom:16px"><div class="card-title">&#9636; Comparativa NDS (% completadas dentro de su meta)</div><div class="nds-chart-wrap"><canvas id="chartNds"></canvas></div></div>
       <div class="nds-section-title">&#9203; Tareas pendientes por asignado</div>
       <div id="ndsPendientes"></div>
     </div>
@@ -395,13 +425,16 @@ var AVATAR_COLORS=['#C9A84C','#2E7CC4','#2E9C5C','#8E6FB8','#DE8272','#DB9034','
 
 // ── TABS ────────────────────────────────────────────────────────────────────
 function cambiarTab(tab){
-  var TABS=['dashboard','finanzas','nds','infografia'];
+  var TABS=['dashboard','finanzas','nds','mantenimientos','infografia'];
   document.querySelectorAll('.tab-btn').forEach(function(b,i){b.classList.toggle('active',TABS[i]===tab);});
   document.querySelectorAll('.tab-panel').forEach(function(p){p.classList.remove('active');});
   document.getElementById('panel-'+tab).classList.add('active');
   var esFin=(tab==='finanzas');
+  var esMtto=(tab==='mantenimientos');
   document.body.classList.toggle('fin-tab',esFin);
+  document.body.classList.toggle('mantenimientos-tab',esMtto);
   if(esFin) cargarFinanzas();
+  if(esMtto && typeof inicializarMantenimientos==='function') inicializarMantenimientos();
 }
 
 // ── UTILS ────────────────────────────────────────────────────────────────────
