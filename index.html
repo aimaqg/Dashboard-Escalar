@@ -206,9 +206,10 @@ body.fin-tab .filters,body.fin-tab .active-filters-bar{display:none!important}
     </div>
     <div style="margin-bottom:20px;text-align:left">
       <label style="color:#A39B88;font-size:11px;letter-spacing:1px;display:block;margin-bottom:6px">CONTRASEÑA</label>
-      <input id="inputPass" type="password" placeholder="Contraseña" autocomplete="current-password"
-        style="width:100%;background:#FFFFFF;border:1px solid #EFE8D8;color:#231D10;padding:12px 14px;border-radius:8px;font-size:14px;outline:none;font-family:inherit"
+      <div style="position:relative"><input id="inputPass" type="password" placeholder="Contraseña" autocomplete="current-password"
+        style="width:100%;background:#FFFFFF;border:1px solid #EFE8D8;color:#231D10;padding:12px 46px 12px 14px;border-radius:8px;font-size:14px;outline:none;font-family:inherit"
         onkeydown="if(event.key==='Enter') iniciarLogin()"/>
+        <button type="button" onclick="var i=document.getElementById('inputPass');i.type=i.type==='password'?'text':'password';this.textContent=i.type==='password'?'👁':' 🙈'" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;font-size:16px;color:#A39B88;padding:4px;line-height:1" title="Mostrar/ocultar contraseña">👁</button></div>
     </div>
     <button class="btn-login" id="btnLogin" onclick="iniciarLogin()">Ingresar</button>
     <div class="login-error" id="loginError"></div>
