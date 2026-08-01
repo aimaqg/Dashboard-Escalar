@@ -153,53 +153,31 @@ function semaforo(dias, pct) {
       const sem   = semaforo(diasRestantes(fechaVence) !== '' ? diasRestantes(fechaVence) : null, pct);
       const desc  = detailMap[t.id] || '';
 
-      if (asignados.length === 0) {
-        // tarea sin asignar: una fila con asignado vacío
-        filas.push({
-          ID_Registro:      idRegistro++,
-          ID_Tarea:         t.id,
-          Titulo_Tarea:     t.title || '',
-          Descripcion:      desc,
-          Asignado_Nombre:  '',
-          Asignado_email:   '',
-          Fecha_Creacion:   fechaCreacion,
-          Fecha_vencimiento: fechaVence,
-          Prioridad:        prioridad,
-          Bucket:           bucket,
-          Estado:           estado,
-          Completada:       fechaCompletada,
-          'Dias para vencer': typeof dias === 'number' ? dias : '',
-          Semaforo:         sem,
-          Canal_teams:      ''
-        });
-      } else {
-        // una fila por asignado (mismo esquema que el Excel)
-        for (const userId of asignados) {
-          const assignment = t.assignments[userId];
-          filas.push({
-            ID_Registro:      idRegistro++,
-            ID_Tarea:         t.id,
-            Titulo_Tarea:     t.title || '',
-            Descripcion:      desc,
-            Asignado_Nombre:  userId,   // se resuelve a nombre en el paso de usuarios
-            Asignado_email:   '',
-            Fecha_Creacion:   fechaCreacion,
-            Fecha_vencimiento: fechaVence,
-            Prioridad:        prioridad,
-            Bucket:           bucket,
-            Estado:           estado,
-            Completada:       fechaCompletada,
-            'Dias para vencer': typeof dias === 'number' ? dias : '',
-            Semaforo:         sem,
-            Canal_teams:      ''
-          });
-        }
-      }
+      // Una fila por tarea — asignados concatenados con ";" (el dashboard los separa con splitAsignados)
+      filas.push({
+        ID_Registro:       idRegistro++,
+        ID_Tarea:          t.id,
+        Titulo_Tarea:      t.title || '',
+        Descripcion:       desc,
+        Asignado_Nombre:   asignados.join(';'),   // se resuelve a nombres en el paso de usuarios
+        Asignado_email:    '',
+        Fecha_Creacion:    fechaCreacion,
+        Fecha_vencimiento: fechaVence,
+        Prioridad:         prioridad,
+        Bucket:            bucket,
+        Estado:            estado,
+        Completada:        fechaCompletada,
+        'Dias para vencer': typeof dias === 'number' ? dias : '',
+        Semaforo:          sem,
+        Canal_teams:       ''
+      });
     }
 
     // ── Resolver nombres de usuario ───────────────────────────────────────────
-    // Recolectar IDs únicos
-    const userIds = [...new Set(filas.map(f => f.Asignado_Nombre).filter(Boolean))];
+    // Recolectar IDs únicos (los nombres están concatenados con ";")
+    const userIds = [...new Set(
+      filas.flatMap(f => f.Asignado_Nombre ? f.Asignado_Nombre.split(';').map(s => s.trim()).filter(Boolean) : [])
+    )];
     const userMap = {};
     console.log(`      Resolviendo ${userIds.length} usuarios...`);
     await Promise.all(userIds.map(async uid => {
@@ -211,12 +189,14 @@ function semaforo(dias, pct) {
       }
     }));
 
-    // Sustituir IDs por nombres
+    // Sustituir IDs por nombres (campo concatenado con ";")
     filas.forEach(f => {
-      if (f.Asignado_Nombre && userMap[f.Asignado_Nombre]) {
-        f.Asignado_email  = userMap[f.Asignado_Nombre].email;
-        f.Asignado_Nombre = userMap[f.Asignado_Nombre].nombre;
-      }
+      if (!f.Asignado_Nombre) return;
+      const ids = f.Asignado_Nombre.split(';').map(s => s.trim()).filter(Boolean);
+      const nombres = ids.map(id => userMap[id] ? userMap[id].nombre : id);
+      const emails  = ids.map(id => userMap[id] ? userMap[id].email  : '');
+      f.Asignado_Nombre = nombres.join(';');
+      f.Asignado_email  = emails.join(';');
     });
 
     // ── Escribir JSON ─────────────────────────────────────────────────────────

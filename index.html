@@ -598,10 +598,13 @@ function limpiarFiltros(){
 
 // ── RENDER DASHBOARD ─────────────────────────────────────────────────────────
 function renderKPIs(){
-  var total=datosFiltrados.length,completadas=datosFiltrados.filter(function(t){return parsearEstado(t.Estado)===100;}).length;
-  var enProgreso=datosFiltrados.filter(function(t){return parsearEstado(t.Estado)===50;}).length;
-  var sinIniciar=datosFiltrados.filter(function(t){return parsearEstado(t.Estado)===0;}).length;
-  var vencidas=datosFiltrados.filter(function(t){if(parsearEstado(t.Estado)===100) return false;var d=diasRestantes(t.Fecha_vencimiento);return d!==null&&d<0;}).length;
+  // Deduplicar por ID_Tarea para contar tareas únicas (no filas)
+  var vistas={};
+  var unicas=datosFiltrados.filter(function(t){if(vistas[t.ID_Tarea]) return false;vistas[t.ID_Tarea]=true;return true;});
+  var total=unicas.length,completadas=unicas.filter(function(t){return parsearEstado(t.Estado)===100;}).length;
+  var enProgreso=unicas.filter(function(t){return parsearEstado(t.Estado)===50;}).length;
+  var sinIniciar=unicas.filter(function(t){return parsearEstado(t.Estado)===0;}).length;
+  var vencidas=unicas.filter(function(t){if(parsearEstado(t.Estado)===100) return false;var d=diasRestantes(t.Fecha_vencimiento);return d!==null&&d<0;}).length;
   var pct=total?Math.round(completadas/total*100):0;
   var ndsCount=datosFiltrados.filter(function(t){if(parsearEstado(t.Estado)!==100) return false;return evaluarNds(t)==='enTiempo';}).length;
   var nds=total?Math.round(ndsCount/total*100):0,nc=ndsColor(nds);
@@ -619,7 +622,8 @@ function renderAsignados(){
   document.getElementById('chartAsignados').innerHTML=sorted.length?sorted.map(function(item){return'<div class="assignee-bar"><div class="assignee-name">'+displayNombre(item[0])+'</div><div class="assignee-track"><div class="assignee-fill" style="width:'+Math.round(item[1]/max*100)+'%"></div></div><div class="assignee-count">'+item[1]+'</div></div>';}).join(''):'<div class="empty-state">Sin datos</div>';
 }
 function renderChartEstado(){
-  var c0=0,c50=0,c100=0;datosFiltrados.forEach(function(t){var e=parsearEstado(t.Estado);if(e===100)c100++;else if(e===50)c50++;else c0++;});
+  var vistas2={};var uniq=datosFiltrados.filter(function(t){if(vistas2[t.ID_Tarea])return false;vistas2[t.ID_Tarea]=true;return true;});
+  var c0=0,c50=0,c100=0;uniq.forEach(function(t){var e=parsearEstado(t.Estado);if(e===100)c100++;else if(e===50)c50++;else c0++;});
   var labels=['Sin iniciar','En progreso','Completada'],data=[c0,c50,c100],colors=['#666','#2E7CC4','#1E8E4E'];
   document.getElementById('legendEstado').innerHTML=labels.map(function(l,i){return'<span class="legend-item"><span class="legend-dot" style="background:'+colors[i]+'"></span>'+l+' ('+data[i]+')</span>';}).join('');
   if(chartEstadoInst) chartEstadoInst.destroy();
@@ -634,7 +638,7 @@ function renderChartBucket(){
   chartBucketInst=new Chart(document.getElementById('chartBucket'),{type:'bar',data:{labels:labels,datasets:[{data:data,backgroundColor:labels.map(function(_,i){return PALETA[i%PALETA.length];}),borderRadius:4,borderSkipped:false}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#8A8171',font:{size:11},maxRotation:45},grid:{color:'#231D100A'}},y:{ticks:{color:'#8A8171',font:{size:11},stepSize:1},grid:{color:'#231D100A'}}}}});
 }
 function renderChartPrioridad(){
-  var conteo={};datosFiltrados.forEach(function(t){if(t.Prioridad) conteo[t.Prioridad]=(conteo[t.Prioridad]||0)+1;});
+  var vistas3={};var conteo={};datosFiltrados.forEach(function(t){if(vistas3[t.ID_Tarea])return;vistas3[t.ID_Tarea]=true;if(t.Prioridad) conteo[t.Prioridad]=(conteo[t.Prioridad]||0)+1;});
   var labels=Object.keys(conteo),data=labels.map(function(p){return conteo[p];});
   var colors={urgente:'#C93B2E',urgent:'#C93B2E','Urgente':'#C93B2E',importante:'#D9821F',important:'#D9821F','Importante':'#D9821F',media:'#2E7CC4',medium:'#2E7CC4','Media':'#2E7CC4',baja:'#8F8A7C',low:'#8F8A7C','Baja':'#8F8A7C','Sin prioridad':'#C9C3B4'};
   document.getElementById('legendPrioridad').innerHTML=labels.map(function(l,i){return'<span class="legend-item"><span class="legend-dot" style="background:'+(colors[l.toLowerCase()]||PALETA[i])+'"></span>'+l+' ('+data[i]+')</span>';}).join('');
@@ -655,8 +659,8 @@ function renderTablaVencidas(){
 function renderTablaTodas(){
   document.getElementById('contadorTareas').textContent='('+datosFiltrados.length+')';
   var tbody=document.getElementById('tbodyTodas');
-  if(!datosFiltrados.length){tbody.innerHTML='<tr><td colspan="9" class="empty-state">Sin resultados</td></tr>';return;}
-  tbody.innerHTML=datosFiltrados.map(function(t){
+  if(!_uniqT.length){tbody.innerHTML='<tr><td colspan="9" class="empty-state">Sin resultados</td></tr>';return;}
+  tbody.innerHTML=_uniqT.map(function(t){
     var dias=diasRestantes(t.Fecha_vencimiento),est=estadoLabel(t.Estado),sem=semaforo(dias,parsearEstado(t.Estado));
     var fechaTxt=!fechaValida(t.Fecha_vencimiento)?'<span style="color:#C9A84C55;font-style:italic;font-size:11px">Sin fecha</span>':'<span style="color:'+(dias<0?'#DE8272':dias<=3?'#DB9034':'#6E6656')+'">'+formatFecha(t.Fecha_vencimiento)+'</span>';
     var asigs=splitAsignados(t.Asignado_Nombre).map(function(n){return displayNombre(n);}).join(', ')||'—';
