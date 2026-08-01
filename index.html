@@ -151,7 +151,7 @@ tbody td{padding:9px 10px;color:var(--tinta);font-size:12px;font-variant-numeric
 .info-empty{color:var(--tinta-3);text-align:center;padding:60px 24px;font-size:14px}
 .info-hint{color:var(--tinta-3);font-size:11px;margin-top:8px}
 @media(max-width:640px){.charts-row{grid-template-columns:1fr}.filters{gap:6px}.nds-bar-wrap{display:none}}
-body.fin-tab .filters,body.fin-tab .active-filters-bar,body.mantenimientos-tab .filters,body.mantenimientos-tab .active-filters-bar{display:none!important}
+body.fin-tab .filters,body.fin-tab .active-filters-bar,body.mantenimientos-tab .filters,body.mantenimientos-tab .active-filters-bar,body.nds-tab .filters,body.nds-tab .active-filters-bar,body.infografia-tab .filters,body.infografia-tab .active-filters-bar{display:none!important}
 .fin-toolbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
 .fin-toolbar label{color:var(--tinta-2);font-size:11px}
 .fin-toolbar select{background:var(--blanco);border:1px solid var(--linea);color:var(--tinta);font-size:13px;font-weight:500;padding:7px 12px;border-radius:9px;cursor:pointer;outline:none;transition:border-color .15s}
@@ -272,7 +272,7 @@ body.fin-tab .filters,body.fin-tab .active-filters-bar,body.mantenimientos-tab .
   <div class="tabs-bar">
     <button class="tab-btn active" onclick="cambiarTab('dashboard')">&#9783; Dashboard</button>
     <button class="tab-btn" onclick="cambiarTab('finanzas')">&#9636; Estados financieros</button>
-    <button class="tab-btn" onclick="cambiarTab('nds')">&#9650; NDS por asignado</button>
+    <button class="tab-btn" onclick="cambiarTab('nds')">&#128101; Detalle por empleado</button>
     <button class="tab-btn" onclick="cambiarTab('mantenimientos')">&#128295; Mantenimientos</button>
     <button class="tab-btn" onclick="cambiarTab('infografia')">&#9670; Infografía</button>
   </div>
@@ -312,6 +312,7 @@ body.fin-tab .filters,body.fin-tab .active-filters-bar,body.mantenimientos-tab .
         <div class="card"><div class="card-title">&#9632; Tareas por copropiedad</div><div class="legend" id="legendBucket"></div><div style="position:relative;height:220px"><canvas id="chartBucket"></canvas></div></div>
         <div class="card"><div class="card-title">&#9873; Distribución por prioridad</div><div class="legend" id="legendPrioridad"></div><div style="position:relative;height:220px"><canvas id="chartPrioridad"></canvas></div></div>
       </div>
+      <div class="card card-collapsible" style="margin-bottom:16px"><div class="card-title">&#9670; NDS por prioridad</div><div id="ndsPorPrioridad"></div></div>
       <div class="card card-collapsible" style="margin-bottom:16px">
         <div class="card-title">&#9888; Tareas vencidas o próximas a vencer</div>
         <div class="table-wrap"><table><thead><tr><th></th><th>Tarea</th><th>Asignado</th><th>Copropiedad</th><th>Vencimiento</th><th>Días</th><th>Prioridad</th><th>Estado</th></tr></thead><tbody id="tbodyVencidas"></tbody></table></div>
@@ -356,7 +357,7 @@ body.fin-tab .filters,body.fin-tab .active-filters-bar,body.mantenimientos-tab .
   <div class="tab-panel" id="panel-nds">
     <div class="content">
       <div class="nds-hero" id="ndsHero"></div>
-      <div class="card card-collapsible" style="margin-bottom:16px"><div class="card-title">&#9670; NDS por prioridad</div><div id="ndsPorPrioridad"></div></div>
+      
         <div class="card card-collapsible" style="margin-bottom:16px"><div class="card-title">&#9650; NDS por asignado — % dentro de su meta por prioridad (meta 90%)</div><div id="ndsRanking"></div></div>
       <div class="card card-collapsible" style="margin-bottom:16px"><div class="card-title">&#9636; Comparativa NDS (% completadas dentro de su meta)</div><div class="nds-chart-wrap"><canvas id="chartNds"></canvas></div></div>
       <div class="nds-section-title">&#9203; Tareas pendientes por asignado</div>
@@ -433,6 +434,8 @@ function cambiarTab(tab){
   var esMtto=(tab==='mantenimientos');
   document.body.classList.toggle('fin-tab',esFin);
   document.body.classList.toggle('mantenimientos-tab',esMtto);
+  document.body.classList.toggle('nds-tab', tab==='nds');
+  document.body.classList.toggle('infografia-tab', tab==='infografia');
   if(esFin) cargarFinanzas();
   if(esMtto && typeof inicializarMantenimientos==='function') inicializarMantenimientos();
 }
@@ -1487,6 +1490,22 @@ document.addEventListener('click',function(e){
   abrirZoom(card);
 });
 document.addEventListener('keydown',function(e){if(e.key==='Escape') cerrarZoom();});
+
+
+function filtrarPorEstado(estado){
+  var sel=document.getElementById('fEstado');
+  if(sel.value===String(estado)){sel.value='';}
+  else{sel.value=String(estado);}
+  aplicarFiltros();
+}
+function filtrarPorVencidas(){
+  var hoy=new Date();
+  var fmt=function(d){return d.getFullYear()+'-'+(d.getMonth()+1<10?'0':'')+(d.getMonth()+1)+'-'+(d.getDate()<10?'0':'')+d.getDate();};
+  var elHasta=document.getElementById('fFechaHasta');
+  if(elHasta.value===fmt(hoy)){elHasta.value='';}
+  else{document.getElementById('fFechaDesde').value='';elHasta.value=fmt(hoy);}
+  aplicarFiltros();
+}
 
 (function init(){
   document.getElementById('loginScreen').style.display = 'flex';
