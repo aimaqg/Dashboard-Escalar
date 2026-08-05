@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-05T14:29:51.789Z",
+  "actualizado": "2026-08-05T16:17:41.063Z",
   "total": 348,
   "datos": [
     {
@@ -295,7 +295,7 @@
       "ID_Registro": 18,
       "ID_Tarea": "WfMFJEqugUqwi2ZlzGaJ82UAIgmv",
       "Titulo_Tarea": "Cotizar puerta vehicular",
-      "Descripcion": "",
+      "Descripcion": "Andres se debe cotizar todo el cambio de la puerta vehicular del sótano. Nilson dijo que no tiene la capacidad.",
       "Asignado_Nombre": "Coordinador Escalar SAS",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-07-27",
