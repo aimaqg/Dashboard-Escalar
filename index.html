@@ -707,6 +707,27 @@ async function cargarDatos(){
     err.style.display = 'block';
   }
 }
+
+function iniciarSesion(){
+  var u=document.getElementById('inputUser').value.trim().toLowerCase();
+  var p=document.getElementById('inputPass').value;
+  var btn=document.getElementById('btnLogin');
+  var err=document.getElementById('loginError');
+  err.style.display='none';
+  if(!u||!p){err.textContent='Completa usuario y contraseña.';err.style.display='block';return;}
+  if(USUARIOS[u]&&USUARIOS[u]===p){
+    usuarioActual=u;
+    document.getElementById('loginScreen').style.display='none';
+    var av=document.getElementById('userAvatar');
+    if(av) av.textContent=u.charAt(0).toUpperCase();
+    cargarDatos();
+  }else{
+    err.textContent='Usuario o contraseña incorrectos.';
+    err.style.display='block';
+    btn.disabled=false;
+  }
+}
+
 function cerrarSesion(){
   usuarioActual = '';
   document.getElementById('inputUser').value = '';
