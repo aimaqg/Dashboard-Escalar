@@ -277,6 +277,60 @@ body.infografia-tab .filters,body.infografia-tab .active-filters-bar{display:non
   .nds-bar-wrap{display:none}
   .kpi-value{font-size:24px}
 }
+
+/* CALENDARIO DE MANTENIMIENTOS */
+.cal-wrap{overflow-x:auto;margin-bottom:24px}
+.cal-table{border-collapse:collapse;min-width:100%;font-size:11px}
+.cal-table th{background:var(--ink);color:#fff;padding:8px 10px;text-align:center;font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;white-space:nowrap;position:sticky;top:0;z-index:2}
+.cal-table th.col-equipo{text-align:left;min-width:180px;position:sticky;left:0;z-index:3;background:var(--ink)}
+.cal-table td.col-equipo{text-align:left;font-weight:600;font-size:11px;color:var(--ink);background:var(--surface);position:sticky;left:0;z-index:1;border-right:2px solid var(--rule);padding:8px 10px;white-space:nowrap}
+.cal-table tr:hover td{background:var(--oro-tint)}
+.cal-table tr:hover td.col-equipo{background:var(--oro-tint)}
+.cal-cell{width:52px;height:38px;text-align:center;vertical-align:middle;border:1px solid var(--rule-2);cursor:default;transition:all .15s;position:relative}
+.cal-cell:hover{z-index:1}
+.cal-dot{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto;font-size:10px;font-weight:700;color:#fff;cursor:pointer;transition:transform .15s}
+.cal-dot:hover{transform:scale(1.25)}
+.cal-dot.vencido {background:var(--red)}
+.cal-dot.urgente {background:var(--amber)}
+.cal-dot.proximo {background:var(--green)}
+.cal-dot.completado{background:var(--ink-4)}
+.cal-dot.sin-fecha{background:var(--rule);color:var(--ink-3)}
+.cal-sep{height:4px;background:var(--rule-2)}
+.cal-sep td{padding:0;height:4px}
+.mtto-legend{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px;font-size:11px;align-items:center}
+.mtto-legend-item{display:flex;align-items:center;gap:6px;color:var(--ink-2)}
+.mtto-legend-dot{width:12px;height:12px;border-radius:50%}
+
+/* TOOLTIP DEL CALENDARIO */
+.cal-tooltip{position:fixed;background:var(--ink);color:#fff;border-radius:8px;padding:10px 14px;font-size:11px;line-height:1.6;max-width:220px;z-index:1000;pointer-events:none;opacity:0;transition:opacity .15s;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.cal-tooltip.show{opacity:1}
+.cal-tooltip strong{color:var(--oro-light);display:block;margin-bottom:4px;font-size:12px}
+
+/* MTTO KPIs */
+.mtto-resumen{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-bottom:20px}
+.mtto-kpi{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow-sm);position:relative}
+.mtto-kpi::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent,var(--oro));border-radius:6px 0 0 6px}
+.mtto-kpi-val{font-family:var(--font-display);font-size:26px;font-weight:700;color:var(--ink);letter-spacing:-.5px}
+.mtto-kpi-label{font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--ink-3);margin-top:4px}
+
+/* SECCION TITULO */
+.mtto-seccion-titulo{font-size:11px;font-weight:700;color:var(--ink-2);margin:20px 0 10px;display:flex;align-items:center;gap:10px;letter-spacing:1px;text-transform:uppercase}
+.mtto-seccion-titulo::after{content:'';flex:1;height:1px;background:var(--rule)}
+
+/* HISTORIAL */
+.mtto-hist-table{width:100%;border-collapse:collapse;font-size:11px}
+.mtto-hist-table thead tr{border-bottom:2px solid var(--rule)}
+.mtto-hist-table thead th{color:var(--ink-3);font-weight:700;padding:8px 10px;text-align:left;font-size:10px;letter-spacing:.8px;text-transform:uppercase}
+.mtto-hist-table tbody tr{border-bottom:1px solid var(--rule-2);transition:background .12s}
+.mtto-hist-table tbody tr:hover{background:var(--oro-tint)}
+.mtto-hist-table tbody td{padding:8px 10px;color:var(--ink);font-size:11px}
+
+/* TOOLBAR */
+.mtto-toolbar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:16px}
+.mtto-toolbar label{color:var(--ink-3);font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase}
+.mtto-toolbar select{background:var(--ground);border:1px solid var(--rule);color:var(--ink);font-size:12px;padding:6px 10px;border-radius:6px;cursor:pointer;outline:none;transition:border-color .15s}
+.mtto-toolbar select:hover{border-color:var(--oro)}
+body.mantenimientos-tab .filters,body.mantenimientos-tab .active-filters-bar{display:none!important}
 </style>
 </head>
 <body>
@@ -431,24 +485,48 @@ body.infografia-tab .filters,body.infografia-tab .active-filters-bar{display:non
   <div class="tab-panel" id="panel-mantenimientos">
     <div class="content">
       <div class="mtto-toolbar">
-        <label style="color:var(--tinta-2);font-size:11px">Copropiedad</label>
+        <label>Copropiedad</label>
         <select id="mttoFiltroCopr" onchange="renderMantenimientos()"><option value="">Todas</option></select>
-        <label style="color:var(--tinta-2);font-size:11px">Asignado</label>
-        <select id="mttoFiltroAsig" onchange="renderMantenimientos()"><option value="">Todos</option></select>
+        <label>Tipo</label>
+        <select id="mttoFiltroTipo" onchange="renderMantenimientos()">
+          <option value="">Todos</option>
+          <option value="Preventivo">Preventivo</option>
+          <option value="Legal">Legal</option>
+          <option value="Correctivo">Correctivo</option>
+          <option value="Normativo">Normativo</option>
+        </select>
       </div>
       <div class="mtto-resumen" id="mttoResumen"></div>
-      <div class="mtto-seccion-titulo">&#128295; Mantenimientos próximos</div>
-      <div id="mttoProximos"></div>
-      <div class="mtto-seccion-titulo">&#128203; Historial de mantenimientos completados</div>
-      <div class="card" style="margin-bottom:16px">
-        <div class="table-wrap">
-          <table class="mtto-hist-table">
-            <thead><tr>
-              <th>Tarea</th><th>Copropiedad</th><th>Asignado</th>
-              <th>Completada</th><th>Creación</th><th>Duración</th><th>Estado</th>
-            </tr></thead>
-            <tbody id="mttoHistorial"></tbody>
-          </table>
+      <div class="mtto-legend">
+        <strong style="font-size:11px;color:var(--ink-2);font-weight:700">Referencias:</strong>
+        <span class="mtto-legend-item"><span class="mtto-legend-dot" style="background:var(--red)"></span>Vencido</span>
+        <span class="mtto-legend-item"><span class="mtto-legend-dot" style="background:var(--amber)"></span>Esta semana</span>
+        <span class="mtto-legend-item"><span class="mtto-legend-dot" style="background:var(--green)"></span>Próximo mes</span>
+        <span class="mtto-legend-item"><span class="mtto-legend-dot" style="background:var(--ink-4)"></span>Completado</span>
+      </div>
+      <div class="mtto-seccion-titulo">📅 Calendario de mantenimientos 2026</div>
+      <div class="card" style="margin-bottom:16px;padding:16px">
+        <div class="cal-wrap"><div id="mttoCalendario"><div class="empty-state">Cargando...</div></div></div>
+      </div>
+      <div class="mtto-seccion-titulo">📋 Detalle de mantenimientos próximos</div>
+      <div class="card card-collapsible" style="margin-bottom:16px">
+        <div class="card-title">Próximos 30 días</div>
+        <div class="card-cuerpo"><div id="mttoProximos"></div></div>
+      </div>
+      <div class="mtto-seccion-titulo">📂 Historial completados</div>
+      <div class="card card-collapsible" style="margin-bottom:16px">
+        <div class="card-title">Mantenimientos ejecutados</div>
+        <div class="card-cuerpo">
+          <div class="table-wrap">
+            <table class="mtto-hist-table">
+              <thead><tr>
+                <th>Copropiedad</th><th>Elemento</th><th>Tipo</th>
+                <th>Fecha ejecución</th><th>Proveedor</th><th>Costo real</th>
+                <th>Resultado</th><th>Observaciones</th>
+              </tr></thead>
+              <tbody id="mttoHistorial"></tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
@@ -522,6 +600,7 @@ if(typeof Chart !== 'undefined'){
 
 var CONFIG = {
   jsonUrl: 'tareas.json',
+  mttoUrl: 'mantenimientos.json',
   NDS_META: 90
 };
 
@@ -551,7 +630,7 @@ function cambiarTab(tab){
   document.body.classList.toggle('nds-tab', tab==='nds');
   document.body.classList.toggle('infografia-tab', tab==='infografia');
   if(esFin) cargarFinanzas();
-  if(esMtto && typeof inicializarMantenimientos==='function') inicializarMantenimientos();
+  if(tab==='mantenimientos'){ if(!mttoData) cargarMantenimientos(); else renderMantenimientos(); }
 }
 
 // ── UTILS ────────────────────────────────────────────────────────────────────
@@ -711,7 +790,6 @@ async function cargarDatos(){
 function iniciarSesion(){
   var u=document.getElementById('inputUser').value.trim().toLowerCase();
   var p=document.getElementById('inputPass').value;
-  var btn=document.getElementById('btnLogin');
   var err=document.getElementById('loginError');
   err.style.display='none';
   if(!u||!p){err.textContent='Completa usuario y contraseña.';err.style.display='block';return;}
@@ -1646,6 +1724,312 @@ function filtrarPorVencidas(){
   if(elHasta.value===fmt(hoy)){elHasta.value='';}
   else{document.getElementById('fFechaDesde').value='';elHasta.value=fmt(hoy);}
   aplicarFiltros();
+}
+
+
+// ═══════════════════════════════════════════════════════════════
+//  MÓDULO MANTENIMIENTOS
+// ═══════════════════════════════════════════════════════════════
+var mttoData = null;
+var MESES_ABREV = ['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'];
+var MESES_FULL  = ['ENERO','FEBRERO','MARZO','ABRIL','MAYO','JUNIO','JULIO','AGOSTO','SEPTIEMBRE','OCTUBRE','NOVIEMBRE','DICIEMBRE'];
+
+function diasHastaFecha(f){
+  if(!f) return null;
+  var hoy=new Date(); hoy.setHours(0,0,0,0);
+  var d=new Date(f); if(isNaN(d)) return null;
+  d.setHours(0,0,0,0);
+  return Math.ceil((d-hoy)/(1000*60*60*24));
+}
+
+function claseDot(dias, estado){
+  if(estado==='Completado') return 'completado';
+  if(dias===null) return 'sin-fecha';
+  if(dias<0) return 'vencido';
+  if(dias<=7) return 'urgente';
+  return 'proximo';
+}
+
+function fmtFechaCorta(f){
+  if(!f) return '—';
+  var d=new Date(f); if(isNaN(d)) return f;
+  return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear();
+}
+
+function mesIndexDeFecha(f){
+  if(!f) return -1;
+  var d=new Date(f); if(isNaN(d)){
+    // Intentar parsear texto "ENERO", "FEBRERO", etc.
+    var upper=(f+'').toUpperCase();
+    return MESES_FULL.indexOf(upper);
+  }
+  return d.getMonth();
+}
+
+function proximaFechaFila(fila, anio){
+  // Genera la próxima fecha de vencimiento según la frecuencia
+  var hoy = new Date(); hoy.setHours(0,0,0,0);
+  var mes = mesIndexDeFecha(fila.Mes);
+  var dia = parseInt(fila.Dia)||1;
+  if(mes < 0) return null; // MENSUAL u otros textos
+  var d = new Date(anio, mes, dia);
+  if(d < hoy) d.setFullYear(anio+1);
+  return d;
+}
+
+// Construir estructura de filas para el calendario
+// Cada entrada de PROGRAMADOS puede tener múltiples filas (una por mes)
+function buildFilasCalendario(programados){
+  var filas = [];
+  var byElemento = {};
+
+  programados.forEach(function(r){
+    if(!r.Copropiedad && !r.Elemento) return;
+    var key = (r._copropiedad||r.Copropiedad||'')+'||'+(r._elemento||r.Elemento||'');
+    if(!byElemento[key]){
+      byElemento[key] = {
+        copropiedad: r._copropiedad||r.Copropiedad||'',
+        elemento: r._elemento||r.Elemento||'',
+        tipo: r.Tipo||'',
+        proveedor: r.Proveedor||'',
+        responsable: r.Responsable||'',
+        meses: new Array(12).fill(null)
+      };
+    }
+    var m = mesIndexDeFecha(r.Mes);
+    var dia = parseInt(r.Dia)||null;
+    var estado = r.Estado||'Pendiente';
+    var venc = r.Proximo_vencimiento||r.Fecha||null;
+
+    if(m >= 0){
+      // Fecha específica
+      var anio = new Date().getFullYear();
+      var fecha = venc || (dia ? (anio+'-'+(m+1<10?'0':'')+(m+1)+'-'+(dia<10?'0':'')+dia) : null);
+      byElemento[key].meses[m] = {
+        dia: dia, estado: estado, fecha: fecha,
+        costo: r.Costo_estimado||r.Costo||'', obs: r.Observaciones||''
+      };
+    } else if((r.Mes||'').toUpperCase()==='MENSUAL'){
+      // Mensual: llenar todos los meses
+      for(var mm=0; mm<12; mm++){
+        var anio2 = new Date().getFullYear();
+        byElemento[key].meses[mm] = {
+          dia: dia, estado: estado,
+          fecha: anio2+'-'+(mm+1<10?'0':'')+(mm+1)+'-'+(dia<10?'0':'')+Math.max(dia||1,1),
+          costo: r.Costo_estimado||r.Costo||'', obs: r.Observaciones||''
+        };
+      }
+    }
+  });
+
+  return Object.values(byElemento);
+}
+
+function renderCalendario(filas, coprFiltro, tipoFiltro){
+  var filtradas = filas.filter(function(f){
+    if(coprFiltro && f.copropiedad!==coprFiltro) return false;
+    if(tipoFiltro && f.tipo!==tipoFiltro) return false;
+    return true;
+  });
+
+  if(!filtradas.length){
+    document.getElementById('mttoCalendario').innerHTML='<div class="empty-state">No hay mantenimientos programados</div>';
+    return;
+  }
+
+  // Agrupar por copropiedad
+  var grupos = {};
+  filtradas.forEach(function(f){
+    if(!grupos[f.copropiedad]) grupos[f.copropiedad]=[];
+    grupos[f.copropiedad].push(f);
+  });
+
+  var html = '<table class="cal-table">';
+  // Header
+  html += '<thead><tr><th class="col-equipo">Copropiedad / Elemento</th>';
+  MESES_ABREV.forEach(function(m){ html+='<th>'+m+'</th>'; });
+  html += '</tr></thead><tbody>';
+
+  Object.keys(grupos).sort().forEach(function(cop, gi){
+    // Fila separadora de copropiedad
+    html += '<tr><td class="col-equipo" colspan="13" style="background:var(--oro-tint);padding:6px 10px;font-size:10px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--oro-deep);border-bottom:1px solid var(--oro-line)">'+cop+'</td></tr>';
+
+    grupos[cop].forEach(function(fila){
+      html += '<tr>';
+      html += '<td class="col-equipo">'+fila.elemento+'<br><span style="font-size:9px;font-weight:400;color:var(--ink-4)">'+fila.tipo+'</span></td>';
+      fila.meses.forEach(function(m, mi){
+        if(!m){
+          html += '<td class="cal-cell"></td>';
+        } else {
+          var dias = diasHastaFecha(m.fecha);
+          var clase = claseDot(dias, m.estado);
+          var label = m.dia||'✓';
+          var tooltipData = JSON.stringify({
+            elem: fila.elemento, mes: MESES_ABREV[mi],
+            dia: m.dia||'—', estado: m.estado,
+            fecha: m.fecha||'—', costo: m.costo||'—', obs: m.obs||'—',
+            dias: dias
+          }).replace(/'/g,"\'");
+          html += '<td class="cal-cell">';
+          html += '<div class="cal-dot '+clase+'" onmouseenter="showTooltip(event,\''+tooltipData+'\')" onmouseleave="hideTooltip()">'+label+'</div>';
+          html += '</td>';
+        }
+      });
+      html += '</tr>';
+    });
+
+    if(gi < Object.keys(grupos).length-1)
+      html += '<tr class="cal-sep"><td colspan="13"></td></tr>';
+  });
+
+  html += '</tbody></table>';
+  document.getElementById('mttoCalendario').innerHTML = html;
+}
+
+// Tooltip
+var _tt = null;
+function showTooltip(e, dataStr){
+  try{
+    var d = JSON.parse(dataStr);
+    if(!_tt){ _tt=document.createElement('div'); _tt.className='cal-tooltip'; document.body.appendChild(_tt); }
+    var diasTxt = d.dias===null?'Sin fecha':d.dias<0?'Vencido hace '+Math.abs(d.dias)+'d':d.dias===0?'Hoy':d.dias+'d restantes';
+    _tt.innerHTML = '<strong>'+d.elem+'</strong>'+
+      d.mes+(d.dia&&d.dia!=='—'?' '+d.dia:'')+
+      '<br>Estado: '+d.estado+
+      '<br>'+diasTxt+
+      (d.costo&&d.costo!=='—'?'<br>Costo est.: $'+parseFloat(d.costo).toLocaleString('es-CO'):'');
+    _tt.style.left=(e.clientX+14)+'px';
+    _tt.style.top=(e.clientY-10)+'px';
+    _tt.classList.add('show');
+  }catch(ex){}
+}
+function hideTooltip(){ if(_tt) _tt.classList.remove('show'); }
+
+function renderProximos(programados, coprFiltro, tipoFiltro){
+  var hoy=new Date(); hoy.setHours(0,0,0,0);
+  var proximos = [];
+  programados.forEach(function(r){
+    if(coprFiltro && (r._copropiedad||r.Copropiedad)!==coprFiltro) return;
+    if(tipoFiltro && r.Tipo!==tipoFiltro) return;
+    if(r.Estado==='Completado') return;
+    var dias = diasHastaFecha(r.Proximo_vencimiento||r.Fecha);
+    if(dias!==null && dias<=30) proximos.push({r:r, dias:dias});
+  });
+  proximos.sort(function(a,b){return a.dias-b.dias;});
+  if(!proximos.length){
+    document.getElementById('mttoProximos').innerHTML='<div class="empty-state" style="padding:20px">Sin mantenimientos próximos en los próximos 30 días</div>';
+    return;
+  }
+  var html='<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px;padding:4px 0">';
+  proximos.forEach(function(p){
+    var r=p.r, dias=p.dias;
+    var col=dias<0?'var(--red)':dias<=7?'var(--amber)':'var(--green)';
+    var bg=dias<0?'var(--red-t)':dias<=7?'var(--amber-t)':'var(--green-t)';
+    var diasTxt=dias<0?Math.abs(dias)+'d vencido':dias===0?'Hoy':dias+'d';
+    html+='<div style="background:var(--surface);border:1px solid var(--rule);border-left:3px solid '+col+';border-radius:10px;padding:12px 14px;box-shadow:var(--shadow-sm)">'+
+      '<div style="font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:'+col+';background:'+bg+';display:inline-block;padding:2px 7px;border-radius:8px;margin-bottom:6px">'+diasTxt+'</div>'+
+      '<div style="font-weight:600;font-size:12px;color:var(--ink);margin-bottom:3px">'+((r._elemento||r.Elemento)||'—')+'</div>'+
+      '<div style="font-size:11px;color:var(--ink-3)">'+((r._copropiedad||r.Copropiedad)||'—')+' · '+(r.Tipo||'')+'</div>'+
+      (r.Proveedor?'<div style="font-size:10px;color:var(--ink-4);margin-top:2px">'+r.Proveedor+'</div>':'')+
+    '</div>';
+  });
+  html+='</div>';
+  document.getElementById('mttoProximos').innerHTML=html;
+}
+
+function renderHistorial(historial, coprFiltro){
+  var filtrado = historial.filter(function(r){
+    return !coprFiltro || (r._copropiedad||r.Copropiedad)===coprFiltro;
+  });
+  if(!filtrado.length){
+    document.getElementById('mttoHistorial').innerHTML='<tr><td colspan="8" class="empty-state">Sin historial de mantenimientos</td></tr>';
+    return;
+  }
+  filtrado.sort(function(a,b){
+    var da=new Date(a.Fecha_ejecucion||a.Fecha||0), db=new Date(b.Fecha_ejecucion||b.Fecha||0);
+    return db-da;
+  });
+  document.getElementById('mttoHistorial').innerHTML=filtrado.map(function(r){
+    var res=r.Resultado||'—';
+    var resCol=res==='Satisfactorio'?'var(--green)':res.includes('seguimiento')?'var(--red)':'var(--amber)';
+    var costo=parseFloat(r.Costo_real||r.Costo||0);
+    return '<tr>'+
+      '<td><span class="badge b-gray" style="font-size:9px">'+((r._copropiedad||r.Copropiedad)||'—')+'</span></td>'+
+      '<td style="font-weight:500">'+((r._elemento||r.Elemento)||'—')+'</td>'+
+      '<td>'+((r.Tipo)||'—')+'</td>'+
+      '<td>'+fmtFechaCorta(r.Fecha_ejecucion||r.Fecha)+'</td>'+
+      '<td>'+(r.Proveedor||'—')+'</td>'+
+      '<td style="font-variant-numeric:tabular-nums">'+(costo?'$'+costo.toLocaleString('es-CO'):'—')+'</td>'+
+      '<td style="color:'+resCol+';font-weight:600">'+res+'</td>'+
+      '<td style="color:var(--ink-3)">'+(r.Observaciones||'—')+'</td>'+
+    '</tr>';
+  }).join('');
+}
+
+function renderKPIsMtto(programados){
+  var vencidos=0, semana=0, mes30=0, total=0;
+  programados.forEach(function(r){
+    if(r.Estado==='Completado') return;
+    total++;
+    var dias=diasHastaFecha(r.Proximo_vencimiento||r.Fecha);
+    if(dias===null) return;
+    if(dias<0) vencidos++;
+    else if(dias<=7) semana++;
+    else if(dias<=30) mes30++;
+  });
+  var kpis=[
+    {label:'VENCIDOS',val:vencidos,acc:'var(--red)'},
+    {label:'ESTA SEMANA',val:semana,acc:'var(--amber)'},
+    {label:'PRÓX. MES',val:mes30,acc:'var(--green)'},
+    {label:'TOTAL PEND.',val:total,acc:'var(--oro)'},
+  ];
+  document.getElementById('mttoResumen').innerHTML=kpis.map(function(k){
+    return '<div class="mtto-kpi" style="--accent:'+k.acc+'"><div class="mtto-kpi-val" style="color:'+k.acc+'">'+k.val+'</div><div class="mtto-kpi-label">'+k.label+'</div></div>';
+  }).join('');
+}
+
+async function cargarMantenimientos(){
+  try{
+    var r=await fetch(CONFIG.mttoUrl+'?t='+Date.now());
+    if(!r.ok) throw new Error('mantenimientos.json no encontrado ('+r.status+')');
+    mttoData=await r.json();
+    console.log('Mantenimientos cargados:', mttoData);
+    renderMantenimientos();
+  }catch(e){
+    console.warn('mantenimientos.json:', e.message);
+    document.getElementById('mttoCalendario').innerHTML='<div class="empty-state" style="padding:32px">'+
+      'No se encontró <strong>mantenimientos.json</strong>.<br>'+
+      '<span style="font-size:11px;color:var(--ink-4)">Sube el archivo Mantenimientos_Escalar.xlsx a SharePoint y corre el workflow.</span>'+
+    '</div>';
+  }
+}
+
+function renderMantenimientos(){
+  if(!mttoData){ cargarMantenimientos(); return; }
+  var copr=document.getElementById('mttoFiltroCopr').value;
+  var tipo=document.getElementById('mttoFiltroTipo').value;
+  var prog=mttoData.programados||[];
+  var hist=mttoData.historial||[];
+
+  // Poblar selector de copropiedades
+  var coprs={};
+  prog.concat(hist).forEach(function(r){var c=(r._copropiedad||r.Copropiedad||'');if(c)coprs[c]=true;});
+  var sel=document.getElementById('mttoFiltroCopr');
+  if(sel.options.length<=1){
+    Object.keys(coprs).sort().forEach(function(c){
+      var o=document.createElement('option');o.value=c;o.textContent=c;sel.appendChild(o);
+    });
+  }
+
+  renderKPIsMtto(prog);
+  var filasCal=buildFilasCalendario(prog);
+  renderCalendario(filasCal, copr, tipo);
+  renderProximos(prog, copr, tipo);
+  renderHistorial(hist, copr);
+}
+
+function inicializarMantenimientos(){
+  renderMantenimientos();
 }
 
 (function init(){
