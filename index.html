@@ -6,7 +6,7 @@
 <title>Dashboard · Escalar Asesorías</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <style>
 :root{
@@ -15,7 +15,7 @@
   --surface:#FFFFFF;--ground:#FAF7F2;--rule:#EDE7D9;--rule-2:#F5F1E8;
   --green:#1A7A47;--green-t:#E8F5EE;--red:#B83328;--red-t:#FAEDEB;
   --amber:#B86B1A;--amber-t:#FDF0E3;--blue:#1E5FA8;--blue-t:#E8F0FA;
-  --font-display:'DM Serif Display',Georgia,serif;
+  --font-display:'Inter',system-ui,sans-serif;
   --font-body:'Inter',system-ui,sans-serif;
   --font-mono:'DM Mono','Courier New',monospace;
   --shadow-sm:0 1px 2px rgba(35,29,16,.04),0 2px 8px -4px rgba(140,109,31,.12);
@@ -42,7 +42,7 @@ button,select,input{font-family:inherit}
 .login-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent 0%,var(--oro) 30%,var(--oro-light) 60%,transparent 100%)}
 .hex-logo{width:72px;height:72px;margin:0 auto 20px;position:relative;animation:hexPulse 3s ease-in-out infinite}
 .hex-logo svg{width:100%;height:100%}
-.login-brand{font-family:var(--font-display);font-size:26px;color:var(--ink);letter-spacing:2px;margin-bottom:2px}
+.login-brand{font-family:var(--font-display);font-size:22px;font-weight:800;color:var(--ink);letter-spacing:4px;margin-bottom:2px}
 .login-sub{font-size:10px;letter-spacing:3px;color:var(--oro-deep);text-transform:uppercase;margin-bottom:28px}
 .login-desc{font-size:12px;color:var(--ink-2);line-height:1.6;margin-bottom:28px}
 .login-field{margin-bottom:14px;text-align:left}
@@ -72,7 +72,7 @@ button,select,input{font-family:inherit}
 .brand{display:flex;align-items:center;gap:12px}
 .brand-hex{width:32px;height:32px;flex-shrink:0}
 .brand-hex svg{width:100%;height:100%}
-.brand-text{font-family:var(--font-display);font-size:18px;color:var(--ink);letter-spacing:1px;line-height:1}
+.brand-text{font-family:var(--font-display);font-size:16px;font-weight:700;color:var(--ink);letter-spacing:2px;line-height:1}
 .brand-tagline{font-size:9px;letter-spacing:2.5px;color:var(--oro-deep);text-transform:uppercase;line-height:1;margin-top:2px}
 .topbar-right{display:flex;align-items:center;gap:16px}
 .user-chip{display:flex;align-items:center;gap:8px}
@@ -116,7 +116,7 @@ button,select,input{font-family:inherit}
 .kpi.clickable:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
 .kpi.gold{--accent:var(--oro)}.kpi.green{--accent:var(--green);background:linear-gradient(135deg,var(--green-t),var(--surface) 60%)}.kpi.red{--accent:var(--red);background:linear-gradient(135deg,var(--red-t),var(--surface) 60%)}.kpi.blue{--accent:var(--blue);background:linear-gradient(135deg,var(--blue-t),var(--surface) 60%)}.kpi.orange{--accent:var(--amber);background:linear-gradient(135deg,var(--amber-t),var(--surface) 60%)}
 .kpi-label{font-size:10px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px}
-.kpi-value{font-family:var(--font-display);font-size:32px;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums}
+.kpi-value{font-family:var(--font-display);font-size:28px;font-weight:700;color:var(--ink);line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-0.5px}
 .kpi.green .kpi-value{color:var(--green)}.kpi.red .kpi-value{color:var(--red)}.kpi.blue .kpi-value{color:var(--blue)}.kpi.orange .kpi-value{color:var(--amber)}
 .kpi-sub{font-size:10px;color:var(--ink-3);margin-top:4px;line-height:1.4}
 .progress-bar{height:3px;background:var(--rule);border-radius:2px;overflow:hidden;margin-top:8px}
@@ -176,7 +176,7 @@ tbody td{padding:9px 10px;color:var(--ink);font-size:12px;font-variant-numeric:t
 /* NDS */
 .nds-hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px;margin-bottom:24px}
 .nds-hero-card{background:var(--surface);border:1px solid var(--rule);border-radius:14px;padding:20px;text-align:center;box-shadow:var(--shadow-sm);animation:fadeUp .45s cubic-bezier(.22,.61,.36,1) both}
-.nds-hero-value{font-family:var(--font-display);font-size:52px;font-weight:400;line-height:1;font-variant-numeric:tabular-nums;animation:countUp .5s ease both .2s}
+.nds-hero-value{font-family:var(--font-display);font-size:48px;font-weight:800;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:-1px;animation:countUp .5s ease both .2s}
 .nds-hero-label{color:var(--ink-3);font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-top:8px}
 .nds-hero-sub{font-size:10px;color:var(--ink-4);margin-top:4px}
 .nds-asignado-row{display:flex;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid var(--rule-2);transition:background .12s}
@@ -191,7 +191,7 @@ tbody td{padding:9px 10px;color:var(--ink);font-size:12px;font-variant-numeric:t
 .nds-bar-track{background:var(--rule-2);border-radius:4px;height:9px;overflow:hidden}
 .nds-bar-fill{height:100%;border-radius:4px;transform-origin:left;animation:barFill .7s cubic-bezier(.22,.61,.36,1) both}
 .nds-bar-meta{display:flex;justify-content:space-between;margin-top:3px;font-size:10px;color:var(--ink-4)}
-.nds-pct{font-family:var(--font-display);font-size:22px;font-weight:400;min-width:54px;text-align:right;font-variant-numeric:tabular-nums}
+.nds-pct{font-family:var(--font-display);font-size:20px;font-weight:700;min-width:54px;text-align:right;font-variant-numeric:tabular-nums;letter-spacing:-0.5px}
 .nds-badges{display:flex;flex-direction:column;gap:3px;align-items:flex-end;min-width:90px}
 .nds-section-title{color:var(--ink);font-size:12px;font-weight:700;padding:16px 0 10px;letter-spacing:.2px}
 .nds-pendientes-card{background:var(--surface);border:1px solid var(--rule);border-radius:14px;margin-bottom:16px;overflow:hidden;box-shadow:var(--shadow-sm)}
@@ -212,7 +212,7 @@ tbody td{padding:9px 10px;color:var(--ink);font-size:12px;font-variant-numeric:t
 .fin-kpi::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent,var(--oro));border-radius:6px 0 0 6px}
 .fin-kpi.k-red{--accent:var(--red);background:linear-gradient(135deg,var(--red-t),var(--surface) 55%)}.fin-kpi.k-green{--accent:var(--green);background:linear-gradient(135deg,var(--green-t),var(--surface) 55%)}.fin-kpi.k-orange{--accent:var(--amber);background:linear-gradient(135deg,var(--amber-t),var(--surface) 55%)}
 .fin-kpi-label{color:var(--ink-3);font-size:10px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:8px}
-.fin-kpi-valor{font-family:var(--font-display);font-size:30px;font-weight:400;color:var(--ink);font-variant-numeric:tabular-nums;line-height:1}
+.fin-kpi-valor{font-family:var(--font-display);font-size:26px;font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums;line-height:1;letter-spacing:-0.5px}
 .fin-kpi.k-red .fin-kpi-valor{color:var(--red)}.fin-kpi.k-green .fin-kpi-valor{color:var(--green)}.fin-kpi.k-orange .fin-kpi-valor{color:var(--amber)}.fin-kpi.k-big .fin-kpi-valor{font-size:36px}
 .fin-kpi-sub{color:var(--ink-3);font-size:10px;margin-top:6px;line-height:1.4}
 .fin-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
@@ -240,9 +240,9 @@ tbody td{padding:9px 10px;color:var(--ink);font-size:12px;font-variant-numeric:t
 /* MANTENIMIENTOS */
 .mtto-resumen{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-bottom:20px}
 .mtto-kpi{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow-sm);position:relative;overflow:hidden}
-.mtto-kpi-val{font-family:var(--font-display);font-size:28px;font-weight:400;color:var(--ink)}
+.mtto-kpi-val{font-family:var(--font-display);font-size:26px;font-weight:700;color:var(--ink);letter-spacing:-0.5px}
 .mtto-kpi-label{font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--ink-3);margin-top:4px}
-.mtto-seccion-titulo{font-family:var(--font-display);font-size:18px;color:var(--ink);margin:20px 0 12px;display:flex;align-items:center;gap:12px}
+.mtto-seccion-titulo{font-family:var(--font-display);font-size:15px;font-weight:700;color:var(--ink);margin:20px 0 12px;display:flex;align-items:center;gap:12px;letter-spacing:.5px;text-transform:uppercase}
 .mtto-seccion-titulo::after{content:'';flex:1;height:1px;background:var(--rule)}
 .mtto-cols{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
 .mtto-card-item{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:16px;box-shadow:var(--shadow-sm);transition:box-shadow .2s,transform .2s;animation:fadeUp .35s cubic-bezier(.22,.61,.36,1) both}
@@ -290,12 +290,12 @@ body.infografia-tab .filters,body.infografia-tab .active-filters-bar{display:non
     <div class="login-desc">Ingresa tus credenciales para acceder al dashboard.</div>
     <div class="login-field">
       <label>Usuario</label>
-      <input id="inputUser" type="text" placeholder="admin" autocomplete="username" onkeydown="if(event.key==='Enter') document.getElementById('inputPass').focus()"/>
+      <input id="inputUser" type="text" placeholder="Usuario" autocomplete="username" onkeydown="if(event.key==='Enter') document.getElementById('inputPass').focus()"/>
     </div>
     <div class="login-field">
       <label>Contraseña</label>
       <div class="pass-wrap">
-        <input id="inputPass" type="password" placeholder="••••••••" autocomplete="current-password" onkeydown="if(event.key==='Enter') iniciarSesion()"/>
+        <input id="inputPass" type="password" placeholder="Contraseña" autocomplete="current-password" onkeydown="if(event.key==='Enter') iniciarSesion()"/>
         <button class="pass-eye" type="button" onclick="var i=document.getElementById('inputPass');i.type=i.type==='password'?'text':'password';this.textContent=i.type==='password'?'👁':'🙈'">👁</button>
       </div>
     </div>
@@ -707,27 +707,6 @@ async function cargarDatos(){
     err.style.display = 'block';
   }
 }
-
-function iniciarSesion(){
-  var u=document.getElementById('inputUser').value.trim().toLowerCase();
-  var p=document.getElementById('inputPass').value;
-  var btn=document.getElementById('btnLogin');
-  var err=document.getElementById('loginError');
-  err.style.display='none';
-  if(!u||!p){err.textContent='Completa usuario y contraseña.';err.style.display='block';return;}
-  if(USUARIOS[u]&&USUARIOS[u]===p){
-    usuarioActual=u;
-    document.getElementById('loginScreen').style.display='none';
-    var av=document.getElementById('userAvatar');
-    if(av) av.textContent=u.charAt(0).toUpperCase();
-    cargarDatos();
-  }else{
-    err.textContent='Usuario o contraseña incorrectos.';
-    err.style.display='block';
-    btn.disabled=false;
-  }
-}
-
 function cerrarSesion(){
   usuarioActual = '';
   document.getElementById('inputUser').value = '';
