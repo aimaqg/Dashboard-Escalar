@@ -1,9 +1,9 @@
 // scripts/sync-mantenimientos.js
-// Descarga Mantenimientos_Escalar.xlsx desde SharePoint y genera mantenimientos.json
-// El parsing real lo hace parse-mantenimientos.py (maneja celdas fusionadas con openpyxl)
+// Descarga Mantenimientos_Escalar.xlsx desde SharePoint vía link compartido
+// y genera mantenimientos.json usando parse-mantenimientos.py
 //
-// Uso local: node scripts/sync-mantenimientos.js --local ruta/Mantenimientos_Escalar.xlsx
-// Producción: node scripts/sync-mantenimientos.js  (descarga de SharePoint)
+// Uso local: node scripts/sync-mantenimientos.js --local ruta/archivo.xlsx
+// Producción: node scripts/sync-mantenimientos.js
 
 const fs   = require('fs');
 const path = require('path');
@@ -13,90 +13,95 @@ const TENANT        = process.env.AZURE_TENANT_ID;
 const CLIENT_ID     = process.env.AZURE_CLIENT_ID;
 const CLIENT_SECRET = process.env.AZURE_CLIENT_SECRET;
 
-const SHAREPOINT_HOST    = 'escalarasesorias.sharepoint.com';
-const SITE_PATH          = '/sites/Escalar';
-const MTTO_FILENAME      = 'Mantenimientos_Escalar.xlsx';
-const FOLDER_CANDIDATES  = ['/Escalar', '/Escalar/EEFF', '/'];
-const PARSER_SCRIPT      = path.join(__dirname, 'parse-mantenimientos.py');
+// Link compartido del archivo en SharePoint
+const MTTO_SHARE_URL = 'https://escalarasesorias.sharepoint.com/:x:/s/Escalar/IQD6GBEzVlcKRqKOYfmMcPWBAUvxuC9YOu4mcl97IdZ4BzA?e=yWzsE6';
+const PARSER_SCRIPT  = path.join(__dirname, 'parse-mantenimientos.py');
+
+function shareId(url){
+  const b64 = Buffer.from(url).toString('base64')
+    .replace(/=+$/, '').replace(/\//g, '_').replace(/\+/g, '-');
+  return 'u!' + b64;
+}
 
 async function getToken(fetch){
   const r = await fetch(
     `https://login.microsoftonline.com/${TENANT}/oauth2/v2.0/token`,
-    { method:'POST',
-      headers:{'Content-Type':'application/x-www-form-urlencoded'},
-      body: new URLSearchParams({client_id:CLIENT_ID,client_secret:CLIENT_SECRET,
-        scope:'https://graph.microsoft.com/.default',grant_type:'client_credentials'}) }
+    { method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        client_id: CLIENT_ID, client_secret: CLIENT_SECRET,
+        scope: 'https://graph.microsoft.com/.default',
+        grant_type: 'client_credentials'
+      })
+    }
   );
   if(!r.ok) throw new Error(`Token: ${r.status} — ${await r.text()}`);
   return (await r.json()).access_token;
 }
 
 async function descargarArchivo(fetch, token){
-  const H = { Authorization:`Bearer ${token}` };
-  const rs = await fetch(`https://graph.microsoft.com/v1.0/sites/${SHAREPOINT_HOST}:${SITE_PATH}`, {headers:H});
-  if(!rs.ok) throw new Error(`Site: ${rs.status}`);
-  const siteId = (await rs.json()).id;
+  const sid = shareId(MTTO_SHARE_URL);
+  const url = `https://graph.microsoft.com/v1.0/shares/${sid}/driveItem`;
+  console.log('  Resolviendo link compartido...');
+  const r = await fetch(url, {
+    headers: { Authorization: `Bearer ${token}` }
+  });
+  if(!r.ok) throw new Error(`No se pudo resolver el link de Mantenimientos (${r.status}). Verifica que el archivo siga en SharePoint.`);
+  const item = await r.json();
+  console.log(`  Archivo: ${item.name} (modificado: ${item.lastModifiedDateTime})`);
 
-  for(const folder of FOLDER_CANDIDATES){
-    const url = `https://graph.microsoft.com/v1.0/sites/${siteId}/drive/root:${encodeURI(folder+'/'+MTTO_FILENAME)}:/content`;
-    const r = await fetch(url, {headers:H});
-    if(r.ok){
-      console.log(`  Archivo: ${folder}/${MTTO_FILENAME}`);
-      const tmpPath = path.join('/tmp', MTTO_FILENAME);
-      fs.writeFileSync(tmpPath, Buffer.from(await r.arrayBuffer()));
-      return tmpPath;
-    }
-  }
-  throw new Error(`${MTTO_FILENAME} no encontrado. Carpetas probadas: ${FOLDER_CANDIDATES.join(', ')}`);
+  // Descargar contenido
+  const dlUrl = item['@microsoft.graph.downloadUrl'] ||
+    `https://graph.microsoft.com/v1.0/drives/${item.parentReference.driveId}/items/${item.id}/content`;
+  const headers = item['@microsoft.graph.downloadUrl'] ? {} : { Authorization: `Bearer ${token}` };
+  const dl = await fetch(dlUrl, { headers });
+  if(!dl.ok) throw new Error(`Descarga fallida: ${dl.status}`);
+
+  const tmpPath = '/tmp/Mantenimientos_Escalar.xlsx';
+  fs.writeFileSync(tmpPath, Buffer.from(await dl.arrayBuffer()));
+  console.log(`  Guardado temporalmente en ${tmpPath}`);
+  return tmpPath;
 }
 
 function parsearConPython(excelPath){
-  // Modificar temporalmente el path en el script Python y correrlo
   const py = fs.readFileSync(PARSER_SCRIPT, 'utf8');
-  const pyTemp = py.replace(
-    /open\(['"].*?Mantenimientos_Escalar\.xlsx['"]\)/g,
-    `open(${JSON.stringify(excelPath)})`
-  ).replace(
-    /wb = openpyxl\.load_workbook\(['"].*?['"]\)/,
-    `wb = openpyxl.load_workbook(${JSON.stringify(excelPath)})`
-  );
+  // Sustituir la ruta del archivo y la ruta de salida
+  const pyFinal = py
+    .replace(/wb = openpyxl\.load_workbook\([^)]+\)/,
+             `wb = openpyxl.load_workbook(${JSON.stringify(excelPath)})`)
+    .replace(/open\([^)]*Mantenimientos_Escalar\.xlsx[^)]*\)/,
+             `open(${JSON.stringify(excelPath)})`)
+    .replace("'/home/claude/Dashboard-Escalar/mantenimientos.json'",
+             "'mantenimientos.json'");
   const tmpPy = '/tmp/parse_mtto_run.py';
-  // Cambiar la ruta de salida al directorio actual
-  const pyFinal = pyTemp.replace(
-    "'/home/claude/Dashboard-Escalar/mantenimientos.json'",
-    "'mantenimientos.json'"
-  );
   fs.writeFileSync(tmpPy, pyFinal);
-  try{
-    const out = execSync(`python3 ${tmpPy}`, {encoding:'utf8'});
-    console.log(out.trim());
-  } catch(e){
-    throw new Error('parse-mantenimientos.py falló: ' + e.stderr);
-  }
+  const out = execSync(`python3 ${tmpPy}`, { encoding: 'utf8' });
+  console.log(out.trim());
 }
 
 (async () => {
-  try{
+  try {
     const localIdx = process.argv.indexOf('--local');
     if(localIdx >= 0){
-      const file = process.argv[localIdx+1];
+      const file = process.argv[localIdx + 1];
       if(!file){ console.error('Uso: --local archivo.xlsx'); process.exit(1); }
-      console.log('[LOCAL] Parseando:', file);
+      console.log(`[LOCAL] Parseando: ${file}`);
       parsearConPython(path.resolve(file));
     } else {
       const fetch = require('node-fetch');
-      if(!TENANT||!CLIENT_ID||!CLIENT_SECRET){
+      if(!TENANT || !CLIENT_ID || !CLIENT_SECRET){
         console.error('ERROR: Faltan secrets de Azure.'); process.exit(1);
       }
-      console.log('[1/3] Token...');
+      console.log('[1/3] Obteniendo token...');
       const token = await getToken(fetch);
-      console.log('[2/3] Descargando desde SharePoint...');
+      console.log('      OK');
+      console.log('[2/3] Descargando Mantenimientos_Escalar.xlsx...');
       const tmpPath = await descargarArchivo(fetch, token);
-      console.log('[3/3] Parseando con Python...');
+      console.log('[3/3] Parseando...');
       parsearConPython(tmpPath);
     }
     console.log('LISTO — mantenimientos.json generado');
-  } catch(e){
+  } catch(e) {
     console.error('FALLÓ:', e.message);
     process.exit(1);
   }
