@@ -1,180 +1,194 @@
-# El problema: xlsx lee las celdas fusionadas como null en las filas siguientes
-# openpyxl sí las lee correctamente. Reescribir el parser usando openpyxl directamente
-# en el script de Node mediante un paso previo de Python, o mejorar el parser Node.
+import openpyxl, json, re
+from datetime import date
 
-# Solución: usar el valor de la celda superior izquierda de cada rango fusionado
-# Esto es lo que hace XLSX.js con cellMerge:true -- hay que activarlo
+# ── Limpiar texto eliminando emojis y espacios extra ─────────────────────────
+def limpiar(v):
+    if v is None: return ''
+    s = str(v).strip()
+    # Eliminar emojis y caracteres no ASCII al inicio
+    s = re.sub(r'^[\U00010000-\U0010ffff\u2600-\u26FF\u2700-\u27BF\uFE00-\uFE0F\s]+', '', s)
+    return s.strip()
 
-import openpyxl, json
+def norm(v): return limpiar(v).upper()
 
-def parse_hoja(ws, hdr_row_idx=2):
-    """Lee una hoja respetando celdas fusionadas"""
-    # Mapa de rangos fusionados: coordenada -> valor de la celda ancla
-    merge_map = {}
+MESES_FULL = ['ENERO','FEBRERO','MARZO','ABRIL','MAYO','JUNIO',
+              'JULIO','AGOSTO','SEPTIEMBRE','OCTUBRE','NOVIEMBRE','DICIEMBRE']
+
+def mes_idx(v):
+    n = norm(v)
+    if n in MESES_FULL: return MESES_FULL.index(n)
+    for i,m in enumerate(MESES_FULL):
+        if n and m.startswith(n[:3]): return i
+    return -1
+
+def fecha_iso(v):
+    if not v: return ''
+    if isinstance(v, date): return v.isoformat()
+    if isinstance(v, str) and re.match(r'\d{2}/\d{2}/\d{4}', v):
+        d,m,y = v.split('/')
+        try: return date(int(y),int(m),int(d)).isoformat()
+        except: return v
+    return str(v).strip()
+
+wb = openpyxl.load_workbook('/tmp/Mantenimientos_temp.xlsx')
+
+# ── Mapa de celdas fusionadas ────────────────────────────────────────────────
+def build_merge_map(ws):
+    mm = {}
     for merged in ws.merged_cells:
-        # La celda ancla (superior izquierda) tiene el valor
-        anchor = ws.cell(merged.min_row, merged.min_col)
-        for row in range(merged.min_row, merged.max_row+1):
-            for col in range(merged.min_col, merged.max_col+1):
-                if not (row==merged.min_row and col==merged.min_col):
-                    merge_map[(row,col)] = anchor.value
+        anchor_val = ws.cell(merged.min_row, merged.min_col).value
+        for r in range(merged.min_row, merged.max_row+1):
+            for c in range(merged.min_col, merged.max_col+1):
+                if not (r==merged.min_row and c==merged.min_col):
+                    mm[(r,c)] = anchor_val
+    return mm
 
-    def cel(row, col):
-        key = (row, col)
-        if key in merge_map: return merge_map[key]
-        return ws.cell(row, col).value
+def get_cell(ws, merge_map, r, c):
+    return merge_map.get((r,c), ws.cell(r,c).value)
 
-    # Encabezados en hdr_row_idx (1-indexed)
-    hdrs = [str(cel(hdr_row_idx, c) or '').strip().upper() for c in range(1, ws.max_column+1)]
+# ── Parser PROGRAMADOS ────────────────────────────────────────────────────────
+def parse_programados(ws):
+    mm = build_merge_map(ws)
+
+    # Encontrar fila de encabezados buscando la que tenga "MES" (limpiando emojis)
+    hdr_row = -1
+    for i in range(1, 6):
+        row_vals = [norm(get_cell(ws, mm, i, c)) for c in range(1, ws.max_column+1)]
+        if any('MES' == v for v in row_vals):
+            hdr_row = i; break
+    if hdr_row < 0:
+        # Fallback: usar fila 3
+        hdr_row = 3
+
+    hdrs = [norm(get_cell(ws, mm, hdr_row, c)) for c in range(1, ws.max_column+1)]
 
     def colidx(patron):
-        import re
         for i,h in enumerate(hdrs):
-            if re.search(patron, h): return i+1  # 1-indexed para ws.cell
+            if h and re.search(patron, h): return i+1
         return None
 
     iCopr  = colidx(r'COPROPIEDAD')
     iElem  = colidx(r'EQUIPO|ELEMENTO')
     iMes   = colidx(r'^MES$')
-    iDia   = colidx(r'^DIA$|^D[ÍI]A$')
+    iDia   = colidx(r'^D[IÍ]A$')
     iProv  = colidx(r'PROVEEDOR')
     iResp  = colidx(r'RESPONSABLE')
-    iCosto = colidx(r'COSTO')
     iTipo  = colidx(r'TIPO')
     iObs   = colidx(r'OBSERVACI')
     iEst   = colidx(r'ESTADO')
 
-    # Para historial
-    iFecha = colidx(r'FECHA')
-    iRes   = colidx(r'RESULTADO')
+    print(f'  Encabezados (fila {hdr_row}): Mes={iMes} Dia={iDia} Copr={iCopr} Elem={iElem} Est={iEst}')
 
-    rows_out = []
-    for r in range(hdr_row_idx+1, ws.max_row+1):
-        row_data = {
-            'copr':  cel(r, iCopr)  if iCopr  else None,
-            'elem':  cel(r, iElem)  if iElem  else None,
-            'mes':   cel(r, iMes)   if iMes   else None,
-            'dia':   cel(r, iDia)   if iDia   else None,
-            'prov':  cel(r, iProv)  if iProv  else None,
-            'resp':  cel(r, iResp)  if iResp  else None,
-            'costo': cel(r, iCosto) if iCosto else None,
-            'tipo':  cel(r, iTipo)  if iTipo  else None,
-            'obs':   cel(r, iObs)   if iObs   else None,
-            'estado':cel(r, iEst)   if iEst   else None,
-            'fecha': cel(r, iFecha) if iFecha else None,
-            'result':cel(r, iRes)   if iRes   else None,
-        }
-        rows_out.append(row_data)
-    return rows_out
+    hoy = date.today(); anio = hoy.year
+    programados = []
 
-wb = openpyxl.load_workbook('/mnt/user-data/outputs/Mantenimientos_Escalar.xlsx')
-print('Hojas:', wb.sheetnames)
+    for r in range(hdr_row+1, ws.max_row+1):
+        def v(col): return get_cell(ws, mm, r, col) if col else None
 
-# PROGRAMADOS
-ws_prog = wb['PROGRAMADOS']
-filas_prog = parse_hoja(ws_prog, hdr_row_idx=3)
+        copr  = limpiar(v(iCopr))
+        elem  = limpiar(v(iElem))
+        mes_v = limpiar(v(iMes))
+        dia_v = v(iDia)
+        tipo  = limpiar(v(iTipo))  or 'Preventivo'
+        estado= limpiar(v(iEst))  or 'Pendiente'
+        prov  = limpiar(v(iProv)) or ''
+        resp  = limpiar(v(iResp)) or ''
+        obs   = limpiar(v(iObs))  or ''
 
-MESES_FULL = ['ENERO','FEBRERO','MARZO','ABRIL','MAYO','JUNIO','JULIO','AGOSTO','SEPTIEMBRE','OCTUBRE','NOVIEMBRE','DICIEMBRE']
+        # Saltar filas vacías y separadores
+        if not mes_v and not copr and not elem: continue
+        if norm(mes_v) in ('MES', ''): continue
 
-def mes_idx(v):
-    if not v: return -1
-    n = str(v).strip().upper()
-    if n in MESES_FULL: return MESES_FULL.index(n)
-    for i,m in enumerate(MESES_FULL):
-        if m.startswith(n[:3]): return i
-    return -1
-
-from datetime import date, timedelta
-hoy = date.today()
-anio = hoy.year
-
-programados = []
-for f in filas_prog:
-    copr = str(f['copr'] or '').strip()
-    elem = str(f['elem'] or '').strip()
-    mes  = str(f['mes']  or '').strip()
-    dia  = f['dia']
-    if not mes and not copr and not elem: continue
-
-    mi = mes_idx(mes)
-    dia_n = int(dia) if dia and str(dia).strip().isdigit() else None
-    prox = ''
-    if mi >= 0 and dia_n:
-        try:
-            d = date(anio, mi+1, dia_n)
-            if d < hoy: d = date(anio+1, mi+1, dia_n)
-            prox = d.isoformat()
+        mi = mes_idx(mes_v)
+        dia_n = None
+        try: dia_n = int(str(dia_v).strip()) if dia_v and str(dia_v).strip() else None
         except: pass
 
-    tipo_v  = str(f['tipo']   or '').strip() or 'Preventivo'
-    estado_v= str(f['estado'] or '').strip() or 'Pendiente'
-    costo_v = None
-    try: costo_v = float(str(f['costo']).replace(',','').replace('$','')) if f['costo'] else None
-    except: pass
+        prox = ''
+        if mi >= 0 and dia_n:
+            try:
+                d = date(anio, mi+1, dia_n)
+                if d < hoy: d = date(anio+1, mi+1, dia_n)
+                prox = d.isoformat()
+            except: pass
 
-    programados.append({
-        '_copropiedad': copr,
-        '_elemento':    elem,
-        'Copropiedad':  copr,
-        'Elemento':     elem,
-        'Mes':          mes.upper() if mes.upper()=='MENSUAL' else (MESES_FULL[mi] if mi>=0 else mes),
-        'Dia':          str(dia_n) if dia_n else '',
-        'Tipo':         tipo_v,
-        'Proveedor':    str(f['prov']  or '').strip(),
-        'Responsable':  str(f['resp']  or '').strip(),
-        'Costo_estimado': costo_v,
-        'Estado':       estado_v,
-        'Observaciones': str(f['obs'] or '').strip(),
-        'Proximo_vencimiento': prox,
-    })
+        mes_norm = 'MENSUAL' if norm(mes_v) == 'MENSUAL' else (MESES_FULL[mi] if mi>=0 else mes_v.upper())
 
-# HISTORIAL
+        programados.append({
+            '_copropiedad':     copr,
+            '_elemento':        elem,
+            'Copropiedad':      copr,
+            'Elemento':         elem,
+            'Mes':              mes_norm,
+            'Dia':              str(dia_n) if dia_n else '',
+            'Tipo':             tipo,
+            'Proveedor':        prov,
+            'Responsable':      resp,
+            'Estado':           estado,
+            'Observaciones':    obs,
+            'Proximo_vencimiento': prox,
+        })
+
+    return programados
+
+# ── Parser HISTORIAL ──────────────────────────────────────────────────────────
+def parse_historial(ws):
+    mm = build_merge_map(ws)
+    hdr_row = -1
+    for i in range(1,5):
+        row_vals = [norm(get_cell(ws,mm,i,c)) for c in range(1,ws.max_column+1)]
+        if any('FECHA' in v for v in row_vals if v):
+            hdr_row=i; break
+    if hdr_row<0: hdr_row=3
+
+    hdrs = [norm(get_cell(ws,mm,hdr_row,c)) for c in range(1,ws.max_column+1)]
+    def colidx(p):
+        for i,h in enumerate(hdrs):
+            if h and re.search(p,h): return i+1
+        return None
+
+    iCopr  = colidx(r'COPROPIEDAD')
+    iElem  = colidx(r'EQUIPO|ELEMENTO')
+    iTipo  = colidx(r'TIPO')
+    iFecha = colidx(r'FECHA')
+    iProv  = colidx(r'PROVEEDOR')
+    iResp  = colidx(r'RESPONSABLE')
+    iRes   = colidx(r'RESULTADO')
+    iObs   = colidx(r'OBSERVACI')
+
+    historial = []
+    for r in range(hdr_row+1, ws.max_row+1):
+        def v(col): return get_cell(ws,mm,r,col) if col else None
+        copr  = limpiar(v(iCopr))
+        elem  = limpiar(v(iElem))
+        fecha = fecha_iso(v(iFecha))
+        if not fecha and not copr and not elem: continue
+        historial.append({
+            '_copropiedad': copr,
+            '_elemento':    elem,
+            'Copropiedad':  copr,
+            'Elemento':     elem,
+            'Tipo':         limpiar(v(iTipo)),
+            'Fecha_ejecucion': fecha,
+            'Proveedor':    limpiar(v(iProv)),
+            'Responsable':  limpiar(v(iResp)),
+            'Resultado':    limpiar(v(iRes)),
+            'Observaciones':limpiar(v(iObs)),
+        })
+    return historial
+
+ws_prog = wb['PROGRAMADOS']
 ws_hist = wb['HISTORIAL']
-filas_hist = parse_hoja(ws_hist, hdr_row_idx=2)
-historial = []
-for f in filas_hist:
-    copr = str(f['copr'] or '').strip()
-    elem = str(f['elem'] or '').strip()
-    fecha_raw = f['fecha']
-    if not fecha_raw and not copr and not elem: continue
-    fecha_str = ''
-    if fecha_raw:
-        if isinstance(fecha_raw, date): fecha_str = fecha_raw.isoformat()
-        elif isinstance(fecha_raw, str) and '/' in fecha_raw:
-            parts = fecha_raw.split('/')
-            if len(parts)==3:
-                try: fecha_str = date(int(parts[2]),int(parts[1]),int(parts[0])).isoformat()
-                except: fecha_str = fecha_raw
-
-    costo_v = None
-    try: costo_v = float(str(f['costo']).replace(',','').replace('$','')) if f['costo'] else None
-    except: pass
-
-    historial.append({
-        '_copropiedad': copr,
-        '_elemento':    elem,
-        'Copropiedad':  copr,
-        'Elemento':     elem,
-        'Tipo':         str(f['tipo']   or '').strip(),
-        'Fecha_ejecucion': fecha_str,
-        'Proveedor':    str(f['prov']   or '').strip(),
-        'Costo_real':   costo_v,
-        'Responsable':  str(f['resp']   or '').strip(),
-        'Resultado':    str(f['result'] or '').strip(),
-        'Observaciones':str(f['obs']    or '').strip(),
-    })
+prog = parse_programados(ws_prog)
+hist = parse_historial(ws_hist)
 
 out = {
     'actualizado': date.today().isoformat(),
-    'totalProgramados': len(programados),
-    'totalHistorial': len(historial),
-    'programados': programados,
-    'historial': historial,
+    'totalProgramados': len(prog),
+    'totalHistorial':   len(hist),
+    'programados': prog,
+    'historial':   hist,
 }
-
-with open('/home/claude/Dashboard-Escalar/mantenimientos.json','w') as fp:
-    json.dump(out, fp, ensure_ascii=False, indent=2)
-
-print(f'Programados: {len(programados)} | Historial: {len(historial)}')
-for p in programados[:8]:
-    print(f"  {p['_copropiedad']:12s} | {p['_elemento']:22s} | {p['Mes']:12s} | dia={p['Dia']:3s} | {p['Estado']:12s} | {p['Proximo_vencimiento']}")
+with open('mantenimientos.json','w') as f:
+    json.dump(out, f, ensure_ascii=False, indent=2)
+print(f'OK: {len(prog)} programados, {len(hist)} historial')
