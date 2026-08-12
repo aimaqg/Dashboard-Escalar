@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-12T20:07:10.214Z",
+  "actualizado": "2026-08-12T21:00:49.398Z",
   "total": 357,
   "datos": [
     {
@@ -520,13 +520,13 @@
       "Asignado_Nombre": "Coordinador Escalar SAS",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-07-23",
-      "Fecha_vencimiento": "2026-08-06",
+      "Fecha_vencimiento": "2026-08-19",
       "Prioridad": "Media",
       "Bucket": "Los Nogales",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": -6,
-      "Semaforo": "Vencida",
+      "Dias para vencer": 7,
+      "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
     {
@@ -775,13 +775,13 @@
       "Asignado_Nombre": "Coordinador Escalar SAS",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-03-19",
-      "Fecha_vencimiento": "2026-08-06",
+      "Fecha_vencimiento": "2026-08-19",
       "Prioridad": "Media",
       "Bucket": "Los Nogales",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": -6,
-      "Semaforo": "Vencida",
+      "Dias para vencer": 7,
+      "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
     {
