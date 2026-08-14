@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-14T13:41:49.659Z",
+  "actualizado": "2026-08-14T14:39:47.796Z",
   "total": 361,
   "datos": [
     {
@@ -248,13 +248,13 @@
       "Asignado_Nombre": "Coordinador Escalar SAS",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-08-04",
-      "Fecha_vencimiento": "2026-08-13",
+      "Fecha_vencimiento": "2026-08-20",
       "Prioridad": "Media",
       "Bucket": "Atalanta",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": -1,
-      "Semaforo": "Vencida",
+      "Dias para vencer": 6,
+      "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
     {
@@ -486,13 +486,13 @@
       "Asignado_Nombre": "Dirección  Escalar SAS;Coordinador Escalar SAS",
       "Asignado_email": "direccion@escalarsas.com;coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-07-24",
-      "Fecha_vencimiento": "2026-08-07",
+      "Fecha_vencimiento": "2026-08-20",
       "Prioridad": "Media",
       "Bucket": "Escalar",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": -7,
-      "Semaforo": "Vencida",
+      "Dias para vencer": 6,
+      "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
     {
@@ -639,13 +639,13 @@
       "Asignado_Nombre": "Coordinador Escalar SAS",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-07-14",
-      "Fecha_vencimiento": "2026-08-12",
+      "Fecha_vencimiento": "2026-08-20",
       "Prioridad": "Media",
       "Bucket": "Atalanta",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": -2,
-      "Semaforo": "Vencida",
+      "Dias para vencer": 6,
+      "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
     {
@@ -669,17 +669,17 @@
       "ID_Registro": 40,
       "ID_Tarea": "u-1IhXINpEK3oyRDwk83p2UAInr8",
       "Titulo_Tarea": "Iniciar Instalacion De Pergola En La Porteria.",
-      "Descripcion": "",
+      "Descripcion": "13/08/2026 Se inicia tramite ante la curaduria del Municipio de Sabaneta",
       "Asignado_Nombre": "Coordinador Escalar SAS",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-07-14",
-      "Fecha_vencimiento": "2026-08-06",
+      "Fecha_vencimiento": "2026-08-20",
       "Prioridad": "Media",
       "Bucket": "Atalanta",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": -8,
-      "Semaforo": "Vencida",
+      "Dias para vencer": 6,
+      "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
     {
