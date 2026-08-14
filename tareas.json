@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-14T19:30:11.867Z",
+  "actualizado": "2026-08-14T20:05:19.449Z",
   "total": 366,
   "datos": [
     {
@@ -334,7 +334,7 @@
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-07-31",
       "Fecha_vencimiento": "2026-08-20",
-      "Prioridad": "Importante",
+      "Prioridad": "Baja",
       "Bucket": "Complex",
       "Estado": "Not started",
       "Completada": "",
@@ -368,7 +368,7 @@
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-07-29",
       "Fecha_vencimiento": "2026-08-15",
-      "Prioridad": "Importante",
+      "Prioridad": "Media",
       "Bucket": "Complex",
       "Estado": "Not started",
       "Completada": "",
@@ -385,7 +385,7 @@
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-07-28",
       "Fecha_vencimiento": "2026-08-20",
-      "Prioridad": "Importante",
+      "Prioridad": "Baja",
       "Bucket": "Atalanta",
       "Estado": "Not started",
       "Completada": "",
