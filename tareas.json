@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-14T22:31:51.654Z",
+  "actualizado": "2026-08-14T22:54:11.304Z",
   "total": 374,
   "datos": [
     {
@@ -3644,7 +3644,7 @@
       "ID_Registro": 215,
       "ID_Tarea": "y-j-0kzlp0WjgZEGRn8FyGUAKRn9",
       "Titulo_Tarea": "Ubicar el numero 0 en el apartamento 304 ya que se despego",
-      "Descripcion": "04/05/2026 Se pega el numero del apto 304.",
+      "Descripcion": "",
       "Asignado_Nombre": "Coordinador Escalar SAS",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-04-27",
