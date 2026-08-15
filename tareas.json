@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-15T20:00:36.287Z",
+  "actualizado": "2026-08-15T20:33:09.844Z",
   "total": 374,
   "datos": [
     {
@@ -2335,7 +2335,7 @@
       "ID_Registro": 138,
       "ID_Tarea": "eI-RzlF8nkGoSs2rHxGyX2UAMesv",
       "Titulo_Tarea": "Calendarios mantenimiento",
-      "Descripcion": "Hola equipo,\r\n\r\nSolicito su ayuda con la información pertinente a los mantenimientos para crear el calendario de ellos.",
+      "Descripcion": "",
       "Asignado_Nombre": "Dirección  Escalar SAS;Gerencia Escalar SAS",
       "Asignado_email": "direccion@escalarsas.com;gerencia@escalarsas.com",
       "Fecha_Creacion": "2026-07-10",
