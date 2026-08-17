@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-17T05:37:43.369Z",
+  "actualizado": "2026-08-17T06:04:23.597Z",
   "total": 374,
   "datos": [
     {
@@ -4341,7 +4341,7 @@
       "ID_Registro": 256,
       "ID_Tarea": "510xQs8L6kmt852ruOKdtWUALua0",
       "Titulo_Tarea": "Cambio resorte puerta vehicular p2 ",
-      "Descripcion": "",
+      "Descripcion": "30/03/2026 Se realiza cambio de resorte en la puerta vehicular.",
       "Asignado_Nombre": "",
       "Asignado_email": "",
       "Fecha_Creacion": "2026-04-06",
@@ -5021,7 +5021,7 @@
       "ID_Registro": 296,
       "ID_Tarea": "GxJlcj8mZkCirOBJnE4HtGUABL2W",
       "Titulo_Tarea": "Martinique instalar bomba #2 falla en variador presión/ impulsión bomba #1 con ruido desmonte ",
-      "Descripcion": "",
+      "Descripcion": "Se envía información en varias ocasiones al grupo de Netzco, en espera de respuesta.",
       "Asignado_Nombre": "Coordinador Escalar SAS",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-01-14",
