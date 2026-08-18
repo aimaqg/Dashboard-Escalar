@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-18T11:54:24.603Z",
+  "actualizado": "2026-08-18T12:52:47.819Z",
   "total": 374,
   "datos": [
     {
@@ -1128,7 +1128,7 @@
       "ID_Registro": 67,
       "ID_Tarea": "izlLwmpdME6lisC3gHuEtmUAJtDd",
       "Titulo_Tarea": "Gestion intervencion proceso arbol y anden",
-      "Descripcion": "10/08/2026 Se recibe comunicacion por parte del area de Infrastructura donde nos informan que recibieron el tramite y estaran realizando la intervencion  de acuerdo a la prioridad de la novedad presentada.",
+      "Descripcion": "",
       "Asignado_Nombre": "Coordinador Escalar SAS",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-07-24",
@@ -2947,7 +2947,7 @@
       "ID_Registro": 174,
       "ID_Tarea": "Yw_ze3BQikWl4J297kTfKWUABsk1",
       "Titulo_Tarea": "Cambio de manguera de Jacuzzi, se encuentra con fuga.",
-      "Descripcion": "11/06/2026 Se Cambia Valvula del Jacuzzy",
+      "Descripcion": "",
       "Asignado_Nombre": "Coordinador Escalar SAS",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-04-27",
