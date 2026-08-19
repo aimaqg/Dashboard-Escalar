@@ -1,11 +1,11 @@
 {
-  "actualizado": "2026-08-19T21:29:29.214Z",
+  "actualizado": "2026-08-19T21:53:37.604Z",
   "total": 12,
   "unidades": [
     {
-      "unidad": "Atalanta Julio 2026",
-      "archivo": "EEFF- ATALANTA JULIO 2026.xlsx",
-      "anio": 2026,
+      "unidad": "Atalanta",
+      "archivo": "EEFF- ATALANTA.xlsx",
+      "anio": null,
       "mes": "JULIO",
       "kpis": {
         "efectivo": 28445053,
@@ -1610,9 +1610,9 @@
       ]
     },
     {
-      "unidad": "Cumbres Julio 2026",
-      "archivo": "EEFF- CUMBRES  JULIO 2026.xlsx",
-      "anio": 2026,
+      "unidad": "Cumbres",
+      "archivo": "EEFF- CUMBRES.xlsx",
+      "anio": null,
       "mes": "JULIO",
       "kpis": {
         "efectivo": 38878019,
@@ -2160,9 +2160,9 @@
       ]
     },
     {
-      "unidad": "Dijon Julio 2026",
-      "archivo": "EEFF- DIJON JULIO 2026.xls",
-      "anio": 2026,
+      "unidad": "Dijon",
+      "archivo": "EEFF- DIJON.xls",
+      "anio": null,
       "mes": "JULIO",
       "kpis": {
         "efectivo": 15016989.7,
@@ -4870,8 +4870,8 @@
       ]
     },
     {
-      "unidad": "Nogales Julio 2026",
-      "archivo": "EEFF - NOGALES JULIO 2026.xlsx",
+      "unidad": "Nogales",
+      "archivo": "EEFF-NOGALES-2026.xlsx",
       "anio": 2026,
       "mes": "JULIO",
       "kpis": {
