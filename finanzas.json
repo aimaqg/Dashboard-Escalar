@@ -1,11 +1,11 @@
 {
-  "actualizado": "2026-08-19T21:53:37.604Z",
+  "actualizado": "2026-08-19T21:58:06.567Z",
   "total": 12,
   "unidades": [
     {
       "unidad": "Atalanta",
-      "archivo": "EEFF- ATALANTA.xlsx",
-      "anio": null,
+      "archivo": "EEFF-ATALANTA-2026.xlsx",
+      "anio": 2026,
       "mes": "JULIO",
       "kpis": {
         "efectivo": 28445053,
@@ -1611,8 +1611,8 @@
     },
     {
       "unidad": "Cumbres",
-      "archivo": "EEFF- CUMBRES.xlsx",
-      "anio": null,
+      "archivo": "EEFF-CUMBRES-2026.xlsx",
+      "anio": 2026,
       "mes": "JULIO",
       "kpis": {
         "efectivo": 38878019,
