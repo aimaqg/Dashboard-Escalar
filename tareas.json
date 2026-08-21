@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-21T17:42:19.548Z",
+  "actualizado": "2026-08-21T18:03:29.855Z",
   "total": 409,
   "datos": [
     {
@@ -108,7 +108,7 @@
       "ID_Registro": 7,
       "ID_Tarea": "G7UlYhffjEOeHBADgWAP9mUAM0TY",
       "Titulo_Tarea": "Recopilar facturas gastso adcionales por trabajso cobstructora RCI",
-      "Descripcion": "",
+      "Descripcion": "validar cuales son las facturas de insumos, adicionar la de los filtros.",
       "Asignado_Nombre": "Dirección  Escalar SAS;Asistente uno Escalar SAS",
       "Asignado_email": "direccion@escalarsas.com;asistenteuno@escalarsas.com",
       "Fecha_Creacion": "2026-08-20",
