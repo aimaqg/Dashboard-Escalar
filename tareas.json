@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-21T14:47:15.282Z",
+  "actualizado": "2026-08-21T15:18:07.554Z",
   "total": 405,
   "datos": [
     {
@@ -13,7 +13,7 @@
       "Fecha_vencimiento": "2026-08-21",
       "Prioridad": "Importante",
       "Bucket": "Marroco",
-      "Estado": "Not started",
+      "Estado": "In progress",
       "Completada": "",
       "Dias para vencer": 0,
       "Semaforo": "Próxima a vencer",
