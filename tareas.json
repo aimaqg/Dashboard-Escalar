@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-24T15:49:18.953Z",
+  "actualizado": "2026-08-24T16:19:15.092Z",
   "total": 425,
   "datos": [
     {
@@ -690,13 +690,13 @@
       "Asignado_Nombre": "Andres Ramirez",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-07-31",
-      "Fecha_vencimiento": "2026-08-25",
+      "Fecha_vencimiento": "2026-08-31",
       "Prioridad": "Baja",
       "Bucket": "Complex",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 1,
-      "Semaforo": "Próxima a vencer",
+      "Dias para vencer": 7,
+      "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
     {
