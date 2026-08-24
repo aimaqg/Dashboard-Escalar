@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-24T15:00:18.995Z",
+  "actualizado": "2026-08-24T15:49:18.953Z",
   "total": 425,
   "datos": [
     {
@@ -21,23 +21,6 @@
     },
     {
       "ID_Registro": 2,
-      "ID_Tarea": "k4eQtJ28cEihvsAZ-1t3zGUAAgA-",
-      "Titulo_Tarea": "Circular masivo para torre 1 y torre 2 conexión para la torre 1 el servicio de energía estará intermitente entre las 8 am y 12 pm del jueves 27 agosto ",
-      "Descripcion": "",
-      "Asignado_Nombre": "Sara Silva;Maria Isabel Zuleta",
-      "Asignado_email": "asistentedos@escalarsas.com;asistenteuno@escalarsas.com",
-      "Fecha_Creacion": "2026-08-24",
-      "Fecha_vencimiento": "2026-08-24",
-      "Prioridad": "Importante",
-      "Bucket": "Jacarandas",
-      "Estado": "Not started",
-      "Completada": "",
-      "Dias para vencer": 0,
-      "Semaforo": "Próxima a vencer",
-      "Canal_teams": ""
-    },
-    {
-      "ID_Registro": 3,
       "ID_Tarea": "_k93rOMqLEWOC6W7FGyqVmUAEQsH",
       "Titulo_Tarea": "Cotización domo salida gym",
       "Descripcion": "",
@@ -54,7 +37,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 4,
+      "ID_Registro": 3,
       "ID_Tarea": "XL1xBdBFP0uiK0U6dBhmR2UAFruq",
       "Titulo_Tarea": "Revisar cambiar posicion reloj Gimnasio",
       "Descripcion": "",
@@ -71,7 +54,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 5,
+      "ID_Registro": 4,
       "ID_Tarea": "Uwp9WbWCCke-PIbH5uUEZGUACXAW",
       "Titulo_Tarea": "Intervenir Registro en Sotano 2",
       "Descripcion": "",
@@ -88,7 +71,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 6,
+      "ID_Registro": 5,
       "ID_Tarea": "BpcilVMEakGBiYrExi4lrGUAP4YM",
       "Titulo_Tarea": "📢 Notificación de Tarea Asignada",
       "Descripcion": "[Vínculo al mensaje](https://teams.microsoft.com/l/message/19:ma1j9Oq_TZbPe5zhk0EPWBCt0fjmCQYIxCbQic9fWzw1@thread.tacv2/1787343672872?tenantId=68c8479a-6d32-4a07-92aa-9165f551c776&amp;groupId=e6c92547-de5a-4752-ba69-b47efb0b1e66&amp;parentMessageId=1787343672872) compra de luces marroco para los respectivos cambios",
@@ -105,7 +88,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 7,
+      "ID_Registro": 6,
       "ID_Tarea": "h70KlneE_U2qOsY9VumGu2UAK4xj",
       "Titulo_Tarea": "Cotización dados luminarias ",
       "Descripcion": "",
@@ -122,7 +105,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 8,
+      "ID_Registro": 7,
       "ID_Tarea": "RuWYLwEhJU-vmDutoo563WUAGFr-",
       "Titulo_Tarea": "Revisión obras cerrajería ",
       "Descripcion": "",
@@ -139,7 +122,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 9,
+      "ID_Registro": 8,
       "ID_Tarea": "F3xne_U6CUGY5__TJp80imUAGkI0",
       "Titulo_Tarea": "llenar formulario  afectaciones zona comun copropiedades",
       "Descripcion": "",
@@ -156,7 +139,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 10,
+      "ID_Registro": 9,
       "ID_Tarea": "tDtlQGrelUmDUEfddZAV-GUABpjV",
       "Titulo_Tarea": "cartas con sanción económica la mínima , el listado se envió al chat de cumbres condominio",
       "Descripcion": "Realizar las cartas con sanción económica, los apartamentos ya están en el chat de cumbres seguridad",
@@ -173,7 +156,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 11,
+      "ID_Registro": 10,
       "ID_Tarea": "3n4wFfVlQUyCurnIdBuk7mUAAUX4",
       "Titulo_Tarea": "Cartas con sanción mal uso de parqueaderos ",
       "Descripcion": "",
@@ -190,7 +173,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 12,
+      "ID_Registro": 11,
       "ID_Tarea": "m61ITCMRDESX1v3zXmUA2mUAFJii",
       "Titulo_Tarea": "Combra luces navidad",
       "Descripcion": "Validar listado para cotizaciones de todas las udades darle prioridad a balcones",
@@ -207,7 +190,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 13,
+      "ID_Registro": 12,
       "ID_Tarea": "fkazmpjTlUa_YAECxRgolWUAM_8x",
       "Titulo_Tarea": "Imprimir actas pendientes para firma",
       "Descripcion": "",
@@ -224,7 +207,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 14,
+      "ID_Registro": 13,
       "ID_Tarea": "a3mtuwSC40iKbI2RTOYu82UAOhFH",
       "Titulo_Tarea": "comunicado acompañamiento de proveedores zonas comunes",
       "Descripcion": "",
@@ -241,7 +224,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 15,
+      "ID_Registro": 14,
       "ID_Tarea": "iaZLr_hiMUOVINwjzPa092UAPzLV",
       "Titulo_Tarea": "Brindar Respuesta a don Cristian apto 307 por novedad en fachada",
       "Descripcion": "",
@@ -258,7 +241,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 16,
+      "ID_Registro": 15,
       "ID_Tarea": "yslFnzeApU6b46Uvi1skpGUAM49T",
       "Titulo_Tarea": "Mantenimientos desagues de ultimos Pisos de Marroco",
       "Descripcion": "",
@@ -275,7 +258,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 17,
+      "ID_Registro": 16,
       "ID_Tarea": "WusM7Z9Ht0WlbaNznDxjWWUAEOzM",
       "Titulo_Tarea": "Citofono Apto.401 t1",
       "Descripcion": "",
@@ -292,7 +275,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 18,
+      "ID_Registro": 17,
       "ID_Tarea": "G7UlYhffjEOeHBADgWAP9mUAM0TY",
       "Titulo_Tarea": "Recopilar facturas gastso adcionales por trabajso cobstructora RCI",
       "Descripcion": "validar cuales son las facturas de insumos, adicionar la de los filtros.",
@@ -309,7 +292,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 19,
+      "ID_Registro": 18,
       "ID_Tarea": "4kkCK1FdtUyCAPEE1o57M2UACXGg",
       "Titulo_Tarea": "Gestionar todo lo pertinente para la ruta de evacuacion",
       "Descripcion": "",
@@ -326,7 +309,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 20,
+      "ID_Registro": 19,
       "ID_Tarea": "H8XX4wdmRESG7OtjkvXbamUAG4jg",
       "Titulo_Tarea": "hallowen y navidad",
       "Descripcion": "",
@@ -343,7 +326,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 21,
+      "ID_Registro": 20,
       "ID_Tarea": "SrOUjEoMnEW2b7MzFDV2gGUABxIt",
       "Titulo_Tarea": "Mantenimiento Correctivo Puerta Peatonal",
       "Descripcion": "",
@@ -360,7 +343,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 22,
+      "ID_Registro": 21,
       "ID_Tarea": "Aogss6AgLE6qcT65Mh0c1GUANUDx",
       "Titulo_Tarea": "Llamar a Esteban para tener claridad del tratamiento q se hizo en jardinera ",
       "Descripcion": "clase de hidrófugo y en q áreas",
@@ -377,7 +360,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 23,
+      "ID_Registro": 22,
       "ID_Tarea": "7tcNrwk7Xk21DrLwKZoo-WUAP0aQ",
       "Titulo_Tarea": "Actualizar directorio pagina web",
       "Descripcion": "",
@@ -394,7 +377,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 24,
+      "ID_Registro": 23,
       "ID_Tarea": "duSq7kNvKUKATCAC3D2mcWUALHLf",
       "Titulo_Tarea": "Revisar y corregir observacioens piscina jabon, lava pies , puerta",
       "Descripcion": "",
@@ -411,7 +394,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 25,
+      "ID_Registro": 24,
       "ID_Tarea": "9in-3uxOf0uaMf32QQnQ0WUAATF4",
       "Titulo_Tarea": "Cotizar pintura puertas oficinas",
       "Descripcion": "",
@@ -428,7 +411,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 26,
+      "ID_Registro": 25,
       "ID_Tarea": "w3LLAtsahkqOpEZhGEk-NWUAI1-W",
       "Titulo_Tarea": "Respuesta Derecho de petición de información 702",
       "Descripcion": "",
@@ -445,7 +428,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 27,
+      "ID_Registro": 26,
       "ID_Tarea": "I_zKdNQQvEWQB2h313KU92UANvkV",
       "Titulo_Tarea": "Actas",
       "Descripcion": "",
@@ -462,7 +445,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 28,
+      "ID_Registro": 27,
       "ID_Tarea": "W8bmnV-8BUucRWNUHT79hGUAESIE",
       "Titulo_Tarea": "Cotizar cerramiento en zona de mascotas",
       "Descripcion": "",
@@ -479,7 +462,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 29,
+      "ID_Registro": 28,
       "ID_Tarea": "FdhI_ltK1023cfdq_2A7_WUALu35",
       "Titulo_Tarea": "Actualizar  información para el boletín",
       "Descripcion": "",
@@ -496,7 +479,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 30,
+      "ID_Registro": 29,
       "ID_Tarea": "TY8h1rfv0UW2PUbzqJTZh2UAPmMw",
       "Titulo_Tarea": "Actualizar  información para el boletín",
       "Descripcion": "",
@@ -513,7 +496,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 31,
+      "ID_Registro": 30,
       "ID_Tarea": "a1TerI2boUi_CkbbpMLXyGUAC9Dw",
       "Titulo_Tarea": "Actualizar  información para el boletín",
       "Descripcion": "",
@@ -530,7 +513,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 32,
+      "ID_Registro": 31,
       "ID_Tarea": "rI99QY0dlEayAJhuZLBse2UABntv",
       "Titulo_Tarea": "Seguimiento a humedad en el piso 5",
       "Descripcion": "",
@@ -547,7 +530,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 33,
+      "ID_Registro": 32,
       "ID_Tarea": "9U7kwLHv00qDmLmB9vBTq2UAOFks",
       "Titulo_Tarea": "Actualizar cronograma mantenimientos",
       "Descripcion": "",
@@ -564,7 +547,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 34,
+      "ID_Registro": 33,
       "ID_Tarea": "bM-BPet-m0WNZtACggF4zWUAKYA6",
       "Titulo_Tarea": "Cotizar intervencion por humedad en el ingreso del cuarto de bombas de la terraza",
       "Descripcion": "",
@@ -581,7 +564,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 35,
+      "ID_Registro": 34,
       "ID_Tarea": "mYENILoUI0eWiotnAKHYrGUAG56X",
       "Titulo_Tarea": "Brigada con Hidrolavadora en zona de Mascotas",
       "Descripcion": "",
@@ -598,7 +581,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 36,
+      "ID_Registro": 35,
       "ID_Tarea": "2E6eWeKkQ0icHtgsLhWTmWUAIyaW",
       "Titulo_Tarea": "Consultar posible instalación de contador oficina y cotizar",
       "Descripcion": "",
@@ -615,7 +598,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 37,
+      "ID_Registro": 36,
       "ID_Tarea": "x4e3Pp-B5kOEB6WV9F3iNGUADn0F",
       "Titulo_Tarea": "Cotizar Impermeabilizacion en escalas de ingreso a la terraza torre 2",
       "Descripcion": "",
@@ -632,7 +615,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 38,
+      "ID_Registro": 37,
       "ID_Tarea": "LzKUB0bkiU-ookbfLGIzJGUAA4Zt",
       "Titulo_Tarea": "Cotizr humedad por filtracion en piso 3 al lado del Gimnasio",
       "Descripcion": "",
@@ -649,7 +632,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 39,
+      "ID_Registro": 38,
       "ID_Tarea": "53h5ZCYATkarU8xJLZg6R2UAAUGR",
       "Titulo_Tarea": "Cotizar reparacion por filtracion en el parquedero 99040",
       "Descripcion": "",
@@ -666,7 +649,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 40,
+      "ID_Registro": 39,
       "ID_Tarea": "mWYC6g_NCkOsXXZoeOkA0WUAIYhS",
       "Titulo_Tarea": "Cotizar intervencion en el cuartos utiles # del apto 1102 y  parqueadero 66o",
       "Descripcion": "",
@@ -683,7 +666,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 41,
+      "ID_Registro": 40,
       "ID_Tarea": "xUD_JRlN00aT2_M-ulesJWUAE7YS",
       "Titulo_Tarea": "Viabilidad mercado de la confianza",
       "Descripcion": "",
@@ -700,7 +683,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 42,
+      "ID_Registro": 41,
       "ID_Tarea": "Od3VMS3YtkS8uoyO6MM0BGUAImKQ",
       "Titulo_Tarea": "Cotizar mmto shut pisos y zocalo",
       "Descripcion": "",
@@ -717,7 +700,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 43,
+      "ID_Registro": 42,
       "ID_Tarea": "Z_pBIuL_EkWBNl4ltNERTmUAM23U",
       "Titulo_Tarea": "Cerrar Registro en S2",
       "Descripcion": "",
@@ -734,7 +717,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 44,
+      "ID_Registro": 43,
       "ID_Tarea": "BEMTnG1at0ubTUCPTIJWS2UABo2K",
       "Titulo_Tarea": "trabajos de soldadura puertas",
       "Descripcion": "",
@@ -751,7 +734,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 45,
+      "ID_Registro": 44,
       "ID_Tarea": "WfMFJEqugUqwi2ZlzGaJ82UAIgmv",
       "Titulo_Tarea": "Cotizar puerta vehicular",
       "Descripcion": "Andres se debe cotizar todo el cambio de la puerta vehicular del sótano. Nilson dijo que no tiene la capacidad.",
@@ -768,7 +751,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 46,
+      "ID_Registro": 45,
       "ID_Tarea": "P84DbWGoLU2-1pVX4RB_y2UAIJSl",
       "Titulo_Tarea": "Reparar puerta cuarto reciclaje",
       "Descripcion": "",
@@ -785,7 +768,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 47,
+      "ID_Registro": 46,
       "ID_Tarea": "aD_AsQbca06HOBuEsiqeB2UAD5ap",
       "Titulo_Tarea": "Cotizar cambio de espejo del Gimnasio",
       "Descripcion": "10/08/2026 Se comparte cotizacion solicitada",
@@ -802,7 +785,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 48,
+      "ID_Registro": 47,
       "ID_Tarea": "XgHxfSymOkGrRZVIK1opJmUAA5M3",
       "Titulo_Tarea": "Informe bombas piscina para reclamacion seguro",
       "Descripcion": "",
@@ -819,7 +802,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 49,
+      "ID_Registro": 48,
       "ID_Tarea": "8iXIy0Cye0u7PfDy6iz5lGUAJG67",
       "Titulo_Tarea": "comprar materas plantas salon social",
       "Descripcion": "",
@@ -836,7 +819,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 50,
+      "ID_Registro": 49,
       "ID_Tarea": "HfGSZy_250mUA12ceALj-GUAN07o",
       "Titulo_Tarea": "Segumiento a porgraamcion sistema de gestioj en todas las undidades s",
       "Descripcion": "",
@@ -853,7 +836,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 51,
+      "ID_Registro": 50,
       "ID_Tarea": "o4afUt5zK0eK8-yTnasZbWUAEKQR",
       "Titulo_Tarea": "recopilar info compra ducteriria cargadores carro",
       "Descripcion": "31/07/2026 Ignacio se compromete a entregar esta informacion el dia lunes 3 de agosto",
@@ -870,7 +853,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 52,
+      "ID_Registro": 51,
       "ID_Tarea": "FPh2qoXuK0iJPOg_F_VajGUAFIMx",
       "Titulo_Tarea": "Cotizar reparacion de baldosa del ascensor",
       "Descripcion": "",
@@ -887,7 +870,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 53,
+      "ID_Registro": 52,
       "ID_Tarea": "w7qJ7I5d9Uu85sZsbKE7GWUAIzO2",
       "Titulo_Tarea": "Cotizar la reparacion de la puerta del reciclaje",
       "Descripcion": "",
@@ -904,7 +887,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 54,
+      "ID_Registro": 53,
       "ID_Tarea": "JbI9g1I-wUKVJhcVxqzbKWUAGGZZ",
       "Titulo_Tarea": "Cotizar Cambio de baldosa en el piso 17",
       "Descripcion": "",
@@ -921,7 +904,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 55,
+      "ID_Registro": 54,
       "ID_Tarea": "Vw1bFMnLnkuO97ClQC20k2UADaqL",
       "Titulo_Tarea": "Compra de comparendera para el Edificio Charlotte",
       "Descripcion": "",
@@ -938,7 +921,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 56,
+      "ID_Registro": 55,
       "ID_Tarea": "5qYPZdBwr0CZBFCaZcQSHWUAMf6b",
       "Titulo_Tarea": "Chect list requitos cargadores",
       "Descripcion": "",
@@ -955,7 +938,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 57,
+      "ID_Registro": 56,
       "ID_Tarea": "g5M2ebDtZ0OpdvM3LHhgAWUAA5JR",
       "Titulo_Tarea": "Iniciar Reclamacion Ante La Aseguradora Por Siniestro En Las Puertas Vehiculares.",
       "Descripcion": "",
@@ -972,7 +955,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 58,
+      "ID_Registro": 57,
       "ID_Tarea": "u-1IhXINpEK3oyRDwk83p2UAInr8",
       "Titulo_Tarea": "Iniciar Instalacion De Pergola En La Porteria.",
       "Descripcion": "13/08/2026 Se inicia tramite ante la curaduria del Municipio de Sabaneta",
@@ -989,7 +972,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 59,
+      "ID_Registro": 58,
       "ID_Tarea": "sWtbjihCfky_l_z_vi4slWUAL8Fz",
       "Titulo_Tarea": "Hablar con el señor Andres propietario del apartamento 1004 esto por novedad presentada en ventana.",
       "Descripcion": "",
@@ -1006,7 +989,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 60,
+      "ID_Registro": 59,
       "ID_Tarea": "BdGxFdRHiE-pnMOtopaXAGUAKM7y",
       "Titulo_Tarea": "Iniciar Instalacion de paneles solares y Pergola de Porteria",
       "Descripcion": "30/06/2026 Se autoriza por parte del consejo La Instalacion de los paneles solares por parte del proveedor Opus e instalacion de la pergola de porteria con el proveedor Raul Jaramillo.",
@@ -1023,7 +1006,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 61,
+      "ID_Registro": 60,
       "ID_Tarea": "BF4ML1jH50GztnwU8yNmzGUAKPxL",
       "Titulo_Tarea": "Verificar Garantia de Pintura En El Ingreso Del Edificio",
       "Descripcion": "30/07/2026 Se Envia solcitud formal al proveedor para una respuesta inmediata",
@@ -1040,7 +1023,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 62,
+      "ID_Registro": 61,
       "ID_Tarea": "NfE6hB9pX0am0zkTlkleKmUAJHd6",
       "Titulo_Tarea": "Revisar el cuarto util del apartamento 604 esto por filtracion presentada",
       "Descripcion": "",
@@ -1057,7 +1040,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 63,
+      "ID_Registro": 62,
       "ID_Tarea": "xEZcQpCvlECIl1bU-eINtGUANCmd",
       "Titulo_Tarea": "boletines unidades",
       "Descripcion": "Ya está marroco y jacarandas",
@@ -1074,7 +1057,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 64,
+      "ID_Registro": 63,
       "ID_Tarea": "kbA_YG3j6kys5AK1dXQgMWUAOcKK",
       "Titulo_Tarea": "Intervencion por Filtracion en el parqueadero del apto 606 ",
       "Descripcion": "",
@@ -1091,7 +1074,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 65,
+      "ID_Registro": 64,
       "ID_Tarea": "H_oAXjEljke6m2j9yb0tNmUAK4De",
       "Titulo_Tarea": "Retirar Varilla ubicada en el Parque Infantil .",
       "Descripcion": "31/03/2026 Se evidencia condición insegura con una varilla al lado de la zona infantil.",
@@ -1108,7 +1091,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 66,
+      "ID_Registro": 65,
       "ID_Tarea": "TyekDE-KM0uqpPehhrwMRmUABiy3",
       "Titulo_Tarea": "Reparaciones varias en el piso 7, esto debido a intervenciones de prooveedores de gas y agua en los respectivos gabinetes",
       "Descripcion": "",
@@ -1125,7 +1108,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 67,
+      "ID_Registro": 66,
       "ID_Tarea": "G1_RiEzbU0mDnMbXpOZDkGUAIxj8",
       "Titulo_Tarea": "Buscar fundación cableado",
       "Descripcion": "",
@@ -1139,6 +1122,23 @@
       "Completada": "",
       "Dias para vencer": 4,
       "Semaforo": "En tiempo",
+      "Canal_teams": ""
+    },
+    {
+      "ID_Registro": 67,
+      "ID_Tarea": "k4eQtJ28cEihvsAZ-1t3zGUAAgA-",
+      "Titulo_Tarea": "Circular masivo para torre 1 y torre 2 conexión para la torre 1 el servicio de energía estará intermitente entre las 8 am y 12 pm del jueves 27 agosto ",
+      "Descripcion": "",
+      "Asignado_Nombre": "Sara Silva;Maria Isabel Zuleta",
+      "Asignado_email": "asistentedos@escalarsas.com;asistenteuno@escalarsas.com",
+      "Fecha_Creacion": "2026-08-24",
+      "Fecha_vencimiento": "2026-08-24",
+      "Prioridad": "Importante",
+      "Bucket": "Jacarandas",
+      "Estado": "Completed",
+      "Completada": "2026-08-24",
+      "Dias para vencer": 0,
+      "Semaforo": "Completada",
       "Canal_teams": ""
     },
     {
