@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-25T07:47:37.453Z",
+  "actualizado": "2026-08-25T08:24:44.401Z",
   "total": 429,
   "datos": [
     {
@@ -125,7 +125,7 @@
       "ID_Registro": 8,
       "ID_Tarea": "BpcilVMEakGBiYrExi4lrGUAP4YM",
       "Titulo_Tarea": "📢 Notificación de Tarea Asignada",
-      "Descripcion": "[Vínculo al mensaje](https://teams.microsoft.com/l/message/19:ma1j9Oq_TZbPe5zhk0EPWBCt0fjmCQYIxCbQic9fWzw1@thread.tacv2/1787343672872?tenantId=68c8479a-6d32-4a07-92aa-9165f551c776&amp;groupId=e6c92547-de5a-4752-ba69-b47efb0b1e66&amp;parentMessageId=1787343672872) compra de luces marroco para los respectivos cambios",
+      "Descripcion": "",
       "Asignado_Nombre": "Ignacio Rojas",
       "Asignado_email": "mantenimiento@escalarsas.com",
       "Fecha_Creacion": "2026-08-21",
