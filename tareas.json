@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-25T10:17:31.207Z",
+  "actualizado": "2026-08-25T11:31:31.379Z",
   "total": 429,
   "datos": [
     {
@@ -771,7 +771,7 @@
       "ID_Registro": 46,
       "ID_Tarea": "o4afUt5zK0eK8-yTnasZbWUAEKQR",
       "Titulo_Tarea": "recopilar info compra ducteriria cargadores carro",
-      "Descripcion": "31/07/2026 Ignacio se compromete a entregar esta informacion el dia lunes 3 de agosto",
+      "Descripcion": "",
       "Asignado_Nombre": "Andres Ramirez",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-07-24",
@@ -1910,7 +1910,7 @@
       "ID_Registro": 113,
       "ID_Tarea": "mBpj1UoarECp8luWz69p3mUAAKmo",
       "Titulo_Tarea": "Instalar Avisos En el Gimnasio",
-      "Descripcion": "14/08/2026 Se instalan avisos informativos en el Gimnasio",
+      "Descripcion": "",
       "Asignado_Nombre": "Andres Ramirez",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-08-14",
