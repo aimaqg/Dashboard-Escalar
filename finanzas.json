@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-25T19:56:36.062Z",
+  "actualizado": "2026-08-25T20:33:00.421Z",
   "total": 11,
   "unidades": [
     {
@@ -995,22 +995,22 @@
       "unidad": "Complex",
       "archivo": "EEFF-COMPLEX-2026.xls",
       "anio": 2026,
-      "mes": "JUNIO",
+      "mes": "JULIO",
       "kpis": {
-        "efectivo": 30970218.4,
-        "cartera": 31861216,
-        "excedenteAcumulado": 53767541.90999997,
-        "excedenteMes": 7090226.679999992,
-        "gastoPromedioMensual": 74159221.52666667
+        "efectivo": 42357434.61,
+        "cartera": 35361366,
+        "excedenteAcumulado": 57698576.349999964,
+        "excedenteMes": 3931034.4399999976,
+        "gastoPromedioMensual": 74359169.75571428
       },
       "presupuesto": {
         "ingresos": {
-          "ppto": 447264918,
-          "ejecutado": 498722871.07
+          "ppto": 521809071,
+          "ejecutado": 578212764.64
         },
         "gastos": {
-          "ppto": 447264918,
-          "ejecutado": 444955329.16
+          "ppto": 521809071,
+          "ejecutado": 520514188.29
         }
       },
       "mensual": {
@@ -1020,7 +1020,8 @@
           "MARZO",
           "ABRIL",
           "MAYO",
-          "JUNIO"
+          "JUNIO",
+          "JULIO"
         ],
         "ingresos": [
           81999374.01,
@@ -1028,7 +1029,8 @@
           88626645.61,
           80163918.13,
           85313403.07,
-          79360378.36
+          79360378.36,
+          79489893.57
         ],
         "gastos": [
           73958784.64,
@@ -1036,33 +1038,46 @@
           74958753.72999999,
           78011896.72,
           72836675.85000001,
-          72270151.68
+          72270151.68,
+          75558859.13
         ]
       },
       "morosos": [
         {
           "apto": "315",
           "nombre": "SOCIEDAD DE ACTIVOS ESPECIALES",
-          "valor": 13384400,
-          "cuotas": 27.3
+          "valor": 13874100,
+          "cuotas": 28.3
         },
         {
           "apto": "109",
           "nombre": "CENTRO LOGISTICO BANCOLOMBIA",
-          "valor": 7784057,
+          "valor": 7871772,
           "cuotas": 1
         },
         {
           "apto": "119",
           "nombre": "SOCIEDAD DE ACTIVOS ESPECIALES",
-          "valor": 6378600,
-          "cuotas": 6.4
+          "valor": 7381400,
+          "cuotas": 7.4
         },
         {
           "apto": "100",
           "nombre": "SOCIEDAD DE ACTIVOS ESPECIALES",
-          "valor": 1873200,
-          "cuotas": 6.4
+          "valor": 2167700,
+          "cuotas": 7.4
+        },
+        {
+          "apto": "105",
+          "nombre": "SOCIEDAD DE ACTIVOS ESPECIALES",
+          "valor": 1120823,
+          "cuotas": 1
+        },
+        {
+          "apto": "409",
+          "nombre": "CARLOS ARTURO MAYA VELEZ",
+          "valor": 1048429,
+          "cuotas": 2
         },
         {
           "apto": "115",
@@ -1071,306 +1086,288 @@
           "cuotas": 0.9
         },
         {
-          "apto": "218",
-          "nombre": "GLORIA ACEVEDO",
-          "valor": 654000,
-          "cuotas": 1
-        },
-        {
-          "apto": "409",
-          "nombre": "CARLOS ARTURO MAYA VELEZ",
-          "valor": 516723,
-          "cuotas": 1
-        },
-        {
           "apto": "117",
           "nombre": "AP INERSIONISTAS S.A.S 901012052-3",
           "valor": 504047,
           "cuotas": 0.5
         },
         {
-          "apto": "309",
-          "nombre": "LUIS ENRIQUE LONDOÑO LONDOÑO",
-          "valor": 99702,
-          "cuotas": 0.2
+          "apto": "406",
+          "nombre": "CLARA PAULINA HERNANDEZ MEJIA",
+          "valor": 486953,
+          "cuotas": 1
         },
         {
-          "apto": "505",
-          "nombre": "CLINICA ODONTOSUR",
-          "valor": 22500,
+          "apto": "504",
+          "nombre": "JHON JAIRO DIAZ",
+          "valor": 34506,
           "cuotas": 0
         },
         {
-          "apto": "406",
-          "nombre": "CLARA PAULINA HERNANDEZ MEJIA",
-          "valor": 11900,
-          "cuotas": null
-        },
-        {
-          "apto": "118",
-          "nombre": "DARIO ELEJADE CORREA",
-          "valor": 11187,
+          "apto": "305",
+          "nombre": "CLAUDIA PRECIADO ASSABAL",
+          "valor": 736,
           "cuotas": 0
         }
       ],
       "desviaciones": [
         {
           "rubro": "Salarios-Prestaciones-Seguridad Social",
-          "ppto": 3900000,
+          "ppto": 4550000,
           "ejecutado": 6030985,
-          "diferencia": 2130985
+          "diferencia": 1480985
         },
         {
           "rubro": "Honorarios Revisoría Fiscal",
-          "ppto": 11287740,
-          "ejecutado": 11170587,
-          "diferencia": -117153
+          "ppto": 13169030,
+          "ejecutado": 13032353,
+          "diferencia": -136677
         },
         {
           "rubro": "Honorarios Administrador",
-          "ppto": 32195400,
-          "ejecutado": 34162000,
-          "diferencia": 1966600
+          "ppto": 37561300,
+          "ejecutado": 40601000,
+          "diferencia": 3039700
         },
         {
           "rubro": "Iva Administracion",
-          "ppto": 6117126,
-          "ejecutado": 6227922,
-          "diferencia": 110796
+          "ppto": 7136647,
+          "ejecutado": 7371810,
+          "diferencia": 235163
         },
         {
           "rubro": "Contabilidad",
-          "ppto": 9780360,
-          "ejecutado": 9780360,
+          "ppto": 11410420,
+          "ejecutado": 11410420,
           "diferencia": 0
         },
         {
           "rubro": "Asesoría Jurídica Y Auditoria Sgsst",
-          "ppto": 2700000,
+          "ppto": 3150000,
           "ejecutado": 1400000,
-          "diferencia": -1300000
+          "diferencia": -1750000
         },
         {
           "rubro": "Administracion Pagina",
-          "ppto": 2850000,
-          "ejecutado": 3443410,
-          "diferencia": 593410
+          "ppto": 3325000,
+          "ejecutado": 3916360,
+          "diferencia": 591360
         },
         {
           "rubro": "Implementacion Facturacion Electronica",
-          "ppto": 390000,
+          "ppto": 455000,
           "ejecutado": 570000,
-          "diferencia": 180000
+          "diferencia": 115000
         },
         {
           "rubro": "Servicio De Aseo",
-          "ppto": 70290000,
-          "ejecutado": 58959927,
-          "diferencia": -11330073
+          "ppto": 82005000,
+          "ejecutado": 70032334,
+          "diferencia": -11972666
         },
         {
           "rubro": "Vigilancia",
-          "ppto": 174544998,
-          "ejecutado": 193967008,
-          "diferencia": 19422010
+          "ppto": 203635831,
+          "ejecutado": 220938262,
+          "diferencia": 17302431
         },
         {
           "rubro": "Seguro Zonas Comunes",
-          "ppto": 18827328,
-          "ejecutado": 16810110,
-          "diferencia": -2017218
+          "ppto": 21965216,
+          "ejecutado": 19611795,
+          "diferencia": -2353421
         },
         {
           "rubro": "Fumigación",
-          "ppto": 1274400,
+          "ppto": 1486800,
           "ejecutado": 2220540,
-          "diferencia": 946140
+          "diferencia": 733740
         },
         {
           "rubro": "Gastos Bancarios",
-          "ppto": 606000,
-          "ejecutado": 476582.16,
-          "diferencia": -129417.84000000003
+          "ppto": 707000,
+          "ejecutado": 582500.29,
+          "diferencia": -124499.70999999996
         },
         {
           "rubro": "De Industria Y Comercio",
-          "ppto": 510000,
+          "ppto": 595000,
           "ejecutado": 87000,
-          "diferencia": -423000
+          "diferencia": -508000
         },
         {
           "rubro": "Acueducto Y Saneamiento",
-          "ppto": 5070000,
-          "ejecutado": 5951105.33,
-          "diferencia": 881105.3300000001
+          "ppto": 5915000,
+          "ejecutado": 6910739.33,
+          "diferencia": 995739.3300000001
         },
         {
           "rubro": "Tasa Aseo",
-          "ppto": 432000,
-          "ejecutado": 529516.6699999999,
-          "diferencia": 97516.66999999993
+          "ppto": 504000,
+          "ejecutado": 718362.6699999999,
+          "diferencia": 214362.66999999993
         },
         {
           "rubro": "Energía Eléctrica",
-          "ppto": 23886000,
-          "ejecutado": 22416256.8,
-          "diferencia": -1469743.1999999993
+          "ppto": 27867000,
+          "ejecutado": 27314606.8,
+          "diferencia": -552393.1999999993
         },
         {
           "rubro": "Impuesto A La Seguridad",
-          "ppto": 1320000,
+          "ppto": 1540000,
           "ejecutado": 2078000,
-          "diferencia": 758000
+          "diferencia": 538000
         },
         {
           "rubro": "Teléfono- Internet-Citofonia",
-          "ppto": 2400000,
-          "ejecutado": 4113323,
-          "diferencia": 1713323
+          "ppto": 2800000,
+          "ejecutado": 4798920,
+          "diferencia": 1998920
         },
         {
           "rubro": "Jardín",
-          "ppto": 6600000,
-          "ejecutado": 5756400,
-          "diferencia": -843600
+          "ppto": 7700000,
+          "ejecutado": 6715800,
+          "diferencia": -984200
         },
         {
           "rubro": "Zonas Comunes",
-          "ppto": 21000000,
-          "ejecutado": 12100162,
-          "diferencia": -8899838
+          "ppto": 24500000,
+          "ejecutado": 17523602,
+          "diferencia": -6976398
         },
         {
           "rubro": "Cctv",
-          "ppto": 900000,
+          "ppto": 1050000,
           "ejecutado": 0,
-          "diferencia": -900000
+          "diferencia": -1050000
         },
         {
           "rubro": "Fachada",
-          "ppto": 3600000,
-          "ejecutado": 3600000,
+          "ppto": 4200000,
+          "ejecutado": 4200000,
           "diferencia": 0
         },
         {
           "rubro": "Eléctrico",
-          "ppto": 900000,
-          "ejecutado": 4759850,
-          "diferencia": 3859850
+          "ppto": 1050000,
+          "ejecutado": 5019152,
+          "diferencia": 3969152
         },
         {
           "rubro": "Sub Estación",
-          "ppto": 2565000,
-          "ejecutado": 795774,
-          "diferencia": -1769226
+          "ppto": 2992500,
+          "ejecutado": 4944760,
+          "diferencia": 1952260
         },
         {
           "rubro": "Ascensores",
-          "ppto": 12138000,
-          "ejecutado": 11050839,
-          "diferencia": -1087161
+          "ppto": 14161000,
+          "ejecutado": 13016558,
+          "diferencia": -1144442
         },
         {
           "rubro": "Puerta/Talanqueras",
-          "ppto": 1200000,
-          "ejecutado": 4060000,
-          "diferencia": 2860000
+          "ppto": 1400000,
+          "ejecutado": 4170000,
+          "diferencia": 2770000
         },
         {
           "rubro": "Bombas",
-          "ppto": 4140000,
-          "ejecutado": 4629213,
-          "diferencia": 489213
+          "ppto": 4830000,
+          "ejecutado": 5313106,
+          "diferencia": 483106
         },
         {
           "rubro": "Tanques",
-          "ppto": 4824000,
-          "ejecutado": 4649143,
-          "diferencia": -174857
+          "ppto": 5628000,
+          "ejecutado": 5180659,
+          "diferencia": -447341
         },
         {
           "rubro": "Extintores, Gabinetes, Lamparas)",
-          "ppto": 570000,
-          "ejecutado": 246529,
-          "diferencia": -323471
+          "ppto": 665000,
+          "ejecutado": 382604,
+          "diferencia": -282396
         },
         {
           "rubro": "Mto Red De Incendio",
-          "ppto": 1680000,
+          "ppto": 1960000,
           "ejecutado": 1118057,
-          "diferencia": -561943
+          "diferencia": -841943
         },
         {
           "rubro": "Avisos",
-          "ppto": 900000,
+          "ppto": 1050000,
           "ejecutado": 0,
-          "diferencia": -900000
+          "diferencia": -1050000
         },
         {
           "rubro": "Equipos Radios, Brilladora, Hidrolavadora",
-          "ppto": 900000,
+          "ppto": 1050000,
           "ejecutado": 785000,
-          "diferencia": -115000
+          "diferencia": -265000
         },
         {
           "rubro": "Elementos De Aseo",
-          "ppto": 3006000,
-          "ejecutado": 3319210,
-          "diferencia": 313210
+          "ppto": 3507000,
+          "ejecutado": 3514211,
+          "diferencia": 7211
         },
         {
           "rubro": "Insumos Baños Publicos",
-          "ppto": 1558200,
-          "ejecutado": 1525104,
-          "diferencia": -33096
+          "ppto": 1817900,
+          "ejecutado": 1779288,
+          "diferencia": -38612
         },
         {
           "rubro": "Cafetería, Reunión Consejo",
-          "ppto": 1800000,
-          "ejecutado": 1851879,
-          "diferencia": 51879
+          "ppto": 2100000,
+          "ejecutado": 2125704,
+          "diferencia": 25704
         },
         {
           "rubro": "Correo, Taxis, Correspondencia",
-          "ppto": 168000,
+          "ppto": 196000,
           "ejecutado": 118000,
-          "diferencia": -50000
+          "diferencia": -78000
         },
         {
           "rubro": "Reuniones Asamblea",
-          "ppto": 1200000,
+          "ppto": 1400000,
           "ejecutado": 2384257,
-          "diferencia": 1184257
+          "diferencia": 984257
         },
         {
           "rubro": "Útiles/ Papelería Y Fotocopias",
-          "ppto": 606000,
+          "ppto": 707000,
           "ejecutado": 578263,
-          "diferencia": -27737
+          "diferencia": -128737
         },
         {
           "rubro": "Imprevistos/Legales / Varios/Ajuste Al Peso",
-          "ppto": 600000,
-          "ejecutado": 41560.2,
-          "diferencia": -558439.8
+          "ppto": 700000,
+          "ejecutado": 827723.2,
+          "diferencia": 127723.19999999995
         },
         {
           "rubro": "Dotaciones Menores",
-          "ppto": 900000,
+          "ppto": 1050000,
           "ejecutado": 951600,
-          "diferencia": 51600
+          "diferencia": -98400
         },
         {
           "rubro": "Arreglos Navideños-Detalles",
-          "ppto": 2700000,
+          "ppto": 3150000,
           "ejecutado": 210180,
-          "diferencia": -2489820
+          "diferencia": -2939820
         },
         {
           "rubro": "Reserva Ley 675",
-          "ppto": 4428366,
+          "ppto": 5166427,
           "ejecutado": 0,
-          "diferencia": -4428366
+          "diferencia": -5166427
         },
         {
           "rubro": "Costos Y Gastos Ejercicios Anteriores",
@@ -1386,11 +1383,11 @@
         },
         {
           "categoria": "Honorarios",
-          "valor": 66184279
+          "valor": 77731943
         },
         {
           "categoria": "Servicios Generales",
-          "valor": 273004167.16
+          "valor": 313955431.29
         },
         {
           "categoria": "Impuestos",
@@ -1398,15 +1395,15 @@
         },
         {
           "categoria": "Servicios Publicos",
-          "valor": 35088201.8
+          "valor": 41820628.8
         },
         {
           "categoria": "Mantenimiento",
-          "valor": 53550967
+          "valor": 68369298
         },
         {
           "categoria": "Diversos",
-          "valor": 10980053.2
+          "valor": 12489226.2
         },
         {
           "categoria": "Otros Gastos",
@@ -1416,33 +1413,33 @@
       "ingresosDetalle": [
         {
           "rubro": "Cuotas De Admón. Expensas Comunes",
-          "ppto": 412554618,
-          "ejecutado": 437341500,
-          "diferencia": 24786882
+          "ppto": 481313721,
+          "ejecutado": 506098700,
+          "diferencia": 24784979
         },
         {
           "rubro": "Fondo Ley 675",
           "ppto": 0,
-          "ejecutado": -4428366,
-          "diferencia": -4428366
+          "ejecutado": -5166427,
+          "diferencia": -5166427
         },
         {
           "rubro": "Rendimientos Bancarios",
           "ppto": 0,
-          "ejecutado": 10680.56,
-          "diferencia": 10680.56
+          "ejecutado": 12046.9,
+          "diferencia": 12046.9
         },
         {
           "rubro": "Rendimientos Por Inversiones",
           "ppto": 0,
-          "ejecutado": 12865831.51,
-          "diferencia": 12865831.51
+          "ejecutado": 14594636.74,
+          "diferencia": 14594636.74
         },
         {
           "rubro": "Intereses De Mora",
           "ppto": 0,
-          "ejecutado": 1194571,
-          "diferencia": 1194571
+          "ejecutado": 1443079,
+          "diferencia": 1443079
         },
         {
           "rubro": "Multas Por Asamblea",
@@ -1452,39 +1449,39 @@
         },
         {
           "rubro": "Descuentos Por Pronto Pago",
-          "ppto": 3000000,
-          "ejecutado": 5245192,
-          "diferencia": 2245192
+          "ppto": 3500000,
+          "ejecutado": 6037193,
+          "diferencia": 2537193
         },
         {
           "rubro": "Salón De Reuniones",
-          "ppto": 9000000,
-          "ejecutado": 12889220,
-          "diferencia": 3889220
+          "ppto": 10500000,
+          "ejecutado": 15312180,
+          "diferencia": 4812180
         },
         {
           "rubro": "Menos: (mtto - Internet -cafeteria) Salon Social",
           "ppto": 0,
-          "ejecutado": -1382457,
-          "diferencia": -1382457
+          "ejecutado": -2290537,
+          "diferencia": -2290537
         },
         {
           "rubro": "Espacio Zona Común",
-          "ppto": 6000000,
-          "ejecutado": 11727366,
-          "diferencia": 5727366
+          "ppto": 7000000,
+          "ejecutado": 13007033,
+          "diferencia": 6007033
         },
         {
           "rubro": "Espacio Oficina Admon",
-          "ppto": 5200200,
-          "ejecutado": 2600000,
-          "diferencia": -2600200
+          "ppto": 6066900,
+          "ejecutado": 3900000,
+          "diferencia": -2166900
         },
         {
           "rubro": "Reintegro De Costos Y Gastos - Incapacidades",
           "ppto": 0,
-          "ejecutado": 929339,
-          "diferencia": 929339
+          "ejecutado": 1311839,
+          "diferencia": 1311839
         },
         {
           "rubro": "Reclamacion Aseguradora",
@@ -1495,20 +1492,20 @@
         {
           "rubro": "Aprovechamientos",
           "ppto": 0,
-          "ejecutado": 1402137,
-          "diferencia": 1402137
+          "ejecutado": 2062644,
+          "diferencia": 2062644
         },
         {
           "rubro": "Reciclaje",
           "ppto": 0,
-          "ejecutado": 931590,
-          "diferencia": 931590
+          "ejecutado": 1023910,
+          "diferencia": 1023910
         },
         {
           "rubro": "Multas/Alquiler Parqueadero Motos Y Carros",
-          "ppto": 11510100,
-          "ejecutado": 15349100,
-          "diferencia": 3839000
+          "ppto": 13428450,
+          "ejecutado": 18819300,
+          "diferencia": 5390850
         }
       ],
       "servicios": [
@@ -1520,7 +1517,8 @@
             "MARZO",
             "ABRIL",
             "MAYO",
-            "JUNIO"
+            "JUNIO",
+            "JULIO"
           ],
           "valores": [
             863329,
@@ -1528,7 +1526,8 @@
             1007713,
             1350480.33,
             891839,
-            986753
+            986753,
+            959634
           ]
         },
         {
@@ -1539,7 +1538,8 @@
             "MARZO",
             "ABRIL",
             "MAYO",
-            "JUNIO"
+            "JUNIO",
+            "JULIO"
           ],
           "valores": [
             66832,
@@ -1547,7 +1547,8 @@
             90389,
             93688.67,
             94213,
-            94204
+            94204,
+            188846
           ]
         },
         {
@@ -1558,7 +1559,8 @@
             "MARZO",
             "ABRIL",
             "MAYO",
-            "JUNIO"
+            "JUNIO",
+            "JULIO"
           ],
           "valores": [
             3580920,
@@ -1566,7 +1568,8 @@
             3472050,
             3705655.8,
             3714524,
-            4267328
+            4267328,
+            4898350
           ]
         },
         {
@@ -1577,7 +1580,8 @@
             "MARZO",
             "ABRIL",
             "MAYO",
-            "JUNIO"
+            "JUNIO",
+            "JULIO"
           ],
           "valores": [
             0,
@@ -1585,6 +1589,7 @@
             992000,
             0,
             1086000,
+            0,
             0
           ]
         },
@@ -1596,11 +1601,13 @@
             "MARZO",
             "ABRIL",
             "MAYO",
-            "JUNIO"
+            "JUNIO",
+            "JULIO"
           ],
           "valores": [
             686548,
             684387,
+            685597,
             685597,
             685597,
             685597,
@@ -3201,22 +3208,22 @@
       "unidad": "Marroco",
       "archivo": "EEFF-MARROCO-2026.xls",
       "anio": 2026,
-      "mes": "JUNIO",
+      "mes": "JULIO",
       "kpis": {
-        "efectivo": 18821583.95,
-        "cartera": 48089137,
-        "excedenteAcumulado": 12597725.730000034,
-        "excedenteMes": 6107469.730000003,
-        "gastoPromedioMensual": 100116410.26833333
+        "efectivo": 35612497,
+        "cartera": 34549571,
+        "excedenteAcumulado": 7174350.730000033,
+        "excedenteMes": -5423375,
+        "gastoPromedioMensual": 101228324.80142857
       },
       "presupuesto": {
         "ingresos": {
-          "ppto": 607353754,
-          "ejecutado": 613296187.34
+          "ppto": 708579380,
+          "ejecutado": 715772624.34
         },
         "gastos": {
-          "ppto": 607353754,
-          "ejecutado": 600698461.61
+          "ppto": 708579380,
+          "ejecutado": 708598273.61
         }
       },
       "mensual": {
@@ -3226,7 +3233,8 @@
           "MARZO",
           "ABRIL",
           "MAYO",
-          "JUNIO"
+          "JUNIO",
+          "JULIO"
         ],
         "ingresos": [
           93672560,
@@ -3234,7 +3242,8 @@
           93881158,
           110732642,
           110586282,
-          110610494.34
+          110610494.34,
+          102476437
         ],
         "gastos": [
           100574754,
@@ -3242,7 +3251,8 @@
           107869527,
           94383571,
           97225819,
-          104503024.61
+          104503024.61,
+          107899812
         ],
         "excedenteMes": [
           -6902194,
@@ -3250,395 +3260,330 @@
           -13988369,
           16349071,
           13360463,
-          6107469.730000004
+          6107469.730000004,
+          -5423375
         ]
       },
       "morosos": [
         {
           "apto": "1805",
           "nombre": "Deinar Yernefi Agudelo Ortiz / Valentina Hernandez Agudelo CC:43.751.130",
-          "valor": 21645805,
-          "cuotas": null
-        },
-        {
-          "apto": "1006",
-          "nombre": "Ricardo Serna Velez / Maria Camila Arango Valencia CC:1036636162",
-          "valor": 3180025,
+          "valor": 21644185,
           "cuotas": null
         },
         {
           "apto": "2107",
           "nombre": "Giovanni Molina Marin CC:1039463142",
-          "valor": 2966143,
+          "valor": 3969388,
           "cuotas": null
         },
         {
           "apto": "1102",
           "nombre": "Helena Patricia Mora Madrigal / Carlos Andres Gomez Arboleda CC:43221394",
-          "valor": 2532189,
+          "valor": 2331556,
           "cuotas": null
         },
         {
           "apto": "1904",
           "nombre": "Jose Quintero Serna CC:71381805",
-          "valor": 1710859,
+          "valor": 1325715,
           "cuotas": null
         },
         {
-          "apto": "2201",
-          "nombre": "Paula Andrea Zapata CC:43654644",
-          "valor": 1657699,
+          "apto": "1506",
+          "nombre": "Alvaro Alberto Gomez Alba CC:1090464630",
+          "valor": 1001250,
           "cuotas": null
         },
         {
-          "apto": "608",
-          "nombre": "Rafael Antonio Sierra Restrepo CC:70516127",
-          "valor": 1645351,
+          "apto": "2101",
+          "nombre": "Oswaldo Montañez Hernandez / Ana Paola Espinosa CC:70517522",
+          "valor": 968142,
           "cuotas": null
         },
         {
-          "apto": "1703",
-          "nombre": "Gonzalo Howard Londoño / Jane Pusey Castro CC:18011233",
-          "valor": 1635758,
-          "cuotas": null
-        },
-        {
-          "apto": "706",
-          "nombre": "Monica Alexandra Benitez Benavidez / Sandra Stella Benavidez Jimenez CC:",
-          "valor": 1532499,
-          "cuotas": null
-        },
-        {
-          "apto": "1901",
-          "nombre": "Juan Fernando Campo Franco CC:4517777",
-          "valor": 1032149,
-          "cuotas": null
-        },
-        {
-          "apto": "906",
-          "nombre": "John Fredy Florez Arenas / Luz Adriana Monsalve Zuluaga CC:71741475",
-          "valor": 1027496,
-          "cuotas": null
-        },
-        {
-          "apto": "2006",
-          "nombre": "John Camilo Herron Carmona / Ana Milena Lopera Arango CC:98772536",
-          "valor": 1013679,
-          "cuotas": null
-        },
-        {
-          "apto": "1106",
-          "nombre": "Stivens Ariel Sanguino / Maria Del Carmen Carvajal Henao CC:649753908",
-          "valor": 987154,
-          "cuotas": null
-        },
-        {
-          "apto": "1005",
-          "nombre": "Laura Cristina Velez Gonzalez CC:1152458834",
-          "valor": 838539,
-          "cuotas": null
-        },
-        {
-          "apto": "908",
-          "nombre": "Jorge Luis Gómez Martínez CC:1065582972",
-          "valor": 808337,
-          "cuotas": null
-        },
-        {
-          "apto": "802",
-          "nombre": "Isabel Cristina Correa Ángel CC:43684250",
-          "valor": 804277,
-          "cuotas": null
-        },
-        {
-          "apto": "1008",
-          "nombre": "Fabio Alberto De Jesus Ortega Marquez",
-          "valor": 797472,
-          "cuotas": null
-        },
-        {
-          "apto": "1208",
-          "nombre": "Jorge Mario Velez Medina / Ana Maria Franco Guzman CC:3414215",
-          "valor": 795300,
-          "cuotas": null
-        },
-        {
-          "apto": "805",
-          "nombre": "John Arley Celis Carmona CC:1045047098",
-          "valor": 793125,
-          "cuotas": null
-        },
-        {
-          "apto": "1308",
-          "nombre": "Jessica María Acosta Hernández CC:1036623863",
-          "valor": 792040,
-          "cuotas": null
-        },
-        {
-          "apto": "2007",
-          "nombre": "Laura Restrepo Gonzalez CC:1036647008",
-          "valor": 676873,
-          "cuotas": null
-        },
-        {
-          "apto": "1207",
-          "nombre": "Inversiones Cuatrense (Alejandra Perez / Juan David Hoyos) AP:901125937-1",
-          "valor": 612772,
-          "cuotas": null
-        },
-        {
-          "apto": "CONSUT",
-          "nombre": "Constructora Agata S.A.S NIT:900430960-5",
-          "valor": 124110,
-          "cuotas": null
-        },
-        {
-          "apto": "CONSPQ",
-          "nombre": "Constructora Agata S.A.S NIT:900430960-5",
-          "valor": 82166,
+          "apto": "1103",
+          "nombre": "Nelson Hernando Vargas González CC:1039451924",
+          "valor": 760468,
           "cuotas": null
         },
         {
           "apto": "2102",
           "nombre": "Jorge Mario Uribe Toro / Yuli Farley Muñoz Arenas CC:8163751",
-          "valor": 4105,
+          "valor": 748608,
           "cuotas": null
         },
         {
-          "apto": "2003",
-          "nombre": "Sergio Andres Castrillon Idarraga / Laura Isabel Gallego Arroyave CC:",
-          "valor": 509,
+          "apto": "1003",
+          "nombre": "Johanna Maria Bossa Paredes / Julio Alejandro Morales Fernandez CC:",
+          "valor": 748429,
           "cuotas": null
         },
         {
-          "apto": "1704",
-          "nombre": "Diana Marcela Meza Leon CC:33993536",
-          "valor": 40,
+          "apto": "1803",
+          "nombre": "Jorge Andres Andrade Ochoa / Orfa Nelly Machado Moreno CC:72041230",
+          "valor": 744416,
           "cuotas": null
         },
         {
-          "apto": "1906",
-          "nombre": "Luis Felipe Gaviria Gomez / Adriana Milena Cuartas Arismendy CC:98548309",
-          "valor": 1,
+          "apto": "1603",
+          "nombre": "Jessica Mestre Loaiza / Carlos Esteban Garcia Camargo CC:1128416909",
+          "valor": 743413,
           "cuotas": null
         },
         {
-          "apto": "2001",
-          "nombre": "Juan Guillermo Correa Londoño CC:8030889",
-          "valor": 1,
+          "apto": "1808",
+          "nombre": "Daniel Cano Montaño / Lina Marcela Hernandez Villegas CC:1039453673",
+          "valor": 732377,
+          "cuotas": null
+        },
+        {
+          "apto": "1604",
+          "nombre": "Juan Esteban Giraldo Gomez CC:8101130",
+          "valor": 579882,
+          "cuotas": null
+        },
+        {
+          "apto": "1005",
+          "nombre": "Laura Cristina Velez Gonzalez CC:1152458834",
+          "valor": 571919,
+          "cuotas": null
+        },
+        {
+          "apto": "802",
+          "nombre": "Isabel Cristina Correa Ángel CC:43684250",
+          "valor": 500000,
+          "cuotas": null
+        },
+        {
+          "apto": "CONSUT",
+          "nombre": "Constructora Agata S.A.S NIT:900430960-5",
+          "valor": 96799,
+          "cuotas": null
+        },
+        {
+          "apto": "CONSPQ",
+          "nombre": "Constructora Agata S.A.S NIT:900430960-5",
+          "valor": 37848,
+          "cuotas": null
+        },
+        {
+          "apto": "CU9802A",
+          "nombre": "Gran Fragata SAS / Carlos Cordoba NIT:900.619.974",
+          "valor": 15049,
           "cuotas": null
         }
       ],
       "desviaciones": [
         {
           "rubro": "Vigilancia",
-          "ppto": 213925752,
+          "ppto": 249580044,
           "pptoAnual": 427851504.5,
-          "ejecutado": 209784260,
-          "diferencia": -4141492
+          "ejecutado": 245678405,
+          "diferencia": -3901639
         },
         {
           "rubro": "Oficios Varios",
-          "ppto": 89917506,
+          "ppto": 104903757,
           "pptoAnual": 179835012,
-          "ejecutado": 91724669,
-          "diferencia": 1807163
+          "ejecutado": 106769872,
+          "diferencia": 1866115
         },
         {
           "rubro": "Administración",
-          "ppto": 31800000,
+          "ppto": 37100000,
           "pptoAnual": 63600000,
-          "ejecutado": 31799996,
-          "diferencia": -4
+          "ejecutado": 37099995,
+          "diferencia": -5
         },
         {
           "rubro": "Contabilidad",
-          "ppto": 10500000,
+          "ppto": 12250000,
           "pptoAnual": 21000000,
-          "ejecutado": 10500000,
+          "ejecutado": 12250000,
           "diferencia": 0
         },
         {
           "rubro": "Facturacion",
-          "ppto": 1734000,
+          "ppto": 2023000,
           "pptoAnual": 3468000,
-          "ejecutado": 1727400,
-          "diferencia": -6600
+          "ejecutado": 2015300,
+          "diferencia": -7700
         },
         {
           "rubro": "Sg-Sst",
-          "ppto": 900000,
+          "ppto": 1050000,
           "pptoAnual": 1800000,
           "ejecutado": 900000,
-          "diferencia": 0
+          "diferencia": -150000
         },
         {
           "rubro": "Pòliza Global Copropiedad",
-          "ppto": 45866544,
+          "ppto": 53510968,
           "pptoAnual": 91733088,
-          "ejecutado": 45866544,
+          "ejecutado": 53510968,
           "diferencia": 0
         },
         {
           "rubro": "Acueducto",
-          "ppto": 5700000,
+          "ppto": 6650000,
           "pptoAnual": 11400000,
-          "ejecutado": 4529733,
-          "diferencia": -1170267
+          "ejecutado": 5379758,
+          "diferencia": -1270242
         },
         {
           "rubro": "Energia Eléctrica",
-          "ppto": 78060000,
+          "ppto": 91070000,
           "pptoAnual": 156120000,
-          "ejecutado": 72870783,
-          "diferencia": -5189217
+          "ejecutado": 86761988,
+          "diferencia": -4308012
         },
         {
           "rubro": "Imp Tasa Seguridad",
-          "ppto": 5040000,
+          "ppto": 5880000,
           "pptoAnual": 10080000,
           "ejecutado": 7490000,
-          "diferencia": 2450000
+          "diferencia": 1610000
         },
         {
           "rubro": "Teléfono Convencional",
-          "ppto": 306000,
+          "ppto": 357000,
           "pptoAnual": 612000,
-          "ejecutado": 213350,
-          "diferencia": -92650
+          "ejecutado": 247025,
+          "diferencia": -109975
         },
         {
           "rubro": "Mantto. Zonas Comunes",
-          "ppto": 6600000,
+          "ppto": 7700000,
           "pptoAnual": 13200000,
-          "ejecutado": 3514532,
-          "diferencia": -3085468
+          "ejecutado": 10681815,
+          "diferencia": 2981815
         },
         {
           "rubro": "Mantenimiento Elèctrico",
-          "ppto": 900000,
+          "ppto": 1050000,
           "pptoAnual": 1800000,
-          "ejecutado": 3842260,
-          "diferencia": 2942260
+          "ejecutado": 4564828,
+          "diferencia": 3514828
         },
         {
           "rubro": "Puertas Electricas",
-          "ppto": 990000,
+          "ppto": 1155000,
           "pptoAnual": 1980000,
           "ejecutado": 0,
-          "diferencia": -990000
+          "diferencia": -1155000
         },
         {
           "rubro": "Mantto Gimnasio",
-          "ppto": 1080000,
+          "ppto": 1260000,
           "pptoAnual": 2160000,
           "ejecutado": 1370000,
-          "diferencia": 290000
+          "diferencia": 110000
         },
         {
           "rubro": "Mantto. Jardineria",
-          "ppto": 6750000,
+          "ppto": 7875000,
           "pptoAnual": 13500000,
-          "ejecutado": 8031000,
-          "diferencia": 1281000
+          "ejecutado": 12065000,
+          "diferencia": 4190000
         },
         {
           "rubro": "Mantenimiento Ascensores",
-          "ppto": 55988428,
+          "ppto": 65319832,
           "pptoAnual": 111976855.614,
-          "ejecutado": 53322312,
-          "diferencia": -2666116
+          "ejecutado": 62209364,
+          "diferencia": -3110468
         },
         {
           "rubro": "Mantto. Motobombas",
-          "ppto": 7260000,
+          "ppto": 8470000,
           "pptoAnual": 14520000,
-          "ejecutado": 11061568,
-          "diferencia": 3801568
+          "ejecutado": 11812847,
+          "diferencia": 3342847
         },
         {
           "rubro": "Lavado Tanques",
-          "ppto": 2046120,
+          "ppto": 2387140,
           "pptoAnual": 4092240,
-          "ejecutado": 213274,
-          "diferencia": -1832846
+          "ejecutado": 1122124,
+          "diferencia": -1265016
         },
         {
           "rubro": "Ric, Extintores, Y Lamparas Emergencia",
-          "ppto": 11874000,
+          "ppto": 13853000,
           "pptoAnual": 23748000,
-          "ejecutado": 10056801,
-          "diferencia": -1817199
+          "ejecutado": 11353471,
+          "diferencia": -2499529
         },
         {
           "rubro": "Planta De Emergencia",
-          "ppto": 810000,
+          "ppto": 945000,
           "pptoAnual": 1620000,
-          "ejecutado": 708609,
-          "diferencia": -101391
+          "ejecutado": 944812,
+          "diferencia": -188
         },
         {
           "rubro": "Provision Cambio Filtro Y Baterias",
-          "ppto": 1500000,
+          "ppto": 1750000,
           "pptoAnual": 3000000,
           "ejecutado": 0,
-          "diferencia": -1500000
+          "diferencia": -1750000
         },
         {
           "rubro": "Fumigaciòn",
-          "ppto": 1440000,
+          "ppto": 1680000,
           "pptoAnual": 2880000,
           "ejecutado": 2888700,
-          "diferencia": 1448700
+          "diferencia": 1208700
         },
         {
           "rubro": "Dotacion Y Herramientas Menores",
-          "ppto": 660000,
+          "ppto": 770000,
           "pptoAnual": 1320000,
           "ejecutado": 306558,
-          "diferencia": -353442
+          "diferencia": -463442
         },
         {
           "rubro": "Insumos Piscina",
-          "ppto": 6720000,
+          "ppto": 7840000,
           "pptoAnual": 13440000,
-          "ejecutado": 5922800,
-          "diferencia": -797200
+          "ejecutado": 6740700,
+          "diferencia": -1099300
         },
         {
           "rubro": "Bombas De Calor",
-          "ppto": 1080000,
+          "ppto": 1260000,
           "pptoAnual": 2160000,
           "ejecutado": 875000,
-          "diferencia": -205000
+          "diferencia": -385000
         },
         {
           "rubro": "Elementos Aseo Y Cafeteria",
-          "ppto": 6300000,
+          "ppto": 7350000,
           "pptoAnual": 12600000,
-          "ejecutado": 6597948,
-          "diferencia": 297948
+          "ejecutado": 7768301,
+          "diferencia": 418301
         },
         {
           "rubro": "Papelerìa Y Fotocopias",
-          "ppto": 546000,
+          "ppto": 637000,
           "pptoAnual": 1092000,
-          "ejecutado": 492619,
-          "diferencia": -53381
+          "ejecutado": 503619,
+          "diferencia": -133381
         },
         {
           "rubro": "Logistica Asamblea",
-          "ppto": 2160000,
+          "ppto": 2520000,
           "pptoAnual": 4320000,
           "ejecutado": 3178400,
-          "diferencia": 1018400
+          "diferencia": 658400
         },
         {
           "rubro": "Bancarios",
-          "ppto": 786000,
+          "ppto": 917000,
           "pptoAnual": 1572000,
-          "ejecutado": 669788.61,
-          "diferencia": -116211.39000000001
+          "ejecutado": 867632.61,
+          "diferencia": -49367.390000000014
         },
         {
           "rubro": "Otros No Presupuestados",
@@ -3649,72 +3594,78 @@
         },
         {
           "rubro": "Fondo De Imprevistos Ley 675",
-          "ppto": 6013404,
+          "ppto": 7015638,
           "pptoAnual": 12026808,
-          "ejecutado": 6013404,
+          "ejecutado": 7015638,
           "diferencia": 0
         },
         {
           "rubro": "Arreglos Navideños",
-          "ppto": 2100000,
+          "ppto": 2450000,
           "pptoAnual": 4200000,
           "ejecutado": 0,
-          "diferencia": -2100000
+          "diferencia": -2450000
         }
       ],
       "composicion": [
         {
           "categoria": "Gastos De Personal",
-          "valor": 301508929
+          "valor": 352448277
         },
         {
           "categoria": "Gastos Administrativos",
-          "valor": 44927396
+          "valor": 52265295
         },
         {
           "categoria": "Seguro",
-          "valor": 45866544
+          "valor": 53510968
         },
         {
           "categoria": "Servicios Publicos",
-          "valor": 85103866
+          "valor": 99878771
         },
         {
           "categoria": "Mantenimientos Y Reparaciones",
-          "valor": 102113414
+          "valor": 126935219
         },
         {
           "categoria": "Otros Gastos Diversos",
-          "valor": 20508524
+          "valor": 22692111
         },
         {
           "categoria": "Gastos No Operacionales",
-          "valor": 669788.61
+          "valor": 867632.61
         }
       ],
       "ingresosDetalle": [
         {
           "rubro": "Cuotas De Sostenimiento",
           "ppto": null,
-          "ejecutado": 601953768,
+          "ejecutado": 702279396,
           "diferencia": null
         },
         {
           "rubro": "Intereses Corporaciones Financ Y Morosos",
           "ppto": null,
-          "ejecutado": 3645142.34,
+          "ejecutado": 4210675.34,
           "diferencia": null
         },
         {
           "rubro": "Salon Social",
           "ppto": null,
-          "ejecutado": 1750000,
+          "ejecutado": 2250000,
           "diferencia": null
         },
         {
           "rubro": "Descuentos",
           "ppto": null,
-          "ejecutado": 5825803,
+          "ejecutado": 6882549,
+          "diferencia": null
+        },
+        {
+          "rubro": "Reintegro De Costos Y Gastos",
+          "ppto": null,
+          "ejecutado": 28015,
           "diferencia": null
         },
         {
@@ -3726,7 +3677,7 @@
         {
           "rubro": "Diversos",
           "ppto": null,
-          "ejecutado": 25474,
+          "ejecutado": 25989,
           "diferencia": null
         }
       ],
@@ -5069,22 +5020,22 @@
       "unidad": "Santafe",
       "archivo": "EEFF-SANTAFE-2026.xlsx",
       "anio": 2026,
-      "mes": "JUNIO",
+      "mes": "JULIO",
       "kpis": {
-        "efectivo": 23612828,
-        "cartera": 15295178,
-        "excedenteAcumulado": 25679425,
-        "excedenteMes": 8927759,
-        "gastoPromedioMensual": 97544516.33333333
+        "efectivo": 43845265,
+        "cartera": 7050527,
+        "excedenteAcumulado": 33155365,
+        "excedenteMes": 7475940,
+        "gastoPromedioMensual": 97084770
       },
       "presupuesto": {
         "ingresos": {
-          "ppto": 609984066,
-          "ejecutado": 610946523
+          "ppto": 711648077,
+          "ejecutado": 712748755
         },
         "gastos": {
-          "ppto": 609984066,
-          "ejecutado": 585267098
+          "ppto": 711648077,
+          "ejecutado": 679593390
         }
       },
       "mensual": {
@@ -5094,7 +5045,8 @@
           "MARZO",
           "ABRIL",
           "MAYO",
-          "JUNIO"
+          "JUNIO",
+          "JULIO"
         ],
         "ingresos": [
           91344587,
@@ -5102,7 +5054,8 @@
           92019401,
           111610422,
           110837611,
-          112287001
+          112287001,
+          101802232
         ],
         "gastos": [
           91658976,
@@ -5110,7 +5063,8 @@
           106437452,
           94136795,
           98035156,
-          103359242
+          103359242,
+          94326292
         ],
         "excedenteMes": [
           -314389,
@@ -5118,476 +5072,453 @@
           -14418051,
           17473627,
           12802455,
-          8927759
+          8927759,
+          7475940
         ]
       },
       "morosos": [
         {
-          "apto": "1103",
-          "nombre": "Juan David Restrepo",
-          "valor": 2511508,
-          "cuotas": null
-        },
-        {
           "apto": "906",
           "nombre": "Maria Nohelia Puertas",
-          "valor": 2323393,
+          "valor": 3057121,
           "cuotas": null
         },
         {
-          "apto": "901",
-          "nombre": "Nubia Velez",
-          "valor": 1951747,
-          "cuotas": null
-        },
-        {
-          "apto": "907",
-          "nombre": "Meredith Carrascal",
-          "valor": 1800949,
-          "cuotas": null
-        },
-        {
-          "apto": "1609",
-          "nombre": "Diana Gonzalez De Brown",
-          "valor": 1177546,
-          "cuotas": null
-        },
-        {
-          "apto": "1809",
-          "nombre": "Edgar Arias Sandoval",
-          "valor": 1104245,
-          "cuotas": null
-        },
-        {
-          "apto": "1101",
-          "nombre": "Inv.San Miguel Uribe Norena",
-          "valor": 1019453,
-          "cuotas": null
-        },
-        {
-          "apto": "1510",
-          "nombre": "Veronica De La Ossa Villa",
-          "valor": 971112,
-          "cuotas": null
-        },
-        {
-          "apto": "701",
-          "nombre": "Gladys Vanegas",
-          "valor": 923095,
-          "cuotas": null
-        },
-        {
-          "apto": "1501",
-          "nombre": "Constanza Arcila Y Cia Ltda Nit 800104395-3",
-          "valor": 913131,
-          "cuotas": null
-        },
-        {
-          "apto": "801",
-          "nombre": "Ricardo A Serna",
-          "valor": 881655,
-          "cuotas": null
-        },
-        {
-          "apto": "606",
-          "nombre": "Lina Maria Vargas B",
-          "valor": 784838,
+          "apto": "1103",
+          "nombre": "Juan David Restrepo",
+          "valor": 2964929,
           "cuotas": null
         },
         {
           "apto": "506",
           "nombre": "Maria Fernanda Gil",
-          "valor": 701993,
+          "valor": 1435166,
           "cuotas": null
         },
         {
-          "apto": "1009",
-          "nombre": "Ana Maria Giraldo",
-          "valor": 607877,
+          "apto": "1101",
+          "nombre": "Inv.San Miguel Uribe Norena",
+          "valor": 1149884,
           "cuotas": null
         },
         {
-          "apto": "1202",
-          "nombre": "Andres Sicard R./Andrea Cano",
-          "valor": 599500,
-          "cuotas": null
-        },
-        {
-          "apto": "909",
-          "nombre": "Juan Diego Uribe",
-          "valor": 569026,
-          "cuotas": null
-        },
-        {
-          "apto": "502",
-          "nombre": "Maximiliano Valderrama",
-          "valor": 470273,
-          "cuotas": null
-        },
-        {
-          "apto": "1503",
-          "nombre": "Maria Camila Henao Osorno CC:1017193845",
-          "valor": 435725,
-          "cuotas": null
-        },
-        {
-          "apto": "PQ-0022",
-          "nombre": "Eugenia Betancur B.C.C.53973159",
-          "valor": 376960,
-          "cuotas": null
-        },
-        {
-          "apto": "PQ-0001",
-          "nombre": "Inmobiliaria Conconcreto",
-          "valor": 305994,
-          "cuotas": null
-        },
-        {
-          "apto": "1909",
-          "nombre": "Daniel Zapata M/",
-          "valor": 263375,
+          "apto": "1501",
+          "nombre": "Constanza Arcila Y Cia Ltda Nit 800104395-3",
+          "valor": 835558,
           "cuotas": null
         },
         {
           "apto": "807",
           "nombre": "Julian Ochoa Arango",
-          "valor": 241060,
+          "valor": 781160,
+          "cuotas": null
+        },
+        {
+          "apto": "1510",
+          "nombre": "Veronica De La Ossa Villa",
+          "valor": 657906,
+          "cuotas": null
+        },
+        {
+          "apto": "1309",
+          "nombre": "Gabriel Alfredo Ramirez",
+          "valor": 549760,
+          "cuotas": null
+        },
+        {
+          "apto": "1809",
+          "nombre": "Edgar Arias Sandoval",
+          "valor": 528652,
+          "cuotas": null
+        },
+        {
+          "apto": "907",
+          "nombre": "Meredith Carrascal",
+          "valor": 522227,
+          "cuotas": null
+        },
+        {
+          "apto": "1909",
+          "nombre": "Daniel Zapata M/",
+          "valor": 328022,
+          "cuotas": null
+        },
+        {
+          "apto": "PQ-0000",
+          "nombre": "Arquitectura Y Concreto",
+          "valor": 168614,
+          "cuotas": null
+        },
+        {
+          "apto": "PQ-0001",
+          "nombre": "Inmobiliaria Conconcreto",
+          "valor": 141804,
+          "cuotas": null
+        },
+        {
+          "apto": "709",
+          "nombre": "Camilo Palacio Quintero",
+          "valor": 74607,
+          "cuotas": null
+        },
+        {
+          "apto": "604",
+          "nombre": "Diana Patricia Obando",
+          "valor": 51144,
+          "cuotas": null
+        },
+        {
+          "apto": "PQ-5354",
+          "nombre": "Lucelly de Jesús Castillo Rendón CC:22186757",
+          "valor": 47110,
+          "cuotas": null
+        },
+        {
+          "apto": "PQ-0138",
+          "nombre": "Maria Marleny Roldan",
+          "valor": 23579,
           "cuotas": null
         },
         {
           "apto": "PQ-0002",
           "nombre": "Juan Camilo Jimenez Correac.C.8.465.289",
-          "valor": 190391,
-          "cuotas": null
-        },
-        {
-          "apto": "1102",
-          "nombre": "Guillermo Hernand",
-          "valor": 36601,
-          "cuotas": null
-        },
-        {
-          "apto": "505",
-          "nombre": "Antonio Angulo Catano",
-          "valor": 13142,
-          "cuotas": null
-        },
-        {
-          "apto": "1810",
-          "nombre": "Angela Castro/Jaime Orozco",
-          "valor": 1634,
+          "valor": 6000,
           "cuotas": null
         },
         {
           "apto": "1710",
           "nombre": "Jorge Alberto Hernandez",
-          "valor": 100,
+          "valor": 1709,
           "cuotas": null
         },
         {
-          "apto": "1106",
-          "nombre": "Jose Fdo Maya/Guillermo Hno",
-          "valor": 1,
+          "apto": "1810",
+          "nombre": "Angela Castro/Jaime Orozco",
+          "valor": 1669,
+          "cuotas": null
+        },
+        {
+          "apto": "705",
+          "nombre": "Jorge J Guarin",
+          "valor": 647,
+          "cuotas": null
+        },
+        {
+          "apto": "608",
+          "nombre": "Santiago Del Valle",
+          "valor": 180,
+          "cuotas": null
+        },
+        {
+          "apto": "1802",
+          "nombre": "Paulina Toro",
+          "valor": 27,
           "cuotas": null
         }
       ],
       "desviaciones": [
         {
           "rubro": "Vigilancia",
-          "ppto": 213900792,
+          "ppto": 249550924,
           "pptoAnual": 427801584,
-          "ejecutado": 209498922,
-          "diferencia": -4401870
+          "ejecutado": 245388881,
+          "diferencia": -4162043
         },
         {
           "rubro": "Aseo",
-          "ppto": 68598000,
+          "ppto": 80031000,
           "pptoAnual": 137196000,
-          "ejecutado": 68296632,
-          "diferencia": -301368
+          "ejecutado": 79747686,
+          "diferencia": -283314
         },
         {
           "rubro": "Poliza De Seguros",
-          "ppto": 32380500,
+          "ppto": 37777250,
           "pptoAnual": 64761000,
-          "ejecutado": 32380428,
-          "diferencia": -72
+          "ejecutado": 37777166,
+          "diferencia": -84
         },
         {
           "rubro": "Administración",
-          "ppto": 39955680,
+          "ppto": 46614960,
           "pptoAnual": 79911360,
-          "ejecutado": 39955675,
-          "diferencia": -5
+          "ejecutado": 46614954,
+          "diferencia": -6
         },
         {
           "rubro": "Facturacion",
-          "ppto": 2520000,
+          "ppto": 2940000,
           "pptoAnual": 5040000,
-          "ejecutado": 2381600,
-          "diferencia": -138400
+          "ejecutado": 2744100,
+          "diferencia": -195900
         },
         {
           "rubro": "Rev Fiscal",
-          "ppto": 9072000,
+          "ppto": 10584000,
           "pptoAnual": 18144000,
-          "ejecutado": 9072000,
+          "ejecutado": 10584000,
           "diferencia": 0
         },
         {
           "rubro": "Contabilidad",
-          "ppto": 9072000,
+          "ppto": 10584000,
           "pptoAnual": 18144000,
-          "ejecutado": 9072000,
+          "ejecutado": 10584000,
           "diferencia": 0
         },
         {
           "rubro": "Juridico/Sgsst/Pmirs",
-          "ppto": 7242000,
+          "ppto": 8449000,
           "pptoAnual": 14484000,
-          "ejecutado": 5081898,
-          "diferencia": -2160102
+          "ejecutado": 6996381,
+          "diferencia": -1452619
         },
         {
           "rubro": "Acueducto",
-          "ppto": 4500000,
+          "ppto": 5250000,
           "pptoAnual": 9000000,
-          "ejecutado": 4939880,
-          "diferencia": 439880
+          "ejecutado": 7438720,
+          "diferencia": 2188720
         },
         {
           "rubro": "Energia Eléctrica E Impuesto Seguridad",
-          "ppto": 72984000,
+          "ppto": 85148000,
           "pptoAnual": 145968000,
-          "ejecutado": 54036140,
-          "diferencia": -18947860
+          "ejecutado": 63293760,
+          "diferencia": -21854240
         },
         {
           "rubro": "Impuesto A La Seguridad",
-          "ppto": 4980000,
+          "ppto": 5810000,
           "pptoAnual": 9960000,
           "ejecutado": 6535000,
-          "diferencia": 1555000
+          "diferencia": 725000
         },
         {
           "rubro": "Teléfono - Internet",
-          "ppto": 1656000,
+          "ppto": 1932000,
           "pptoAnual": 3312000,
-          "ejecutado": 1648482,
-          "diferencia": -7518
+          "ejecutado": 1923229,
+          "diferencia": -8771
         },
         {
           "rubro": "Mantto. Zonas Comunes",
-          "ppto": 23700000,
+          "ppto": 27650000,
           "pptoAnual": 47400000,
-          "ejecutado": 20615947,
-          "diferencia": -3084053
+          "ejecutado": 21830322,
+          "diferencia": -5819678
         },
         {
           "rubro": "Mantenimiento Jardin",
-          "ppto": 7200000,
+          "ppto": 8400000,
           "pptoAnual": 14400000,
-          "ejecutado": 7006200,
-          "diferencia": -193800
+          "ejecutado": 8592200,
+          "diferencia": 192200
         },
         {
           "rubro": "Mantto Piscina - Examenes Labo",
-          "ppto": 5280000,
+          "ppto": 6160000,
           "pptoAnual": 10560000,
-          "ejecutado": 6563209,
-          "diferencia": 1283209
+          "ejecutado": 8526461,
+          "diferencia": 2366461
         },
         {
           "rubro": "Mantto Jacuzzi",
-          "ppto": 1080000,
+          "ppto": 1260000,
           "pptoAnual": 2160000,
-          "ejecutado": 0,
-          "diferencia": -1080000
+          "ejecutado": 820000,
+          "diferencia": -440000
         },
         {
           "rubro": "Mantto Ascensores",
-          "ppto": 54858000,
+          "ppto": 64001000,
           "pptoAnual": 109716000,
-          "ejecutado": 55493223,
-          "diferencia": 635223
+          "ejecutado": 64636089,
+          "diferencia": 635089
         },
         {
           "rubro": "Mantto Electrico",
-          "ppto": 1080000,
+          "ppto": 1260000,
           "pptoAnual": 2160000,
           "ejecutado": 623481,
-          "diferencia": -456519
+          "diferencia": -636519
         },
         {
           "rubro": "Mantto. Bombas",
-          "ppto": 3810000,
+          "ppto": 4445000,
           "pptoAnual": 7620000,
-          "ejecutado": 4150532,
-          "diferencia": 340532
+          "ejecutado": 4657639,
+          "diferencia": 212639
         },
         {
           "rubro": "Mantto Tanques",
-          "ppto": 2388000,
+          "ppto": 2786000,
           "pptoAnual": 4776000,
           "ejecutado": 2188231,
-          "diferencia": -199769
+          "diferencia": -597769
         },
         {
           "rubro": "Mantto Gimnasio",
-          "ppto": 3060000,
+          "ppto": 3570000,
           "pptoAnual": 6120000,
-          "ejecutado": 2636430,
-          "diferencia": -423570
+          "ejecutado": 2955835,
+          "diferencia": -614165
         },
         {
           "rubro": "Mantto Planta Electrica",
-          "ppto": 1434000,
+          "ppto": 1673000,
           "pptoAnual": 2868000,
           "ejecutado": 2363295,
-          "diferencia": 929295
+          "diferencia": 690295
         },
         {
           "rubro": "Mantto Cctv",
-          "ppto": 876000,
+          "ppto": 1022000,
           "pptoAnual": 1752000,
           "ejecutado": 659260,
-          "diferencia": -216740
+          "diferencia": -362740
         },
         {
           "rubro": "Fumigacion",
-          "ppto": 2484000,
+          "ppto": 2898000,
           "pptoAnual": 4968000,
           "ejecutado": 3638800,
-          "diferencia": 1154800
+          "diferencia": 740800
         },
         {
           "rubro": "Elementos Aseo Y Cafeteria",
-          "ppto": 4500000,
+          "ppto": 5250000,
           "pptoAnual": 9000000,
-          "ejecutado": 4449325,
-          "diferencia": -50675
+          "ejecutado": 5123246,
+          "diferencia": -126754
         },
         {
           "rubro": "Papelerìa Y Fotocopias",
-          "ppto": 540000,
+          "ppto": 630000,
           "pptoAnual": 1080000,
-          "ejecutado": 366668,
-          "diferencia": -173332
+          "ejecutado": 393664,
+          "diferencia": -236336
         },
         {
           "rubro": "Logistica Asamblea",
-          "ppto": 1530000,
+          "ppto": 1785000,
           "pptoAnual": 3060000,
           "ejecutado": 2890127,
-          "diferencia": 1360127
+          "diferencia": 1105127
         },
         {
           "rubro": "Decoracion Navidad",
-          "ppto": 1800000,
+          "ppto": 2100000,
           "pptoAnual": 3600000,
           "ejecutado": 0,
-          "diferencia": -1800000
+          "diferencia": -2100000
         },
         {
           "rubro": "Diversos - Otros",
-          "ppto": 540000,
+          "ppto": 630000,
           "pptoAnual": 1080000,
-          "ejecutado": 2117174,
-          "diferencia": 1577174
+          "ejecutado": 2158174,
+          "diferencia": 1528174
         },
         {
           "rubro": "Bancarios",
-          "ppto": 1884000,
+          "ppto": 2198000,
           "pptoAnual": 3768000,
-          "ejecutado": 1527441,
-          "diferencia": -356559
+          "ejecutado": 1810221,
+          "diferencia": -387779
         },
         {
           "rubro": "Provision Obras",
-          "ppto": 18962880,
+          "ppto": 22123360,
           "pptoAnual": 37925760,
           "ejecutado": 18962880,
-          "diferencia": 0
+          "diferencia": -3160480
         },
         {
           "rubro": "Fondo De Imprevistos Ley 675",
-          "ppto": 6116214,
+          "ppto": 7135583,
           "pptoAnual": 12232428,
-          "ejecutado": 6116218,
-          "diferencia": 4
+          "ejecutado": 7135588,
+          "diferencia": 5
         }
       ],
       "composicion": [
         {
           "categoria": "Gastos De Personal",
-          "valor": 277795554
+          "valor": 325136567
         },
         {
           "categoria": "Seguro",
-          "valor": 32380428
+          "valor": 37777166
         },
         {
           "categoria": "Gastos Administrativos",
-          "valor": 65563173
+          "valor": 77523435
         },
         {
           "categoria": "Servicios Publicos",
-          "valor": 67159502
+          "valor": 79190709
         },
         {
           "categoria": "Mantenimientos Y Reparaciones",
-          "valor": 105938608
+          "valor": 121491613
         },
         {
           "categoria": "Otros Gastos Diversos",
-          "valor": 34902392
+          "valor": 36663679
         },
         {
           "categoria": "Gastos No Operacionales",
-          "valor": 1527441
+          "valor": 1810221
         }
       ],
       "ingresosDetalle": [
         {
           "rubro": "Cuotas De Sostenimiento",
           "ppto": null,
-          "ejecutado": 588873528,
+          "ejecutado": 687019116,
           "diferencia": null
         },
         {
           "rubro": "Descuento Pronto Pago Vigilancia",
           "ppto": null,
-          "ejecutado": 5861190,
+          "ejecutado": 6917813,
           "diferencia": null
         },
         {
           "rubro": "Intereses Mora",
           "ppto": null,
-          "ejecutado": 2669493,
+          "ejecutado": 3082360,
           "diferencia": null
         },
         {
           "rubro": "Intereses Financieros",
           "ppto": null,
-          "ejecutado": 14456,
+          "ejecutado": 19234,
           "diferencia": null
         },
         {
           "rubro": "Rendimientos Ley 675",
           "ppto": null,
-          "ejecutado": 2481419,
+          "ejecutado": 3097432,
           "diferencia": null
         },
         {
           "rubro": "Rendimientos Obras",
           "ppto": null,
-          "ejecutado": 7321874,
+          "ejecutado": 8683196,
           "diferencia": null
         },
         {
           "rubro": "Sanciones",
           "ppto": null,
           "ejecutado": 2108679,
+          "diferencia": null
+        },
+        {
+          "rubro": "Tienda",
+          "ppto": null,
+          "ejecutado": 205041,
           "diferencia": null
         },
         {
@@ -5612,7 +5543,8 @@
             "MARZO",
             "ABRIL",
             "MAYO",
-            "JUNIO"
+            "JUNIO",
+            "JULIO"
           ],
           "valores": [
             1687900,
@@ -5620,7 +5552,8 @@
             1928942,
             452452,
             156384,
-            1240556
+            1240556,
+            2498840
           ]
         },
         {
@@ -5631,7 +5564,8 @@
             "MARZO",
             "ABRIL",
             "MAYO",
-            "JUNIO"
+            "JUNIO",
+            "JULIO"
           ],
           "valores": [
             10338940,
@@ -5639,7 +5573,8 @@
             8364480,
             8979940,
             8663910,
-            8519980
+            8519980,
+            9257620
           ]
         }
       ]
