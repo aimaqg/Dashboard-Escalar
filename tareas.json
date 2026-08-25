@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-25T21:58:39.123Z",
+  "actualizado": "2026-08-25T22:33:45.552Z",
   "total": 452,
   "datos": [
     {
@@ -3185,7 +3185,7 @@
       "ID_Registro": 188,
       "ID_Tarea": "z7cleEkaKECULwvRNimY7mUAN9gx",
       "Titulo_Tarea": "cotizar paneles",
-      "Descripcion": "",
+      "Descripcion": "23/07/2026 Se envia cotizacion al consejo de administracion para su evaluacion",
       "Asignado_Nombre": "Andres Ramirez",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-07-10",
@@ -4562,7 +4562,7 @@
       "ID_Registro": 269,
       "ID_Tarea": "2jIAvbOQGkyP40t_lolRhWUAJEEe",
       "Titulo_Tarea": "Intervencion Por Hongo  en los Pinos del Ingreso al Edificio.",
-      "Descripcion": "",
+      "Descripcion": "04/05/2026 Se inicia intervencion con proceso especial y seguimiento para erradicar hongo presente en los pinos del ingreso a la unidad.",
       "Asignado_Nombre": "",
       "Asignado_email": "",
       "Fecha_Creacion": "2026-05-04",
