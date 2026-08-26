@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-26T20:12:58.210Z",
+  "actualizado": "2026-08-26T23:45:01.271Z",
   "total": 454,
   "datos": [
     {
@@ -571,13 +571,13 @@
       "Asignado_Nombre": "Yuliana Echeverri",
       "Asignado_email": "gerencia@escalarsas.com",
       "Fecha_Creacion": "2026-08-13",
-      "Fecha_vencimiento": "2026-08-24",
-      "Prioridad": "Media",
+      "Fecha_vencimiento": "2026-09-10",
+      "Prioridad": "Baja",
       "Bucket": "Escalar",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": -2,
-      "Semaforo": "Vencida",
+      "Dias para vencer": 15,
+      "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
     {
