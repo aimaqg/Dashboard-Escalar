@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-26T14:03:14.095Z",
+  "actualizado": "2026-08-26T15:00:31.666Z",
   "total": 453,
   "datos": [
     {
@@ -486,13 +486,13 @@
       "Asignado_Nombre": "Sara Silva;Andres Ramirez",
       "Asignado_email": "asistentedos@escalarsas.com;coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-08-18",
-      "Fecha_vencimiento": "2026-08-26",
+      "Fecha_vencimiento": "2026-09-01",
       "Prioridad": "Media",
       "Bucket": "Complex",
-      "Estado": "Not started",
+      "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 0,
-      "Semaforo": "Próxima a vencer",
+      "Dias para vencer": 6,
+      "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
     {
