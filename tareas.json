@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-08-28T22:44:22.703Z",
+  "actualizado": "2026-08-29T03:55:41.150Z",
   "total": 460,
   "datos": [
     {
@@ -15,7 +15,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 14,
+      "Dias para vencer": 13,
       "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
@@ -32,7 +32,7 @@
       "Bucket": "Martinique",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 6,
+      "Dias para vencer": 5,
       "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
@@ -49,7 +49,7 @@
       "Bucket": "OZ",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 5,
+      "Dias para vencer": 4,
       "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
@@ -66,7 +66,7 @@
       "Bucket": "Escalar",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -83,7 +83,7 @@
       "Bucket": "Dijon",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 6,
+      "Dias para vencer": 5,
       "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
@@ -100,7 +100,7 @@
       "Bucket": "Atalanta",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 6,
+      "Dias para vencer": 5,
       "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
@@ -134,7 +134,7 @@
       "Bucket": "Atalanta",
       "Estado": "Not started",
       "Completada": "",
-      "Dias para vencer": 19,
+      "Dias para vencer": 18,
       "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
@@ -151,7 +151,7 @@
       "Bucket": "Marroco",
       "Estado": "Not started",
       "Completada": "",
-      "Dias para vencer": 19,
+      "Dias para vencer": 18,
       "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
@@ -168,7 +168,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Not started",
       "Completada": "",
-      "Dias para vencer": 19,
+      "Dias para vencer": 18,
       "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
@@ -185,7 +185,7 @@
       "Bucket": "Complex",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 8,
+      "Dias para vencer": 7,
       "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
@@ -202,7 +202,7 @@
       "Bucket": "Charlotte",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 5,
+      "Dias para vencer": 4,
       "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
@@ -219,7 +219,7 @@
       "Bucket": "Los Nogales",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 5,
+      "Dias para vencer": 4,
       "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
@@ -236,7 +236,7 @@
       "Bucket": "OZ",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -253,7 +253,7 @@
       "Bucket": "Complex",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -270,7 +270,7 @@
       "Bucket": "Escalar",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -287,7 +287,7 @@
       "Bucket": "Escalar",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 19,
+      "Dias para vencer": 18,
       "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
@@ -304,7 +304,7 @@
       "Bucket": "Marroco",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": -4,
+      "Dias para vencer": -5,
       "Semaforo": "Vencida",
       "Canal_teams": ""
     },
@@ -321,7 +321,7 @@
       "Bucket": "Jacarandas",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": -1,
+      "Dias para vencer": -2,
       "Semaforo": "Vencida",
       "Canal_teams": ""
     },
@@ -338,7 +338,7 @@
       "Bucket": "Charlotte",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -355,7 +355,7 @@
       "Bucket": "OZ",
       "Estado": "Not started",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -372,8 +372,8 @@
       "Bucket": "Complex",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 4,
-      "Semaforo": "En tiempo",
+      "Dias para vencer": 3,
+      "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
     {
@@ -389,7 +389,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Not started",
       "Completada": "",
-      "Dias para vencer": -4,
+      "Dias para vencer": -5,
       "Semaforo": "Vencida",
       "Canal_teams": ""
     },
@@ -406,7 +406,7 @@
       "Bucket": "Atalanta",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -423,7 +423,7 @@
       "Bucket": "Santa Fe",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": -8,
+      "Dias para vencer": -9,
       "Semaforo": "Vencida",
       "Canal_teams": ""
     },
@@ -440,7 +440,7 @@
       "Bucket": "Martinique",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -457,7 +457,7 @@
       "Bucket": "Escalar",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 13,
+      "Dias para vencer": 12,
       "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
@@ -474,7 +474,7 @@
       "Bucket": "OZ",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -491,7 +491,7 @@
       "Bucket": "Charlotte",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -508,8 +508,8 @@
       "Bucket": "Complex",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 0,
-      "Semaforo": "Próxima a vencer",
+      "Dias para vencer": -1,
+      "Semaforo": "Vencida",
       "Canal_teams": ""
     },
     {
@@ -525,8 +525,8 @@
       "Bucket": "Atalanta",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 4,
-      "Semaforo": "En tiempo",
+      "Dias para vencer": 3,
+      "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
     {
@@ -542,7 +542,7 @@
       "Bucket": "OZ",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -559,7 +559,7 @@
       "Bucket": "Martinique",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -576,8 +576,8 @@
       "Bucket": "Atalanta",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 4,
-      "Semaforo": "En tiempo",
+      "Dias para vencer": 3,
+      "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
     {
@@ -593,7 +593,7 @@
       "Bucket": "Complex",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -610,8 +610,8 @@
       "Bucket": "Complex",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 0,
-      "Semaforo": "Próxima a vencer",
+      "Dias para vencer": -1,
+      "Semaforo": "Vencida",
       "Canal_teams": ""
     },
     {
@@ -627,7 +627,7 @@
       "Bucket": "Complex",
       "Estado": "Not started",
       "Completada": "",
-      "Dias para vencer": -14,
+      "Dias para vencer": -15,
       "Semaforo": "Vencida",
       "Canal_teams": ""
     },
@@ -644,7 +644,7 @@
       "Bucket": "Atalanta",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -661,7 +661,7 @@
       "Bucket": "Jacarandas",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": -21,
+      "Dias para vencer": -22,
       "Semaforo": "Vencida",
       "Canal_teams": ""
     },
@@ -678,7 +678,7 @@
       "Bucket": "Escalar",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": -8,
+      "Dias para vencer": -9,
       "Semaforo": "Vencida",
       "Canal_teams": ""
     },
@@ -695,7 +695,7 @@
       "Bucket": "Martinique",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -712,7 +712,7 @@
       "Bucket": "Charlotte",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -729,7 +729,7 @@
       "Bucket": "Atalanta",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -746,7 +746,7 @@
       "Bucket": "OZ",
       "Estado": "Not started",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -763,7 +763,7 @@
       "Bucket": "Atalanta",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -780,7 +780,7 @@
       "Bucket": "Los Nogales",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -797,7 +797,7 @@
       "Bucket": "Atalanta",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -814,8 +814,8 @@
       "Bucket": "Dijon",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 4,
-      "Semaforo": "En tiempo",
+      "Dias para vencer": 3,
+      "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
     {
@@ -831,7 +831,7 @@
       "Bucket": "Escalar",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -848,7 +848,7 @@
       "Bucket": "Martinique",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -865,7 +865,7 @@
       "Bucket": "Martinique",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
@@ -882,8 +882,8 @@
       "Bucket": "Los Nogales",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 4,
-      "Semaforo": "En tiempo",
+      "Dias para vencer": 3,
+      "Semaforo": "Próxima a vencer",
       "Canal_teams": ""
     },
     {
@@ -899,8 +899,8 @@
       "Bucket": "Complex",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 0,
-      "Semaforo": "Próxima a vencer",
+      "Dias para vencer": -1,
+      "Semaforo": "Vencida",
       "Canal_teams": ""
     },
     {
@@ -916,7 +916,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-08-28",
-      "Dias para vencer": -3,
+      "Dias para vencer": -4,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -933,7 +933,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-08-28",
-      "Dias para vencer": -7,
+      "Dias para vencer": -8,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -950,7 +950,7 @@
       "Bucket": "Jacarandas",
       "Estado": "Completed",
       "Completada": "2026-08-28",
-      "Dias para vencer": 0,
+      "Dias para vencer": -1,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -967,7 +967,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-08-28",
-      "Dias para vencer": -1,
+      "Dias para vencer": -2,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -984,7 +984,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-08-28",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1001,7 +1001,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-08-28",
-      "Dias para vencer": -7,
+      "Dias para vencer": -8,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1018,7 +1018,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-08-28",
-      "Dias para vencer": -3,
+      "Dias para vencer": -4,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1052,7 +1052,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-08-28",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1069,7 +1069,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-08-28",
-      "Dias para vencer": 4,
+      "Dias para vencer": 3,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1086,7 +1086,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-08-27",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1103,7 +1103,7 @@
       "Bucket": "Jacarandas",
       "Estado": "Completed",
       "Completada": "2026-08-27",
-      "Dias para vencer": 0,
+      "Dias para vencer": -1,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1120,7 +1120,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-08-27",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1137,7 +1137,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-08-26",
-      "Dias para vencer": 0,
+      "Dias para vencer": -1,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1154,7 +1154,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-08-26",
-      "Dias para vencer": 5,
+      "Dias para vencer": 4,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1171,7 +1171,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-08-26",
-      "Dias para vencer": -2,
+      "Dias para vencer": -3,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1188,7 +1188,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-08-25",
-      "Dias para vencer": -4,
+      "Dias para vencer": -5,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1205,7 +1205,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-08-25",
-      "Dias para vencer": -4,
+      "Dias para vencer": -5,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1222,7 +1222,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-08-25",
-      "Dias para vencer": -4,
+      "Dias para vencer": -5,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1239,7 +1239,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-08-25",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1256,7 +1256,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-08-25",
-      "Dias para vencer": 4,
+      "Dias para vencer": 3,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1273,7 +1273,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-08-25",
-      "Dias para vencer": 0,
+      "Dias para vencer": -1,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1290,7 +1290,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-08-25",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1307,7 +1307,7 @@
       "Bucket": "Los Nogales",
       "Estado": "Completed",
       "Completada": "2026-08-25",
-      "Dias para vencer": -7,
+      "Dias para vencer": -8,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1324,7 +1324,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-08-25",
-      "Dias para vencer": -14,
+      "Dias para vencer": -15,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1341,7 +1341,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-08-25",
-      "Dias para vencer": -28,
+      "Dias para vencer": -29,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1358,7 +1358,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-08-25",
-      "Dias para vencer": -28,
+      "Dias para vencer": -29,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1375,7 +1375,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-08-25",
-      "Dias para vencer": -1,
+      "Dias para vencer": -2,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1392,7 +1392,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-08-25",
-      "Dias para vencer": -28,
+      "Dias para vencer": -29,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1409,7 +1409,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-08-25",
-      "Dias para vencer": -14,
+      "Dias para vencer": -15,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1426,7 +1426,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-08-25",
-      "Dias para vencer": -28,
+      "Dias para vencer": -29,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1443,7 +1443,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-08-25",
-      "Dias para vencer": -1,
+      "Dias para vencer": -2,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1460,7 +1460,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-08-25",
-      "Dias para vencer": -2,
+      "Dias para vencer": -3,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1477,7 +1477,7 @@
       "Bucket": "Los Nogales",
       "Estado": "Completed",
       "Completada": "2026-08-25",
-      "Dias para vencer": -28,
+      "Dias para vencer": -29,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1494,7 +1494,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-08-25",
-      "Dias para vencer": -42,
+      "Dias para vencer": -43,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1511,7 +1511,7 @@
       "Bucket": "Los Nogales",
       "Estado": "Completed",
       "Completada": "2026-08-25",
-      "Dias para vencer": -14,
+      "Dias para vencer": -15,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1528,7 +1528,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-08-25",
-      "Dias para vencer": -42,
+      "Dias para vencer": -43,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1545,7 +1545,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-08-25",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1562,7 +1562,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-08-24",
-      "Dias para vencer": -2,
+      "Dias para vencer": -3,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1579,7 +1579,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-08-24",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1596,7 +1596,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-08-24",
-      "Dias para vencer": -8,
+      "Dias para vencer": -9,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1613,7 +1613,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-08-24",
-      "Dias para vencer": -4,
+      "Dias para vencer": -5,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1630,7 +1630,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-08-24",
-      "Dias para vencer": -4,
+      "Dias para vencer": -5,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1647,7 +1647,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-08-24",
-      "Dias para vencer": -4,
+      "Dias para vencer": -5,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1664,7 +1664,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-08-24",
-      "Dias para vencer": -2,
+      "Dias para vencer": -3,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1681,7 +1681,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-08-24",
-      "Dias para vencer": 0,
+      "Dias para vencer": -1,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1698,7 +1698,7 @@
       "Bucket": "Escalar",
       "Estado": "Completed",
       "Completada": "2026-08-24",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1715,7 +1715,7 @@
       "Bucket": "Escalar",
       "Estado": "Completed",
       "Completada": "2026-08-24",
-      "Dias para vencer": -3,
+      "Dias para vencer": -4,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1732,7 +1732,7 @@
       "Bucket": "Jacarandas",
       "Estado": "Completed",
       "Completada": "2026-08-24",
-      "Dias para vencer": -4,
+      "Dias para vencer": -5,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1749,7 +1749,7 @@
       "Bucket": "Jacarandas",
       "Estado": "Completed",
       "Completada": "2026-08-24",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1766,7 +1766,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-08-24",
-      "Dias para vencer": -7,
+      "Dias para vencer": -8,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1783,7 +1783,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-08-24",
-      "Dias para vencer": -4,
+      "Dias para vencer": -5,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1800,7 +1800,7 @@
       "Bucket": "Jacarandas",
       "Estado": "Completed",
       "Completada": "2026-08-21",
-      "Dias para vencer": -7,
+      "Dias para vencer": -8,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1817,7 +1817,7 @@
       "Bucket": "Jacarandas",
       "Estado": "Completed",
       "Completada": "2026-08-21",
-      "Dias para vencer": -7,
+      "Dias para vencer": -8,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1834,7 +1834,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-08-21",
-      "Dias para vencer": -2,
+      "Dias para vencer": -3,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1851,7 +1851,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-08-21",
-      "Dias para vencer": 3,
+      "Dias para vencer": 2,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1868,7 +1868,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-08-21",
-      "Dias para vencer": -7,
+      "Dias para vencer": -8,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1885,7 +1885,7 @@
       "Bucket": "Jacarandas",
       "Estado": "Completed",
       "Completada": "2026-08-21",
-      "Dias para vencer": -36,
+      "Dias para vencer": -37,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1902,7 +1902,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-08-21",
-      "Dias para vencer": -2,
+      "Dias para vencer": -3,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1919,7 +1919,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-08-21",
-      "Dias para vencer": -2,
+      "Dias para vencer": -3,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1936,7 +1936,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-08-21",
-      "Dias para vencer": -7,
+      "Dias para vencer": -8,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1953,7 +1953,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-08-21",
-      "Dias para vencer": -7,
+      "Dias para vencer": -8,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1970,7 +1970,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-08-21",
-      "Dias para vencer": -4,
+      "Dias para vencer": -5,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -1987,7 +1987,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-08-21",
-      "Dias para vencer": -7,
+      "Dias para vencer": -8,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2004,7 +2004,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-08-21",
-      "Dias para vencer": -7,
+      "Dias para vencer": -8,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2021,7 +2021,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-08-20",
-      "Dias para vencer": -2,
+      "Dias para vencer": -3,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2038,7 +2038,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-08-20",
-      "Dias para vencer": -4,
+      "Dias para vencer": -5,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2055,7 +2055,7 @@
       "Bucket": "Jacarandas",
       "Estado": "Completed",
       "Completada": "2026-08-20",
-      "Dias para vencer": -10,
+      "Dias para vencer": -11,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2072,7 +2072,7 @@
       "Bucket": "Escalar",
       "Estado": "Completed",
       "Completada": "2026-08-20",
-      "Dias para vencer": -7,
+      "Dias para vencer": -8,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2089,7 +2089,7 @@
       "Bucket": "Escalar",
       "Estado": "Completed",
       "Completada": "2026-08-20",
-      "Dias para vencer": -4,
+      "Dias para vencer": -5,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2106,7 +2106,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-08-20",
-      "Dias para vencer": -8,
+      "Dias para vencer": -9,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2123,7 +2123,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-08-20",
-      "Dias para vencer": -8,
+      "Dias para vencer": -9,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2140,7 +2140,7 @@
       "Bucket": "Los Nogales",
       "Estado": "Completed",
       "Completada": "2026-08-20",
-      "Dias para vencer": -8,
+      "Dias para vencer": -9,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2157,7 +2157,7 @@
       "Bucket": "Escalar",
       "Estado": "Completed",
       "Completada": "2026-08-20",
-      "Dias para vencer": -7,
+      "Dias para vencer": -8,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2174,7 +2174,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-08-19",
-      "Dias para vencer": -7,
+      "Dias para vencer": -8,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2191,7 +2191,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-08-19",
-      "Dias para vencer": -7,
+      "Dias para vencer": -8,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2208,7 +2208,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-08-18",
-      "Dias para vencer": -44,
+      "Dias para vencer": -45,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2225,7 +2225,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-08-18",
-      "Dias para vencer": -44,
+      "Dias para vencer": -45,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2242,7 +2242,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-08-18",
-      "Dias para vencer": -28,
+      "Dias para vencer": -29,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2259,7 +2259,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-08-18",
-      "Dias para vencer": -59,
+      "Dias para vencer": -60,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2276,7 +2276,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-08-18",
-      "Dias para vencer": -59,
+      "Dias para vencer": -60,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2293,7 +2293,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-08-18",
-      "Dias para vencer": -8,
+      "Dias para vencer": -9,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2310,7 +2310,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-08-18",
-      "Dias para vencer": -59,
+      "Dias para vencer": -60,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2327,7 +2327,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-08-18",
-      "Dias para vencer": -59,
+      "Dias para vencer": -60,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2344,7 +2344,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-08-18",
-      "Dias para vencer": -74,
+      "Dias para vencer": -75,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2361,7 +2361,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-08-18",
-      "Dias para vencer": -74,
+      "Dias para vencer": -75,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2378,7 +2378,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-08-18",
-      "Dias para vencer": -8,
+      "Dias para vencer": -9,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2395,7 +2395,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-08-18",
-      "Dias para vencer": -9,
+      "Dias para vencer": -10,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2412,7 +2412,7 @@
       "Bucket": "Jacarandas",
       "Estado": "Completed",
       "Completada": "2026-08-15",
-      "Dias para vencer": -10,
+      "Dias para vencer": -11,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2429,7 +2429,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-08-14",
-      "Dias para vencer": -14,
+      "Dias para vencer": -15,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2446,7 +2446,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-08-14",
-      "Dias para vencer": -9,
+      "Dias para vencer": -10,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2463,7 +2463,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-08-14",
-      "Dias para vencer": -23,
+      "Dias para vencer": -24,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2480,7 +2480,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-08-14",
-      "Dias para vencer": -23,
+      "Dias para vencer": -24,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2497,7 +2497,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-08-14",
-      "Dias para vencer": -14,
+      "Dias para vencer": -15,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2514,7 +2514,7 @@
       "Bucket": "Jacarandas",
       "Estado": "Completed",
       "Completada": "2026-08-14",
-      "Dias para vencer": -31,
+      "Dias para vencer": -32,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2531,7 +2531,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-08-14",
-      "Dias para vencer": -14,
+      "Dias para vencer": -15,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2548,7 +2548,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-08-13",
-      "Dias para vencer": -22,
+      "Dias para vencer": -23,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2565,7 +2565,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-08-13",
-      "Dias para vencer": -8,
+      "Dias para vencer": -9,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2582,7 +2582,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-08-12",
-      "Dias para vencer": -16,
+      "Dias para vencer": -17,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2599,7 +2599,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-08-12",
-      "Dias para vencer": -22,
+      "Dias para vencer": -23,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2616,7 +2616,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-08-12",
-      "Dias para vencer": -22,
+      "Dias para vencer": -23,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2633,7 +2633,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-08-12",
-      "Dias para vencer": -21,
+      "Dias para vencer": -22,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2650,7 +2650,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-08-12",
-      "Dias para vencer": -21,
+      "Dias para vencer": -22,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2667,7 +2667,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-08-11",
-      "Dias para vencer": -22,
+      "Dias para vencer": -23,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2684,7 +2684,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-08-11",
-      "Dias para vencer": -22,
+      "Dias para vencer": -23,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2701,7 +2701,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-08-06",
-      "Dias para vencer": -22,
+      "Dias para vencer": -23,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2718,7 +2718,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-08-06",
-      "Dias para vencer": -18,
+      "Dias para vencer": -19,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2735,7 +2735,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-08-06",
-      "Dias para vencer": -18,
+      "Dias para vencer": -19,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2752,7 +2752,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-08-06",
-      "Dias para vencer": -18,
+      "Dias para vencer": -19,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2769,7 +2769,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-08-05",
-      "Dias para vencer": -24,
+      "Dias para vencer": -25,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2786,7 +2786,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-08-05",
-      "Dias para vencer": -17,
+      "Dias para vencer": -18,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2803,7 +2803,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-08-05",
-      "Dias para vencer": -18,
+      "Dias para vencer": -19,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2820,7 +2820,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-08-05",
-      "Dias para vencer": -22,
+      "Dias para vencer": -23,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2837,7 +2837,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-08-03",
-      "Dias para vencer": -25,
+      "Dias para vencer": -26,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2854,7 +2854,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-08-03",
-      "Dias para vencer": -23,
+      "Dias para vencer": -24,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2871,7 +2871,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-08-03",
-      "Dias para vencer": -22,
+      "Dias para vencer": -23,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2888,7 +2888,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-08-03",
-      "Dias para vencer": -24,
+      "Dias para vencer": -25,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2905,7 +2905,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-08-03",
-      "Dias para vencer": -22,
+      "Dias para vencer": -23,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2922,7 +2922,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-07-31",
-      "Dias para vencer": -28,
+      "Dias para vencer": -29,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2939,7 +2939,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-07-31",
-      "Dias para vencer": -22,
+      "Dias para vencer": -23,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2956,7 +2956,7 @@
       "Bucket": "Escalar",
       "Estado": "Completed",
       "Completada": "2026-07-31",
-      "Dias para vencer": -31,
+      "Dias para vencer": -32,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2973,7 +2973,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-07-31",
-      "Dias para vencer": -42,
+      "Dias para vencer": -43,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -2990,7 +2990,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-07-31",
-      "Dias para vencer": -29,
+      "Dias para vencer": -30,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3007,7 +3007,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-07-31",
-      "Dias para vencer": -32,
+      "Dias para vencer": -33,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3024,7 +3024,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-07-31",
-      "Dias para vencer": -29,
+      "Dias para vencer": -30,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3041,7 +3041,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-07-31",
-      "Dias para vencer": -37,
+      "Dias para vencer": -38,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3058,7 +3058,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-07-31",
-      "Dias para vencer": -22,
+      "Dias para vencer": -23,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3075,7 +3075,7 @@
       "Bucket": "Jacarandas",
       "Estado": "Completed",
       "Completada": "2026-07-31",
-      "Dias para vencer": -32,
+      "Dias para vencer": -33,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3092,7 +3092,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-07-31",
-      "Dias para vencer": -29,
+      "Dias para vencer": -30,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3109,7 +3109,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-07-30",
-      "Dias para vencer": -31,
+      "Dias para vencer": -32,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3126,7 +3126,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-07-30",
-      "Dias para vencer": -17,
+      "Dias para vencer": -18,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3143,7 +3143,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-07-30",
-      "Dias para vencer": -29,
+      "Dias para vencer": -30,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3160,7 +3160,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-07-30",
-      "Dias para vencer": -31,
+      "Dias para vencer": -32,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3177,7 +3177,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-07-30",
-      "Dias para vencer": -35,
+      "Dias para vencer": -36,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3194,7 +3194,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-07-29",
-      "Dias para vencer": -29,
+      "Dias para vencer": -30,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3211,7 +3211,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-07-29",
-      "Dias para vencer": -29,
+      "Dias para vencer": -30,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3228,7 +3228,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-07-27",
-      "Dias para vencer": -29,
+      "Dias para vencer": -30,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3245,7 +3245,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-07-24",
-      "Dias para vencer": -36,
+      "Dias para vencer": -37,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3262,7 +3262,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-07-24",
-      "Dias para vencer": -37,
+      "Dias para vencer": -38,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3279,7 +3279,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-07-24",
-      "Dias para vencer": -37,
+      "Dias para vencer": -38,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3296,7 +3296,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-07-24",
-      "Dias para vencer": -37,
+      "Dias para vencer": -38,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3313,7 +3313,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-07-24",
-      "Dias para vencer": -35,
+      "Dias para vencer": -36,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3330,7 +3330,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-07-23",
-      "Dias para vencer": -38,
+      "Dias para vencer": -39,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3347,7 +3347,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-07-23",
-      "Dias para vencer": -42,
+      "Dias para vencer": -43,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3364,7 +3364,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-07-23",
-      "Dias para vencer": -41,
+      "Dias para vencer": -42,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3381,7 +3381,7 @@
       "Bucket": "Los Nogales",
       "Estado": "Completed",
       "Completada": "2026-07-22",
-      "Dias para vencer": -42,
+      "Dias para vencer": -43,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3398,7 +3398,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-07-22",
-      "Dias para vencer": -42,
+      "Dias para vencer": -43,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3415,7 +3415,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-07-22",
-      "Dias para vencer": -30,
+      "Dias para vencer": -31,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3432,7 +3432,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-07-21",
-      "Dias para vencer": -42,
+      "Dias para vencer": -43,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3449,7 +3449,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-07-17",
-      "Dias para vencer": -38,
+      "Dias para vencer": -39,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3466,7 +3466,7 @@
       "Bucket": "Los Nogales",
       "Estado": "Completed",
       "Completada": "2026-07-17",
-      "Dias para vencer": -42,
+      "Dias para vencer": -43,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3500,7 +3500,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-07-17",
-      "Dias para vencer": -41,
+      "Dias para vencer": -42,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3517,7 +3517,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-07-16",
-      "Dias para vencer": -42,
+      "Dias para vencer": -43,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3534,7 +3534,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-07-16",
-      "Dias para vencer": -42,
+      "Dias para vencer": -43,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3551,7 +3551,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-07-16",
-      "Dias para vencer": -42,
+      "Dias para vencer": -43,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3568,7 +3568,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-07-16",
-      "Dias para vencer": -43,
+      "Dias para vencer": -44,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3585,7 +3585,7 @@
       "Bucket": "Escalar",
       "Estado": "Completed",
       "Completada": "2026-07-16",
-      "Dias para vencer": -43,
+      "Dias para vencer": -44,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3602,7 +3602,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-07-14",
-      "Dias para vencer": -42,
+      "Dias para vencer": -43,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3636,7 +3636,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-07-14",
-      "Dias para vencer": -42,
+      "Dias para vencer": -43,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3653,7 +3653,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-07-14",
-      "Dias para vencer": -43,
+      "Dias para vencer": -44,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3670,7 +3670,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-07-14",
-      "Dias para vencer": -43,
+      "Dias para vencer": -44,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3687,7 +3687,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-07-14",
-      "Dias para vencer": -42,
+      "Dias para vencer": -43,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3704,7 +3704,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-07-14",
-      "Dias para vencer": -49,
+      "Dias para vencer": -50,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3721,7 +3721,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-07-14",
-      "Dias para vencer": -49,
+      "Dias para vencer": -50,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3738,7 +3738,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-07-14",
-      "Dias para vencer": -49,
+      "Dias para vencer": -50,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3755,7 +3755,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-07-14",
-      "Dias para vencer": -49,
+      "Dias para vencer": -50,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3772,7 +3772,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-07-14",
-      "Dias para vencer": -43,
+      "Dias para vencer": -44,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3789,7 +3789,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-07-14",
-      "Dias para vencer": -45,
+      "Dias para vencer": -46,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3806,7 +3806,7 @@
       "Bucket": "Escalar",
       "Estado": "Completed",
       "Completada": "2026-07-10",
-      "Dias para vencer": -42,
+      "Dias para vencer": -43,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3823,7 +3823,7 @@
       "Bucket": "Escalar",
       "Estado": "Completed",
       "Completada": "2026-07-10",
-      "Dias para vencer": -49,
+      "Dias para vencer": -50,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3840,7 +3840,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-07-10",
-      "Dias para vencer": -45,
+      "Dias para vencer": -46,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3857,7 +3857,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-07-10",
-      "Dias para vencer": -39,
+      "Dias para vencer": -40,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3874,7 +3874,7 @@
       "Bucket": "Jacarandas",
       "Estado": "Completed",
       "Completada": "2026-07-10",
-      "Dias para vencer": -45,
+      "Dias para vencer": -46,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3891,7 +3891,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-07-10",
-      "Dias para vencer": -42,
+      "Dias para vencer": -43,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3908,7 +3908,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-07-10",
-      "Dias para vencer": -51,
+      "Dias para vencer": -52,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3925,7 +3925,7 @@
       "Bucket": "Escalar",
       "Estado": "Completed",
       "Completada": "2026-07-10",
-      "Dias para vencer": -43,
+      "Dias para vencer": -44,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3942,7 +3942,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-07-10",
-      "Dias para vencer": -107,
+      "Dias para vencer": -108,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3959,7 +3959,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-07-10",
-      "Dias para vencer": -106,
+      "Dias para vencer": -107,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3976,7 +3976,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-07-06",
-      "Dias para vencer": -77,
+      "Dias para vencer": -78,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -3993,7 +3993,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-07-06",
-      "Dias para vencer": -59,
+      "Dias para vencer": -60,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4010,7 +4010,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-07-06",
-      "Dias para vencer": -59,
+      "Dias para vencer": -60,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4027,7 +4027,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-07-06",
-      "Dias para vencer": -59,
+      "Dias para vencer": -60,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4044,7 +4044,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-07-06",
-      "Dias para vencer": -105,
+      "Dias para vencer": -106,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4061,7 +4061,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-07-06",
-      "Dias para vencer": -105,
+      "Dias para vencer": -106,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4078,7 +4078,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-07-06",
-      "Dias para vencer": -105,
+      "Dias para vencer": -106,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4095,7 +4095,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-07-06",
-      "Dias para vencer": -50,
+      "Dias para vencer": -51,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4112,7 +4112,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-07-03",
-      "Dias para vencer": -56,
+      "Dias para vencer": -57,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4129,7 +4129,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-07-03",
-      "Dias para vencer": -59,
+      "Dias para vencer": -60,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4146,7 +4146,7 @@
       "Bucket": "Los Nogales",
       "Estado": "Completed",
       "Completada": "2026-07-01",
-      "Dias para vencer": -59,
+      "Dias para vencer": -60,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4163,7 +4163,7 @@
       "Bucket": "Jacarandas",
       "Estado": "Completed",
       "Completada": "2026-07-01",
-      "Dias para vencer": -57,
+      "Dias para vencer": -58,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4180,7 +4180,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-06-26",
-      "Dias para vencer": -63,
+      "Dias para vencer": -64,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4197,7 +4197,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-06-26",
-      "Dias para vencer": -135,
+      "Dias para vencer": -136,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4214,7 +4214,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-06-26",
-      "Dias para vencer": -77,
+      "Dias para vencer": -78,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4231,7 +4231,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-06-23",
-      "Dias para vencer": -63,
+      "Dias para vencer": -64,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4248,7 +4248,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-06-22",
-      "Dias para vencer": -63,
+      "Dias para vencer": -64,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4265,7 +4265,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-06-22",
-      "Dias para vencer": -70,
+      "Dias para vencer": -71,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4282,7 +4282,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-06-19",
-      "Dias para vencer": -66,
+      "Dias para vencer": -67,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4299,7 +4299,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-06-16",
-      "Dias para vencer": -70,
+      "Dias para vencer": -71,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4316,7 +4316,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-06-16",
-      "Dias para vencer": -66,
+      "Dias para vencer": -67,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4333,7 +4333,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-06-16",
-      "Dias para vencer": -107,
+      "Dias para vencer": -108,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4350,7 +4350,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-06-16",
-      "Dias para vencer": -70,
+      "Dias para vencer": -71,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4367,7 +4367,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-06-16",
-      "Dias para vencer": -106,
+      "Dias para vencer": -107,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4384,7 +4384,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-06-16",
-      "Dias para vencer": -85,
+      "Dias para vencer": -86,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4418,7 +4418,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-06-12",
-      "Dias para vencer": -72,
+      "Dias para vencer": -73,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4435,7 +4435,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-06-12",
-      "Dias para vencer": -76,
+      "Dias para vencer": -77,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4452,7 +4452,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-06-12",
-      "Dias para vencer": -129,
+      "Dias para vencer": -130,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4469,7 +4469,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-06-12",
-      "Dias para vencer": -136,
+      "Dias para vencer": -137,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4486,7 +4486,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-06-12",
-      "Dias para vencer": -135,
+      "Dias para vencer": -136,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4503,7 +4503,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-06-12",
-      "Dias para vencer": -168,
+      "Dias para vencer": -169,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4520,7 +4520,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-06-10",
-      "Dias para vencer": -78,
+      "Dias para vencer": -79,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4537,7 +4537,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-06-10",
-      "Dias para vencer": -107,
+      "Dias para vencer": -108,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4571,7 +4571,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-06-03",
-      "Dias para vencer": -85,
+      "Dias para vencer": -86,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4588,7 +4588,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-06-03",
-      "Dias para vencer": -84,
+      "Dias para vencer": -85,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4605,7 +4605,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-06-03",
-      "Dias para vencer": -77,
+      "Dias para vencer": -78,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4622,7 +4622,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-06-03",
-      "Dias para vencer": -85,
+      "Dias para vencer": -86,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4639,7 +4639,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-06-03",
-      "Dias para vencer": -84,
+      "Dias para vencer": -85,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4656,7 +4656,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-06-01",
-      "Dias para vencer": -84,
+      "Dias para vencer": -85,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4673,7 +4673,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-06-01",
-      "Dias para vencer": -86,
+      "Dias para vencer": -87,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4690,7 +4690,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-05-29",
-      "Dias para vencer": -94,
+      "Dias para vencer": -95,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4707,7 +4707,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-05-29",
-      "Dias para vencer": -92,
+      "Dias para vencer": -93,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4741,7 +4741,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-05-21",
-      "Dias para vencer": -98,
+      "Dias para vencer": -99,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4758,7 +4758,7 @@
       "Bucket": "Jacarandas",
       "Estado": "Completed",
       "Completada": "2026-05-21",
-      "Dias para vencer": -106,
+      "Dias para vencer": -107,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4775,7 +4775,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-05-21",
-      "Dias para vencer": -106,
+      "Dias para vencer": -107,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4792,7 +4792,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-05-21",
-      "Dias para vencer": -107,
+      "Dias para vencer": -108,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4809,7 +4809,7 @@
       "Bucket": "Jacarandas",
       "Estado": "Completed",
       "Completada": "2026-05-21",
-      "Dias para vencer": -122,
+      "Dias para vencer": -123,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4826,7 +4826,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-05-21",
-      "Dias para vencer": -99,
+      "Dias para vencer": -100,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4843,7 +4843,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-05-19",
-      "Dias para vencer": -105,
+      "Dias para vencer": -106,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4860,7 +4860,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-05-19",
-      "Dias para vencer": -106,
+      "Dias para vencer": -107,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4894,7 +4894,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-05-14",
-      "Dias para vencer": -105,
+      "Dias para vencer": -106,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4911,7 +4911,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-05-13",
-      "Dias para vencer": -112,
+      "Dias para vencer": -113,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4928,7 +4928,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-05-11",
-      "Dias para vencer": -133,
+      "Dias para vencer": -134,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4945,7 +4945,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-05-11",
-      "Dias para vencer": -112,
+      "Dias para vencer": -113,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4962,7 +4962,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-05-11",
-      "Dias para vencer": -120,
+      "Dias para vencer": -121,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4979,7 +4979,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-05-11",
-      "Dias para vencer": -112,
+      "Dias para vencer": -113,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -4996,7 +4996,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-05-11",
-      "Dias para vencer": -112,
+      "Dias para vencer": -113,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5013,7 +5013,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-05-11",
-      "Dias para vencer": -112,
+      "Dias para vencer": -113,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5030,7 +5030,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-05-11",
-      "Dias para vencer": -112,
+      "Dias para vencer": -113,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5047,7 +5047,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-05-11",
-      "Dias para vencer": -112,
+      "Dias para vencer": -113,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5064,7 +5064,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-05-11",
-      "Dias para vencer": -105,
+      "Dias para vencer": -106,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5081,7 +5081,7 @@
       "Bucket": "Los Nogales",
       "Estado": "Completed",
       "Completada": "2026-05-06",
-      "Dias para vencer": -122,
+      "Dias para vencer": -123,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5098,7 +5098,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-05-05",
-      "Dias para vencer": -135,
+      "Dias para vencer": -136,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5115,7 +5115,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-05-04",
-      "Dias para vencer": -120,
+      "Dias para vencer": -121,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5132,7 +5132,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-05-04",
-      "Dias para vencer": -120,
+      "Dias para vencer": -121,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5149,7 +5149,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-05-04",
-      "Dias para vencer": -140,
+      "Dias para vencer": -141,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5166,7 +5166,7 @@
       "Bucket": "Los Nogales",
       "Estado": "Completed",
       "Completada": "2026-05-04",
-      "Dias para vencer": -121,
+      "Dias para vencer": -122,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5183,7 +5183,7 @@
       "Bucket": "Jacarandas",
       "Estado": "Completed",
       "Completada": "2026-05-04",
-      "Dias para vencer": -135,
+      "Dias para vencer": -136,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5200,7 +5200,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-04-28",
-      "Dias para vencer": -121,
+      "Dias para vencer": -122,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5217,7 +5217,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-04-27",
-      "Dias para vencer": -121,
+      "Dias para vencer": -122,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5234,7 +5234,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-04-27",
-      "Dias para vencer": -129,
+      "Dias para vencer": -130,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5251,7 +5251,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-04-27",
-      "Dias para vencer": -140,
+      "Dias para vencer": -141,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5268,7 +5268,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-04-27",
-      "Dias para vencer": -128,
+      "Dias para vencer": -129,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5285,7 +5285,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-04-23",
-      "Dias para vencer": -136,
+      "Dias para vencer": -137,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5302,7 +5302,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-04-23",
-      "Dias para vencer": -133,
+      "Dias para vencer": -134,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5319,7 +5319,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-04-23",
-      "Dias para vencer": -122,
+      "Dias para vencer": -123,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5336,7 +5336,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-04-17",
-      "Dias para vencer": -134,
+      "Dias para vencer": -135,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5353,7 +5353,7 @@
       "Bucket": "Jacarandas",
       "Estado": "Completed",
       "Completada": "2026-04-14",
-      "Dias para vencer": -134,
+      "Dias para vencer": -135,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5370,7 +5370,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-04-14",
-      "Dias para vencer": -137,
+      "Dias para vencer": -138,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5387,7 +5387,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-04-14",
-      "Dias para vencer": -135,
+      "Dias para vencer": -136,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5404,7 +5404,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-04-14",
-      "Dias para vencer": -135,
+      "Dias para vencer": -136,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5421,7 +5421,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-04-13",
-      "Dias para vencer": -140,
+      "Dias para vencer": -141,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5438,7 +5438,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-04-13",
-      "Dias para vencer": -140,
+      "Dias para vencer": -141,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5455,7 +5455,7 @@
       "Bucket": "Jacarandas",
       "Estado": "Completed",
       "Completada": "2026-04-13",
-      "Dias para vencer": -137,
+      "Dias para vencer": -138,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5472,7 +5472,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-04-13",
-      "Dias para vencer": -140,
+      "Dias para vencer": -141,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5489,7 +5489,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-04-13",
-      "Dias para vencer": -140,
+      "Dias para vencer": -141,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5506,7 +5506,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-04-13",
-      "Dias para vencer": -140,
+      "Dias para vencer": -141,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5523,7 +5523,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-04-13",
-      "Dias para vencer": -140,
+      "Dias para vencer": -141,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5540,7 +5540,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-04-13",
-      "Dias para vencer": -140,
+      "Dias para vencer": -141,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5574,7 +5574,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-04-10",
-      "Dias para vencer": -126,
+      "Dias para vencer": -127,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5591,7 +5591,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-04-10",
-      "Dias para vencer": -136,
+      "Dias para vencer": -137,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5608,7 +5608,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-04-10",
-      "Dias para vencer": -140,
+      "Dias para vencer": -141,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5625,7 +5625,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-04-10",
-      "Dias para vencer": -140,
+      "Dias para vencer": -141,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5642,7 +5642,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-04-10",
-      "Dias para vencer": -134,
+      "Dias para vencer": -135,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5676,7 +5676,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-04-10",
-      "Dias para vencer": -161,
+      "Dias para vencer": -162,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5693,7 +5693,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-04-10",
-      "Dias para vencer": -161,
+      "Dias para vencer": -162,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5710,7 +5710,7 @@
       "Bucket": "Los Nogales",
       "Estado": "Completed",
       "Completada": "2026-04-10",
-      "Dias para vencer": -168,
+      "Dias para vencer": -169,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5727,7 +5727,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-04-10",
-      "Dias para vencer": -140,
+      "Dias para vencer": -141,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5744,7 +5744,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-04-09",
-      "Dias para vencer": -140,
+      "Dias para vencer": -141,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5761,7 +5761,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-04-09",
-      "Dias para vencer": -135,
+      "Dias para vencer": -136,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5778,7 +5778,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-04-09",
-      "Dias para vencer": -140,
+      "Dias para vencer": -141,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5795,7 +5795,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-04-09",
-      "Dias para vencer": -136,
+      "Dias para vencer": -137,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5812,7 +5812,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-04-09",
-      "Dias para vencer": -150,
+      "Dias para vencer": -151,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5829,7 +5829,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-04-07",
-      "Dias para vencer": -142,
+      "Dias para vencer": -143,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5846,7 +5846,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-04-06",
-      "Dias para vencer": -150,
+      "Dias para vencer": -151,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5863,7 +5863,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-04-06",
-      "Dias para vencer": -120,
+      "Dias para vencer": -121,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5880,7 +5880,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-04-06",
-      "Dias para vencer": -144,
+      "Dias para vencer": -145,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5897,7 +5897,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-04-06",
-      "Dias para vencer": -150,
+      "Dias para vencer": -151,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5914,7 +5914,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-04-06",
-      "Dias para vencer": -150,
+      "Dias para vencer": -151,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5931,7 +5931,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-04-06",
-      "Dias para vencer": -150,
+      "Dias para vencer": -151,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5948,7 +5948,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-04-06",
-      "Dias para vencer": -150,
+      "Dias para vencer": -151,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5965,7 +5965,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-04-06",
-      "Dias para vencer": -154,
+      "Dias para vencer": -155,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5982,7 +5982,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-04-06",
-      "Dias para vencer": -144,
+      "Dias para vencer": -145,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -5999,7 +5999,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-04-01",
-      "Dias para vencer": -168,
+      "Dias para vencer": -169,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6016,7 +6016,7 @@
       "Bucket": "Escalar",
       "Estado": "Completed",
       "Completada": "2026-04-01",
-      "Dias para vencer": -182,
+      "Dias para vencer": -183,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6033,7 +6033,7 @@
       "Bucket": "Escalar",
       "Estado": "Completed",
       "Completada": "2026-04-01",
-      "Dias para vencer": -179,
+      "Dias para vencer": -180,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6050,7 +6050,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-04-01",
-      "Dias para vencer": -150,
+      "Dias para vencer": -151,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6067,7 +6067,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-03-31",
-      "Dias para vencer": -181,
+      "Dias para vencer": -182,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6084,7 +6084,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-03-30",
-      "Dias para vencer": -151,
+      "Dias para vencer": -152,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6101,7 +6101,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-03-27",
-      "Dias para vencer": -150,
+      "Dias para vencer": -151,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6118,7 +6118,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-03-27",
-      "Dias para vencer": -150,
+      "Dias para vencer": -151,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6135,7 +6135,7 @@
       "Bucket": "Los Nogales",
       "Estado": "Completed",
       "Completada": "2026-03-27",
-      "Dias para vencer": -150,
+      "Dias para vencer": -151,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6152,7 +6152,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-03-26",
-      "Dias para vencer": -149,
+      "Dias para vencer": -150,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6169,7 +6169,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-03-24",
-      "Dias para vencer": -167,
+      "Dias para vencer": -168,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6186,7 +6186,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-03-20",
-      "Dias para vencer": -161,
+      "Dias para vencer": -162,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6203,7 +6203,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-03-20",
-      "Dias para vencer": -161,
+      "Dias para vencer": -162,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6220,7 +6220,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-03-20",
-      "Dias para vencer": -168,
+      "Dias para vencer": -169,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6237,7 +6237,7 @@
       "Bucket": "Los Nogales",
       "Estado": "Completed",
       "Completada": "2026-03-19",
-      "Dias para vencer": -164,
+      "Dias para vencer": -165,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6254,7 +6254,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-03-19",
-      "Dias para vencer": -163,
+      "Dias para vencer": -164,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6271,7 +6271,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-03-19",
-      "Dias para vencer": -161,
+      "Dias para vencer": -162,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6288,7 +6288,7 @@
       "Bucket": "Escalar",
       "Estado": "Completed",
       "Completada": "2026-03-17",
-      "Dias para vencer": -182,
+      "Dias para vencer": -183,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6305,7 +6305,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-03-17",
-      "Dias para vencer": -170,
+      "Dias para vencer": -171,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6322,7 +6322,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-03-16",
-      "Dias para vencer": -167,
+      "Dias para vencer": -168,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6339,7 +6339,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-03-16",
-      "Dias para vencer": -171,
+      "Dias para vencer": -172,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6356,7 +6356,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-03-16",
-      "Dias para vencer": -171,
+      "Dias para vencer": -172,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6373,7 +6373,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-03-16",
-      "Dias para vencer": -178,
+      "Dias para vencer": -179,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6390,7 +6390,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-03-16",
-      "Dias para vencer": -171,
+      "Dias para vencer": -172,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6407,7 +6407,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-03-16",
-      "Dias para vencer": -161,
+      "Dias para vencer": -162,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6424,7 +6424,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-03-16",
-      "Dias para vencer": -161,
+      "Dias para vencer": -162,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6441,7 +6441,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-03-16",
-      "Dias para vencer": -163,
+      "Dias para vencer": -164,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6458,7 +6458,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-03-16",
-      "Dias para vencer": -163,
+      "Dias para vencer": -164,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6475,7 +6475,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-03-16",
-      "Dias para vencer": -161,
+      "Dias para vencer": -162,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6492,7 +6492,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-03-16",
-      "Dias para vencer": -182,
+      "Dias para vencer": -183,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6509,7 +6509,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-03-16",
-      "Dias para vencer": -163,
+      "Dias para vencer": -164,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6526,7 +6526,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-03-13",
-      "Dias para vencer": -168,
+      "Dias para vencer": -169,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6543,7 +6543,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-03-13",
-      "Dias para vencer": -168,
+      "Dias para vencer": -169,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6560,7 +6560,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-03-13",
-      "Dias para vencer": -168,
+      "Dias para vencer": -169,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6577,7 +6577,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-03-13",
-      "Dias para vencer": -170,
+      "Dias para vencer": -171,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6594,7 +6594,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-03-13",
-      "Dias para vencer": -169,
+      "Dias para vencer": -170,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6611,7 +6611,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-03-13",
-      "Dias para vencer": -170,
+      "Dias para vencer": -171,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6628,7 +6628,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-03-12",
-      "Dias para vencer": -168,
+      "Dias para vencer": -169,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6645,7 +6645,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-03-12",
-      "Dias para vencer": -168,
+      "Dias para vencer": -169,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6662,7 +6662,7 @@
       "Bucket": "Escalar",
       "Estado": "Completed",
       "Completada": "2026-03-12",
-      "Dias para vencer": -170,
+      "Dias para vencer": -171,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6679,7 +6679,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-03-11",
-      "Dias para vencer": -171,
+      "Dias para vencer": -172,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6696,7 +6696,7 @@
       "Bucket": "Pendiente",
       "Estado": "Completed",
       "Completada": "2026-03-10",
-      "Dias para vencer": -182,
+      "Dias para vencer": -183,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6713,7 +6713,7 @@
       "Bucket": "Los Nogales",
       "Estado": "Completed",
       "Completada": "2026-03-09",
-      "Dias para vencer": -168,
+      "Dias para vencer": -169,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6730,7 +6730,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-03-09",
-      "Dias para vencer": -171,
+      "Dias para vencer": -172,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6747,7 +6747,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-03-09",
-      "Dias para vencer": -178,
+      "Dias para vencer": -179,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6781,7 +6781,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-03-09",
-      "Dias para vencer": -168,
+      "Dias para vencer": -169,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6798,7 +6798,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-03-09",
-      "Dias para vencer": -168,
+      "Dias para vencer": -169,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6815,7 +6815,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-03-09",
-      "Dias para vencer": -171,
+      "Dias para vencer": -172,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6832,7 +6832,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-03-06",
-      "Dias para vencer": -175,
+      "Dias para vencer": -176,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6849,7 +6849,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-03-06",
-      "Dias para vencer": -175,
+      "Dias para vencer": -176,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6866,7 +6866,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-03-06",
-      "Dias para vencer": -182,
+      "Dias para vencer": -183,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6883,7 +6883,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-03-06",
-      "Dias para vencer": -170,
+      "Dias para vencer": -171,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6900,7 +6900,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-03-06",
-      "Dias para vencer": -172,
+      "Dias para vencer": -173,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6917,7 +6917,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-03-06",
-      "Dias para vencer": -178,
+      "Dias para vencer": -179,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6934,7 +6934,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-03-05",
-      "Dias para vencer": -178,
+      "Dias para vencer": -179,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6951,7 +6951,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-03-05",
-      "Dias para vencer": -178,
+      "Dias para vencer": -179,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6968,7 +6968,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-03-05",
-      "Dias para vencer": -182,
+      "Dias para vencer": -183,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -6985,7 +6985,7 @@
       "Bucket": "Jacarandas",
       "Estado": "Completed",
       "Completada": "2026-03-05",
-      "Dias para vencer": -213,
+      "Dias para vencer": -214,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7002,7 +7002,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-03-04",
-      "Dias para vencer": -182,
+      "Dias para vencer": -183,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7036,7 +7036,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-03-03",
-      "Dias para vencer": -178,
+      "Dias para vencer": -179,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7053,7 +7053,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-03-03",
-      "Dias para vencer": -178,
+      "Dias para vencer": -179,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7070,7 +7070,7 @@
       "Bucket": "Escalar",
       "Estado": "Completed",
       "Completada": "2026-03-02",
-      "Dias para vencer": -183,
+      "Dias para vencer": -184,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7087,7 +7087,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-03-02",
-      "Dias para vencer": -182,
+      "Dias para vencer": -183,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7104,7 +7104,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-03-02",
-      "Dias para vencer": -154,
+      "Dias para vencer": -155,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7121,7 +7121,7 @@
       "Bucket": "Los Nogales",
       "Estado": "Completed",
       "Completada": "2026-03-02",
-      "Dias para vencer": -182,
+      "Dias para vencer": -183,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7138,7 +7138,7 @@
       "Bucket": "Dijon",
       "Estado": "Completed",
       "Completada": "2026-03-02",
-      "Dias para vencer": -210,
+      "Dias para vencer": -211,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7155,7 +7155,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-03-02",
-      "Dias para vencer": -182,
+      "Dias para vencer": -183,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7172,7 +7172,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-02-27",
-      "Dias para vencer": -224,
+      "Dias para vencer": -225,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7189,7 +7189,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-02-27",
-      "Dias para vencer": -213,
+      "Dias para vencer": -214,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7206,7 +7206,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-02-27",
-      "Dias para vencer": -182,
+      "Dias para vencer": -183,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7223,7 +7223,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-02-27",
-      "Dias para vencer": -178,
+      "Dias para vencer": -179,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7240,7 +7240,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-02-26",
-      "Dias para vencer": -182,
+      "Dias para vencer": -183,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7257,7 +7257,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-02-26",
-      "Dias para vencer": -182,
+      "Dias para vencer": -183,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7274,7 +7274,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-02-26",
-      "Dias para vencer": -211,
+      "Dias para vencer": -212,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7291,7 +7291,7 @@
       "Bucket": "Pendiente",
       "Estado": "Completed",
       "Completada": "2026-02-26",
-      "Dias para vencer": -182,
+      "Dias para vencer": -183,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7308,7 +7308,7 @@
       "Bucket": "Escalar",
       "Estado": "Completed",
       "Completada": "2026-02-26",
-      "Dias para vencer": -183,
+      "Dias para vencer": -184,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7325,7 +7325,7 @@
       "Bucket": "Pendiente",
       "Estado": "Completed",
       "Completada": "2026-02-25",
-      "Dias para vencer": -182,
+      "Dias para vencer": -183,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7342,7 +7342,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-02-25",
-      "Dias para vencer": -213,
+      "Dias para vencer": -214,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7359,7 +7359,7 @@
       "Bucket": "Escalar",
       "Estado": "Completed",
       "Completada": "2026-02-25",
-      "Dias para vencer": -184,
+      "Dias para vencer": -185,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7376,7 +7376,7 @@
       "Bucket": "Jacarandas",
       "Estado": "Completed",
       "Completada": "2026-02-25",
-      "Dias para vencer": -184,
+      "Dias para vencer": -185,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7393,7 +7393,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-02-24",
-      "Dias para vencer": -178,
+      "Dias para vencer": -179,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7410,7 +7410,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-02-24",
-      "Dias para vencer": -184,
+      "Dias para vencer": -185,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7444,7 +7444,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-02-23",
-      "Dias para vencer": -184,
+      "Dias para vencer": -185,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7478,7 +7478,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-02-23",
-      "Dias para vencer": -193,
+      "Dias para vencer": -194,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7495,7 +7495,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-02-23",
-      "Dias para vencer": -227,
+      "Dias para vencer": -228,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7512,7 +7512,7 @@
       "Bucket": "Jacarandas",
       "Estado": "Completed",
       "Completada": "2026-02-20",
-      "Dias para vencer": -212,
+      "Dias para vencer": -213,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7529,7 +7529,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-02-05",
-      "Dias para vencer": -214,
+      "Dias para vencer": -215,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7546,7 +7546,7 @@
       "Bucket": "Cumbres Condominio",
       "Estado": "Completed",
       "Completada": "2026-02-04",
-      "Dias para vencer": -212,
+      "Dias para vencer": -213,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7580,7 +7580,7 @@
       "Bucket": "OZ",
       "Estado": "Completed",
       "Completada": "2026-01-28",
-      "Dias para vencer": -224,
+      "Dias para vencer": -225,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7597,7 +7597,7 @@
       "Bucket": "Escalar",
       "Estado": "Completed",
       "Completada": "2026-01-28",
-      "Dias para vencer": -217,
+      "Dias para vencer": -218,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7614,7 +7614,7 @@
       "Bucket": "Complex",
       "Estado": "Completed",
       "Completada": "2026-01-27",
-      "Dias para vencer": -213,
+      "Dias para vencer": -214,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7631,7 +7631,7 @@
       "Bucket": "Santa Fe",
       "Estado": "Completed",
       "Completada": "2026-01-26",
-      "Dias para vencer": -225,
+      "Dias para vencer": -226,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7665,7 +7665,7 @@
       "Bucket": "Los Nogales",
       "Estado": "Completed",
       "Completada": "2026-01-21",
-      "Dias para vencer": -224,
+      "Dias para vencer": -225,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7682,7 +7682,7 @@
       "Bucket": "Charlotte",
       "Estado": "Completed",
       "Completada": "2026-01-21",
-      "Dias para vencer": -224,
+      "Dias para vencer": -225,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7699,7 +7699,7 @@
       "Bucket": "Atalanta",
       "Estado": "Completed",
       "Completada": "2026-01-21",
-      "Dias para vencer": -217,
+      "Dias para vencer": -218,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7716,7 +7716,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-01-16",
-      "Dias para vencer": -221,
+      "Dias para vencer": -222,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7733,7 +7733,7 @@
       "Bucket": "Marroco",
       "Estado": "Completed",
       "Completada": "2026-01-14",
-      "Dias para vencer": -226,
+      "Dias para vencer": -227,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7750,7 +7750,7 @@
       "Bucket": "Martinique",
       "Estado": "Completed",
       "Completada": "2026-01-06",
-      "Dias para vencer": -233,
+      "Dias para vencer": -234,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7801,7 +7801,7 @@
       "Bucket": "Pendiente",
       "Estado": "Completed",
       "Completada": "2026-01-06",
-      "Dias para vencer": -301,
+      "Dias para vencer": -302,
       "Semaforo": "Completada",
       "Canal_teams": ""
     },
@@ -7818,7 +7818,7 @@
       "Bucket": "Escalar",
       "Estado": "Completed",
       "Completada": "2026-01-06",
-      "Dias para vencer": -242,
+      "Dias para vencer": -243,
       "Semaforo": "Completada",
       "Canal_teams": ""
     }
