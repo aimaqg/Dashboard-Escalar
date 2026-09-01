@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-01T07:46:12.957Z",
+  "actualizado": "2026-09-01T12:48:23.544Z",
   "total": 464,
   "datos": [
     {
@@ -64,7 +64,7 @@
       "Fecha_vencimiento": "2026-09-04",
       "Prioridad": "Importante",
       "Bucket": "Cumbres Condominio",
-      "Estado": "Not started",
+      "Estado": "In progress",
       "Completada": "",
       "Dias para vencer": 3,
       "Semaforo": "Próxima a vencer",
