@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-01",
+  "actualizado": "2026-09-02",
   "totalProgramados": 91,
   "totalHistorial": 7,
   "programados": [
@@ -57,7 +57,7 @@
       "Responsable": "Asistente Escalar",
       "Estado": "Pendiente",
       "Observaciones": "",
-      "Proximo_vencimiento": "2026-09-01"
+      "Proximo_vencimiento": "2027-09-01"
     },
     {
       "_copropiedad": "CHARLOTTE",
@@ -365,7 +365,7 @@
       "Responsable": "Asistente Escalar",
       "Estado": "Pendiente",
       "Observaciones": "",
-      "Proximo_vencimiento": "2026-09-01"
+      "Proximo_vencimiento": "2027-09-01"
     },
     {
       "_copropiedad": "COMPLEX",
