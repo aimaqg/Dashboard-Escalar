@@ -1,6 +1,6 @@
 {
   "actualizado": "2026-09-03",
-  "totalProgramados": 91,
+  "totalProgramados": 85,
   "totalHistorial": 7,
   "programados": [
     {
@@ -150,11 +150,11 @@
       "Elemento": "ASCENSORES",
       "Mes": "ENERO",
       "Dia": "28",
-      "Tipo": "Legal",
+      "Tipo": "Preventivo",
       "Proveedor": "Otis S.A.",
       "Responsable": "Coordinador Escalar",
       "Estado": "Completado",
-      "Observaciones": "Certificado requerido",
+      "Observaciones": "",
       "Proximo_vencimiento": "2027-01-28"
     },
     {
@@ -164,11 +164,11 @@
       "Elemento": "ASCENSORES",
       "Mes": "FEBRERO",
       "Dia": "19",
-      "Tipo": "Legal",
+      "Tipo": "Preventivo",
       "Proveedor": "Otis S.A.",
       "Responsable": "Coordinador Escalar",
       "Estado": "Completado",
-      "Observaciones": "Certificado requerido",
+      "Observaciones": "",
       "Proximo_vencimiento": "2027-02-19"
     },
     {
@@ -178,11 +178,11 @@
       "Elemento": "ASCENSORES",
       "Mes": "MARZO",
       "Dia": "18",
-      "Tipo": "Legal",
+      "Tipo": "Preventivo",
       "Proveedor": "Otis S.A.",
       "Responsable": "Coordinador Escalar",
       "Estado": "Completado",
-      "Observaciones": "Certificado requerido",
+      "Observaciones": "",
       "Proximo_vencimiento": "2027-03-18"
     },
     {
@@ -192,11 +192,11 @@
       "Elemento": "ASCENSORES",
       "Mes": "ABRIL",
       "Dia": "16",
-      "Tipo": "Legal",
+      "Tipo": "Preventivo",
       "Proveedor": "Otis S.A.",
       "Responsable": "Coordinador Escalar",
       "Estado": "Completado",
-      "Observaciones": "Certificado requerido",
+      "Observaciones": "",
       "Proximo_vencimiento": "2027-04-16"
     },
     {
@@ -206,11 +206,11 @@
       "Elemento": "ASCENSORES",
       "Mes": "MAYO",
       "Dia": "19",
-      "Tipo": "Legal",
+      "Tipo": "Preventivo",
       "Proveedor": "Otis S.A.",
       "Responsable": "Coordinador Escalar",
       "Estado": "Completado",
-      "Observaciones": "Certificado requerido",
+      "Observaciones": "",
       "Proximo_vencimiento": "2027-05-19"
     },
     {
@@ -220,11 +220,11 @@
       "Elemento": "ASCENSORES",
       "Mes": "JUNIO",
       "Dia": "22",
-      "Tipo": "Legal",
+      "Tipo": "Preventivo",
       "Proveedor": "Otis S.A.",
       "Responsable": "Coordinador Escalar",
       "Estado": "Completado",
-      "Observaciones": "Certificado requerido",
+      "Observaciones": "",
       "Proximo_vencimiento": "2027-06-22"
     },
     {
@@ -234,11 +234,11 @@
       "Elemento": "ASCENSORES",
       "Mes": "JULIO",
       "Dia": "21",
-      "Tipo": "Legal",
+      "Tipo": "Preventivo",
       "Proveedor": "Otis S.A.",
       "Responsable": "Coordinador Escalar",
       "Estado": "Completado",
-      "Observaciones": "Certificado requerido",
+      "Observaciones": "",
       "Proximo_vencimiento": "2027-07-21"
     },
     {
@@ -248,11 +248,11 @@
       "Elemento": "ASCENSORES",
       "Mes": "AGOSTO",
       "Dia": "19",
-      "Tipo": "Legal",
+      "Tipo": "Preventivo",
       "Proveedor": "Otis S.A.",
       "Responsable": "Coordinador Escalar",
       "Estado": "Pendiente",
-      "Observaciones": "Certificado requerido",
+      "Observaciones": "",
       "Proximo_vencimiento": "2027-08-19"
     },
     {
@@ -262,11 +262,11 @@
       "Elemento": "ASCENSORES",
       "Mes": "SEPTIEMBRE",
       "Dia": "16",
-      "Tipo": "Legal",
+      "Tipo": "Preventivo",
       "Proveedor": "Otis S.A.",
       "Responsable": "Coordinador Escalar",
       "Estado": "Pendiente",
-      "Observaciones": "Certificado requerido",
+      "Observaciones": "",
       "Proximo_vencimiento": "2026-09-16"
     },
     {
@@ -276,11 +276,11 @@
       "Elemento": "ASCENSORES",
       "Mes": "OCTUBRE",
       "Dia": "19",
-      "Tipo": "Legal",
+      "Tipo": "Preventivo",
       "Proveedor": "Otis S.A.",
       "Responsable": "Coordinador Escalar",
       "Estado": "Pendiente",
-      "Observaciones": "Certificado requerido",
+      "Observaciones": "",
       "Proximo_vencimiento": "2026-10-19"
     },
     {
@@ -290,11 +290,11 @@
       "Elemento": "ASCENSORES",
       "Mes": "NOVIEMBRE",
       "Dia": "18",
-      "Tipo": "Legal",
+      "Tipo": "Preventivo",
       "Proveedor": "Otis S.A.",
       "Responsable": "Coordinador Escalar",
       "Estado": "Pendiente",
-      "Observaciones": "Certificado requerido",
+      "Observaciones": "",
       "Proximo_vencimiento": "2026-11-18"
     },
     {
@@ -304,11 +304,11 @@
       "Elemento": "ASCENSORES",
       "Mes": "DICIEMBRE",
       "Dia": "17",
-      "Tipo": "Legal",
+      "Tipo": "Preventivo",
       "Proveedor": "Otis S.A.",
       "Responsable": "Coordinador Escalar",
       "Estado": "Pendiente",
-      "Observaciones": "Certificado requerido",
+      "Observaciones": "",
       "Proximo_vencimiento": "2026-12-17"
     },
     {
@@ -516,6 +516,20 @@
       "Dia": "",
       "Tipo": "Preventivo",
       "Proveedor": "Servisepticos",
+      "Responsable": "",
+      "Estado": "Pendiente",
+      "Observaciones": "",
+      "Proximo_vencimiento": ""
+    },
+    {
+      "_copropiedad": "COMPLEX",
+      "_elemento": "LINEA MATRIZ GAS",
+      "Copropiedad": "COMPLEX",
+      "Elemento": "LINEA MATRIZ GAS",
+      "Mes": "CADA 3 AÑOS",
+      "Dia": "",
+      "Tipo": "Preventivo",
+      "Proveedor": "",
       "Responsable": "",
       "Estado": "Pendiente",
       "Observaciones": "",
@@ -1152,90 +1166,6 @@
       "Proximo_vencimiento": "2026-11-10"
     },
     {
-      "_copropiedad": "SANTORINI",
-      "_elemento": "ASCENSOR NORTE",
-      "Copropiedad": "SANTORINI",
-      "Elemento": "ASCENSOR NORTE",
-      "Mes": "ENERO",
-      "Dia": "25",
-      "Tipo": "Legal",
-      "Proveedor": "Otis S.A.",
-      "Responsable": "Coordinador Escalar",
-      "Estado": "Completado",
-      "Observaciones": "Certificado requerido",
-      "Proximo_vencimiento": "2027-01-25"
-    },
-    {
-      "_copropiedad": "SANTORINI",
-      "_elemento": "ASCENSOR NORTE",
-      "Copropiedad": "SANTORINI",
-      "Elemento": "ASCENSOR NORTE",
-      "Mes": "JULIO",
-      "Dia": "25",
-      "Tipo": "Legal",
-      "Proveedor": "Otis S.A.",
-      "Responsable": "Coordinador Escalar",
-      "Estado": "En gestión",
-      "Observaciones": "Certificado requerido",
-      "Proximo_vencimiento": "2027-07-25"
-    },
-    {
-      "_copropiedad": "SANTORINI",
-      "_elemento": "ASCENSOR SUR",
-      "Copropiedad": "SANTORINI",
-      "Elemento": "ASCENSOR SUR",
-      "Mes": "ENERO",
-      "Dia": "26",
-      "Tipo": "Legal",
-      "Proveedor": "Otis S.A.",
-      "Responsable": "Coordinador Escalar",
-      "Estado": "Completado",
-      "Observaciones": "Certificado requerido",
-      "Proximo_vencimiento": "2027-01-26"
-    },
-    {
-      "_copropiedad": "SANTORINI",
-      "_elemento": "ASCENSOR SUR",
-      "Copropiedad": "SANTORINI",
-      "Elemento": "ASCENSOR SUR",
-      "Mes": "JULIO",
-      "Dia": "26",
-      "Tipo": "Legal",
-      "Proveedor": "Otis S.A.",
-      "Responsable": "Coordinador Escalar",
-      "Estado": "En gestión",
-      "Observaciones": "Certificado requerido",
-      "Proximo_vencimiento": "2027-07-26"
-    },
-    {
-      "_copropiedad": "SANTORINI",
-      "_elemento": "PISCINA",
-      "Copropiedad": "SANTORINI",
-      "Elemento": "PISCINA",
-      "Mes": "MENSUAL",
-      "Dia": "",
-      "Tipo": "Preventivo",
-      "Proveedor": "AquaTech Ltda.",
-      "Responsable": "Dirección Escalar",
-      "Estado": "En gestión",
-      "Observaciones": "",
-      "Proximo_vencimiento": ""
-    },
-    {
-      "_copropiedad": "SANTORINI",
-      "_elemento": "JARDINES",
-      "Copropiedad": "SANTORINI",
-      "Elemento": "JARDINES",
-      "Mes": "MENSUAL",
-      "Dia": "",
-      "Tipo": "Preventivo",
-      "Proveedor": "JardinesPro",
-      "Responsable": "Asistente Escalar",
-      "Estado": "En gestión",
-      "Observaciones": "",
-      "Proximo_vencimiento": ""
-    },
-    {
       "_copropiedad": "Código de colores por copropiedad:",
       "_elemento": "Código de colores por copropiedad:",
       "Copropiedad": "Código de colores por copropiedad:",
@@ -1261,20 +1191,6 @@
       "Responsable": "JACARANDAS",
       "Estado": "NOGALES",
       "Observaciones": "MARTINIQUE",
-      "Proximo_vencimiento": ""
-    },
-    {
-      "_copropiedad": "OZ",
-      "_elemento": "SANTA FE",
-      "Copropiedad": "OZ",
-      "Elemento": "SANTA FE",
-      "Mes": "SANTORINI",
-      "Dia": "",
-      "Tipo": "Preventivo",
-      "Proveedor": "",
-      "Responsable": "",
-      "Estado": "Pendiente",
-      "Observaciones": "",
       "Proximo_vencimiento": ""
     }
   ],
