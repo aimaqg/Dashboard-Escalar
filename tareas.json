@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-03T21:57:22.431Z",
+  "actualizado": "2026-09-03T23:51:41.760Z",
   "total": 476,
   "datos": [
     {
@@ -786,23 +786,6 @@
     },
     {
       "ID_Registro": 47,
-      "ID_Tarea": "Vw1bFMnLnkuO97ClQC20k2UADaqL",
-      "Titulo_Tarea": "Compra de comparendera para el Edificio Charlotte",
-      "Descripcion": "",
-      "Asignado_Nombre": "Yuliana Echeverri",
-      "Asignado_email": "gerencia@escalarsas.com",
-      "Fecha_Creacion": "2026-07-14",
-      "Fecha_vencimiento": "2026-08-31",
-      "Prioridad": "Media",
-      "Bucket": "Charlotte",
-      "Estado": "In progress",
-      "Completada": "",
-      "Dias para vencer": -3,
-      "Semaforo": "Vencida",
-      "Canal_teams": ""
-    },
-    {
-      "ID_Registro": 48,
       "ID_Tarea": "5qYPZdBwr0CZBFCaZcQSHWUAMf6b",
       "Titulo_Tarea": "Chect list requitos cargadores",
       "Descripcion": "",
@@ -819,7 +802,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 49,
+      "ID_Registro": 48,
       "ID_Tarea": "g5M2ebDtZ0OpdvM3LHhgAWUAA5JR",
       "Titulo_Tarea": "Iniciar Reclamacion Ante La Aseguradora Por Siniestro En Las Puertas Vehiculares.",
       "Descripcion": "",
@@ -836,7 +819,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 50,
+      "ID_Registro": 49,
       "ID_Tarea": "u-1IhXINpEK3oyRDwk83p2UAInr8",
       "Titulo_Tarea": "Iniciar Instalacion De Pergola En La Porteria.",
       "Descripcion": "13/08/2026 Se inicia tramite ante la curaduria del Municipio de Sabaneta",
@@ -853,7 +836,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 51,
+      "ID_Registro": 50,
       "ID_Tarea": "sWtbjihCfky_l_z_vi4slWUAL8Fz",
       "Titulo_Tarea": "Hablar con el señor Andres propietario del apartamento 1004 esto por novedad presentada en ventana.",
       "Descripcion": "",
@@ -870,7 +853,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 52,
+      "ID_Registro": 51,
       "ID_Tarea": "BdGxFdRHiE-pnMOtopaXAGUAKM7y",
       "Titulo_Tarea": "Iniciar Instalacion de paneles solares y Pergola de Porteria",
       "Descripcion": "30/06/2026 Se autoriza por parte del consejo La Instalacion de los paneles solares por parte del proveedor Opus e instalacion de la pergola de porteria con el proveedor Raul Jaramillo.",
@@ -887,7 +870,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 53,
+      "ID_Registro": 52,
       "ID_Tarea": "NfE6hB9pX0am0zkTlkleKmUAJHd6",
       "Titulo_Tarea": "Revisar el cuarto util del apartamento 604 esto por filtracion presentada",
       "Descripcion": "",
@@ -904,7 +887,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 54,
+      "ID_Registro": 53,
       "ID_Tarea": "xEZcQpCvlECIl1bU-eINtGUANCmd",
       "Titulo_Tarea": "boletines unidades",
       "Descripcion": "Ya está marroco y jacarandas",
@@ -921,7 +904,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 55,
+      "ID_Registro": 54,
       "ID_Tarea": "kbA_YG3j6kys5AK1dXQgMWUAOcKK",
       "Titulo_Tarea": "Intervencion por Filtracion en el parqueadero del apto 606 ",
       "Descripcion": "",
@@ -938,7 +921,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 56,
+      "ID_Registro": 55,
       "ID_Tarea": "H_oAXjEljke6m2j9yb0tNmUAK4De",
       "Titulo_Tarea": "Retirar Varilla ubicada en el Parque Infantil .",
       "Descripcion": "31/03/2026 Se evidencia condición insegura con una varilla al lado de la zona infantil.",
@@ -955,7 +938,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 57,
+      "ID_Registro": 56,
       "ID_Tarea": "TyekDE-KM0uqpPehhrwMRmUABiy3",
       "Titulo_Tarea": "Reparaciones varias en el piso 7, esto debido a intervenciones de prooveedores de gas y agua en los respectivos gabinetes",
       "Descripcion": "",
@@ -969,6 +952,23 @@
       "Completada": "",
       "Dias para vencer": 4,
       "Semaforo": "En tiempo",
+      "Canal_teams": ""
+    },
+    {
+      "ID_Registro": 57,
+      "ID_Tarea": "Vw1bFMnLnkuO97ClQC20k2UADaqL",
+      "Titulo_Tarea": "Compra de comparendera para el Edificio Charlotte",
+      "Descripcion": "",
+      "Asignado_Nombre": "Yuliana Echeverri",
+      "Asignado_email": "gerencia@escalarsas.com",
+      "Fecha_Creacion": "2026-07-14",
+      "Fecha_vencimiento": "2026-08-31",
+      "Prioridad": "Media",
+      "Bucket": "Charlotte",
+      "Estado": "Completed",
+      "Completada": "2026-09-03",
+      "Dias para vencer": -3,
+      "Semaforo": "Completada",
       "Canal_teams": ""
     },
     {
