@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-08T17:38:06.329Z",
+  "actualizado": "2026-09-08T20:17:10.960Z",
   "total": 490,
   "datos": [
     {
@@ -81,7 +81,7 @@
       "Fecha_vencimiento": "2026-09-11",
       "Prioridad": "Media",
       "Bucket": "Martinique",
-      "Estado": "Not started",
+      "Estado": "In progress",
       "Completada": "",
       "Dias para vencer": 3,
       "Semaforo": "Próxima a vencer",
