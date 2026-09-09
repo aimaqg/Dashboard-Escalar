@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-08",
+  "actualizado": "2026-09-09",
   "totalProgramados": 85,
   "totalHistorial": 7,
   "programados": [
@@ -141,7 +141,7 @@
       "Responsable": "Asistente Escalar",
       "Estado": "Pendiente",
       "Observaciones": "",
-      "Proximo_vencimiento": "2026-09-08"
+      "Proximo_vencimiento": "2027-09-08"
     },
     {
       "_copropiedad": "COMPLEX",
@@ -911,7 +911,7 @@
       "Responsable": "Coordinador Escalar",
       "Estado": "Pendiente",
       "Observaciones": "Certificado requerido",
-      "Proximo_vencimiento": "2026-09-08"
+      "Proximo_vencimiento": "2027-09-08"
     },
     {
       "_copropiedad": "MARTINIQUE",
