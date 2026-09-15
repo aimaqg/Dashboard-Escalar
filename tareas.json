@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-15T19:12:31.225Z",
+  "actualizado": "2026-09-15T22:14:47.009Z",
   "total": 502,
   "datos": [
     {
@@ -455,7 +455,7 @@
       "Fecha_vencimiento": "2026-09-16",
       "Prioridad": "Baja",
       "Bucket": "Escalar",
-      "Estado": "Not started",
+      "Estado": "In progress",
       "Completada": "",
       "Dias para vencer": 1,
       "Semaforo": "Próxima a vencer",
@@ -8336,7 +8336,7 @@
       "ID_Registro": 491,
       "ID_Tarea": "W6RCxxNk-0qbUgmKLRumB2UAHaAU",
       "Titulo_Tarea": "Coordinar garantias balcones Fachada ",
-      "Descripcion": "",
+      "Descripcion": "20260113 Esta gestión la está realizando Sebastian. Se quedó que en enero se retomaba el tema por el invierno.",
       "Asignado_Nombre": "Sara Silva;Sebastian Berrio",
       "Asignado_email": "asistentedos@escalarsas.com;direccion@escalarsas.com",
       "Fecha_Creacion": "2026-01-13",
@@ -8455,7 +8455,7 @@
       "ID_Registro": 498,
       "ID_Tarea": "JSHoTyNUVkqir9sT2IY9P2UACCKz",
       "Titulo_Tarea": "Enviar correos proveedores para incrementos ",
-      "Descripcion": "20260105 Se enviaron correos en horas de la mañana.",
+      "Descripcion": "",
       "Asignado_Nombre": "Sara Silva",
       "Asignado_email": "asistentedos@escalarsas.com",
       "Fecha_Creacion": "2026-01-05",
