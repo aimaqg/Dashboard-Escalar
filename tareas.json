@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-23T12:19:00.996Z",
+  "actualizado": "2026-09-23T17:15:22.049Z",
   "total": 507,
   "datos": [
     {
@@ -588,13 +588,13 @@
       "Asignado_Nombre": "Sebastian Berrio;Andres Ramirez",
       "Asignado_email": "direccion@escalarsas.com;coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-07-24",
-      "Fecha_vencimiento": "2026-09-21",
+      "Fecha_vencimiento": "2026-09-29",
       "Prioridad": "Media",
       "Bucket": "Escalar",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": -2,
-      "Semaforo": "Vencida",
+      "Dias para vencer": 6,
+      "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
     {
