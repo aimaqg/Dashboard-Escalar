@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-24T11:57:30.967Z",
+  "actualizado": "2026-09-24T16:47:43.173Z",
   "total": 508,
   "datos": [
     {
@@ -656,13 +656,13 @@
       "Asignado_Nombre": "Andres Ramirez;Yuliana Echeverri",
       "Asignado_email": "coordinador@escalarsas.com;gerencia@escalarsas.com",
       "Fecha_Creacion": "2026-07-14",
-      "Fecha_vencimiento": "2026-09-24",
+      "Fecha_vencimiento": "2026-09-29",
       "Prioridad": "Media",
       "Bucket": "OZ",
-      "Estado": "Not started",
+      "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 0,
-      "Semaforo": "Próxima a vencer",
+      "Dias para vencer": 5,
+      "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
     {
