@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-06T08:04:42.864Z",
+  "actualizado": "2026-10-06T15:06:28.144Z",
   "total": 535,
   "datos": [
     {
@@ -775,13 +775,13 @@
       "Asignado_Nombre": "Sebastian Berrio;Andres Ramirez",
       "Asignado_email": "direccion@escalarsas.com;coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-07-24",
-      "Fecha_vencimiento": "2026-10-05",
+      "Fecha_vencimiento": "2026-10-13",
       "Prioridad": "Media",
       "Bucket": "Escalar",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": -1,
-      "Semaforo": "Vencida",
+      "Dias para vencer": 7,
+      "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
     {
@@ -8353,7 +8353,7 @@
       "ID_Registro": 492,
       "ID_Tarea": "iIcyrBeTR0-DbwkNz733zmUAJeW2",
       "Titulo_Tarea": "Cotizacion etapa 2 proyecto. terminos referecia ",
-      "Descripcion": "",
+      "Descripcion": "Se aborda a la ingeniera quien argumenta que este tema debe ser gestionado directamente por la administradora Yuliana Echeverry.",
       "Asignado_Nombre": "Andres Ramirez;Yuliana Echeverri",
       "Asignado_email": "coordinador@escalarsas.com;gerencia@escalarsas.com",
       "Fecha_Creacion": "2026-01-14",
@@ -8472,7 +8472,7 @@
       "ID_Registro": 499,
       "ID_Tarea": "IHyyBvkjO0mcRODDNK2uMWUADnIJ",
       "Titulo_Tarea": "Seguimiento  obras y entrega Colinge ",
-      "Descripcion": "Se cambio chapa del baño, ya que la ingeniera no genero respuesta y era urgente la intervención, pendiente entrega.",
+      "Descripcion": "",
       "Asignado_Nombre": "Andres Ramirez;Yuliana Echeverri",
       "Asignado_email": "coordinador@escalarsas.com;gerencia@escalarsas.com",
       "Fecha_Creacion": "2026-01-14",
