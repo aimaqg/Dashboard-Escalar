@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-09T01:26:26.869Z",
+  "actualizado": "2026-10-09T07:50:57.171Z",
   "total": 544,
   "datos": [
     {
@@ -8387,7 +8387,7 @@
       "ID_Registro": 494,
       "ID_Tarea": "Q_gafr_qIUuRLcz8JVzodWUAPajV",
       "Titulo_Tarea": "Filtracion Apto.1008",
-      "Descripcion": "Portada Inmobiliaria reporta\r\nApto.1008 se está viendo afectado por **humedades generando hongo en el techo del apartamento y con caída de pintura**, solicitamos una revisión con el inmueble de piso superior si la afectación es generada por este, ya que están afectando el interior del inmueble\r\n\r\nLa informacion ya esta reportada tambien por correo\r\nmantenimiento@portadainmobiliaria.com",
+      "Descripcion": "",
       "Asignado_Nombre": "Sebastian Berrio",
       "Asignado_email": "direccion@escalarsas.com",
       "Fecha_Creacion": "2026-02-25",
@@ -8489,7 +8489,7 @@
       "ID_Registro": 500,
       "ID_Tarea": "TO-IHCtIBkykXcD1pZkusWUAGVr6",
       "Titulo_Tarea": "Obtener fechas cumpleaños vigilancia y aseo",
-      "Descripcion": "POr favor traer las fechas de cumpleaños de cada frente de trabajo de cada unidad.",
+      "Descripcion": "",
       "Asignado_Nombre": "Sara Silva;Sebastian Berrio;Andres Ramirez;Yuliana Echeverri",
       "Asignado_email": "asistentedos@escalarsas.com;direccion@escalarsas.com;coordinador@escalarsas.com;gerencia@escalarsas.com",
       "Fecha_Creacion": "2026-02-20",
