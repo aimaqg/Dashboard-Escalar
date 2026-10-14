@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-14T01:52:41.123Z",
+  "actualizado": "2026-10-14T07:17:33.764Z",
   "total": 549,
   "datos": [
     {
@@ -8353,7 +8353,7 @@
       "ID_Registro": 492,
       "ID_Tarea": "4D5ArullfkKM6_e8R2oOoGUAGSTa",
       "Titulo_Tarea": "Reparar silla de Porteria.",
-      "Descripcion": "",
+      "Descripcion": "Se repara silla de Porteria, cambio de llantas y ajuste de espaldar.",
       "Asignado_Nombre": "",
       "Asignado_email": "",
       "Fecha_Creacion": "2026-03-06",
@@ -8438,7 +8438,7 @@
       "ID_Registro": 497,
       "ID_Tarea": "_SV2fCN_KkeOCL6kPQKxDmUAH2VN",
       "Titulo_Tarea": "Cotizar exigencias y ajustes piscina ",
-      "Descripcion": "20262702 En proceso 60% de exigencias",
+      "Descripcion": "",
       "Asignado_Nombre": "Sebastian Berrio",
       "Asignado_email": "direccion@escalarsas.com",
       "Fecha_Creacion": "2026-01-07",
@@ -8472,7 +8472,7 @@
       "ID_Registro": 499,
       "ID_Tarea": "Q_gafr_qIUuRLcz8JVzodWUAPajV",
       "Titulo_Tarea": "Filtracion Apto.1008",
-      "Descripcion": "",
+      "Descripcion": "Portada Inmobiliaria reporta\r\nApto.1008 se está viendo afectado por **humedades generando hongo en el techo del apartamento y con caída de pintura**, solicitamos una revisión con el inmueble de piso superior si la afectación es generada por este, ya que están afectando el interior del inmueble\r\n\r\nLa informacion ya esta reportada tambien por correo\r\nmantenimiento@portadainmobiliaria.com",
       "Asignado_Nombre": "Sebastian Berrio",
       "Asignado_email": "direccion@escalarsas.com",
       "Fecha_Creacion": "2026-02-25",
