@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-15T07:22:51.098Z",
+  "actualizado": "2026-10-15T12:47:53.789Z",
   "total": 549,
   "datos": [
     {
@@ -8370,7 +8370,7 @@
       "ID_Registro": 493,
       "ID_Tarea": "N0SR8P6-BUGW6UsUIQcwO2UAFYVD",
       "Titulo_Tarea": "Visita Inspeccion por posible humedad en el apto 1405",
-      "Descripcion": "Se realiza visita el día 24 de febrero, se evidencia filtración por alfajía en el balcón y sellos de ventana en alcoba principal pendiente dar respuesta al correo.\r\nSe da respuesta por medio de correo al cliente, donde se le informa que estas filtraciones serán intervenidas en el momento de realizar el mantenimiento a fachada, proyectado a mediano plazo.",
+      "Descripcion": "",
       "Asignado_Nombre": "Andres Ramirez",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-02-23",
@@ -8404,7 +8404,7 @@
       "ID_Registro": 495,
       "ID_Tarea": "sA3B9P_EN0eawNa42JYC-2UAKv5c",
       "Titulo_Tarea": "Circular Ppales decisiones Asamblea ",
-      "Descripcion": "",
+      "Descripcion": "Buenas tardes\r\n\r\nAdjunto envió notas  de los principales temas tratados en asamblea de Atalanta para generar circular de Principales temas.\r\n\r\n[@Yuliana Echeverri](mailto:gerencia@escalarsas.com) por favor validar y autorizar a [@andrea torres](mailto:asistentedos@escalarsas.com) para realizar la circular\r\n\r\nGracias",
       "Asignado_Nombre": "Sara Silva;Yuliana Echeverri",
       "Asignado_email": "asistentedos@escalarsas.com;gerencia@escalarsas.com",
       "Fecha_Creacion": "2026-03-03",
@@ -8455,7 +8455,7 @@
       "ID_Registro": 498,
       "ID_Tarea": "jbinv4WUzE-iZXKs7pm63mUAA9Gv",
       "Titulo_Tarea": "recorrido para intervencion fisuras ambas torres s pronuniadas ambas torres ",
-      "Descripcion": "se tomo la determiancion de cotizar todas las zonas comunes",
+      "Descripcion": "",
       "Asignado_Nombre": "Sebastian Berrio;Yuliana Echeverri",
       "Asignado_email": "direccion@escalarsas.com;gerencia@escalarsas.com",
       "Fecha_Creacion": "2026-02-27",
