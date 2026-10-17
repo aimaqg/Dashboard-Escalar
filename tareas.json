@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-17T18:01:38.629Z",
+  "actualizado": "2026-10-17T20:29:27.749Z",
   "total": 556,
   "datos": [
     {
@@ -8336,7 +8336,7 @@
       "ID_Registro": 491,
       "ID_Tarea": "gVAlEAwC5k-GFkFKOr5tcmUAHYIU",
       "Titulo_Tarea": "Cambio de bandeja interna cuarto útil apartamento 501",
-      "Descripcion": "Se interviene el cuarto útil del apartamento 501 luego de filtraciones presentadas.",
+      "Descripcion": "",
       "Asignado_Nombre": "Andres Ramirez",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-03-09",
@@ -8404,7 +8404,7 @@
       "ID_Registro": 495,
       "ID_Tarea": "_gfiWqgsSkShYkDBLhlCDGUAFxE-",
       "Titulo_Tarea": "Cierre preventivo de un parqueadero visitantes en sotano 3",
-      "Descripcion": "En visita de inspección de proveedor para intervención de fachada se evidencia una  condición insegura por posible caída de adoquín a zona de sótano 3 específicamente en uno de los parqueaderos descubiertos de visitantes.",
+      "Descripcion": "",
       "Asignado_Nombre": "",
       "Asignado_email": "",
       "Fecha_Creacion": "2026-03-06",
@@ -8421,7 +8421,7 @@
       "ID_Registro": 496,
       "ID_Tarea": "UexIDGMBHEWyeXrwFfFcB2UAFswu",
       "Titulo_Tarea": "Inspección por parte del tecnico electrico por cambio de voltaje en el apartamento 802.",
-      "Descripcion": "",
+      "Descripcion": "Se programa visita el dia lunes 9 de marzo a las 9 am, con el objetivo de  atender este requerimiento.",
       "Asignado_Nombre": "",
       "Asignado_email": "",
       "Fecha_Creacion": "2026-03-06",
@@ -8472,7 +8472,7 @@
       "ID_Registro": 499,
       "ID_Tarea": "4D5ArullfkKM6_e8R2oOoGUAGSTa",
       "Titulo_Tarea": "Reparar silla de Porteria.",
-      "Descripcion": "",
+      "Descripcion": "Se repara silla de Porteria, cambio de llantas y ajuste de espaldar.",
       "Asignado_Nombre": "",
       "Asignado_email": "",
       "Fecha_Creacion": "2026-03-06",
