@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-17T04:39:55.923Z",
+  "actualizado": "2026-10-17T08:48:57.420Z",
   "total": 556,
   "datos": [
     {
@@ -8336,7 +8336,7 @@
       "ID_Registro": 491,
       "ID_Tarea": "gVAlEAwC5k-GFkFKOr5tcmUAHYIU",
       "Titulo_Tarea": "Cambio de bandeja interna cuarto útil apartamento 501",
-      "Descripcion": "Se interviene el cuarto útil del apartamento 501 luego de filtraciones presentadas.",
+      "Descripcion": "",
       "Asignado_Nombre": "Andres Ramirez",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-03-09",
@@ -8353,7 +8353,7 @@
       "ID_Registro": 492,
       "ID_Tarea": "Z1XijtU8pE6kXSH6Zg1w2GUAAV8q",
       "Titulo_Tarea": "Visita a los apartamentos 1203 y 1205 por revisión de temas de acabados.",
-      "Descripcion": "",
+      "Descripcion": "Se realiza visita de inspección para cotizar obra blanca.",
       "Asignado_Nombre": "Andres Ramirez",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-03-03",
@@ -8370,7 +8370,7 @@
       "ID_Registro": 493,
       "ID_Tarea": "lcFQdTy4CEmLpX3-bLz0iGUAG7PV",
       "Titulo_Tarea": "Intervención de puerta de ingreso en zona del jardín y puerta piso 12.",
-      "Descripcion": "",
+      "Descripcion": "Se intervienen las puertas mencionadas, quedando en optimas condiciones de uso.",
       "Asignado_Nombre": "",
       "Asignado_email": "",
       "Fecha_Creacion": "2026-02-24",
@@ -8438,7 +8438,7 @@
       "ID_Registro": 497,
       "ID_Tarea": "d8dpISkdUEevoIfxoGs5t2UAErmE",
       "Titulo_Tarea": "Visita por inspección, incidente con un perro que involucra a los residentes del apto 306 y 1902",
-      "Descripcion": "20262402 Se realiza reunión con residentes implicados en el incidente con las mascotas, se llegan a varios compromisos, nos encontramos revisando el tema del acta de reunión para proceder a sus respectivas firmas.\r\nSe cierra este caso, adjunto acta de reunion y compromisos.",
+      "Descripcion": "",
       "Asignado_Nombre": "Andres Ramirez",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-02-23",
