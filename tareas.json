@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-18T00:17:31.898Z",
+  "actualizado": "2026-10-18T04:45:39.524Z",
   "total": 556,
   "datos": [
     {
@@ -8438,7 +8438,7 @@
       "ID_Registro": 497,
       "ID_Tarea": "d8dpISkdUEevoIfxoGs5t2UAErmE",
       "Titulo_Tarea": "Visita por inspección, incidente con un perro que involucra a los residentes del apto 306 y 1902",
-      "Descripcion": "",
+      "Descripcion": "20262402 Se realiza reunión con residentes implicados en el incidente con las mascotas, se llegan a varios compromisos, nos encontramos revisando el tema del acta de reunión para proceder a sus respectivas firmas.\r\nSe cierra este caso, adjunto acta de reunion y compromisos.",
       "Asignado_Nombre": "Andres Ramirez",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-02-23",
@@ -8472,7 +8472,7 @@
       "ID_Registro": 499,
       "ID_Tarea": "4D5ArullfkKM6_e8R2oOoGUAGSTa",
       "Titulo_Tarea": "Reparar silla de Porteria.",
-      "Descripcion": "Se repara silla de Porteria, cambio de llantas y ajuste de espaldar.",
+      "Descripcion": "",
       "Asignado_Nombre": "",
       "Asignado_email": "",
       "Fecha_Creacion": "2026-03-06",
