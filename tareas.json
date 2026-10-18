@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-18T18:55:40.937Z",
+  "actualizado": "2026-10-18T21:19:40.666Z",
   "total": 556,
   "datos": [
     {
@@ -8353,7 +8353,7 @@
       "ID_Registro": 492,
       "ID_Tarea": "Z1XijtU8pE6kXSH6Zg1w2GUAAV8q",
       "Titulo_Tarea": "Visita a los apartamentos 1203 y 1205 por revisión de temas de acabados.",
-      "Descripcion": "Se realiza visita de inspección para cotizar obra blanca.",
+      "Descripcion": "",
       "Asignado_Nombre": "Andres Ramirez",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-03-03",
@@ -8404,7 +8404,7 @@
       "ID_Registro": 495,
       "ID_Tarea": "_gfiWqgsSkShYkDBLhlCDGUAFxE-",
       "Titulo_Tarea": "Cierre preventivo de un parqueadero visitantes en sotano 3",
-      "Descripcion": "",
+      "Descripcion": "En visita de inspección de proveedor para intervención de fachada se evidencia una  condición insegura por posible caída de adoquín a zona de sótano 3 específicamente en uno de los parqueaderos descubiertos de visitantes.",
       "Asignado_Nombre": "",
       "Asignado_email": "",
       "Fecha_Creacion": "2026-03-06",
