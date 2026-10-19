@@ -428,11 +428,11 @@ body.mantenimientos-tab .filters,body.mantenimientos-tab .active-filters-bar{dis
       <div class="kpi-grid" id="kpis"></div>
       <div class="charts-row">
         <div class="card"><div class="card-title">&#128100; Tareas por asignado</div><div id="chartAsignados"></div></div>
-        <div class="card"><div class="card-title">&#9685; Distribución por estado</div><div class="legend" id="legendEstado"></div><div style="position:relative;height:200px"><canvas id="chartEstado"></canvas></div></div>
+        <div class="card"><div class="card-title">&#9685; Distribución por estado</div><div class="legend" id="legendEstado"></div><div style="position:relative;height:227px;width:227px;margin:0 auto"><canvas id="chartEstado"></canvas></div></div>
       </div>
       <div class="charts-row">
-        <div class="card"><div class="card-title">&#9632; Tareas por copropiedad</div><div class="legend" id="legendBucket"></div><div style="position:relative;height:220px"><canvas id="chartBucket"></canvas></div></div>
-        <div class="card"><div class="card-title">&#9873; Distribución por prioridad</div><div class="legend" id="legendPrioridad"></div><div style="position:relative;height:220px"><canvas id="chartPrioridad"></canvas></div></div>
+        <div class="card"><div class="card-title">&#9632; Tareas por copropiedad</div><div class="legend" id="legendBucket"></div><div style="position:relative;height:227px;width:227px;margin:0 auto"><canvas id="chartBucket"></canvas></div></div>
+        <div class="card"><div class="card-title">&#9873; Distribución por prioridad</div><div class="legend" id="legendPrioridad"></div><div style="position:relative;height:227px;width:227px;margin:0 auto"><canvas id="chartPrioridad"></canvas></div></div>
       </div>
       <div class="card card-collapsible" style="margin-bottom:16px"><div class="card-title">&#9670; NDS por prioridad</div><div class="card-cuerpo"><div id="ndsPorPrioridad"></div></div></div>
       <div class="card card-collapsible" style="margin-bottom:16px">
@@ -464,7 +464,7 @@ body.mantenimientos-tab .filters,body.mantenimientos-tab .active-filters-bar{dis
         <div class="card card-collapsible" style="margin-bottom:16px"><div class="card-title">&#9888; Top de morosos — dónde enfocar la gestión de cobro</div><div class="card-cuerpo"><div style="position:relative" id="finMorososWrap"><canvas id="finChartMorosos"></canvas></div></div></div>
         <div class="card card-collapsible" style="margin-bottom:16px"><div class="card-title">&#128680; Alertas de desviación de gastos — sobre-ejecución (rojo) vs. sub-ejecución (verde)</div><div class="card-cuerpo"><div style="position:relative" id="finTornadoWrap"><canvas id="finChartTornado"></canvas></div></div></div>
         <div class="fin-grid-2">
-          <div class="card"><div class="card-title">&#9685; Composición del gasto acumulado</div><div class="legend" id="finLegendComposicion"></div><div style="position:relative;height:280px"><canvas id="finChartComposicion"></canvas></div></div>
+          <div class="card"><div class="card-title">&#9685; Composición del gasto acumulado</div><div class="legend" id="finLegendComposicion"></div><div style="position:relative;height:227px;width:227px;margin:0 auto"><canvas id="finChartComposicion"></canvas></div></div>
           <div class="card"><div class="card-title">&#9998; Lectura ejecutiva</div><div id="finResumen" style="color:#4A4436;font-size:13px;line-height:1.8;padding:6px 2px"></div></div>
         </div>
       </div>
@@ -881,14 +881,14 @@ function renderChartEstado(){
 function renderChartBucket(){
   var conteo={};datosFiltrados.forEach(function(t){if(t.Bucket) conteo[t.Bucket]=(conteo[t.Bucket]||0)+1;});
   var sorted=Object.keys(conteo).map(function(k){return[k,conteo[k]];}).sort(function(a,b){return b[1]-a[1];});
-  var labels=sorted.map(function(e){return e[0];}),data=sorted.map(function(e){return e[1];});
+  var labels=sorted.slice(0,5).map(function(e){return e[0];}),data=sorted.slice(0,5).map(function(e){return e[1];});
   document.getElementById('legendBucket').innerHTML=labels.map(function(l,i){return'<span class="legend-item"><span class="legend-dot" style="background:'+PALETA[i%PALETA.length]+'"></span>'+l+'</span>';}).join('');
   if(chartBucketInst) chartBucketInst.destroy();
   chartBucketInst=new Chart(document.getElementById('chartBucket'),{type:'bar',data:{labels:labels,datasets:[{data:data,backgroundColor:labels.map(function(_,i){return PALETA[i%PALETA.length];}),borderRadius:4,borderSkipped:false}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#8A8171',font:{size:11},maxRotation:45},grid:{color:'#231D100A'}},y:{ticks:{color:'#8A8171',font:{size:11},stepSize:1},grid:{color:'#231D100A'}}}}});
 }
 function renderChartPrioridad(){
   var vistas3={};var conteo={};datosFiltrados.forEach(function(t){if(vistas3[t.ID_Tarea])return;vistas3[t.ID_Tarea]=true;if(t.Prioridad) conteo[t.Prioridad]=(conteo[t.Prioridad]||0)+1;});
-  var labels=Object.keys(conteo),data=labels.map(function(p){return conteo[p];});
+  var allLP=Object.keys(conteo).sort(function(a,b){return conteo[b]-conteo[a];});var labels=allLP.slice(0,5),data=labels.map(function(p){return conteo[p];});
   var colors={urgente:'#C93B2E',urgent:'#C93B2E','Urgente':'#C93B2E',importante:'#D9821F',important:'#D9821F','Importante':'#D9821F',media:'#2E7CC4',medium:'#2E7CC4','Media':'#2E7CC4',baja:'#8F8A7C',low:'#8F8A7C','Baja':'#8F8A7C','Sin prioridad':'#C9C3B4'};
   document.getElementById('legendPrioridad').innerHTML=labels.map(function(l,i){return'<span class="legend-item"><span class="legend-dot" style="background:'+(colors[l.toLowerCase()]||PALETA[i])+'"></span>'+l+' ('+data[i]+')</span>';}).join('');
   if(chartPrioridadInst) chartPrioridadInst.destroy();
