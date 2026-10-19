@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-19T01:32:13.795Z",
+  "actualizado": "2026-10-19T06:44:22.498Z",
   "total": 556,
   "datos": [
     {
@@ -463,23 +463,6 @@
     },
     {
       "ID_Registro": 28,
-      "ID_Tarea": "KAxt5GfHu0CIbDMKQ6mh82UAGcqI",
-      "Titulo_Tarea": "Notificacion cierre o actividad de tarea",
-      "Descripcion": "Es posible q al que cree la tarea le llegue una notificación de que hubo actividad en la tarea se q se cumplió o hubo avance ?",
-      "Asignado_Nombre": "Automatización Escalar",
-      "Asignado_email": "automatizacion@escalarsas.com",
-      "Fecha_Creacion": "2026-09-04",
-      "Fecha_vencimiento": "2026-09-17",
-      "Prioridad": "Media",
-      "Bucket": "Escalar",
-      "Estado": "Not started",
-      "Completada": "",
-      "Dias para vencer": -32,
-      "Semaforo": "Vencida",
-      "Canal_teams": ""
-    },
-    {
-      "ID_Registro": 29,
       "ID_Tarea": "NetQGqL_ykWLMRWQF-I_4mUADOx5",
       "Titulo_Tarea": "Intervenir Bajante en plazoleta piso 2",
       "Descripcion": "",
@@ -496,7 +479,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 30,
+      "ID_Registro": 29,
       "ID_Tarea": "AivVAlTT7EG1YglAZ51Ck2UANfNv",
       "Titulo_Tarea": "Diagnostico Porteria Remota",
       "Descripcion": "",
@@ -513,7 +496,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 31,
+      "ID_Registro": 30,
       "ID_Tarea": "oKW9kysWLkO5U3wN5vKRDmUAMHzv",
       "Titulo_Tarea": "Crear Llave Bancolombia",
       "Descripcion": "",
@@ -530,7 +513,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 32,
+      "ID_Registro": 31,
       "ID_Tarea": "Uwp9WbWCCke-PIbH5uUEZGUACXAW",
       "Titulo_Tarea": "Intervenir Registro en Sotano 2",
       "Descripcion": "",
@@ -547,7 +530,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 33,
+      "ID_Registro": 32,
       "ID_Tarea": "m61ITCMRDESX1v3zXmUA2mUAFJii",
       "Titulo_Tarea": "Combra luces navidad",
       "Descripcion": "Validar listado para cotizaciones de todas las udades darle prioridad a balcones",
@@ -564,7 +547,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 34,
+      "ID_Registro": 33,
       "ID_Tarea": "9U7kwLHv00qDmLmB9vBTq2UAOFks",
       "Titulo_Tarea": "Actualizar cronograma mantenimientos",
       "Descripcion": "",
@@ -581,7 +564,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 35,
+      "ID_Registro": 34,
       "ID_Tarea": "bM-BPet-m0WNZtACggF4zWUAKYA6",
       "Titulo_Tarea": "Cotizar intervencion por humedad en el ingreso del cuarto de bombas de la terraza",
       "Descripcion": "",
@@ -598,7 +581,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 36,
+      "ID_Registro": 35,
       "ID_Tarea": "mYENILoUI0eWiotnAKHYrGUAG56X",
       "Titulo_Tarea": "Brigada con Hidrolavadora en zona de Mascotas",
       "Descripcion": "",
@@ -615,7 +598,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 37,
+      "ID_Registro": 36,
       "ID_Tarea": "x4e3Pp-B5kOEB6WV9F3iNGUADn0F",
       "Titulo_Tarea": "Cotizar Impermeabilizacion en escalas de ingreso a la terraza torre 2",
       "Descripcion": "",
@@ -632,7 +615,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 38,
+      "ID_Registro": 37,
       "ID_Tarea": "53h5ZCYATkarU8xJLZg6R2UAAUGR",
       "Titulo_Tarea": "Cotizar reparacion por filtracion en el parquedero 99040",
       "Descripcion": "",
@@ -649,7 +632,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 39,
+      "ID_Registro": 38,
       "ID_Tarea": "mWYC6g_NCkOsXXZoeOkA0WUAIYhS",
       "Titulo_Tarea": "Cotizar intervencion en el cuartos utiles # del apto 1102 y  parqueadero 66o",
       "Descripcion": "",
@@ -666,7 +649,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 40,
+      "ID_Registro": 39,
       "ID_Tarea": "Od3VMS3YtkS8uoyO6MM0BGUAImKQ",
       "Titulo_Tarea": "Cotizar mmto shut pisos y zocalo",
       "Descripcion": "",
@@ -683,7 +666,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 41,
+      "ID_Registro": 40,
       "ID_Tarea": "WfMFJEqugUqwi2ZlzGaJ82UAIgmv",
       "Titulo_Tarea": "Cotizar puerta vehicular",
       "Descripcion": "Andres se debe cotizar todo el cambio de la puerta vehicular del sótano. Nilson dijo que no tiene la capacidad.",
@@ -700,7 +683,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 42,
+      "ID_Registro": 41,
       "ID_Tarea": "aD_AsQbca06HOBuEsiqeB2UAD5ap",
       "Titulo_Tarea": "Cotizar cambio de espejo del Gimnasio",
       "Descripcion": "10/08/2026 Se comparte cotizacion solicitada",
@@ -717,7 +700,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 43,
+      "ID_Registro": 42,
       "ID_Tarea": "HfGSZy_250mUA12ceALj-GUAN07o",
       "Titulo_Tarea": "Segumiento a porgraamcion sistema de gestioj en todas las undidades s",
       "Descripcion": "",
@@ -734,7 +717,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 44,
+      "ID_Registro": 43,
       "ID_Tarea": "5qYPZdBwr0CZBFCaZcQSHWUAMf6b",
       "Titulo_Tarea": "Chect list requitos cargadores",
       "Descripcion": "",
@@ -751,7 +734,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 45,
+      "ID_Registro": 44,
       "ID_Tarea": "u-1IhXINpEK3oyRDwk83p2UAInr8",
       "Titulo_Tarea": "Iniciar Instalacion De Pergola En La Porteria.",
       "Descripcion": "13/08/2026 Se inicia tramite ante la curaduria del Municipio de Sabaneta",
@@ -768,7 +751,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 46,
+      "ID_Registro": 45,
       "ID_Tarea": "BdGxFdRHiE-pnMOtopaXAGUAKM7y",
       "Titulo_Tarea": "Iniciar Instalacion de paneles solares y Pergola de Porteria",
       "Descripcion": "30/06/2026 Se autoriza por parte del consejo La Instalacion de los paneles solares por parte del proveedor Opus e instalacion de la pergola de porteria con el proveedor Raul Jaramillo.",
@@ -785,7 +768,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 47,
+      "ID_Registro": 46,
       "ID_Tarea": "NfE6hB9pX0am0zkTlkleKmUAJHd6",
       "Titulo_Tarea": "Revisar el cuarto util del apartamento 604 esto por filtracion presentada",
       "Descripcion": "",
@@ -802,7 +785,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 48,
+      "ID_Registro": 47,
       "ID_Tarea": "kbA_YG3j6kys5AK1dXQgMWUAOcKK",
       "Titulo_Tarea": "Intervencion por Filtracion en el parqueadero del apto 606 ",
       "Descripcion": "",
@@ -819,7 +802,7 @@
       "Canal_teams": ""
     },
     {
-      "ID_Registro": 49,
+      "ID_Registro": 48,
       "ID_Tarea": "TyekDE-KM0uqpPehhrwMRmUABiy3",
       "Titulo_Tarea": "Reparaciones varias en el piso 7, esto debido a intervenciones de prooveedores de gas y agua en los respectivos gabinetes",
       "Descripcion": "",
@@ -833,6 +816,23 @@
       "Completada": "",
       "Dias para vencer": 1,
       "Semaforo": "Próxima a vencer",
+      "Canal_teams": ""
+    },
+    {
+      "ID_Registro": 49,
+      "ID_Tarea": "KAxt5GfHu0CIbDMKQ6mh82UAGcqI",
+      "Titulo_Tarea": "Notificacion cierre o actividad de tarea",
+      "Descripcion": "Es posible q al que cree la tarea le llegue una notificación de que hubo actividad en la tarea se q se cumplió o hubo avance ?",
+      "Asignado_Nombre": "Automatización Escalar",
+      "Asignado_email": "automatizacion@escalarsas.com",
+      "Fecha_Creacion": "2026-09-04",
+      "Fecha_vencimiento": "2026-09-17",
+      "Prioridad": "Media",
+      "Bucket": "Escalar",
+      "Estado": "Completed",
+      "Completada": "2026-10-19",
+      "Dias para vencer": -32,
+      "Semaforo": "Completada",
       "Canal_teams": ""
     },
     {
@@ -8846,7 +8846,7 @@
       "ID_Registro": 521,
       "ID_Tarea": "6chL9n1gpUSnVgKtmSierWUAG4zj",
       "Titulo_Tarea": "Por favor actualizar circular sobre la de ida disposicion final de la arena de gato, recordar la notificación de las multas por tema de caninos.",
-      "Descripcion": "20262702 Hecho",
+      "Descripcion": "",
       "Asignado_Nombre": "Sara Silva",
       "Asignado_email": "asistentedos@escalarsas.com",
       "Fecha_Creacion": "2026-02-24",
@@ -8897,7 +8897,7 @@
       "ID_Registro": 524,
       "ID_Tarea": "yw52QDlrMU-4JDlq53O5N2UAHBnH",
       "Titulo_Tarea": "ACTA reunion noviembre",
-      "Descripcion": "Solicito por favor autorización por parte de Yuliana Echeverry del acta compartida, con el fin de enviar al señor Franco Salazar para la firma correspondiente.",
+      "Descripcion": "",
       "Asignado_Nombre": "Andres Ramirez",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-01-23",
@@ -8982,7 +8982,7 @@
       "ID_Registro": 529,
       "ID_Tarea": "3GnnZelqVkqIkWu83PUJjGUAKFV_",
       "Titulo_Tarea": "Inscribir en Bancolombia cuentas de Proveedores Nuevos / Cumbres",
-      "Descripcion": "Buenas tardes \r\n\r\nDoña Yuliana recuerde inscribir las cuentas de las cxp pedientes (Todas son cuentas nuevas) y para poder montar pagos debemos tener primero estas cuentas aprobadas por doña Juliana",
+      "Descripcion": "",
       "Asignado_Nombre": "Yuliana Echeverri",
       "Asignado_email": "gerencia@escalarsas.com",
       "Fecha_Creacion": "2026-02-24",
@@ -8999,7 +8999,7 @@
       "ID_Registro": 530,
       "ID_Tarea": "_xqUiTk13U6qX3IWvrZm1GUAPkjy",
       "Titulo_Tarea": "Circular",
-      "Descripcion": "Corte energía: solo Torre  2 Dia: lunes 2 de marzo  Hora: 8:30 - 11.30am Sin planta sin nada",
+      "Descripcion": "",
       "Asignado_Nombre": "Maria Isabel Zuleta",
       "Asignado_email": "asistenteuno@escalarsas.com",
       "Fecha_Creacion": "2026-02-24",
@@ -9033,7 +9033,7 @@
       "ID_Registro": 532,
       "ID_Tarea": "H-o0LPKYjkqIN7UjW28DPGUAKr88",
       "Titulo_Tarea": "Cambio de paneles piso 17 y revisión de toma corrientes.",
-      "Descripcion": "Se interviene está tarea el día 24 de febrero quedando ok.",
+      "Descripcion": "",
       "Asignado_Nombre": "Andres Ramirez",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-02-23",
@@ -9067,7 +9067,7 @@
       "ID_Registro": 534,
       "ID_Tarea": "RkVv9YPjake-qWZ38ctKpGUAIoll",
       "Titulo_Tarea": "Generar circular de sanciones por manejo de mascotas.",
-      "Descripcion": "20260223 Hecho.",
+      "Descripcion": "",
       "Asignado_Nombre": "Sara Silva",
       "Asignado_email": "asistentedos@escalarsas.com",
       "Fecha_Creacion": "2026-02-23",
@@ -9101,7 +9101,7 @@
       "ID_Registro": 536,
       "ID_Tarea": "0tINF0ZqDk2PaSnTI4bzPmUADHi9",
       "Titulo_Tarea": "Info para informe asamblea",
-      "Descripcion": "Esta tarea queda ok.",
+      "Descripcion": "",
       "Asignado_Nombre": "Andres Ramirez;Yuliana Echeverri",
       "Asignado_email": "coordinador@escalarsas.com;gerencia@escalarsas.com",
       "Fecha_Creacion": "2026-02-05",
@@ -9118,7 +9118,7 @@
       "ID_Registro": 537,
       "ID_Tarea": "83eqSC54VE6SQHchhjl3yWUAF0Q0",
       "Titulo_Tarea": "Completra y archivar planillas mmtos equipos 2025",
-      "Descripcion": "20260106",
+      "Descripcion": "",
       "Asignado_Nombre": "Andres Ramirez",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-01-06",
@@ -9220,7 +9220,7 @@
       "ID_Registro": 543,
       "ID_Tarea": "30hbTb_HikubpvJY5-Che2UAFvNf",
       "Titulo_Tarea": "realizar carta de bienviida en las unidades con el QR del manual y en torre y santa fe cpon la nota de la prohibicion de cortas estadias ",
-      "Descripcion": "19012026 Terminada carta Santafé.",
+      "Descripcion": "",
       "Asignado_Nombre": "Sara Silva",
       "Asignado_email": "asistentedos@escalarsas.com",
       "Fecha_Creacion": "2026-01-19",
@@ -9237,7 +9237,7 @@
       "ID_Registro": 544,
       "ID_Tarea": "w23ux2-Yk0CUZPlbjLctmWUAG7UY",
       "Titulo_Tarea": "Acta enero complex",
-      "Descripcion": "26012026 Borrador redactado, pendiente revisión Yuliana.",
+      "Descripcion": "",
       "Asignado_Nombre": "Sara Silva",
       "Asignado_email": "asistentedos@escalarsas.com",
       "Fecha_Creacion": "2026-01-23",
@@ -9254,7 +9254,7 @@
       "ID_Registro": 545,
       "ID_Tarea": "W6RCxxNk-0qbUgmKLRumB2UAHaAU",
       "Titulo_Tarea": "Coordinar garantias balcones Fachada ",
-      "Descripcion": "20260113 Esta gestión la está realizando Sebastian. Se quedó que en enero se retomaba el tema por el invierno.",
+      "Descripcion": "",
       "Asignado_Nombre": "Sara Silva;Sebastian Berrio",
       "Asignado_email": "asistentedos@escalarsas.com;direccion@escalarsas.com",
       "Fecha_Creacion": "2026-01-13",
@@ -9356,7 +9356,7 @@
       "ID_Registro": 551,
       "ID_Tarea": "ursAjwVKwE2vIWk99btvLmUALrDP",
       "Titulo_Tarea": "circular notificación corte de agua viernes ",
-      "Descripcion": "20260114 Hecho.",
+      "Descripcion": "",
       "Asignado_Nombre": "Sara Silva;Maria Isabel Zuleta",
       "Asignado_email": "asistentedos@escalarsas.com;asistenteuno@escalarsas.com",
       "Fecha_Creacion": "2026-01-13",
@@ -9373,7 +9373,7 @@
       "ID_Registro": 552,
       "ID_Tarea": "JSHoTyNUVkqir9sT2IY9P2UACCKz",
       "Titulo_Tarea": "Enviar correos proveedores para incrementos ",
-      "Descripcion": "20260105 Se enviaron correos en horas de la mañana.",
+      "Descripcion": "",
       "Asignado_Nombre": "Sara Silva",
       "Asignado_email": "asistentedos@escalarsas.com",
       "Fecha_Creacion": "2026-01-05",
@@ -9441,7 +9441,7 @@
       "ID_Registro": 556,
       "ID_Tarea": "NUktHBD1nkuRCi02bjA_gGUAPSLL",
       "Titulo_Tarea": "Hola Yuliana, por favor verifica si este modelo de notificación está bien. Puse el nombre de una unidad como prueba",
-      "Descripcion": "20260106 pendiente respuesta alema",
+      "Descripcion": "",
       "Asignado_Nombre": "Yuliana Echeverri",
       "Asignado_email": "gerencia@escalarsas.com",
       "Fecha_Creacion": "2025-12-28",
