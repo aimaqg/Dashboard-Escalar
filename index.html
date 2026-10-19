@@ -6,21 +6,23 @@
 <title>Dashboard · Escalar Asesorías</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <style>
 :root{
-  --oro:#C9A84C;--oro-deep:#8C6D1F;--oro-light:#E5D3A0;--oro-tint:#FBF6E9;--oro-line:#EFE4C0;
-  --ink:#231D10;--ink-2:#5C5141;--ink-3:#9C8E78;--ink-4:#C5BAA8;
-  --surface:#FFFFFF;--ground:#FAF7F2;--rule:#EDE7D9;--rule-2:#F5F1E8;
-  --green:#1A7A47;--green-t:#E8F5EE;--red:#B83328;--red-t:#FAEDEB;
-  --amber:#B86B1A;--amber-t:#FDF0E3;--blue:#1E5FA8;--blue-t:#E8F0FA;
-  --font-display:'Inter',system-ui,sans-serif;
-  --font-body:'Inter',system-ui,sans-serif;
+  /* Paleta principal — Design artifact */
+  --oro:#C9A227;--oro-deep:#8A6A12;--oro-light:#D4A64A;--oro-tint:#F3E7C4;--oro-line:#EDE3C3;
+  --navy:#0E1A2B;--navy-2:#1D2E47;--navy-3:#22334B;--navy-4:#263852;
+  --ink:#0E1A2B;--ink-2:#2A3446;--ink-3:#5A6478;--ink-4:#A9B3C4;
+  --surface:#FFFFFF;--ground:#F4F2EC;--rule:#EFEBE0;--rule-2:#F2EFE6;
+  --green:#1E6B47;--green-t:#DDF2E6;--red:#9A3A12;--red-t:#FBE7DC;
+  --amber:#6B5310;--amber-t:#F3E7C4;--blue:#1F4E86;--blue-t:#DDEBFA;
+  --font-display:'Sora',system-ui,sans-serif;
+  --font-body:'Manrope',system-ui,sans-serif;
   --font-mono:'DM Mono','Courier New',monospace;
-  --shadow-sm:0 1px 2px rgba(35,29,16,.04),0 2px 8px -4px rgba(140,109,31,.12);
-  --shadow-md:0 2px 4px rgba(35,29,16,.05),0 8px 24px -12px rgba(140,109,31,.22);
-  --shadow-lg:0 4px 8px rgba(35,29,16,.06),0 20px 48px -20px rgba(140,109,31,.35);
+  --shadow-sm:0 1px 0 #E6E1D4;
+  --shadow-md:0 2px 4px rgba(14,26,43,.05),0 8px 24px -12px rgba(201,162,39,.18);
+  --shadow-lg:0 4px 8px rgba(14,26,43,.06),0 20px 48px -20px rgba(201,162,39,.28);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -37,7 +39,7 @@ button,select,input{font-family:inherit}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
 
 /* LOGIN */
-.login-screen{min-height:100vh;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse 900px 600px at 50% -80px,#F5ECD4 0%,var(--ground) 65%)}
+.login-screen{min-height:100vh;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse 900px 600px at 50% -80px,#E9E2CE 0%,var(--ground) 65%)}
 .login-card{background:var(--surface);border:1px solid var(--rule);border-radius:20px;padding:48px 44px 44px;width:100%;max-width:400px;text-align:center;box-shadow:var(--shadow-lg);animation:fadeUp .5s cubic-bezier(.22,.61,.36,1) both;position:relative;overflow:hidden}
 .login-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent 0%,var(--oro) 30%,var(--oro-light) 60%,transparent 100%)}
 .hex-logo{width:72px;height:72px;margin:0 auto 20px;position:relative;animation:hexPulse 3s ease-in-out infinite}
@@ -67,7 +69,7 @@ button,select,input{font-family:inherit}
 .dash{background:var(--ground);min-height:100vh;display:none}
 
 /* TOPBAR */
-.topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--rule);padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:56px;gap:16px;position:sticky}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(244,242,236,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--rule);padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:56px;gap:16px;position:sticky}
 .topbar::after{content:'';position:absolute;left:0;right:0;bottom:0;height:2px;background:linear-gradient(90deg,var(--oro) 0%,var(--oro-light) 40%,transparent 70%);pointer-events:none}
 .brand{display:flex;align-items:center;gap:12px}
 .brand-hex{width:32px;height:32px;flex-shrink:0}
@@ -428,11 +430,11 @@ body.mantenimientos-tab .filters,body.mantenimientos-tab .active-filters-bar{dis
       <div class="kpi-grid" id="kpis"></div>
       <div class="charts-row">
         <div class="card"><div class="card-title">&#128100; Tareas por asignado</div><div id="chartAsignados"></div></div>
-        <div class="card"><div class="card-title">&#9685; Distribución por estado</div><div class="legend" id="legendEstado"></div><div style="position:relative;height:227px;width:227px;margin:0 auto"><canvas id="chartEstado"></canvas></div></div>
+        <div class="card"><div class="card-title">&#9685; Distribución por estado</div><div class="legend" id="legendEstado"></div><div style="position:relative;height:200px"><canvas id="chartEstado"></canvas></div></div>
       </div>
       <div class="charts-row">
-        <div class="card"><div class="card-title">&#9632; Tareas por copropiedad</div><div class="legend" id="legendBucket"></div><div style="position:relative;height:227px;width:227px;margin:0 auto"><canvas id="chartBucket"></canvas></div></div>
-        <div class="card"><div class="card-title">&#9873; Distribución por prioridad</div><div class="legend" id="legendPrioridad"></div><div style="position:relative;height:227px;width:227px;margin:0 auto"><canvas id="chartPrioridad"></canvas></div></div>
+        <div class="card"><div class="card-title">&#9632; Tareas por copropiedad</div><div class="legend" id="legendBucket"></div><div style="position:relative;height:220px"><canvas id="chartBucket"></canvas></div></div>
+        <div class="card"><div class="card-title">&#9873; Distribución por prioridad</div><div class="legend" id="legendPrioridad"></div><div style="position:relative;height:220px"><canvas id="chartPrioridad"></canvas></div></div>
       </div>
       <div class="card card-collapsible" style="margin-bottom:16px"><div class="card-title">&#9670; NDS por prioridad</div><div class="card-cuerpo"><div id="ndsPorPrioridad"></div></div></div>
       <div class="card card-collapsible" style="margin-bottom:16px">
@@ -464,7 +466,7 @@ body.mantenimientos-tab .filters,body.mantenimientos-tab .active-filters-bar{dis
         <div class="card card-collapsible" style="margin-bottom:16px"><div class="card-title">&#9888; Top de morosos — dónde enfocar la gestión de cobro</div><div class="card-cuerpo"><div style="position:relative" id="finMorososWrap"><canvas id="finChartMorosos"></canvas></div></div></div>
         <div class="card card-collapsible" style="margin-bottom:16px"><div class="card-title">&#128680; Alertas de desviación de gastos — sobre-ejecución (rojo) vs. sub-ejecución (verde)</div><div class="card-cuerpo"><div style="position:relative" id="finTornadoWrap"><canvas id="finChartTornado"></canvas></div></div></div>
         <div class="fin-grid-2">
-          <div class="card"><div class="card-title">&#9685; Composición del gasto acumulado</div><div class="legend" id="finLegendComposicion"></div><div style="position:relative;height:227px;width:227px;margin:0 auto"><canvas id="finChartComposicion"></canvas></div></div>
+          <div class="card"><div class="card-title">&#9685; Composición del gasto acumulado</div><div class="legend" id="finLegendComposicion"></div><div style="position:relative;height:280px"><canvas id="finChartComposicion"></canvas></div></div>
           <div class="card"><div class="card-title">&#9998; Lectura ejecutiva</div><div id="finResumen" style="color:#4A4436;font-size:13px;line-height:1.8;padding:6px 2px"></div></div>
         </div>
       </div>
@@ -584,7 +586,7 @@ body.mantenimientos-tab .filters,body.mantenimientos-tab .active-filters-bar{dis
 
 if(typeof Chart !== 'undefined'){
   Chart.defaults.color = '#9C8E78';
-  Chart.defaults.font.family = "'Inter', system-ui, sans-serif";
+  Chart.defaults.font.family = "'Manrope', system-ui, sans-serif";
   Chart.defaults.font.size = 11;
   Chart.defaults.plugins.tooltip.backgroundColor = '#231D10';
   Chart.defaults.plugins.tooltip.titleColor = '#E5D3A0';
@@ -605,9 +607,11 @@ var CONFIG = {
 };
 
 var USUARIOS = {
-  'gerencia':   'Yuli21esca',
-  'asistente2': 'Colombia2026*',
-  'admin':      'Colombia2026*'
+  'gerencia':      'Yuli21esca',
+  'asistente2':    'Colombia2026*',
+  'admin':         'Colombia2026*',
+  'coordinador':   'Colombia2026*',
+  'director':      'Colombia2026*'
 };
 var usuarioActual = '';
 
@@ -881,14 +885,14 @@ function renderChartEstado(){
 function renderChartBucket(){
   var conteo={};datosFiltrados.forEach(function(t){if(t.Bucket) conteo[t.Bucket]=(conteo[t.Bucket]||0)+1;});
   var sorted=Object.keys(conteo).map(function(k){return[k,conteo[k]];}).sort(function(a,b){return b[1]-a[1];});
-  var labels=sorted.slice(0,5).map(function(e){return e[0];}),data=sorted.slice(0,5).map(function(e){return e[1];});
+  var labels=sorted.map(function(e){return e[0];}),data=sorted.map(function(e){return e[1];});
   document.getElementById('legendBucket').innerHTML=labels.map(function(l,i){return'<span class="legend-item"><span class="legend-dot" style="background:'+PALETA[i%PALETA.length]+'"></span>'+l+'</span>';}).join('');
   if(chartBucketInst) chartBucketInst.destroy();
   chartBucketInst=new Chart(document.getElementById('chartBucket'),{type:'bar',data:{labels:labels,datasets:[{data:data,backgroundColor:labels.map(function(_,i){return PALETA[i%PALETA.length];}),borderRadius:4,borderSkipped:false}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#8A8171',font:{size:11},maxRotation:45},grid:{color:'#231D100A'}},y:{ticks:{color:'#8A8171',font:{size:11},stepSize:1},grid:{color:'#231D100A'}}}}});
 }
 function renderChartPrioridad(){
   var vistas3={};var conteo={};datosFiltrados.forEach(function(t){if(vistas3[t.ID_Tarea])return;vistas3[t.ID_Tarea]=true;if(t.Prioridad) conteo[t.Prioridad]=(conteo[t.Prioridad]||0)+1;});
-  var allLP=Object.keys(conteo).sort(function(a,b){return conteo[b]-conteo[a];});var labels=allLP.slice(0,5),data=labels.map(function(p){return conteo[p];});
+  var labels=Object.keys(conteo),data=labels.map(function(p){return conteo[p];});
   var colors={urgente:'#C93B2E',urgent:'#C93B2E','Urgente':'#C93B2E',importante:'#D9821F',important:'#D9821F','Importante':'#D9821F',media:'#2E7CC4',medium:'#2E7CC4','Media':'#2E7CC4',baja:'#8F8A7C',low:'#8F8A7C','Baja':'#8F8A7C','Sin prioridad':'#C9C3B4'};
   document.getElementById('legendPrioridad').innerHTML=labels.map(function(l,i){return'<span class="legend-item"><span class="legend-dot" style="background:'+(colors[l.toLowerCase()]||PALETA[i])+'"></span>'+l+' ('+data[i]+')</span>';}).join('');
   if(chartPrioridadInst) chartPrioridadInst.destroy();
