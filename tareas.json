@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-05T13:31:49.656Z",
+  "actualizado": "2026-11-05T20:47:55.201Z",
   "total": 600,
   "datos": [
     {
@@ -520,13 +520,13 @@
       "Asignado_Nombre": "Andres Ramirez",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-10-01",
-      "Fecha_vencimiento": "2026-11-05",
+      "Fecha_vencimiento": "2026-11-10",
       "Prioridad": "Media",
       "Bucket": "OZ",
       "Estado": "In progress",
       "Completada": "",
-      "Dias para vencer": 0,
-      "Semaforo": "Próxima a vencer",
+      "Dias para vencer": 5,
+      "Semaforo": "En tiempo",
       "Canal_teams": ""
     },
     {
@@ -8472,7 +8472,7 @@
       "ID_Registro": 499,
       "ID_Tarea": "-g1NDsB7akOaS6dk38Pi92UACvwD",
       "Titulo_Tarea": "Solicitud revisión cámara de ingreso vehicular ",
-      "Descripcion": "",
+      "Descripcion": "27/03/2026 Se realiza intervención quedando la cámara en optimas condiciones.",
       "Asignado_Nombre": "Andres Ramirez",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-03-16",
