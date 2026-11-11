@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-11T02:51:35.473Z",
+  "actualizado": "2026-11-11T09:55:56.714Z",
   "total": 620,
   "datos": [
     {
@@ -8421,7 +8421,7 @@
       "ID_Registro": 496,
       "ID_Tarea": "moreC36Mz0iKO8c9j1WZZWUAIPfC",
       "Titulo_Tarea": "Notas Credito MOI ",
-      "Descripcion": "Coordinar con MOI las notas credito de las Facturas de servicios de ENERO y FEBRERO que se generaron en febrero.  Importante tener en cuenta que estas no se causaron para evitar generacion de impuesto",
+      "Descripcion": "",
       "Asignado_Nombre": "Yuliana Echeverri",
       "Asignado_email": "gerencia@escalarsas.com",
       "Fecha_Creacion": "2026-03-10",
@@ -8472,7 +8472,7 @@
       "ID_Registro": 499,
       "ID_Tarea": "IUIooFneZE-q_2_O5bdt9GUAMRCR",
       "Titulo_Tarea": "Cambiar lampara que se encuentra mala en la terraza del piso 17",
-      "Descripcion": "09/04/2026 Se cambia lampara de terraza piso 17",
+      "Descripcion": "",
       "Asignado_Nombre": "Andres Ramirez",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-04-08",
