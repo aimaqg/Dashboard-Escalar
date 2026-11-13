@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-13T16:44:57.312Z",
+  "actualizado": "2026-11-13T22:15:50.701Z",
   "total": 631,
   "datos": [
     {
@@ -8455,7 +8455,7 @@
       "ID_Registro": 498,
       "ID_Tarea": "bAsaEUUC_UegU3Z1LgQfnmUAJI-p",
       "Titulo_Tarea": "Pendientes a realizar en oz",
-      "Descripcion": "",
+      "Descripcion": "validemos si esto con la obra de porteria no se soluciona",
       "Asignado_Nombre": "Andres Ramirez;Yuliana Echeverri",
       "Asignado_email": "coordinador@escalarsas.com;gerencia@escalarsas.com",
       "Fecha_Creacion": "2026-02-02",
@@ -8472,7 +8472,7 @@
       "ID_Registro": 499,
       "ID_Tarea": "Hw0prm5EvUCEyfrlSxdSv2UAJh9Q",
       "Titulo_Tarea": "Filtración en el baño de la  Oficina Cliente Meridiano.",
-      "Descripcion": "Se evidencia filtración en oficina del cliente Meridiano.\r\n\r\n19/03/2026 Según información de la gerente de la compañía esta intervención se realizara con el mantenimiento total de la fachada, se le notifica al cliente de esta situación.",
+      "Descripcion": "",
       "Asignado_Nombre": "Andres Ramirez",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-03-13",
