@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-21T18:16:51.727Z",
+  "actualizado": "2026-11-21T23:27:59.648Z",
   "total": 649,
   "datos": [
     {
@@ -8353,7 +8353,7 @@
       "ID_Registro": 492,
       "ID_Tarea": "WMIoqnEiCU2zbbvnkMiBsGUAGHBE",
       "Titulo_Tarea": "Cotizar malla de seguridad cuartos medidores de gas.",
-      "Descripcion": "Se evidencia una condición insegura por falta de malla en el cuarto de los medidores de gas.",
+      "Descripcion": "",
       "Asignado_Nombre": "Andres Ramirez",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-03-06",
