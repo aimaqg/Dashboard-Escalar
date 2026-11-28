@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-28T10:26:36.356Z",
+  "actualizado": "2026-11-28T18:22:55.823Z",
   "total": 658,
   "datos": [
     {
@@ -8421,7 +8421,7 @@
       "ID_Registro": 496,
       "ID_Tarea": "n5DRonIdF0qoEym6MvaIPWUAFA7F",
       "Titulo_Tarea": "Reparar Contenedor de basura con fibra de vidrio ya que se encuentra reventado en la base",
-      "Descripcion": "08/05/2026 Se realiza reparacion Del Contenedor.",
+      "Descripcion": "",
       "Asignado_Nombre": "Andres Ramirez",
       "Asignado_email": "coordinador@escalarsas.com",
       "Fecha_Creacion": "2026-05-07",
@@ -8455,7 +8455,7 @@
       "ID_Registro": 498,
       "ID_Tarea": "5Nem3uamtESOPx0ZrOJniWUAOyI_",
       "Titulo_Tarea": "Radicar siniestro",
-      "Descripcion": "",
+      "Descripcion": "Radicado sinietsro tajeta MECAP, pendiene  lo solicitado por la CIA",
       "Asignado_Nombre": "Sara Silva;Yuliana Echeverri",
       "Asignado_email": "asistentedos@escalarsas.com;gerencia@escalarsas.com",
       "Fecha_Creacion": "2026-03-13",
